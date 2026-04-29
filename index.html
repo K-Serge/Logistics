@@ -1257,8 +1257,14 @@
     <h2 data-i18n="t419">Что и когда оформлять</h2>
 
     <h3>Phase 1 (W1-2): Foundation</h3>
-    <table>
-      <thead><tr><th data-i18n="t420">Док</th><th data-i18n="t421">Где</th><th data-i18n="t422">Срок</th><th data-i18n="t423">Стоимость</th><th data-i18n="t424">Зависимости</th></tr></thead>
+    <table style="table-layout:fixed;width:100%">
+      <thead><tr>
+        <th style="width:22%" data-i18n="t420">Док</th>
+        <th style="width:22%" data-i18n="t421">Где</th>
+        <th style="width:13%" data-i18n="t422">Срок</th>
+        <th style="width:15%" data-i18n="t423">Стоимость</th>
+        <th style="width:28%" data-i18n="t424">Зависимости</th>
+      </tr></thead>
       <tbody>
         <tr><td>1. <strong>LLC NC</strong></td><td>NC Secretary of State (online)</td><td data-i18n="t425">5-7 дней</td><td>$125</td><td>—</td></tr>
         <tr><td>2. <strong>EIN</strong></td><td>IRS online</td><td data-i18n="t426">15 мин</td><td>Free</td><td data-i18n="t427">После LLC</td></tr>
@@ -1268,30 +1274,42 @@
       </tbody>
     </table>
 
-    <h3 style="margin-top:12px" data-i18n="t431">Phase 2 (W2-4): Параллельно с MC waiting period</h3>
-    <table>
-      <thead><tr><th data-i18n="t432">Док</th><th data-i18n="t433">Где</th><th data-i18n="t434">Срок</th><th data-i18n="t435">Стоимость</th></tr></thead>
+    <h3 style="margin-top:12px" data-i18n="t431">Phase 2 (W2-4): <span style="font-weight:normal;font-size:0.9em;display:block;margin-top:2px">Параллельно с MC waiting period</span></h3>
+    <table style="table-layout:fixed;width:100%">
+      <thead><tr>
+        <th style="width:22%" data-i18n="t432">Док</th>
+        <th style="width:22%" data-i18n="t433">Где</th>
+        <th style="width:13%" data-i18n="t434">Срок</th>
+        <th style="width:15%" data-i18n="t435">Стоимость</th>
+        <th style="width:28%">Зависимости</th>
+      </tr></thead>
       <tbody>
-        <tr><td>6. <strong>BOC-3 Process Agent</strong></td><td>Blanket agent (online)</td><td data-i18n="t436">1 день</td><td>$50</td></tr>
-        <tr><td>7. <strong>UCR Registration</strong></td><td>UCR.gov</td><td data-i18n="t437">1 день</td><td>$76 V1 / $152 V2</td></tr>
-        <tr><td>8. <strong>Drug &amp; Alcohol Consortium</strong></td><td>Foley / USAMD</td><td data-i18n="t438">1 день</td><td>$150/year/driver</td></tr>
-        <tr><td>9. <strong>Insurance quotes + bind</strong></td><td>Progressive / Great West / Sentry</td><td data-i18n="t439">7 дней (3+ quotes)</td><td>$13-18k/year/truck</td></tr>
-        <tr><td>10. <strong>IFTA + decals</strong></td><td>NC DOR</td><td data-i18n="t440">10 дней</td><td>$10 + quarterly</td></tr>
-        <tr><td>11. <strong>HVUT (2290)</strong></td><td>IRS</td><td data-i18n="t441">1 день</td><td>$550/year/truck</td></tr>
-        <tr><td>12. <strong>Truck purchase + inspection</strong></td><td>Dealer / private + 3rd party inspector</td><td data-i18n="t442">2-3 нед</td><td data-i18n="t443">см. CAPEX</td></tr>
+        <tr><td>6. <strong>BOC-3 Process Agent</strong></td><td>Blanket agent (online)</td><td data-i18n="t436">1 день</td><td>$50</td><td>USDOT + MC filed</td></tr>
+        <tr><td>7. <strong>UCR Registration</strong></td><td>UCR.gov</td><td data-i18n="t437">1 день</td><td>$76 V1 / $152 V2</td><td>USDOT</td></tr>
+        <tr><td>8. <strong>Drug &amp; Alcohol Consortium</strong></td><td>Foley / USAMD</td><td data-i18n="t438">1 день</td><td>$150/year/driver</td><td>—</td></tr>
+        <tr><td>9. <strong>Insurance quotes + bind</strong></td><td>Progressive / Great West / Sentry</td><td data-i18n="t439">7 дней (3+ quotes)</td><td>$13-18k/year/truck</td><td>USDOT + truck VIN</td></tr>
+        <tr><td>10. <strong>IFTA + decals</strong></td><td>NC DOR</td><td data-i18n="t440">10 дней</td><td>$10 + quarterly</td><td>USDOT + EIN</td></tr>
+        <tr><td>11. <strong>HVUT (2290)</strong></td><td>IRS</td><td data-i18n="t441">1 день</td><td>$550/year/truck</td><td>EIN + truck VIN</td></tr>
+        <tr><td>12. <strong>Truck purchase + inspection</strong></td><td>Dealer / private + 3rd party inspector</td><td data-i18n="t442">2-3 нед</td><td data-i18n="t443">см. CAPEX</td><td>Business bank account</td></tr>
       </tbody>
     </table>
 
-    <h3 style="margin-top:12px" data-i18n="t444">Phase 3 (W4-6): После получения MC</h3>
-    <table>
-      <thead><tr><th data-i18n="t445">Док</th><th data-i18n="t446">Где</th><th data-i18n="t447">Срок</th><th data-i18n="t448">Стоимость</th></tr></thead>
+    <h3 style="margin-top:12px" data-i18n="t444">Phase 3 (W4-6): <span style="font-weight:normal;font-size:0.9em;display:block;margin-top:2px">После получения MC</span></h3>
+    <table style="table-layout:fixed;width:100%">
+      <thead><tr>
+        <th style="width:22%" data-i18n="t445">Док</th>
+        <th style="width:22%" data-i18n="t446">Где</th>
+        <th style="width:13%" data-i18n="t447">Срок</th>
+        <th style="width:15%" data-i18n="t448">Стоимость</th>
+        <th style="width:28%">Зависимости</th>
+      </tr></thead>
       <tbody>
-        <tr><td>13. <strong>IRP Apportioned Plates</strong></td><td>NC DMV</td><td data-i18n="t449">2 нед</td><td>$1,800-2,500/year/truck</td></tr>
-        <tr><td>14. <strong>ELD device + install</strong></td><td>Motive / Samsara</td><td data-i18n="t450">3 дня shipping</td><td>$35-45/mo/truck</td></tr>
-        <tr><td>15. <strong>Dashcam install</strong></td><td>Same vendor</td><td data-i18n="t451">1 день</td><td>$30/mo/truck</td></tr>
-        <tr><td>16. <strong>Westrock/S&amp;D vendor onboarding</strong></td><td>Westrock procurement portal</td><td data-i18n="t452">2-4 нед</td><td>Free</td></tr>
-        <tr><td>17. <strong>Factoring agreement (optional)</strong></td><td>OTR Capital / RTS</td><td data-i18n="t453">3-5 дней</td><td>2-3% per invoice</td></tr>
-        <tr><td>18. <strong>Driver hiring + drug test + MVR check</strong></td><td>Hiring portal + DOT consortium</td><td data-i18n="t454">2-3 нед</td><td>$300/driver onboarding</td></tr>
+        <tr><td>13. <strong>IRP Apportioned Plates</strong></td><td>NC DMV</td><td data-i18n="t449">2 нед</td><td>$1,800-2,500/year/truck</td><td>MC active + HVUT + truck title</td></tr>
+        <tr><td>14. <strong>ELD device + install</strong></td><td>Motive / Samsara</td><td data-i18n="t450">3 дня shipping</td><td>$35-45/mo/truck</td><td>Truck purchased</td></tr>
+        <tr><td>15. <strong>Dashcam install</strong></td><td>Same vendor</td><td data-i18n="t451">1 день</td><td>$30/mo/truck</td><td>ELD installed</td></tr>
+        <tr><td>16. <strong>Westrock/S&amp;D vendor onboarding</strong></td><td>Westrock procurement portal</td><td data-i18n="t452">2-4 нед</td><td>Free</td><td>MC active + insurance cert</td></tr>
+        <tr><td>17. <strong>Factoring agreement (optional)</strong></td><td>OTR Capital / RTS</td><td data-i18n="t453">3-5 дней</td><td>2-3% per invoice</td><td>MC active</td></tr>
+        <tr><td>18. <strong>Driver hiring + drug test + MVR check</strong></td><td>Hiring portal + DOT consortium</td><td data-i18n="t454">2-3 нед</td><td>$300/driver onboarding</td><td>Drug &amp; Alcohol Consortium</td></tr>
       </tbody>
     </table>
 

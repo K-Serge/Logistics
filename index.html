@@ -275,14 +275,6 @@
     </div>
   </div>
 
-  <!-- SOURCE DATA -->
-  <div class="callout callout-ok" data-i18n='t003'>
-    <strong>📋 Подтверждённые исходные данные (от owner-op + screenshot 2026-04-25):</strong><br>
-    <strong>SC lane:</strong> Concord NC ↔ Summerville SC, 211 mi one-way / 422 r/t, ~3 hrs drive each way, $750/leg = <strong>$1,500/round trip (fuel included)</strong>, <strong>50 round trips/мес</strong> (2 r/t/день × 25 рабочих дней), нужно 2 водителя + 2 трейлера (drop-and-hook).<br>
-    <strong>VA lane:</strong> Concord NC ↔ Chesapeake VA, 306 mi one-way / 612 r/t, ~6 hrs drive each way, <strong>$1,755/round trip</strong>, <strong>23 round trips/мес</strong>, 1 водитель OTR (overnight in sleeper), 1 трейлер (driver отдыхает во время load/unload).<br>
-    <strong>Другие lanes (для справки из screenshot):</strong> MD Middle River $2,575 r/t (~470 mi), NJ Edison $1,900 r/t (~577 mi), TX Houston RPM $2,700 r/t (~1,059 mi).<br>
-    Парковка на складе бесплатно. Владелец не рулит.
-  </div>
 
   <!-- WAREHOUSE LANE REFERENCE -->
   <div class="normal-section" id="warehouse" data-page="warehouse" style="border:2px solid #1e40af;background:#eff6ff">
@@ -1503,8 +1495,7 @@
     <p style="font-size:12px;color:#888;margin-bottom:16px" data-i18n="t497">Заметки сохраняются в браузере. Поделись ссылкой — у каждого свои заметки.</p>
     <textarea id="notes-area" placeholder="Добавь заметки здесь..." style="width:100%;min-height:420px;padding:14px;font-size:13px;font-family:inherit;border:1px solid #d1d5db;border-radius:8px;resize:vertical;outline:none;line-height:1.6;color:#1a1a1a;background:#fff"></textarea>
     <div style="margin-top:8px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
-      <button id="notes-clear" style="padding:6px 14px;font-size:12px;border:1px solid #d1d5db;border-radius:6px;background:#fff;cursor:pointer;color:#666" data-i18n="t498">Очистить</button>
-      <a href="https://drive.google.com/drive/u/0/folders/1_otBqtXwwGJXaCxtExM53M-UTN1NXTLF" target="_blank" style="padding:6px 14px;font-size:12px;border:1px solid #3b82f6;border-radius:6px;background:#eff6ff;color:#2563eb;text-decoration:none;font-weight:600">📁 Google Drive</a>
+<a href="https://drive.google.com/drive/u/0/folders/1_otBqtXwwGJXaCxtExM53M-UTN1NXTLF" target="_blank" style="padding:6px 14px;font-size:12px;border:1px solid #3b82f6;border-radius:6px;background:#eff6ff;color:#2563eb;text-decoration:none;font-weight:600">📁 Google Drive</a>
       <span id="notes-saved" style="font-size:11px;color:#22c55e;display:none" data-i18n="t499">Сохранено ✓</span>
     </div>
   </div>
@@ -1591,7 +1582,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Language toggle ──────────────────────────────────────────────
   const navTranslations = {
     en: {
-      'btn-start':      'Overview',
+      'btn-start':      'Start',
       'btn-truck':      'Trucks',
       'btn-expenses':   'Expenses',
       'btn-documents':  'Documents',
@@ -1619,7 +1610,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'drop-final-rec':       'Final Recommendation',
     },
     ru: {
-      'btn-start':      'Обзор',
+      'btn-start':      'Start',
       'btn-truck':      'Траки',
       'btn-expenses':   'Расходы',
       'btn-documents':  'Документы',

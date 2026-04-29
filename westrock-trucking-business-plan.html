@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Westrock Coffee — Бизнес-план SC + VA (2026)</title>
+<title>Logistic — Бизнес-план SC + VA (2026)</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; color: #1a1a1a; background: #f5f5f5; }
@@ -131,7 +131,7 @@
 </script>
 
 <nav class="top-nav">
-  <span class="nav-brand">🚚 Westrock</span>
+  <span class="nav-brand">🚚 Logistic</span>
 
   <div class="nav-item">
     <button class="nav-btn" data-page="documents">Документы ▾</button>
@@ -191,18 +191,23 @@
     <button class="nav-btn" data-page="risks">⚠️ Риски</button>
   </div>
 
+  <div class="nav-item">
+    <button class="nav-btn" data-page="notes">📝 Заметки</button>
+  </div>
+
   <div class="nav-spacer"></div>
+  <a class="lang-btn" href="https://drive.google.com/drive/u/0/folders/1_otBqtXwwGJXaCxtExM53M-UTN1NXTLF" target="_blank" title="Google Drive" style="margin-right:6px">📁 Drive</a>
   <button class="lang-btn" id="lang-toggle">EN</button>
 </nav>
 
 <div class="page">
 
   <div class="header">
-    <span class="header-brand">Westrock Coffee / S&D · Owner-Operator Business Plan</span>
+    <span class="header-brand">Logistic · Owner-Operator Business Plan</span>
     <span class="header-date" data-en="Concord, NC · 2 options: 1 truck SC vs 2 trucks SC+VA">Concord, NC · 2 варианта: 1 трак SC vs 2 трака SC+VA</span>
   </div>
 
-  <h1 data-en="Business Plan — Westrock Coffee Trucking (SC + VA)">Бизнес-план — Westrock Coffee Trucking (SC + VA)</h1>
+  <h1 data-en="Business Plan — Logistic Trucking (SC + VA)">Бизнес-план — Logistic Trucking (SC + VA)</h1>
 
   <!-- TOP STATS -->
   <div class="stats">
@@ -232,7 +237,16 @@
     </table>
 
     <h3 style="margin-top:16px" data-en="Structure: dual LLC (Wyoming holding + NC operating)">Структура: двойная LLC (Wyoming holding + NC operating)</h3>
-    <pre style="background:#1e2837;color:#d4dbe8;padding:12px;border-radius:6px;font-size:11.5px;line-height:1.6;margin:8px 0">
+    <pre style="background:#1e2837;color:#d4dbe8;padding:12px;border-radius:6px;font-size:11.5px;line-height:1.6;margin:8px 0" data-en="   Partner A + Partner B (individuals)
+            ↓ own 50/50
+   Wyoming LLC (holding) — ANONYMOUS
+   [names not in public Wyoming records]
+            ↓ 100% owns
+   North Carolina LLC (operating)
+   [in NC records: owner = &quot;Wyoming LLC&quot;, not individuals]
+            ↓
+   Trucking business: MC/DOT, IRP, IFTA, insurance
+   [Public Manager = nominee, not partners]">
    Партнёр A + Партнёр B (физлица)
             ↓ владеют 50/50
    Wyoming LLC (холдинг) — АНОНИМНЫЙ
@@ -1621,6 +1635,17 @@
     </div>
   </div>
 
+  <!-- NOTES -->
+  <div data-page="notes" style="padding:24px 0">
+    <h2 style="font-size:18px;font-weight:700;margin-bottom:4px" data-en="📝 Notes">📝 Заметки</h2>
+    <p style="font-size:12px;color:#888;margin-bottom:16px" data-en="Notes are saved in this browser. Share the link — each person has their own notes.">Заметки сохраняются в браузере. Поделись ссылкой — у каждого свои заметки.</p>
+    <textarea id="notes-area" placeholder="Добавь заметки здесь..." style="width:100%;min-height:420px;padding:14px;font-size:13px;font-family:inherit;border:1px solid #d1d5db;border-radius:8px;resize:vertical;outline:none;line-height:1.6;color:#1a1a1a;background:#fff"></textarea>
+    <div style="margin-top:8px;display:flex;gap:10px;align-items:center">
+      <button id="notes-clear" style="padding:6px 14px;font-size:12px;border:1px solid #d1d5db;border-radius:6px;background:#fff;cursor:pointer;color:#666" data-en="Clear notes">Очистить</button>
+      <span id="notes-saved" style="font-size:11px;color:#22c55e;display:none" data-en="Saved ✓">Сохранено ✓</span>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -1704,6 +1729,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'btn-expenses':   'Expenses',
       'btn-documents':  'Documents',
       'btn-risks':      'Risks',
+      'btn-notes':      'Notes',
       'drop-corp-structure':  'Corporate Structure',
       'drop-warehouse':       'Warehouse',
       'drop-daily-schedule':  'Daily Schedule',
@@ -1731,6 +1757,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'btn-expenses':   'Расходы',
       'btn-documents':  'Документы',
       'btn-risks':      'Риски',
+      'btn-notes':      'Заметки',
       'drop-corp-structure':  'Корп. структура',
       'drop-warehouse':       'Склад',
       'drop-daily-schedule':  'Расписание',
@@ -1796,6 +1823,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('lang') || 'ru';
   if (savedLang === 'en') applyLang('en');
   // ── End language toggle ──────────────────────────────────────────
+
+  // Notes
+  const notesArea = document.getElementById('notes-area');
+  const notesSaved = document.getElementById('notes-saved');
+  const notesClear = document.getElementById('notes-clear');
+  let saveTimer;
+  if (notesArea) {
+    notesArea.value = localStorage.getItem('logistic_notes') || '';
+    notesArea.addEventListener('input', () => {
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(() => {
+        localStorage.setItem('logistic_notes', notesArea.value);
+        if (notesSaved) { notesSaved.style.display = 'inline'; setTimeout(() => notesSaved.style.display = 'none', 1500); }
+      }, 400);
+    });
+  }
+  if (notesClear) {
+    notesClear.addEventListener('click', () => {
+      if (notesArea) notesArea.value = '';
+      localStorage.removeItem('logistic_notes');
+    });
+  }
 
   // Restore last visited page or default to 'start'
   const saved = localStorage.getItem('activePage') || 'start';

@@ -184,17 +184,18 @@ const LANG_EN = {
   "t038": `V1 cash 1 truck`,
   "t039": `V2: 2 trucks SC+VA`,
   "t040": `👤 Owner Profile + Corporate Structure`,
-  "t041": `Wyoming holding + NC operating LLC (50/50 partner anonymity)`,
+  "t041": `Wyoming holding + NC operating LLC (50/50 partners)`,
   "t042": `Profile`,
   "t043": `Name / location`,
+  "t043v": `Serge (Serhii Klement) · Charlotte / Matthews, NC + Itzel Zaldivar`,
   "t044": `Personal credit score`,
   "t045": `811 (top tier)`,
   "t046": `No (and not needed — hiring drivers)`,
-  "t047": `Existing LLCs`,
+  "t047_removed": `Existing LLCs`,
   "t048": `Trucking partnership`,
-  "t049": `50/50 with another partner · both want anonymity from competitors/public`,
+  "t049": `Serge (Serhii Klement) · Charlotte / Matthews, NC + Itzel Zaldivar — 50/50 partners`,
   "t050": `Structure: dual LLC (Wyoming holding + NC operating)`,
-  "t051": `   Partner A + Partner B (individuals)
+  "t051": `   Serge (Serhii Klement) + Itzel Zaldivar (individuals)
             ↓ own 50/50
    Wyoming LLC (holding) — ANONYMOUS
    [names not in public Wyoming records]

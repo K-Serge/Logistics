@@ -5,7 +5,7 @@ const LANG_RU = {
   "t038": `V1 cash 1 трак`,
   "t039": `V2: 2 трака SC+VA`,
   "t040": `👤 Профиль владельца + Корпоративная структура`,
-  "t041": `Wyoming holding + NC operating LLC (анонимность 50/50 партнёров)`,
+  "t041": `Wyoming holding + NC operating LLC (50/50 партнёры)`,
   "t042": `Профиль`,
   "t043": `Имя / локация`,
   "t044": `Личный credit score`,
@@ -13,9 +13,9 @@ const LANG_RU = {
   "t046": `Нет (и не нужен — нанимаешь водителей)`,
   "t047": `Существующие LLCs`,
   "t048": `Партнёрство в trucking`,
-  "t049": `50/50 с другим партнёром · оба хотят анонимности от конкурентов/публики`,
+  "t049": `Serge (Serhii Klement) · Charlotte / Matthews, NC + Itzel Zaldivar — партнёры 50/50`,
   "t050": `Структура: двойная LLC (Wyoming holding + NC operating)`,
-  "t051": `Партнёр A + Партнёр B (физлица)
+  "t051": `Serge (Serhii Klement) + Itzel Zaldivar (физлица)
             ↓ владеют 50/50
    Wyoming LLC (холдинг) — АНОНИМНЫЙ
    [имена не в публичных записях Wyoming]

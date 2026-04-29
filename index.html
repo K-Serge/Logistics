@@ -1824,12 +1824,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Enforce ?lang= in URL — redirect if missing
   const urlLang = new URLSearchParams(window.location.search).get('lang');
-  if (urlLang !== 'en' && urlLang !== 'ru') {
-    window.location.replace('?lang=ru');
-  }
-  const savedLang = urlLang;
+  const savedLang = (urlLang === 'en' || urlLang === 'ru') ? urlLang : (localStorage.getItem('lang') || 'ru');
   if (savedLang === 'en') applyLang('en');
   // ── End language toggle ──────────────────────────────────────────
 

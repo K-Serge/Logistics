@@ -1580,25 +1580,23 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('activePage', page);
   }
 
-  // Main nav button clicks + mobile dropdown toggle
+  // Main nav button clicks — navigate immediately, show dropdown on mobile
   navBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
-      const navItem = btn.closest('.nav-item');
-      const dropdown = navItem && navItem.querySelector('.nav-dropdown');
-      const isMobile = window.innerWidth <= 900;
-      if (isMobile && dropdown) {
-        // Toggle dropdown on mobile instead of navigating
-        const isOpen = dropdown.style.display === 'block';
-        // Close all dropdowns
-        document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = '');
-        if (!isOpen) {
-          dropdown.style.display = 'block';
-          e.stopPropagation();
-          return;
-        }
-      }
+      // Always navigate on first tap
       showPage(btn.dataset.page);
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      // On mobile: also toggle the dropdown so user can pick sub-section
+      const isMobile = window.innerWidth <= 900;
+      if (isMobile) {
+        const navItem = btn.closest('.nav-item');
+        const dropdown = navItem && navItem.querySelector('.nav-dropdown');
+        if (dropdown) {
+          const isOpen = dropdown.style.display === 'block';
+          document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = '');
+          if (!isOpen) { dropdown.style.display = 'block'; e.stopPropagation(); }
+        }
+      }
     });
   });
   // Close mobile dropdowns on outside tap

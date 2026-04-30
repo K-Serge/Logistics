@@ -102,7 +102,7 @@
   .lang-btn { padding: 4px 13px; border-radius: 5px; font-size: 11px; font-weight: 700; background: rgba(255,255,255,0.12); color: #e2e8f0; text-decoration: none; letter-spacing: 0.8px; border: 1px solid rgba(255,255,255,0.28); transition: background 0.15s; }
   .lang-btn:hover { background: rgba(255,255,255,0.25); color: #fff; }
   button.lang-btn { border: none; font-family: inherit; cursor: pointer; }
-  /* ── Mobile nav: scrollable ── */
+  /* ── Mobile nav: scrollable, no dropdowns ── */
   @media (max-width: 900px) {
     .top-nav { padding: 0 12px; gap: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
     .top-nav::-webkit-scrollbar { display: none; }
@@ -111,8 +111,10 @@
     .nav-sep { display: none; }
     .nav-spacer { min-width: 8px; flex: 0; }
     .lang-btn { font-size: 10px; padding: 4px 9px; flex-shrink: 0; }
-    /* Dropdowns on mobile: click-based, full-width */
-    .nav-dropdown { min-width: 200px; }
+    /* Hide dropdowns completely on mobile — single tap navigation only */
+    .nav-dropdown { display: none !important; }
+    /* Remove dropdown arrow indicators on mobile */
+    .nav-btn[data-page]::after { content: none; }
   }
   /* ── Tablet ── */
   @media (max-width: 900px) {
@@ -1580,30 +1582,12 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('activePage', page);
   }
 
-  // Main nav button clicks — navigate immediately, show dropdown on mobile
+  // Main nav button clicks — single tap navigation, no dropdown on mobile
   navBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      // Always navigate on first tap
+    btn.addEventListener('click', () => {
       showPage(btn.dataset.page);
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      // On mobile: also toggle the dropdown so user can pick sub-section
-      const isMobile = window.innerWidth <= 900;
-      if (isMobile) {
-        const navItem = btn.closest('.nav-item');
-        const dropdown = navItem && navItem.querySelector('.nav-dropdown');
-        if (dropdown) {
-          const isOpen = dropdown.style.display === 'block';
-          document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = '');
-          if (!isOpen) { dropdown.style.display = 'block'; e.stopPropagation(); }
-        }
-      }
     });
-  });
-  // Close mobile dropdowns on outside tap
-  document.addEventListener('click', () => {
-    if (window.innerWidth <= 900) {
-      document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = '');
-    }
   });
 
   // Dropdown anchor links — switch page then scroll to section

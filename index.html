@@ -238,10 +238,10 @@
   <div class="nav-item">
     <button class="nav-btn" data-page="truck">Покупка трака ▾</button>
     <div class="nav-dropdown">
-      <a href="#truck-purchase" data-page="truck" data-i18n="nav_drop_truckbuy">🏁 PacLease vs Финансирование vs Cash</a>
-      <a href="#trailer-strategy" data-page="truck" data-i18n="nav_drop_trailer">🚛 Trailer стратегия</a>
-      <a href="#truck-choice" data-page="truck" data-i18n="nav_drop_truckchoice">🚚 Какой трак покупать</a>
-      <a href="#cash-vs-financed" data-page="truck" data-i18n="nav_drop_cashfin">💵 Cash vs Financed — экономия %</a>
+      <a href="#truck-mechanic" data-page="truck" data-i18n="nav_drop_truckmech">🔧 Cascadia vs Volvo — выбор</a>
+      <a href="#truck-strategy" data-page="truck" data-i18n="nav_drop_truckstrat">📊 Стратегия 300k → 700k</a>
+      <a href="#trailer-choice" data-page="truck" data-i18n="nav_drop_trailerchoice">🚛 Трейлер: Utility + Hendrickson</a>
+      <a href="#truck-financing" data-page="truck" data-i18n="nav_drop_truckfin">💰 Финансирование — новая компания</a>
     </div>
   </div>
 
@@ -1042,202 +1042,328 @@
     </div>
   </div>
 
-  <!-- TRAILER STRATEGY -->
-  <div class="normal-section" id="trailer-strategy" data-page="truck">
-    <span class="section-label label-fleet" data-i18n="t320">🚚 Trailer стратегия — почему 2 vs 1</span>
-    <h2 data-i18n="t321">Логика количества трейлеров на trip</h2>
-    <table>
-      <thead><tr><th style="width:44px">Lane</th><th style="width:90px">Trip cycle</th><th style="width:80px" data-i18n="t322">HOS rest нужен?</th><th style="width:80px">Trailers needed</th><th data-i18n="t323">Логика</th></tr></thead>
-      <tbody>
-        <tr style="background:#dbeafe">
-          <td><strong>SC</strong></td>
-          <td>1 r/t = 7 hrs (in one day)</td>
-          <td data-i18n="t324">Нет (укладывается в HOS)</td>
-          <td><strong>2 trailers</strong></td>
-          <td data-i18n="t325">2 r/t/день требует drop-and-hook чтобы избежать detention. Один trailer на SC-складе грузится пока другой в пути. <strong>Без второго трейлера driver теряет 2-6 hrs на каждой live-погрузке = срыв 50 r/t plan.</strong></td>
-        </tr>
-        <tr style="background:#fce7f3">
-          <td><strong>VA</strong></td>
-          <td data-i18n="t326">1 r/t = 30 hrs (с overnight rest)</td>
-          <td data-i18n="t327">Да (10-hr rest обязателен)</td>
-          <td><strong>1 trailer</strong></td>
-          <td data-i18n="t328">Driver всё равно отдыхает 10 hrs в sleeper berth — за это время trailer успевает разгрузиться и загрузиться. Drop-and-hook теряет смысл при OTR cycle. Экономия $22k капекса.</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- TRUCK MECHANIC RECOMMENDATION + CASCADIA vs VOLVO -->
+  <div class="normal-section" id="truck-mechanic" data-page="truck" style="border:2px solid #dc2626;background:#fef2f2">
+    <span class="section-label" style="background:#fee2e2;color:#991b1b" data-i18n="mech_label">Совет механика</span>
+    <h2 style="color:#991b1b" data-i18n="mech_title">Только 2 трака: Cascadia или Volvo VNL — больше ничего</h2>
 
-    <div class="callout callout-info" style="margin-top:10px" data-i18n="t329">
-      <strong>Альтернатива — shipper-supplied trailers:</strong> уточни с Westrock/RPM dispatch. Если trailer pool принадлежит shipper — тебе вообще не нужно их покупать (экономия $44k+ капекса). Стандартная практика на dedicated lanes у крупных shippers.
-    </div>
-  </div>
-
-  <!-- LEASE vs FINANCE vs CASH -->
-  <div class="cash-section" id="truck-purchase" data-page="truck" style="border:3px solid #f59e0b;background:#fffbeb">
-    <span class="section-label" style="background:#fde68a;color:#92400e" data-i18n="t330">🏁 PacLease vs Финансирование vs Cash — что выбрать?</span>
-    <h2 style="color:#92400e" data-i18n="t331">Разбор для твоей ситуации (новая LLC, нанятые водители, 20k mi/мес)</h2>
-
-    <div class="callout callout-warn" style="margin-top:8px" data-i18n="t332">
-      <strong>🤔 Главный insight:</strong> при 20,000 mi/мес одним траком + нанятыми водителями (которые меньше следят за траком чем owner-operator) <strong>риск breakdown катастрофически высокий</strong>. PacLease полностью убирает этот риск (replacement truck), даже если monthly cost выше. Это как страховка от потери контракта Westrock.
+    <div class="callout callout-danger" style="margin-bottom:14px">
+      <strong data-i18n="mech_no_kw">❌ Категорически нет: Kenworth, Peterbilt</strong>
+      <ul style="margin:6px 0 0 18px;line-height:1.9">
+        <li data-i18n="mech_no_kw_why1">Запчасти PACCAR на 20–40% дороже</li>
+        <li data-i18n="mech_no_kw_why2">Меньше независимых сервисов — зависишь от дилера</li>
+        <li data-i18n="mech_no_kw_why3">Флоты используют Cascadia/Volvo — механики знают их лучше</li>
+      </ul>
     </div>
 
-    <h3 style="margin-top:16px" data-i18n="t333">3 варианта для первого трака</h3>
+    <h3 data-i18n="tcomp_title">Cascadia DD15 vs Volvo VNL 760 D13TC — сравнение</h3>
+    <p style="font-size:11px;color:#888;margin-bottom:8px" data-i18n="tcomp_subtitle">SC lane: 10,550 mi/мес, home-daily, стратегия 300k→700k</p>
     <table>
       <thead>
         <tr>
-          <th data-i18n="t334">Параметр</th>
-          <th>PacLease Full-Service</th>
-          <th data-i18n="t335">Финансирование (TopMark, 4.9% @ 811)</th>
-          <th>Cash purchase</th>
+          <th data-i18n="tcomp_param">Параметр</th>
+          <th>Freightliner Cascadia DD15</th>
+          <th>Volvo VNL 760 D13TC</th>
+          <th data-i18n="tcomp_winner">Лучший</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Upfront cost</td><td class="s-green"><strong>$0</strong> (security deposit ~$5k)</td><td>$16,000 (20% down $80k)</td><td class="s-red">$80,000</td></tr>
-        <tr><td>Monthly cost (1 truck, 20k mi/mo)</td><td>~$7,500 all-in</td><td>$1,200 loan + $4,000 maint = $5,200</td><td>$0 loan + $4,000 maint = $4,000</td></tr>
-        <tr><td data-i18n="t336">Включено в monthly</td><td class="s-green" data-i18n="t337">✅ Лизинг + ТО + шины + 24/7 roadside + <strong>подменный трак</strong></td><td data-i18n="t338">Только loan payment</td><td data-i18n="t339">Только operating</td></tr>
-        <tr><td>Maintenance risk</td><td class="s-green" data-i18n="t340">$0 (всё включено)</td><td class="s-red" data-i18n="t341">$25-40k за 5 лет</td><td class="s-red" data-i18n="t342">$40-60k за 5 лет</td></tr>
-        <tr><td data-i18n="t343">Downtime при breakdown</td><td class="s-green"><strong data-i18n="t344">0 дней</strong> (replacement)</td><td class="s-red" data-i18n="t345">2-4 недели</td><td class="s-red" data-i18n="t346">2-4 недели</td></tr>
-        <tr><td>Downtime cost (lost revenue)</td><td>$0</td><td class="s-red">-$15-30k</td><td class="s-red">-$15-30k</td></tr>
-        <tr><td data-i18n="t347">Контракт risk при поломке</td><td class="s-green" data-i18n="t348">Минимум — Westrock не замечает</td><td class="s-red" data-i18n="t349">Высокий — можешь потерять lane</td><td class="s-red" data-i18n="t350">Высокий</td></tr>
-        <tr><td>5-year total truck cost</td><td>$450,000</td><td>~$120k loan + $35k maint = $155k</td><td>$80k upfront + $50k maint = $130k</td></tr>
-        <tr><td>Equity at end of 5 years</td><td class="s-red" data-i18n="t351">$0 (return truck)</td><td class="s-green">$30-40k</td><td class="s-amber">$15-25k (high mileage)</td></tr>
-        <tr><td data-i18n="t352">Кто чинит трак</td><td>PacLease network (Peterbilt dealers)</td><td data-i18n="t353">Ты ищешь mechanic</td><td data-i18n="t354">Ты ищешь mechanic</td></tr>
-        <tr><td data-i18n="t355">Approval для new LLC</td><td class="s-green" data-i18n="t356">✅ PacLease одобряет startups</td><td class="s-green" data-i18n="t357">✅ TopMark с 811 credit</td><td>—</td></tr>
-        <tr><td>Approval Penske/Ryder</td><td class="s-red" data-i18n="t358">❌ Требуют 1+ year revenue</td><td>—</td><td>—</td></tr>
-        <tr><td data-i18n="t359">NET/мес (User's P&amp;L numbers)</td><td>$36,208</td><td>$37,448 ($1k profit advantage)</td><td>~$40,000</td></tr>
-        <tr><td>5-year cumulative NET</td><td>$2.17M</td><td>$2.25M (+$80k vs lease)</td><td data-i18n="t360">~$2.4M (но с большим breakdown risk)</td></tr>
-        <tr><td>Risk profile</td><td class="s-green">⭐⭐⭐⭐⭐ LOW</td><td class="s-amber">⭐⭐⭐ MEDIUM</td><td class="s-amber">⭐⭐ HIGHER</td></tr>
+        <tr>
+          <td data-i18n="tcomp_engine">Двигатель</td>
+          <td>Detroit DD15 Gen5 — 455–505 HP, 1,750 lb-ft</td>
+          <td>Volvo D13TC Turbo Compound — 455–500 HP, 1,860 lb-ft</td>
+          <td data-i18n="tcomp_engine_w">Ничья</td>
+        </tr>
+        <tr>
+          <td data-i18n="tcomp_trans">Коробка</td>
+          <td data-i18n="tcomp_cas_trans">Detroit DT12 — 12-ст. автомат</td>
+          <td data-i18n="tcomp_vol_trans">I-Shift — 12-ст. автомат</td>
+          <td data-i18n="tcomp_engine_w">Ничья</td>
+        </tr>
+        <tr style="background:#dcfce7">
+          <td data-i18n="tcomp_mpg">Топливо</td>
+          <td data-i18n="tcomp_cas_mpg">7.0–8.0 MPG</td>
+          <td data-i18n="tcomp_vol_mpg">8.0–9.5 MPG (D13TC Turbo Compound)</td>
+          <td class="s-green"><strong data-i18n="tcomp_mpg_w">Volvo (+$300–600/мес)</strong></td>
+        </tr>
+        <tr style="background:#dbeafe">
+          <td data-i18n="tcomp_parts">Запчасти / сервис</td>
+          <td class="s-green" data-i18n="tcomp_cas_parts">✅ #1 в США — 4,000+ точек</td>
+          <td data-i18n="tcomp_vol_parts">⚠️ ~300 дилеров, редко независимые</td>
+          <td class="s-green"><strong data-i18n="tcomp_parts_w">Cascadia</strong></td>
+        </tr>
+        <tr>
+          <td data-i18n="tcomp_price_label">Цена б/у (350k mi, 2020–22)</td>
+          <td>$70,000–$85,000</td>
+          <td>$75,000–$95,000</td>
+          <td data-i18n="tcomp_price_w">Cascadia</td>
+        </tr>
+        <tr>
+          <td data-i18n="tcomp_resale">Продажа при 700k</td>
+          <td data-i18n="tcomp_cas_resale">$28,000–$40,000</td>
+          <td data-i18n="tcomp_vol_resale">$32,000–$45,000</td>
+          <td data-i18n="tcomp_resale_w">Volvo</td>
+        </tr>
+        <tr>
+          <td data-i18n="tcomp_repair">Ремонты 300→700k</td>
+          <td data-i18n="tcomp_cas_repair">NOx $500–2k; EGR; инжекторы редко</td>
+          <td data-i18n="tcomp_vol_repair">I-Shift сцепление ~$3k при 500k+; EGR</td>
+          <td data-i18n="tcomp_repair_w">Сопоставимо</td>
+        </tr>
+        <tr>
+          <td data-i18n="tcomp_driver">Комфорт водителя</td>
+          <td data-i18n="tcomp_cas_driver">Хороший — стандарт</td>
+          <td data-i18n="tcomp_vol_driver">Лучший в классе</td>
+          <td data-i18n="tcomp_driver_w">Volvo</td>
+        </tr>
+        <tr>
+          <td data-i18n="tcomp_fin">OEM финансирование</td>
+          <td>Daimler Truck Financial (DTF)</td>
+          <td>Volvo Financial Services (VFS)</td>
+          <td>—</td>
+        </tr>
       </tbody>
     </table>
 
-    <h3 style="margin-top:16px" data-i18n="t361">Что включено в PacLease $7,500/мес (Full-Service Lease)</h3>
-    <table>
-      <tbody>
-        <tr><td data-i18n="t362">✅ Truck lease payment (Peterbilt 579 или Kenworth T680, новый или 1-2 yr old)</td></tr>
-        <tr><td data-i18n="t363">✅ All scheduled maintenance (oil, filters, fluids на 25k mi intervals)</td></tr>
-        <tr><td data-i18n="t364">✅ All major repairs (engine, transmission, turbo, EGR — всё)</td></tr>
-        <tr><td>✅ Tires (drive + steer + trailer если в lease)</td></tr>
-        <tr><td>✅ 24/7 roadside assistance</td></tr>
-        <tr><td data-i18n="t365">✅ <strong>Replacement truck при поломке</strong> (key benefit)</td></tr>
-        <tr><td>✅ Annual inspection / DOT inspection</td></tr>
-        <tr><td>✅ Warranty work coordination</td></tr>
-        <tr><td data-i18n="t366">❌ НЕ включено: fuel, driver salary, insurance, permits, tolls, ELD</td></tr>
-      </tbody>
-    </table>
-    <p style="font-size:11px;color:#666;margin-top:6px" data-i18n="t367">Fuel, drivers, insurance, permits — твоя ответственность отдельно (как у меня в P&amp;L).</p>
-
-    <h3 style="margin-top:16px" data-i18n="t368">Где взять PacLease в NC</h3>
-    <table>
-      <tbody>
-        <tr><td><strong>TLG Peterbilt Charlotte</strong> <span data-i18n="t369">(ближайший)</span></td><td>(704) 597-8600</td><td data-i18n="t370">~30 мин от Matthews</td></tr>
-        <tr><td><strong>TLG Peterbilt Raleigh</strong></td><td>(910) 892-7105</td><td data-i18n="t371">~3 hrs от Charlotte</td></tr>
-      </tbody>
-    </table>
-
-    <h3 style="margin-top:16px" data-i18n="t372">Где взять Financing (если выбираешь не PacLease)</h3>
-    <table>
-      <tbody>
-        <tr><td><strong>TopMark Funding</strong> (best for new LLC + 811 credit)</td><td data-i18n="t373">(866) 627-6644 · topmarkfunding.com · pre-approval за 24 hrs, soft check, 4.9-6.9% APR</td></tr>
-        <tr><td><strong>PACCAR Financial</strong> <span data-i18n="t374">(через Peterbilt/Kenworth dealer)</span></td><td data-i18n="t375">OEM financing 5-7% APR. Привязывает к brand</td></tr>
-        <tr><td><strong>Daimler Truck Financial</strong> (Freightliner)</td><td data-i18n="t376">5-7% APR на Cascadia</td></tr>
-        <tr><td><strong>Local NC bank</strong></td><td data-i18n="t377">Wells Fargo / Truist / Bank of America commercial lending. Может потребовать business track record</td></tr>
-      </tbody>
-    </table>
-
-    <h3 style="margin-top:20px" data-i18n="t378">🎯 Рекомендуемая стратегия для твоей ситуации</h3>
-
-    <div class="callout callout-ok" data-i18n='t023'>
-      <strong>Год 1-2: 1 трак PacLease</strong> (минимизация риска во время learning curve)<br>
-      • Upfront cost: $5k security deposit + $90k working capital/reserve = <strong>$95k starting capital</strong> (vs $189k cash или $124k financed)<br>
-      • Все breakdown risks на PacLease<br>
-      • Свободные $80k остаются у тебя в HYSA под 4-5% = $3-4k/year passive<br>
-      • Учишься Westrock dispatch, driver management, paperwork без equipment headaches<br>
-      • Может потерять $1-3k/мес NET vs financed — но это страховка от $25-40k breakdown event<br><br>
-      <strong>Год 2-3: добавить 2-й трак Financed (TopMark, 4.9% APR)</strong><br>
-      • Now есть track record (12+ мес invoices, paid taxes, FMCSA safety rating)<br>
-      • Cash flow $36-40k/мес позволяет absorb breakdown risk на 2-м траке<br>
-      • TopMark с 811 credit = best rate ($1,200/мес vs $1,330)<br>
-      • Building equity ($30-40k за 5 лет на 2-м траке)<br>
-      • Готов к V1-double или V2 (SC+VA) сценарию<br><br>
-      <strong>Год 4-5: оценить — продлить PacLease или купить out (lease-to-own)</strong><br>
-      • PacLease обычно предлагает purchase option в конце (по market value минус equity build-up)<br>
-      • Можно купить трак по $35-45k (если на тот момент 600k mi и хорошее состояние)<br>
-      • Или просто продлить lease на новую модель (2026-2027)<br>
-      • К году 5: 2-й трак (financed) полностью твой, equity $30-40k
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px">
+      <div class="callout callout-info">
+        <strong data-i18n="tcomp_cas_verdict_title">✅ Cascadia — если важно:</strong>
+        <ul style="margin:6px 0 0 16px;line-height:1.8;font-size:12px">
+          <li data-i18n="tcomp_cas_v1">Минимальный риск с сервисом</li>
+          <li data-i18n="tcomp_cas_v2">Цена входа на $5–15k ниже</li>
+          <li data-i18n="tcomp_cas_v3">Нет Volvo дилера рядом</li>
+        </ul>
+      </div>
+      <div class="callout callout-ok">
+        <strong data-i18n="tcomp_vol_verdict_title">✅ Volvo VNL 760 — если важно:</strong>
+        <ul style="margin:6px 0 0 16px;line-height:1.8;font-size:12px">
+          <li data-i18n="tcomp_vol_v1">Экономия $300–600/мес на топливе</li>
+          <li data-i18n="tcomp_vol_v2">Лучший комфорт → меньше текучка</li>
+          <li data-i18n="tcomp_vol_v3">Есть Volvo дилер рядом</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="callout callout-warn" style="margin-top:8px" data-i18n='t024'>
-      <strong>⚠️ Когда НЕ PacLease:</strong><br>
-      • Если у тебя есть свой mechanic или контакты с reliable shop в Charlotte<br>
-      • Если хочешь maximizе NET и готов absorb breakdown risk самостоятельно<br>
-      • Если есть $80k cash который иначе лежит без работы (alternative use cost = 0)<br>
-      • Если планируешь продать бизнес через 3-5 лет (equity в траках = asset на продажу)
-    </div>
-
-    <div class="callout callout-info" style="margin-top:8px" data-i18n='t025'>
-      <strong>💡 Hybrid стратегия для V1-double (2 трака на SC):</strong><br>
-      <strong>Truck #1 PacLease + Truck #2 Financed (TopMark)</strong><br>
-      • PacLease handles primary line — zero downtime risk на основной revenue<br>
-      • Financed builds equity year-over-year<br>
-      • Diversifies risk: lease + ownership<br>
-      • Total capex: $5k PacLease deposit + $16k Truck #2 down + trailers + working capital = ~$80k<br>
-      • Гораздо ниже чем $287k pure cash V1-double
+    <div class="callout callout-ok" style="margin-top:10px">
+      ⭐ <span data-i18n="tcomp_callout">Рекомендация механика: Cascadia 2020–22 DD15 Gen5, 350–400k миль, $75–85k. Volvo VNL 760 — если топливная экономия критична и есть дилер рядом.</span>
     </div>
   </div>
 
-  <!-- TRUCK CHOICE -->
-  <div class="normal-section" id="truck-choice" data-page="truck">
-    <span class="section-label label-fleet" data-i18n="t379">🚚 Какой трак покупать (одинаково для V1 и V2)</span>
-    <h2 data-i18n="t380">Рекомендация по моделям</h2>
+  <!-- STRATEGY 300k→700k -->
+  <div class="normal-section" id="truck-strategy" data-page="truck">
+    <span class="section-label label-fleet" data-i18n="tstrat_label">Стратегия</span>
+    <h2 data-i18n="tstrat_title">Купить при 300–400k → использовать → продать при 700k</h2>
+
+    <div class="callout callout-info" style="margin-bottom:12px">
+      <ul style="margin:0 0 0 18px;line-height:1.9">
+        <li data-i18n="tstrat_why1">До 300k: основные проблемы уже проявились — входишь ПОСЛЕ них</li>
+        <li data-i18n="tstrat_why2">300–700k: golden zone — системы работают, overhaul ещё не нужен</li>
+        <li data-i18n="tstrat_why3">После 700k: overhaul $25–40k. Продаёшь ДО — максимальная resale value</li>
+      </ul>
+    </div>
+
     <table>
-      <thead><tr><th data-i18n="t381">Категория</th><th data-i18n="t382">Модель</th><th data-i18n="t383">Пробег</th><th data-i18n="t384">Цена</th><th data-i18n="t385">Для какого lane</th></tr></thead>
+      <thead>
+        <tr>
+          <th data-i18n="tstrat_param">Параметр</th>
+          <th>Cascadia DD15</th>
+          <th>Volvo VNL 760</th>
+        </tr>
+      </thead>
       <tbody>
-        <tr style="background:#fef3c7"><td><strong>SWEET SPOT ✅</strong></td><td><strong>Cascadia DD15 Gen5 — 2021-2022</strong></td><td>350-400k mi</td><td>$75-85k</td><td data-i18n="t386">Подходит для SC (короткий lane, мало износа). Для VA тоже OK, но Sleeper Cab вариант обязателен (driver спит в trailer berth).</td></tr>
-        <tr><td>Premium</td><td>Peterbilt 579 X15 / Kenworth T680 X15 — 2020-2022</td><td>300-450k mi</td><td>$85-100k</td><td data-i18n="t387">Если Truck #2 OTR — comfort matters. 579/T680 имеют roomier sleepers, лучше для long-haul.</td></tr>
-        <tr><td>Lightly used</td><td>Cascadia 2023-2024</td><td>150-250k mi</td><td>$110-145k</td><td data-i18n="t388">Если cash есть на премиум. Меньше breakdown risk.</td></tr>
-        <tr><td>Old reliable</td><td>Pre-emission Pete 389 — 2006-2007</td><td>600k-1M+</td><td>$50-85k</td><td data-i18n="t389">Без DEF/DPF. Любим owner-op. Sleeper version OK для VA.</td></tr>
-        <tr><td data-i18n="t390">Избегать</td><td>2015-2018 Cascadia DD15 Gen4 / International ProStar / Volvo VNL 2017-19</td><td>600-900k</td><td>$25-50k</td><td class="s-red" data-i18n="t391">DEF/EGR ремонты $15-25k/year. Мнимая экономия.</td></tr>
+        <tr>
+          <td data-i18n="tstrat_buy">Цена покупки (350k mi, 2020–22)</td>
+          <td>$70,000–$85,000</td>
+          <td>$75,000–$95,000</td>
+        </tr>
+        <tr>
+          <td data-i18n="tstrat_sell">Продажа при 700k (~33 мес)</td>
+          <td data-i18n="tcomp_cas_resale">$28,000–$40,000</td>
+          <td data-i18n="tcomp_vol_resale">$32,000–$45,000</td>
+        </tr>
+        <tr style="background:#fef3c7">
+          <td data-i18n="tstrat_dep">Реальная амортизация</td>
+          <td data-i18n="tstrat_dep_cas">~$40–50k за 350k миль</td>
+          <td data-i18n="tstrat_dep_vol">~$43–55k за 350k миль</td>
+        </tr>
+        <tr>
+          <td data-i18n="tstrat_dep_pm">Амортизация в месяц</td>
+          <td data-i18n="tstrat_dep_cas_pm">~$1,200–1,500/мес</td>
+          <td data-i18n="tstrat_dep_vol_pm">~$1,300–1,670/мес</td>
+        </tr>
+        <tr>
+          <td data-i18n="tstrat_miles_to">Срок до 700k</td>
+          <td colspan="2" style="text-align:center" data-i18n="tstrat_miles_to_val">~33 мес (10,550 mi/мес · SC lane)</td>
+        </tr>
       </tbody>
     </table>
-
-    <div class="callout callout-ok" style="margin-top:10px" data-i18n="t392">
-      <strong>Рекомендация V1:</strong> 1 × Cascadia 2021-22 Day Cab или Sleeper $75-80k.<br>
-      <strong>Рекомендация V2:</strong> 2 × Cascadia 2021-22, оба <strong>с Sleeper berth</strong> ($75-85k each). Sleeper для Truck #2 обязателен (VA OTR). Для Truck #1 SC — Sleeper тоже полезен как backup при поломке другого трака. Total $150-170k за 2 траков.
-    </div>
+    <p class="totals" data-i18n="tstrat_note">Амортизация — единственный невозвратный расход. Покупай б/у, не переплачивай за первые 300k, продавай до overhaul.</p>
   </div>
 
-  <!-- CASH VS FINANCED -->
-  <div class="cash-section" id="cash-vs-financed" data-page="truck">
-    <span class="section-label label-cash" data-i18n="t393">💵 Cash vs Financed — экономия на процентах</span>
-    <h2 data-i18n="t394">Что даёт покупка за наличные</h2>
+  <!-- TRAILER: UTILITY + HENDRICKSON -->
+  <div class="normal-section" id="trailer-choice" data-page="truck">
+    <span class="section-label label-fleet" data-i18n="trl_label">Трейлер</span>
+    <h2 data-i18n="trl_title">Utility 53' + Hendrickson INTRAAX — выбор флотов</h2>
+    <p style="font-size:12px;color:#555;margin-bottom:12px" data-i18n="trl_subtitle">Подтверждено механиком: лучший dry van для нашего маршрута</p>
 
-    <h3>Variant 1 — interest savings</h3>
+    <div class="callout callout-info" style="margin-bottom:12px">
+      <ul style="margin:0 0 0 18px;line-height:1.9">
+        <li data-i18n="trl_why1">Utility Trailer Mfg. Co. — #1 производитель dry van в США</li>
+        <li data-i18n="trl_why2">Hendrickson INTRAAX Air Ride — лучшая воздушная подвеска</li>
+        <li data-i18n="trl_why3">VS2DX / 4000DX модели — отраслевой стандарт</li>
+        <li data-i18n="trl_why4">Флоты массово используют → запчасти везде, любой механик знает</li>
+      </ul>
+    </div>
+
     <table>
-      <thead><tr><th data-i18n="t395">Актив</th><th data-i18n="t396">Цена</th><th>Loan</th><th>Monthly</th><th>Total 5yr</th><th>Interest</th></tr></thead>
+      <thead><tr><th data-i18n="trl_param">Параметр</th><th>Spec</th></tr></thead>
       <tbody>
-        <tr><td>1× Truck $80k @ 9%</td><td>$80,000</td><td>$64,000</td><td>$1,330</td><td>$79,800</td><td class="s-red">$15,800</td></tr>
-        <tr><td>2× Trailers $44k @ 8%</td><td>$44,000</td><td>$35,200</td><td>$715</td><td>$42,840</td><td class="s-red">$7,640</td></tr>
-        <tr style="background:#fecaca"><td><strong data-i18n="t397">Итого V1 finance</strong></td><td><strong>$124,000</strong></td><td><strong>$99,200</strong></td><td><strong>$2,045</strong></td><td><strong>$122,640</strong></td><td class="s-red"><strong>$23,440</strong></td></tr>
+        <tr><td data-i18n="trl_body">Кузов</td><td data-i18n="trl_body_val">53' × 102" dry van, DuraPlate или стальные панели</td></tr>
+        <tr><td data-i18n="trl_susp">Подвеска</td><td data-i18n="trl_susp_val">Hendrickson INTRAAX Air Ride — промышленный стандарт</td></tr>
+        <tr><td data-i18n="trl_floor">Пол</td><td data-i18n="trl_floor_val">Дубовый или Apitong hardwood</td></tr>
+        <tr><td data-i18n="trl_payload">Грузоподъёмность</td><td data-i18n="trl_payload_val">До 45,000 lbs</td></tr>
+        <tr><td data-i18n="trl_lifespan">Ресурс</td><td data-i18n="trl_lifespan_val">15–20 лет при нормальном обслуживании</td></tr>
+        <tr><td data-i18n="trl_price_new">Новый (2024–25)</td><td>$45,000–$55,000</td></tr>
+        <tr><td data-i18n="trl_price_used">Б/У 2019–22</td><td data-i18n="trl_price_used_val">$18,000–$28,000</td></tr>
       </tbody>
     </table>
 
-    <h3 style="margin-top:16px">Variant 2 — interest savings</h3>
+    <div class="callout callout-ok" style="margin-top:10px">
+      <strong data-i18n="trl_strat_title">Стратегия: 1 трейлер достаточно</strong><br>
+      <span style="font-size:12px" data-i18n="trl_strat_desc">При 25 r/t/мес (1 driver, home-daily): 1 трейлер = нет нужды в drop-and-hook. Driver берёт утром, возвращает вечером.</span>
+    </div>
+    <p class="totals" style="margin-top:8px">⭐ <span data-i18n="trl_rec">Рекомендация: б/у 2019–22 Utility 53' + Hendrickson, 400–600k mi, $20–25k. Инспекция механиком обязательна.</span></p>
+  </div>
+
+  <!-- FINANCING NEW COMPANY -->
+  <div class="cash-section" id="truck-financing" data-page="truck" style="border:3px solid #f59e0b;background:#fffbeb">
+    <span class="section-label" style="background:#fde68a;color:#92400e" data-i18n="tfin_label">Финансирование</span>
+    <h2 style="color:#92400e" data-i18n="tfin_title">Варианты — новая компания, сильный личный кредит</h2>
+
+    <h3 data-i18n="tfin_situation_title">Наша ситуация</h3>
+    <ul style="margin:8px 0 14px 20px;line-height:1.9">
+      <li data-i18n="tfin_sit1">Serge credit: <strong>811</strong> — топ-тир</li>
+      <li data-i18n="tfin_sit2">Itzel credit: <strong>780</strong> — отличный второй гарант</li>
+      <li data-i18n="tfin_sit3">LLC новая — 0 business history</li>
+      <li data-i18n="tfin_sit4"><strong>$80k cash</strong> на руках</li>
+      <li data-i18n="tfin_sit5">Нужно: трак ~$78k + трейлер ~$22k = <strong>$100k total</strong></li>
+      <li data-i18n="tfin_sit6">Westrock платит <strong>net-10</strong> → минимальный кассовый разрыв</li>
+    </ul>
+
+    <h3 data-i18n="tfin_options_title">4 варианта финансирования</h3>
+
+    <div style="border:1px solid #fca5a5;border-radius:8px;padding:12px 14px;margin:10px 0;background:#fff8f0">
+      <strong data-i18n="tfin_a_title">А — Трак за наличные + трейлер в кредит</strong>
+      <table style="margin-top:8px"><tbody>
+        <tr><td style="width:100px;color:#888;font-size:11px" data-i18n="tfin_a_truck">Трак</td><td><strong>$78k cash</strong></td></tr>
+        <tr><td style="color:#888;font-size:11px" data-i18n="tfin_a_trailer">Трейлер</td><td>$22k @ 10% / 60 мес → ~$467/мес</td></tr>
+        <tr><td style="color:#888;font-size:11px" data-i18n="tfin_a_reserve">Резерв</td><td class="s-red"><strong>$0 ⚠️</strong></td></tr>
+      </tbody></table>
+      <div style="font-size:12px;margin-top:8px">
+        <span style="color:#16a34a">✅ <span data-i18n="tfin_a_pro1">Нет платежа за трак — максимальный NET</span></span> ·
+        <span style="color:#dc2626">❌ <span data-i18n="tfin_a_con1">$0 резерва — первый ремонт = стресс</span></span>
+      </div>
+      <div class="callout callout-warn" style="margin-top:8px;font-size:12px;padding:6px 10px" data-i18n="tfin_a_verdict">⚠️ Работает только с Westrock net-10</div>
+    </div>
+
+    <div style="border:2px solid #16a34a;border-radius:8px;padding:12px 14px;margin:10px 0;background:#f0fdf4">
+      <strong>⭐ <span data-i18n="tfin_b_title">B — Финансировать трак (25% down) + трейлер за наличные</span></strong>
+      <table style="margin-top:8px"><tbody>
+        <tr><td style="width:100px;color:#888;font-size:11px" data-i18n="tfin_b_truck">Трак</td><td>$78k: down $20k → financed $58k @ 9–11% / 60 мес</td></tr>
+        <tr><td style="color:#888;font-size:11px" data-i18n="tfin_b_trailer">Трейлер</td><td>$22k cash</td></tr>
+        <tr><td style="color:#888;font-size:11px">Payment</td><td><strong data-i18n="tfin_b_payment">~$1,200–1,310/мес</strong></td></tr>
+        <tr><td style="color:#888;font-size:11px" data-i18n="tfin_a_reserve">Резерв</td><td class="s-green"><strong>$38k ✅</strong></td></tr>
+      </tbody></table>
+      <div style="font-size:12px;margin-top:8px">
+        <span style="color:#16a34a">✅ <span data-i18n="tfin_b_pro1">$38k рабочего капитала</span></span> ·
+        <span style="color:#dc2626">❌ <span data-i18n="tfin_b_con1">Ставка 9–13% APR для новой LLC</span></span>
+      </div>
+      <div class="callout callout-ok" style="margin-top:8px;font-size:12px;padding:6px 10px" data-i18n="tfin_b_verdict">⭐ Лучший вариант — баланс платежей и резерва</div>
+    </div>
+
+    <div style="border:1px solid #e0e0e0;border-radius:8px;padding:12px 14px;margin:10px 0;background:#fff">
+      <strong data-i18n="tfin_c_title">C — Финансировать всё (трак + трейлер)</strong>
+      <table style="margin-top:8px"><tbody>
+        <tr><td style="width:100px;color:#888;font-size:11px" data-i18n="tfin_c_truck">Трак</td><td>$78k: down $16k → financed $62k @ 9–11% / 60 мес</td></tr>
+        <tr><td style="color:#888;font-size:11px" data-i18n="tfin_c_trailer">Трейлер</td><td>$22k: down $4.5k → financed $17.5k @ 10% / 60 мес</td></tr>
+        <tr><td style="color:#888;font-size:11px">Payment</td><td><strong data-i18n="tfin_c_payment">~$1,680–1,800/мес</strong></td></tr>
+        <tr><td style="color:#888;font-size:11px" data-i18n="tfin_a_reserve">Резерв</td><td class="s-green"><strong>$59.5k ✅✅</strong></td></tr>
+      </tbody></table>
+      <div style="font-size:12px;margin-top:8px">
+        <span style="color:#16a34a">✅ <span data-i18n="tfin_c_pro1">Максимальный резерв</span></span> ·
+        <span style="color:#dc2626">❌ <span data-i18n="tfin_c_con1">$1,700/мес снижает NET на $20,400/год</span></span>
+      </div>
+      <div class="callout callout-info" style="margin-top:8px;font-size:12px;padding:6px 10px" data-i18n="tfin_c_verdict">✅ Если хочешь максимальный cash buffer</div>
+    </div>
+
+    <div style="border:1px solid #d1d5db;border-radius:8px;padding:12px 14px;margin:10px 0;background:#f8fafc">
+      <strong data-i18n="tfin_d_title">D — Full-Service Lease (Ryder или Penske)</strong>
+      <p style="font-size:12px;color:#555;margin:4px 0 8px" data-i18n="tfin_d_desc">Аренда трака всё включено: ТО, ремонты, шины, breakdown support</p>
+      <table><tbody>
+        <tr><td style="width:100px;color:#888;font-size:11px">Payment</td><td><strong data-i18n="tfin_d_payment">$2,600–4,500/мес</strong></td></tr>
+        <tr><td style="color:#888;font-size:11px" data-i18n="tfin_a_reserve">Резерв</td><td class="s-green"><strong>$75k+ ✅✅✅</strong></td></tr>
+      </tbody></table>
+      <div style="font-size:12px;margin-top:8px">
+        <span style="color:#16a34a">✅ <span data-i18n="tfin_d_pro1">Нулевой риск ремонтов</span></span> ·
+        <span style="color:#dc2626">❌ <span data-i18n="tfin_d_con1">На $27–40k/год дороже</span> · ❌ <span data-i18n="tfin_d_con2">Нет equity</span></span>
+      </div>
+      <div class="callout callout-warn" style="margin-top:8px;font-size:12px;padding:6px 10px" data-i18n="tfin_d_verdict">⚠️ Только если хочешь нулевой риск поломок на старте</div>
+    </div>
+
+    <h3 style="margin-top:18px" data-i18n="tfin_comp_title">Компании — финансирование новой trucking LLC</h3>
     <table>
-      <thead><tr><th data-i18n="t398">Актив</th><th data-i18n="t399">Цена</th><th>Loan</th><th>Monthly</th><th>Total 5yr</th><th>Interest</th></tr></thead>
+      <thead>
+        <tr>
+          <th data-i18n="tfin_comp_name">Компания</th>
+          <th data-i18n="tfin_comp_type">Тип</th>
+          <th data-i18n="tfin_comp_rate">Ставка</th>
+          <th data-i18n="tfin_comp_down">Down</th>
+          <th data-i18n="tfin_comp_startup">Стартапы</th>
+          <th data-i18n="tfin_comp_note">Примечание</th>
+        </tr>
+      </thead>
       <tbody>
-        <tr><td>2× Trucks $160k @ 9%</td><td>$160,000</td><td>$128,000</td><td>$2,660</td><td>$159,600</td><td class="s-red">$31,600</td></tr>
-        <tr><td>3× Trailers $66k @ 8%</td><td>$66,000</td><td>$52,800</td><td>$1,071</td><td>$64,260</td><td class="s-red">$11,460</td></tr>
-        <tr style="background:#fecaca"><td><strong data-i18n="t400">Итого V2 finance</strong></td><td><strong>$226,000</strong></td><td><strong>$180,800</strong></td><td><strong>$3,731</strong></td><td><strong>$223,860</strong></td><td class="s-red"><strong>$43,060</strong></td></tr>
+        <tr>
+          <td><strong>Daimler Truck Financial</strong><br><small style="color:#888">(888) 305-9479</small></td>
+          <td>OEM loan/lease</td><td>8–12%</td><td>20–25%</td>
+          <td data-i18n="tfin_startup_cond">⚠️ С гарантом</td>
+          <td style="font-size:11px" data-i18n="tfin_dtf_note">OEM для Cascadia. 90 дней до первого платежа.</td>
+        </tr>
+        <tr>
+          <td><strong>Volvo Financial Services</strong><br><small style="color:#888">volvofinancialservices.com</small></td>
+          <td>OEM loan/lease</td><td>8–12%</td><td>20–25%</td>
+          <td data-i18n="tfin_startup_cond">⚠️ С гарантом</td>
+          <td style="font-size:11px" data-i18n="tfin_vfs_note">OEM для Volvo. $5k down assist или 90 дней до первого платежа.</td>
+        </tr>
+        <tr style="background:#fef9c3">
+          <td><strong>TopMark Funding ⭐</strong><br><small style="color:#888">(866) 627-6644</small></td>
+          <td>Специализированный</td><td>8–15%</td><td>15–25%</td>
+          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
+          <td style="font-size:11px" data-i18n="tfin_tm_note">Специализируется на trucking. Soft pull. Одобрение 24 hrs.</td>
+        </tr>
+        <tr>
+          <td><strong>Mission Financial</strong><br><small style="color:#888">missionfinancialservices.net</small></td>
+          <td>Специализированный</td><td>10–18%</td><td>10–20%</td>
+          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
+          <td style="font-size:11px" data-i18n="tfin_mf_note">No time-in-business. CDL experience в счёт.</td>
+        </tr>
+        <tr>
+          <td><strong>Ryder System</strong><br><small style="color:#888">ryder.com</small></td>
+          <td>Full-service lease</td><td>—</td><td>—</td>
+          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
+          <td style="font-size:11px" data-i18n="tfin_ryder_note">Full-service lease. Cascadia, Volvo. ТО + шины включено.</td>
+        </tr>
+        <tr>
+          <td><strong>Penske Truck Leasing</strong><br><small style="color:#888">pensketruckleasing.com</small></td>
+          <td>Full-service lease</td><td>—</td><td>—</td>
+          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
+          <td style="font-size:11px" data-i18n="tfin_penske_note">Full-service lease. Все бренды. ТО + breakdown support.</td>
+        </tr>
       </tbody>
     </table>
 
-    <div class="callout callout-ok" style="margin-top:12px" data-i18n='t026'>
-      <strong>Экономия cash purchase:</strong><br>
-      • <strong>V1:</strong> $23,440 interest за 5 лет + $2,045/мес cash flow = +$24,540/year NET<br>
-      • <strong>V2:</strong> $43,060 interest за 5 лет + $3,731/мес cash flow = +$44,772/year NET<br>
-      • V2 cash также: lower insurance premium (-5-8% без liens), проще resale<br><br>
-      <strong>Когда выгоднее cash:</strong> если $99k (V1) или $221k (V2) лежат на HYSA под 4-5% — переплачиваешь spread $4-9k/year.<br>
-      <strong>Когда выгоднее financed:</strong> если эти деньги работают в другом бизнесе/инвестициях с >9% return.<br>
-      <strong>Hybrid:</strong> cash на trailers (8% loan = небольшая экономия), financing на trucks (9% но capital остаётся).
+    <div class="callout callout-ok" style="margin-top:14px">
+      🎯 <strong><span data-i18n="tfin_final">Рекомендация: Вариант B — финансировать трак (25% down → ~$1,250/мес) через DTF или TopMark. Трейлер купить за наличные $22k. Остаток $38k — рабочий капитал. Westrock net-10 обеспечивает стабильный cash flow.</span></strong>
     </div>
   </div>
 
@@ -1263,16 +1389,16 @@
     <div class="callout callout-info" style="margin-top:10px" data-i18n='t028'>
       <strong>💰 Working Capital ($40k V1 / $60k V2) — "AR bridge"</strong><br><br>
       Оборотный капитал для покрытия расходов пока клиент платит с задержкой.<br><br>
-      <strong>Зачем:</strong> Westrock платит net-30 или net-45 (через 30-45 дней после invoice). А расходы ежедневные:<br>
+      <strong>Зачем:</strong> Westrock платит <strong>net-10</strong> (через 10 дней после invoice) — отличные условия, минимальный кассовый разрыв. Расходы ежедневные:<br>
       • Дизель ~$2,800/нед (V1) или ~$4,800/нед (V2)<br>
       • Drivers salary $4-7k каждые 2 нед<br>
       • Insurance $1,400-2,800/мес<br>
-      • Loans $2-3.7k/мес (если financed)<br><br>
-      <strong>Cash flow timeline:</strong><br>
-      • Месяц 1: работаешь, invoices выставлены. Получено: $0. Потрачено: $20-37k.<br>
-      • Месяц 2: первые поступления приходят, продолжаешь работать.<br>
-      • Нужен буфер ~1.5-2 мес операционных расходов = $40k V1 / $60k V2.<br><br>
-      <strong>Альтернатива — factoring:</strong> OTR Capital / RTS платят сразу за 2-3% fee. На $75k/мес = $1.5-2.25k/мес = $18-27k/year. <strong>Стратегия:</strong> первые 3-6 мес факторинг (нет credit history с Westrock), потом direct net-30.
+      • Loans $1.2-1.8k/мес (если financed)<br><br>
+      <strong>Cash flow timeline (net-10):</strong><br>
+      • Неделя 1-2: работаешь, invoices выставлены. Расходы: $7-12k.<br>
+      • Неделя 2-3: первые поступления приходят (10 дней после invoice).<br>
+      • Нужен буфер ~2-3 нед расходов = $15-25k (значительно меньше чем net-30).<br><br>
+      <strong>Альтернатива — factoring:</strong> OTR Capital / RTS платят сразу за 2-3% fee. На $75k/мес = $1.5-2.25k/мес. При net-10 factoring почти не нужен — только для первого месяца.
     </div>
   </div>
 
@@ -1801,6 +1927,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Updates tracking ────────────────────────────────────────────────
   const UPDATES_DATA = [
+    { ts: '2026-05-03T18:00:00', pageKey: 'upd_002_page', descKey: 'upd_002_desc' },
     { ts: '2026-05-03T12:00:00', pageKey: 'upd_001_page', descKey: 'upd_001_desc' },
   ];
 

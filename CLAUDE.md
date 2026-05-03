@@ -10,9 +10,16 @@
 - **Стартер-пакет партнёра:** `~/MyDocumetns/AI/Cloude/contexts/business-transport/documents/trucking-starter-package.xlsx`
 - **Сессионный контекст:** `~/MyDocumetns/AI/Cloude/contexts/business-transport/documents/trucking-session-context.md`
 
+## ⛔ ПРАВИЛО i18n — ОБЯЗАТЕЛЬНО
+**Никакого хардкода русского текста в index.html.** Любой видимый текст — только через ключи:
+1. Добавить ключ в `lang/ru.js` (LANG_RU) — русский текст
+2. Добавить тот же ключ в `lang/en.js` (LANG_EN) — английский перевод
+3. В HTML: `<element data-i18n="ключ">` (applyLang подставит нужный язык)
+4. В JS-коде: читать через `dict[key]` где `dict = lang === 'en' ? LANG_EN : LANG_RU`
+
 ## Архитектура HTML
 - `data-i18n="t001"` на элементах → `applyLang(lang)` в JS
-- Страницы: `data-page="start|documents|warehouse|truck|expenses|risks|notes"` → `showPage(page)`
+- Страницы: `data-page="start|documents|warehouse|truck|expenses|risks|notes|updates"` → `showPage(page)`
 - URL: `?lang=ru` / `?lang=en`, хранится в localStorage
 - Пароль: `localStorage('wp_auth')` = `1885`
 - Хедер/статистика скрыты везде кроме `start` (класс `overview-only`)

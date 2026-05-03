@@ -482,4 +482,11 @@ const LANG_RU = {
   "nav_drop_reserve": `Reserve Fund + Working Capital`,
   "nav_drop_drivers": `Найм водителей`,
   "nav_drop_expenses": `Полная сводка year 1`,
+  "updates_title": `📋 Обновления`,
+  "updates_subtitle": `История изменений и дополнений бизнес-плана.`,
+  "updates_col_date": `Дата и время`,
+  "updates_col_page": `Страница`,
+  "updates_col_what": `Что сделано`,
+  "upd_001_page": `Обновления`,
+  "upd_001_desc": `Добавлена страница Обновления с историей изменений и уведомлениями о новых записях`,
 };

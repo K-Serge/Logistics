@@ -675,4 +675,11 @@ const LANG_EN = {
   "nav_drop_reserve": `Reserve Fund + Working Capital`,
   "nav_drop_drivers": `Driver Hiring`,
   "nav_drop_expenses": `Full Year 1 Summary`,
+  "updates_title": `📋 Updates`,
+  "updates_subtitle": `History of changes and additions to the business plan.`,
+  "updates_col_date": `Date & Time`,
+  "updates_col_page": `Page`,
+  "updates_col_what": `What was done`,
+  "upd_001_page": `Updates`,
+  "upd_001_desc": `Added Updates page with change history and unread bell notifications`,
 };

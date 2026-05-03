@@ -102,6 +102,13 @@
   .lang-btn { padding: 4px 13px; border-radius: 5px; font-size: 11px; font-weight: 700; background: rgba(255,255,255,0.12); color: #e2e8f0; text-decoration: none; letter-spacing: 0.8px; border: 1px solid rgba(255,255,255,0.28); transition: background 0.15s; }
   .lang-btn:hover { background: rgba(255,255,255,0.25); color: #fff; }
   button.lang-btn { border: none; font-family: inherit; cursor: pointer; }
+  /* Updates bell */
+  #updates-bell { color: #ef4444; font-size: 13px; margin-left: 4px; vertical-align: middle; animation: bell-pulse 1.1s ease-in-out infinite; }
+  @keyframes bell-pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.15;transform:scale(0.75)} }
+  .updates-table th { background:#f8fafc;color:#374151; }
+  .updates-table td:first-child { white-space:nowrap;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums; }
+  .updates-table td:nth-child(2) { font-weight:600;color:#1e40af; }
+  .updates-new-badge { display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;background:#ef4444;color:#fff;margin-left:6px;vertical-align:middle;text-transform:uppercase;letter-spacing:0.4px; }
   /* ── Mobile nav: scrollable, no dropdowns ── */
   @media (max-width: 900px) {
     .top-nav { padding: 0 12px; gap: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
@@ -255,6 +262,10 @@
 
   <div class="nav-item">
     <button class="nav-btn" data-page="notes">📝 Заметки</button>
+  </div>
+
+  <div class="nav-item">
+    <button class="nav-btn" data-page="updates">Обновления<span id="updates-bell" style="display:none">🔔</span></button>
   </div>
 
   <div class="nav-spacer"></div>
@@ -1549,6 +1560,26 @@
     </div>
   </div>
 
+  <!-- UPDATES -->
+  <div id="updates-page" data-page="updates" style="padding:24px 0">
+    <h2 style="font-size:18px;font-weight:700;margin-bottom:4px">📋 Обновления</h2>
+    <p style="font-size:12px;color:#888;margin-bottom:16px">История изменений и дополнений бизнес-плана.</p>
+    <div class="table-wrap">
+      <table class="updates-table">
+        <thead>
+          <tr>
+            <th style="width:160px">Дата и время</th>
+            <th style="width:180px">Страница</th>
+            <th>Что сделано</th>
+          </tr>
+        </thead>
+        <tbody id="updates-tbody">
+          <!-- populated by JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- NOTES -->
   <div data-page="notes" style="padding:24px 0">
     <h2 style="font-size:18px;font-weight:700;margin-bottom:4px" data-i18n="t496">📝 Заметки</h2>
@@ -1647,6 +1678,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'btn-expenses':   'Expenses',
       'btn-documents':  'Documents',
       'btn-risks':      'Risks',
+      'btn-updates':    'Updates',
       'btn-notes':      'Notes',
       'drop-corp-structure':  'Corporate Structure',
       'drop-warehouse':       'Warehouse',
@@ -1676,6 +1708,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'btn-documents':  'Документы',
       'btn-risks':      'Риски',
       'btn-notes':      'Заметки',
+      'btn-updates':    'Обновления',
       'drop-corp-structure':  'Корп. структура',
       'drop-warehouse':       'Склад',
       'drop-daily-schedule':  'Расписание',
@@ -1716,7 +1749,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const tr = navTranslations[lang];
     document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
       const key = 'btn-' + btn.dataset.page;
-      if (tr[key]) btn.textContent = tr[key];
+      if (tr[key]) {
+        const savedChildren = [...btn.children]; // preserve spans (bell etc.)
+        btn.textContent = tr[key];
+        savedChildren.forEach(c => btn.appendChild(c));
+      }
     });
 
     // Swap expand/collapse button labels
@@ -1758,6 +1795,49 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   // ── End language toggle ──────────────────────────────────────────
+
+  // ── Updates tracking ────────────────────────────────────────────────
+  const UPDATES_DATA = [
+    { ts: '2026-05-03T12:00:00', page: 'Обновления', desc: 'Добавлена страница Обновления с историей изменений и уведомлениями о новых записях' },
+  ];
+
+  function renderUpdates(lang) {
+    const tbody = document.getElementById('updates-tbody');
+    if (!tbody) return;
+    const lastRead = localStorage.getItem('updates_last_read') || '';
+    tbody.innerHTML = UPDATES_DATA.map(u => {
+      const d = new Date(u.ts);
+      const dateStr = d.toLocaleDateString('ru-RU', { day:'2-digit', month:'2-digit', year:'numeric' })
+                    + ' ' + d.toLocaleTimeString('ru-RU', { hour:'2-digit', minute:'2-digit' });
+      const isNew = u.ts > lastRead;
+      const badge = isNew ? '<span class="updates-new-badge">new</span>' : '';
+      return `<tr><td>${dateStr}</td><td>${u.page}${badge}</td><td>${u.desc}</td></tr>`;
+    }).join('');
+  }
+
+  function checkUpdatesUnread() {
+    const lastRead = localStorage.getItem('updates_last_read') || '';
+    const hasUnread = UPDATES_DATA.some(u => u.ts > lastRead);
+    const bell = document.getElementById('updates-bell');
+    if (bell) bell.style.display = hasUnread ? 'inline' : 'none';
+  }
+
+  // Hook into showPage to mark as read
+  const _origShowPage = showPage;
+  showPage = function(page) {
+    _origShowPage(page);
+    if (page === 'updates') {
+      localStorage.setItem('updates_last_read', new Date().toISOString());
+      const bell = document.getElementById('updates-bell');
+      if (bell) bell.style.display = 'none';
+      // remove new badges
+      document.querySelectorAll('.updates-new-badge').forEach(b => b.remove());
+    }
+  };
+
+  renderUpdates();
+  checkUpdatesUnread();
+  // ── End Updates tracking ─────────────────────────────────────────────
 
   // Notes
   const notesArea = document.getElementById('notes-area');

@@ -2695,6 +2695,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (txt.includes('12/125k')) cell.style.cssText += ';background:#4ade80;color:#14532d;font-weight:600';
     else if (txt.includes('Level 1')) cell.style.cssText += ';background:#bbf7d0;color:#14532d';
     else if (txt.includes('Level 2')) cell.style.cssText += ';background:#fef9c3;color:#713f12';
+
+    // Model color: 126=green, 116=yellow, 113=red
+    const modelCell = row.cells[1];
+    if (modelCell && !isRemote && !isFB) {
+      const m = modelCell.textContent;
+      if (m.includes('126')) modelCell.style.cssText += ';background:#bbf7d0;color:#14532d;font-weight:600';
+      else if (m.includes('116')) modelCell.style.cssText += ';background:#fef9c3;color:#713f12;font-weight:600';
+      else if (m.includes('113')) modelCell.style.cssText += ';background:#fecaca;color:#991b1b;font-weight:600';
+    }
   });
 
   // Sortable tables — click any .th-sort header to sort

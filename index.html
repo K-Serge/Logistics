@@ -1366,7 +1366,7 @@
     </div>
 
     <div style="border:1px solid #fca5a5;border-radius:8px;padding:12px 14px;margin:10px 0;background:#fff8f0">
-      <strong data-i18n="tfin_a_title">А — Трак за наличные + трейлер в кредит</strong>
+      <strong data-i18n="tfin_a_title">2 — Трак за наличные + трейлер в кредит</strong>
       <table style="margin-top:8px"><tbody>
         <tr><td style="width:100px;color:#888;font-size:11px" data-i18n="tfin_a_truck">Трак</td><td><strong>$78k cash</strong></td></tr>
         <tr><td style="color:#888;font-size:11px" data-i18n="tfin_a_trailer">Трейлер</td><td>$22k @ 10% / 60 мес → ~$467/мес</td></tr>
@@ -1380,9 +1380,9 @@
     </div>
 
     <div style="border:2px solid #16a34a;border-radius:8px;padding:12px 14px;margin:10px 0;background:#f0fdf4">
-      <strong>⭐ <span data-i18n="tfin_b_title">B — Финансировать трак (25% down) + трейлер за наличные</span></strong>
+      <strong>⭐ <span data-i18n="tfin_b_title">3 — Финансировать трак (25% down) + трейлер за наличные</span></strong>
       <table style="margin-top:8px"><tbody>
-        <tr><td style="width:100px;color:#888;font-size:11px" data-i18n="tfin_b_truck">Трак</td><td>$78k: down $20k → financed $58k @ <strong>4.9–6.9%</strong> / 60 мес (TopMark, 811 credit)</td></tr>
+        <tr><td style="width:100px;color:#888;font-size:11px" data-i18n="tfin_b_truck">Трак</td><td>$78k: down $20k → financed $58k @ <strong>9–13%</strong> / 60 мес <span style="color:#888;font-size:11px">(новая LLC без истории; Year 2 → 4.9–6.9%)</span></td></tr>
         <tr><td style="color:#888;font-size:11px" data-i18n="tfin_b_trailer">Трейлер</td><td>$22k cash</td></tr>
         <tr><td style="color:#888;font-size:11px">Payment</td><td><strong data-i18n="tfin_b_payment">~$1,200–1,310/мес</strong></td></tr>
         <tr><td style="color:#888;font-size:11px" data-i18n="tfin_a_reserve">Резерв</td><td class="s-green"><strong>$38k ✅</strong></td></tr>
@@ -1395,7 +1395,7 @@
     </div>
 
     <div style="border:1px solid #e0e0e0;border-radius:8px;padding:12px 14px;margin:10px 0;background:#fff">
-      <strong data-i18n="tfin_c_title">C — Финансировать всё (трак + трейлер)</strong>
+      <strong data-i18n="tfin_c_title">4 — Финансировать всё (трак + трейлер)</strong>
       <table style="margin-top:8px"><tbody>
         <tr><td style="width:100px;color:#888;font-size:11px" data-i18n="tfin_c_truck">Трак</td><td>$78k: down $16k → financed $62k @ 9–11% / 60 мес</td></tr>
         <tr><td style="color:#888;font-size:11px" data-i18n="tfin_c_trailer">Трейлер</td><td>$22k: down $4.5k → financed $17.5k @ 10% / 60 мес</td></tr>
@@ -1410,7 +1410,7 @@
     </div>
 
     <div style="border:1px solid #d1d5db;border-radius:8px;padding:12px 14px;margin:10px 0;background:#f8fafc">
-      <strong data-i18n="tfin_d_title">D — Full-Service Lease (Ryder или Penske)</strong>
+      <strong data-i18n="tfin_d_title">5 — Full-Service Lease (Ryder или Penske)</strong>
       <p style="font-size:12px;color:#555;margin:4px 0 8px" data-i18n="tfin_d_desc">Аренда трака всё включено: ТО, ремонты, шины, breakdown support</p>
       <table><tbody>
         <tr><td style="width:100px;color:#888;font-size:11px">Payment</td><td><strong data-i18n="tfin_d_payment">$2,600–4,500/мес</strong></td></tr>
@@ -1424,7 +1424,7 @@
     </div>
 
     <div style="border:1px solid #7c3aed;border-radius:8px;padding:12px 14px;margin:10px 0;background:#f5f3ff">
-      <strong data-i18n="tfin_e_title">5 — 2 трака + 2 трейлера под финансирование (V2 сразу)</strong>
+      <strong data-i18n="tfin_e_title">6 — 2 трака + 2 трейлера под финансирование (V2 сразу)</strong>
       <table style="margin-top:8px"><tbody>
         <tr><td style="width:130px;color:#888;font-size:11px" data-i18n="tfin_e_truck1">Трак #1</td><td>$78k: down $20k → financed $58k @ 9–11% / 60 мес → ~$1,250/мес</td></tr>
         <tr><td style="color:#888;font-size:11px" data-i18n="tfin_e_truck2">Трак #2</td><td>$78k: down $20k → financed $58k @ 9–11% / 60 мес → ~$1,250/мес</td></tr>
@@ -1450,51 +1450,80 @@
         <tr>
           <th data-i18n="tfin_comp_name">Компания</th>
           <th data-i18n="tfin_comp_type">Тип</th>
-          <th data-i18n="tfin_comp_rate">Ставка</th>
+          <th data-i18n="tfin_comp_rate">Ставка (811)</th>
           <th data-i18n="tfin_comp_down">Down</th>
-          <th data-i18n="tfin_comp_startup">Стартапы</th>
+          <th data-i18n="tfin_comp_startup">Year 0?</th>
           <th data-i18n="tfin_comp_note">Примечание</th>
         </tr>
       </thead>
       <tbody>
+        <tr style="background:#fef9c3">
+          <td><strong><a href="https://topmarkfunding.com" target="_blank" style="color:#1d4ed8">TopMark Funding ⭐</a></strong><br><small style="color:#888">(866) 627-6644</small></td>
+          <td data-i18n="tfin_comp_type_broker">Брокер (50+ lenders)</td><td class="s-green"><strong>4.9–6.9%</strong></td><td>$0–10%</td>
+          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
+          <td style="font-size:11px" data-i18n="tfin_tm_note">Broker (50+ lenders). Soft pull. Одобрение 24 hrs. С кредитом 811 — ставка от 4.9%.</td>
+        </tr>
+        <tr style="background:#fef9c3">
+          <td><strong><a href="https://trucorecapital.com" target="_blank" style="color:#1d4ed8">TrueCore Capital ⭐</a></strong><br><small style="color:#888">(805) 422-7342</small></td>
+          <td data-i18n="tfin_comp_type_broker">Брокер (lender network)</td><td>Конкурентная</td><td>10–20%</td>
+          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
+          <td style="font-size:11px" data-i18n="tfin_tc_note">Broker (lender network). Soft pull, 24 hrs. Гибкие требования, стартапы ок.</td>
+        </tr>
+        <tr style="background:#f0fdf4">
+          <td><strong><a href="https://thepetestore.com" target="_blank" style="color:#1d4ed8">The Pete Store (PacLease)</a></strong><br><small style="color:#888">Asheville + NC</small></td>
+          <td>Full-service lease</td><td>All-in $7,500/мес</td><td>~$0</td>
+          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
+          <td style="font-size:11px" data-i18n="tfin_ps_note">Peterbilt/PacLease дилер в NC. Full-service all-in. Soft pre-approval. Быстро.</td>
+        </tr>
         <tr>
-          <td><strong>Daimler Truck Financial</strong><br><small style="color:#888">(888) 305-9479</small></td>
+          <td><strong><a href="https://lonemountaintruck.com" target="_blank" style="color:#1d4ed8">Lone Mountain Truck Leasing</a></strong><br><small style="color:#888">lonemountaintruck.com</small></td>
+          <td>Lease-to-own</td><td>—</td><td>от $3,500</td>
+          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
+          <td style="font-size:11px" data-i18n="tfin_lm_note">Lease-to-own. Down от $3,500. Нет balloon payment. После последнего платежа — трак твой.</td>
+        </tr>
+        <tr>
+          <td><strong><a href="https://idealease.com" target="_blank" style="color:#1d4ed8">Idealease</a></strong><br><small style="color:#888">430+ локаций, NC ✅</small></td>
+          <td>Full-service lease/rental</td><td>—</td><td>—</td>
+          <td style="color:#f59e0b">⚠️ Bridge</td>
+          <td style="font-size:11px" data-i18n="tfin_il_note">430+ локаций включая NC. Краткосрочная аренда — хороший bridge пока строишь историю.</td>
+        </tr>
+        <tr>
+          <td><strong><a href="https://dtfi.com" target="_blank" style="color:#1d4ed8">Daimler Truck Financial</a></strong><br><small style="color:#888">(888) 305-9479</small></td>
           <td>OEM loan/lease</td><td>8–12%</td><td>20–25%</td>
           <td data-i18n="tfin_startup_cond">⚠️ С гарантом</td>
           <td style="font-size:11px" data-i18n="tfin_dtf_note">OEM для Cascadia. 90 дней до первого платежа.</td>
         </tr>
         <tr>
-          <td><strong>Volvo Financial Services</strong><br><small style="color:#888">volvofinancialservices.com</small></td>
+          <td><strong><a href="https://volvofinancialservices.com" target="_blank" style="color:#1d4ed8">Volvo Financial Services</a></strong><br><small style="color:#888">volvofinancialservices.com</small></td>
           <td>OEM loan/lease</td><td>8–12%</td><td>20–25%</td>
           <td data-i18n="tfin_startup_cond">⚠️ С гарантом</td>
           <td style="font-size:11px" data-i18n="tfin_vfs_note">OEM для Volvo. $5k down assist или 90 дней до первого платежа.</td>
         </tr>
-        <tr style="background:#fef9c3">
-          <td><strong>TopMark Funding ⭐</strong><br><small style="color:#888">(866) 627-6644</small></td>
-          <td>Специализированный</td><td>8–15%</td><td>15–25%</td>
-          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
-          <td style="font-size:11px" data-i18n="tfin_tm_note">Специализируется на trucking. Soft pull. Одобрение 24 hrs.</td>
-        </tr>
         <tr>
-          <td><strong>Mission Financial</strong><br><small style="color:#888">missionfinancialservices.net</small></td>
-          <td>Специализированный</td><td>10–18%</td><td>10–20%</td>
+          <td><strong><a href="https://missionfinancialservices.net" target="_blank" style="color:#1d4ed8">Mission Financial</a></strong><br><small style="color:#888">missionfinancialservices.net</small></td>
+          <td>Direct lender</td><td>8–14%</td><td>10–20%</td>
           <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
-          <td style="font-size:11px" data-i18n="tfin_mf_note">No time-in-business. CDL experience в счёт.</td>
+          <td style="font-size:11px" data-i18n="tfin_mf_note">No time-in-business. Hard pull при заявке. Ставка 8–14%.</td>
         </tr>
-        <tr>
-          <td><strong>Ryder System</strong><br><small style="color:#888">ryder.com</small></td>
+        <tr style="opacity:0.6">
+          <td><strong><a href="https://ryder.com" target="_blank" style="color:#6b7280">Ryder ChoiceLease</a></strong><br><small style="color:#888">ryder.com</small></td>
           <td>Full-service lease</td><td>—</td><td>—</td>
           <td style="color:#dc2626">❌ Year 1+</td>
-          <td style="font-size:11px" data-i18n="tfin_ryder_note">⚠️ Year 1+ только. Требуют 1+ год выручки.</td>
+          <td style="font-size:11px" data-i18n="tfin_ryder_note">⚠️ Year 1+. Требуют фин. отчёты, декларации, 1+ год выручки.</td>
         </tr>
-        <tr>
-          <td><strong>Penske Truck Leasing</strong><br><small style="color:#888">pensketruckleasing.com</small></td>
+        <tr style="opacity:0.6">
+          <td><strong><a href="https://pensketruckleasing.com" target="_blank" style="color:#6b7280">Penske Truck Leasing</a></strong><br><small style="color:#888">pensketruckleasing.com</small></td>
           <td>Full-service lease</td><td>—</td><td>—</td>
           <td style="color:#dc2626">❌ Year 1+</td>
-          <td style="font-size:11px" data-i18n="tfin_penske_note">⚠️ Year 1+ только. Требуют 1+ год выручки.</td>
+          <td style="font-size:11px" data-i18n="tfin_penske_note">⚠️ Year 1+. Рейтинг 1.9/5. Требуют 1+ год выручки.</td>
         </tr>
       </tbody>
     </table>
+
+    <div class="callout callout-info" style="margin-top:14px">
+      🎯 <strong data-i18n="tfin_strategy_title">Стратегия: 3 параллельные заявки — все soft pull, кредит не пострадает</strong><br>
+      <span style="font-size:12px" data-i18n="tfin_strategy_desc">Подай одновременно в TopMark + TrueCore + The Pete Store. Все делают soft check. Получи 3 оффера → выбери лучший. С кредитом 811 ты в топ-tier.</span>
+    </div>
 
     <div class="callout callout-ok" style="margin-top:14px">
       🎯 <strong><span data-i18n="tfin_final">Рекомендация: Вариант B — финансировать трак (25% down → ~$1,250/мес) через DTF или TopMark. Трейлер купить за наличные $22k. Остаток $38k — рабочий капитал. Westrock net-10 обеспечивает стабильный cash flow.</span></strong>
@@ -2041,6 +2070,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ── Updates tracking — MUST be before applyLang(savedLang) so renderUpdates has UPDATES_DATA ready ──
+  const UPDATES_DATA = [
+    { ts: '2026-05-04T10:00:00', pageKey: 'upd_004_page', descKey: 'upd_004_desc' },
+    { ts: '2026-05-03T22:00:00', pageKey: 'upd_003_page', descKey: 'upd_003_desc' },
+    { ts: '2026-05-03T18:00:00', pageKey: 'upd_002_page', descKey: 'upd_002_desc' },
+    { ts: '2026-05-03T12:00:00', pageKey: 'upd_001_page', descKey: 'upd_001_desc' },
+  ];
+
   const urlLang = new URLSearchParams(window.location.search).get('lang');
   const savedLang = (urlLang === 'en' || urlLang === 'ru') ? urlLang : (localStorage.getItem('lang') || 'ru');
   applyLang(savedLang);
@@ -2056,12 +2093,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   // ── End language toggle ──────────────────────────────────────────
 
-  // ── Updates tracking ────────────────────────────────────────────────
-  const UPDATES_DATA = [
-    { ts: '2026-05-03T22:00:00', pageKey: 'upd_003_page', descKey: 'upd_003_desc' },
-    { ts: '2026-05-03T18:00:00', pageKey: 'upd_002_page', descKey: 'upd_002_desc' },
-    { ts: '2026-05-03T12:00:00', pageKey: 'upd_001_page', descKey: 'upd_001_desc' },
-  ];
+  // ── Updates tracking (continued) ────────────────────────────────────────────
 
   function renderUpdates() {
     const tbody = document.getElementById('updates-tbody');

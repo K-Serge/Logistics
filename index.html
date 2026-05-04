@@ -2543,6 +2543,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('activePage') || 'start';
   showPage(saved);
 
+  // Heatmap: green = best (low value), red = worst (high value)
+  function applyHeatmap(tableId, heatCols) {
+    const table = document.getElementById(tableId);
+    if (!table) return;
+    const rows = Array.from(table.querySelectorAll('tbody tr'));
+    heatCols.forEach(col => {
+      const vals = rows.map(r => {
+        const c = r.cells[col];
+        const v = parseFloat(c?.dataset?.sort ?? c?.textContent);
+        return isNaN(v) ? null : v;
+      });
+      const nums = vals.filter(v => v !== null);
+      const min = Math.min(...nums), max = Math.max(...nums);
+      rows.forEach((row, i) => {
+        const v = vals[i];
+        if (v === null) return;
+        const t = max === min ? 0.5 : (v - min) / (max - min);
+        const hue = Math.round((1 - t) * 118); // 118=green … 0=red
+        row.cells[col].style.cssText += `;background:hsl(${hue},72%,88%);color:#111`;
+      });
+    });
+  }
+
+  // Apply heatmap on load: cols 3=Mi, 4=$, 5=$/mi rem
+  applyHeatmap('truck-master-table', [3, 4, 5]);
+
   // Sortable tables — click any .th-sort header to sort
   document.querySelectorAll('table').forEach(table => {
     table.querySelectorAll('th.th-sort').forEach(th => {
@@ -2564,6 +2590,8 @@ document.addEventListener('DOMContentLoaded', () => {
           return asc ? av.localeCompare(bv, 'ru') : bv.localeCompare(av, 'ru');
         });
         rows.forEach(r => tbody.appendChild(r));
+        // Re-apply heatmap after sort
+        if (table.id === 'truck-master-table') applyHeatmap('truck-master-table', [3, 4, 5]);
       });
     });
   });

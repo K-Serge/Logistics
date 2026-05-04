@@ -487,6 +487,8 @@ const LANG_RU = {
   "updates_col_date": `Дата и время`,
   "updates_col_page": `Страница`,
   "updates_col_what": `Что сделано`,
+  "upd_005_page": `Покупка трака`,
+  "upd_005_desc": `Day Cab focus: добавлено сравнение Cascadia 116/126 DC, Volvo VNL 300, Kenworth T680, Peterbilt 579 (цены новые/б-у, MPG, советы). Реальные объявления Charlotte/Gaffney с FB. Список дилеров с ссылками: SelecTrucks, Penske, Ryder, Premier Truck, MHC. Главное: для home-daily нужен Day Cab, не Sleeper.`,
   "upd_004_page": `Покупка трака`,
   "upd_004_desc": `Нумерация вариантов: 1–6 (PacLease=1, наличные=2, financing=3, всё в кредит=4, Ryder/Penske=5, 2 трака=6). Ставка исправлена: 9–13% для новой LLC (4.9–6.9% со 2-го года).`,
   "upd_003_page": `Покупка трака`,
@@ -545,7 +547,7 @@ const LANG_RU = {
   "tcomp_vol_v1": `Экономия $300–600/мес на топливе ($3,600–7,200/год)`,
   "tcomp_vol_v2": `Лучший комфорт → меньше текучка водителей`,
   "tcomp_vol_v3": `Рядом есть хороший Volvo дилер`,
-  "tcomp_callout": `Рекомендация механика: Cascadia 2020–22 DD15 Gen5, 350–400k миль, $75–85k. Volvo VNL 760 — если топливная экономия критична и есть дилер рядом.`,
+  "tcomp_callout": `Главное: для нашего маршрута (home-daily, 422 mi/смена, 2 водителя) — нужен Day Cab, НЕ Sleeper. Sleeper = $25–40k переплаты + 1500–2500 lb лишнего веса. Рекомендация: Cascadia 116 Day Cab 2021–22 DD13, 280–320k mi, $50–60k. Полный разбор Day Cab вариантов и реальных объявлений ниже ↓`,
 
   // === STRATEGY 300k→700k ===
   "tstrat_label": `Стратегия`,

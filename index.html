@@ -176,7 +176,7 @@
   .s-orange { color: #d97706; }
   .row-budget    { background: #fffbeb; }
   .row-best      { background: #dcfce7; }
-  .row-overfilter{ background: #fff1f2; }
+  .row-overfilter{ background: #fecaca; }
 </style>
 </head>
 <body>
@@ -1480,7 +1480,7 @@
 <p style="font-size:11px;color:#888;margin-top:6px">
 <strong>$/mi</strong> = цена ÷ пробег. <strong>Сам по себе не решает</strong> — нужно смотреть вместе с ценой: при почти одинаковой цене побеждает трак с меньшим пробегом, потому что ты получаешь больше оставшегося ресурса за те же деньги.<br/>
       Пример: <span style="background:#dcfce7;padding:1px 4px;border-radius:3px">$55,900 ÷ 251,351 mi = <strong>$0.222/mi</strong> ✅</span>  vs  $53,900 ÷ 347,833 mi = $0.155/mi — первый дороже за пройденную милю, но это значит меньше износа и больше остатка.<br/>
-<strong>$/mi rem</strong> = цена ÷ (700k − пробег) — итоговый показатель: учитывает и цену, и оставшийся ресурс одновременно. Формула рейтинга: 40% вес. Чем ниже — тем выгоднее.  <span style="background:#fff1f2;padding:1px 5px;border-radius:3px">⚠️ розовый</span> = Facebook, пробег выше 350k.
+<strong>$/mi rem</strong> = цена ÷ (700k − пробег) — итоговый показатель: учитывает и цену, и оставшийся ресурс одновременно. Формула рейтинга: 40% вес. Чем ниже — тем выгоднее.  <span style="background:#fecaca;padding:1px 5px;border-radius:3px">⚠️ красный</span> = Facebook, пробег выше 350k, исключены из тепловой карты.
     </p>
 <div style="margin-top:8px;padding:8px 12px;background:#eff6ff;border-left:3px solid #3b82f6;border-radius:0 6px 6px 0;font-size:12px;color:#1e40af;line-height:1.6">
       🏢 <strong>Приоритет — дилер.</strong> SelecTrucks, Penske, Berman проводят диагностику, ТО и инспекцию перед продажей — знаешь историю трака. Facebook = частник: неизвестный сервис, нет гарантий, нет документов. При равной цене дилер всегда выгоднее.
@@ -2570,6 +2570,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rows = Array.from(table.querySelectorAll('tbody tr'));
     heatCols.forEach(col => {
       const vals = rows.map(r => {
+        if (r.classList.contains('row-overfilter')) return null;
         const c = r.cells[col];
         const v = parseFloat(c?.dataset?.sort ?? c?.textContent);
         return isNaN(v) ? null : v;
@@ -2578,6 +2579,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const min = Math.min(...nums), max = Math.max(...nums);
       const invert = invertCols.includes(col);
       rows.forEach((row, i) => {
+        if (row.classList.contains('row-overfilter')) return;
         const v = vals[i];
         if (v === null) return;
         let t = max === min ? 0.5 : (v - min) / (max - min);
@@ -2592,8 +2594,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Per-cell background cleanup + Level 1/2 highlights
   document.querySelectorAll('#truck-master-table tbody tr').forEach(row => {
-    // Clear fill everywhere except cols 3=Mi, 4=$, 5=$/mi rem
+    const isFB = row.classList.contains('row-overfilter');
     Array.from(row.cells).forEach((cell, i) => {
+      if (isFB) { cell.style.background = '#fecaca'; return; }
       if (![3, 4, 5, 6, 7].includes(i)) cell.style.background = '#fff';
     });
     // Level 1 / Level 2 highlight in col 8

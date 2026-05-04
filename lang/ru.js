@@ -600,7 +600,7 @@ const LANG_RU = {
   "tfin_sit4": `$80k cash на руках`,
   "tfin_sit5": `Нужно: трак ~$78k + трейлер ~$22k = $100k total`,
   "tfin_sit6": `Westrock платит net-10 → минимальный кассовый разрыв`,
-  "tfin_options_title": `4 варианта финансирования`,
+  "tfin_options_title": `6 вариантов — 3 реальных для Year 0`,
   "tfin_a_title": `1 — Трак за наличные + трейлер в кредит`,
   "tfin_a_truck": `Трак`,
   "tfin_a_trailer": `Трейлер`,
@@ -615,7 +615,7 @@ const LANG_RU = {
   "tfin_b_payment": `~$1,200–1,310/мес`,
   "tfin_b_pro1": `$38k рабочего капитала — ремонты + start-up costs`,
   "tfin_b_pro2": `Трейлер без платежей — ниже monthly burn`,
-  "tfin_b_con1": `Ставка новой LLC: 9–13% APR (не 5–7% как у established)`,
+  "tfin_b_con1": `TopMark даёт 4.9–6.9% при 811 — все ремонты за свой счёт`,
   "tfin_b_verdict": `⭐ Лучший вариант — баланс платежей и резерва`,
   "tfin_c_title": `3 — Финансировать всё (трак + трейлер)`,
   "tfin_c_truck": `Трак`,
@@ -646,9 +646,9 @@ const LANG_RU = {
   "tfin_vfs_note": `OEM для Volvo. $5k down assist или 90 дней до первого платежа.`,
   "tfin_tm_note": `Специализируется на trucking. Soft pull. Одобрение 24 hrs.`,
   "tfin_mf_note": `No time-in-business requirement. CDL experience в счёт.`,
-  "tfin_ryder_note": `Full-service lease. Все бренды (Cascadia, Volvo). ТО + шины включено.`,
-  "tfin_penske_note": `Full-service lease. Все бренды. ТО + breakdown support включено.`,
-  "tfin_final": `Рекомендация: Вариант B — финансировать трак (25% down → ~$1,250/мес) через DTF или TopMark. Трейлер купить за наличные $22k. Остаток $38k — рабочий капитал. Westrock net-10 обеспечивает стабильный cash flow.`,
+  "tfin_ryder_note": `⚠️ Year 1+ только. Требуют 1+ год выручки компании — новую LLC не одобрят.`,
+  "tfin_penske_note": `⚠️ Year 1+ только. Требуют 1+ год выручки компании — новую LLC не одобрят.`,
+  "tfin_final": `Рекомендация: Year 1 — PacLease (TLG Peterbilt Charlotte (704) 597-8600): нулевой риск, $36k/мес NET, $95k CAPEX. Year 2 — добавить financed трак через TopMark 4.9% (866) 627-6644: 811 credit даёт лучшие условия + история компании уже есть.`,
 
   // === TRUCK NAV ===
   "nav_drop_truckmech": `🔧 Cascadia vs Volvo — выбор`,
@@ -668,7 +668,7 @@ const LANG_RU = {
   "fleet_note": `Флоты — крупные транспортные компании (Werner, J.B. Hunt, Schneider, Swift). Держат сотни траков, стандартизируют парк на 2–3 марки. Именно поэтому Cascadia и Volvo знают все механики — это то, на чём ездят флоты.`,
 
   // === VNL 760 vs 860 ===
-  "vnl_title": `VNL 760 vs 860 — чем отличаются`,
+  "vnl_title": `Cascadia vs VNL 760 vs VNL 860 — сравнение кабин`,
   "vnl_subtitle": `SC маршрут home-daily: sleeper не нужен — нет смысла переплачивать за 860`,
   "vnl_760_col": `VNL 760 (Regional)`,
   "vnl_860_col": `VNL 860 (Flagship OTR)`,
@@ -696,6 +696,33 @@ const LANG_RU = {
   "svc_columbia": `Columbia SC (по пути I-77): Freightliner dealer · TA/Petro truck stop с сервисом`,
   "svc_friends": `Знакомые механики в Charlotte — большое преимущество: $50–100/hr экономия vs дилер. DD15 знают все независимые сервисы, D13 — только специалисты Volvo.`,
   "svc_verdict": `→ Cascadia ещё раз выигрывает: DD15 обслужат любые знакомые независимые мастера.`,
+
+  // === FINANCING: SUMMARY COMPARISON TABLE ===
+  "tfin_sum_title": `Сравнение реальных вариантов (1 трак, 50 r/t/мес = $75k/мес)`,
+  "tfin_sum_option": `Вариант`,
+  "tfin_sum_net": `NET/мес`,
+  "tfin_sum_5yr": `5 лет`,
+  "tfin_sum_capex": `CAPEX`,
+  "tfin_sum_risk": `Риск поломки`,
+  "tfin_sum_truck": `Трак твой?`,
+  "tfin_sum_avail": `Year 0?`,
+  "tfin_sum_cash_note": `¹ Один overhaul ($25–40k) + простой 4 нед (-$15–30k) = легко -$40–70k → разница с PacLease съедается`,
+  "tfin_sum_ryder_note": `Ryder/Penske: требуют 1+ год выручки компании — новую LLC не одобрят`,
+
+  // === FINANCING: PACLEASE BLOCK ===
+  "tfin_pac_title": `1 — PacLease Full-Service ⭐ (Year 0 — реально!)`,
+  "tfin_pac_desc": `Full-service lease всё включено: ТО, ремонты, шины, 24/7 roadside, подменный трак при поломке`,
+  "tfin_pac_payment": `$7,500/мес all-in`,
+  "tfin_pac_capex": `$95k (страховка $10k + пермиты $2.5k + ELD $500 + резерв $57.5k + working capital $25k)`,
+  "tfin_pac_net": `$36,208/мес`,
+  "tfin_pac_pro1": `Нулевой риск ремонтов — PacLease платит за всё`,
+  "tfin_pac_pro2": `При поломке дают подменный трак → контракт с Westrock не срывается`,
+  "tfin_pac_pro3": `Одобряют Year 0 с личным гарантом — кредит 811 достаточно`,
+  "tfin_pac_con1": `Трак не твой в конце — equity не строится`,
+  "tfin_pac_con2": `На $15–26k/год дороже чем TopMark financing`,
+  "tfin_pac_con3": `Трак PACCAR (K&T) — при full-service не проблема: сервис берёт PacLease, не ты`,
+  "tfin_pac_verdict": `⭐ Лучший старт: нулевой механический риск. Год 1 строишь историю → Год 2 financed трак @ 4.9% TopMark`,
+  "tfin_pac_contact": `TLG Peterbilt Charlotte: (704) 597-8600`,
 
   // === FINANCING: 2 TRUCKS + 2 TRAILERS ===
   "tfin_e_title": `E — 2 трака + 2 трейлера под финансирование (V2 сразу)`,

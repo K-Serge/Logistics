@@ -1152,24 +1152,26 @@
       💡 <span data-i18n="fleet_note">Флоты — крупные транспортные компании (Werner, J.B. Hunt, Schneider, Swift). Держат сотни траков, стандартизируют парк на 2–3 марки. Именно поэтому Cascadia и Volvo знают все механики — это то, на чём ездят флоты.</span>
     </div>
 
-    <!-- VNL 760 vs 860 -->
-    <h3 style="margin-top:18px" data-i18n="vnl_title">VNL 760 vs 860 — чем отличаются</h3>
+    <!-- VNL 760 vs 860 vs Cascadia -->
+    <h3 style="margin-top:18px" data-i18n="vnl_title">Cascadia vs VNL 760 vs VNL 860 — сравнение кабин</h3>
     <p style="font-size:11px;color:#888;margin-bottom:8px" data-i18n="vnl_subtitle">SC маршрут home-daily: sleeper не нужен — нет смысла переплачивать за 860</p>
     <table>
       <thead><tr>
         <th data-i18n="tcomp_param">Параметр</th>
+        <th>Cascadia 126 ⭐</th>
         <th data-i18n="vnl_760_col">VNL 760 (Regional)</th>
         <th data-i18n="vnl_860_col">VNL 860 (Flagship OTR)</th>
       </tr></thead>
       <tbody>
-        <tr><td data-i18n="vnl_sleeper">Кабина / sleeper</td><td data-i18n="vnl_760_sleeper">70" flat-roof / 76" raised-roof</td><td data-i18n="vnl_860_sleeper">82" Globetrotter XL ultra-high</td></tr>
-        <tr><td data-i18n="vnl_weight">Вес</td><td class="s-green" data-i18n="vnl_760_weight">~16,000 lbs (легче)</td><td data-i18n="vnl_860_weight">~16,800 lbs</td></tr>
-        <tr><td data-i18n="vnl_price_new">Цена новый (2024)</td><td class="s-green" data-i18n="vnl_760_price_new">~$185–200k</td><td data-i18n="vnl_860_price_new">~$200–220k</td></tr>
-        <tr><td data-i18n="vnl_price_used">Б/У 350k mi, 2020–22</td><td class="s-green" data-i18n="vnl_760_price_used">$75–90k</td><td data-i18n="vnl_860_price_used">$85–100k</td></tr>
-        <tr><td data-i18n="vnl_purpose">Назначение</td><td class="s-green" data-i18n="vnl_760_purpose">Regional, home-daily ✅</td><td data-i18n="vnl_860_purpose">OTR, живёт в кабине</td></tr>
+        <tr><td data-i18n="vnl_sleeper">Кабина / sleeper</td><td>72" raised-roof / day cab</td><td data-i18n="vnl_760_sleeper">70" flat-roof / 76" raised-roof</td><td data-i18n="vnl_860_sleeper">82" Globetrotter XL ultra-high</td></tr>
+        <tr><td data-i18n="vnl_weight">Вес</td><td class="s-green">~15,800 lbs (самый лёгкий)</td><td data-i18n="vnl_760_weight">~16,000 lbs (легче)</td><td data-i18n="vnl_860_weight">~16,800 lbs</td></tr>
+        <tr><td data-i18n="vnl_price_new">Цена новый (2024)</td><td class="s-green">~$175–195k</td><td data-i18n="vnl_760_price_new">~$185–200k</td><td data-i18n="vnl_860_price_new">~$200–220k</td></tr>
+        <tr><td data-i18n="vnl_price_used">Б/У 350k mi, 2020–22</td><td class="s-green">$70–85k</td><td data-i18n="vnl_760_price_used">$75–90k</td><td data-i18n="vnl_860_price_used">$85–100k</td></tr>
+        <tr><td data-i18n="vnl_purpose">Назначение</td><td class="s-green">Regional, home-daily ✅</td><td class="s-green" data-i18n="vnl_760_purpose">Regional, home-daily ✅</td><td data-i18n="vnl_860_purpose">OTR, живёт в кабине</td></tr>
+        <tr><td data-i18n="tcomp_parts">Сервис</td><td class="s-green">4,000+ точек, любой механик</td><td>~300 дилеров Volvo</td><td>~300 дилеров Volvo</td></tr>
       </tbody>
     </table>
-    <p class="totals" data-i18n="vnl_rec">⭐ Для SC shuttle (home-daily): VNL 760.</p>
+    <p class="totals" data-i18n="vnl_rec">⭐ Для SC shuttle (home-daily): Cascadia или VNL 760. VNL 860 — переплата за sleeper который не нужен.</p>
 
     <!-- Service infrastructure -->
     <h3 style="margin-top:18px" data-i18n="svc_title">Сервис по маршруту: Charlotte → Summerville SC</h3>
@@ -1298,7 +1300,70 @@
       <li data-i18n="tfin_sit6">Westrock платит <strong>net-10</strong> → минимальный кассовый разрыв</li>
     </ul>
 
-    <h3 data-i18n="tfin_options_title">4 варианта финансирования</h3>
+    <h3 data-i18n="tfin_options_title">6 вариантов — 3 реальных для Year 0</h3>
+
+    <!-- Summary comparison table -->
+    <div style="margin-bottom:16px">
+      <p style="font-weight:600;font-size:12px;margin-bottom:8px" data-i18n="tfin_sum_title">Сравнение реальных вариантов (1 трак, 50 r/t/мес = $75k/мес)</p>
+      <table>
+        <thead><tr>
+          <th data-i18n="tfin_sum_option">Вариант</th>
+          <th data-i18n="tfin_sum_net">NET/мес</th>
+          <th data-i18n="tfin_sum_5yr">5 лет</th>
+          <th data-i18n="tfin_sum_capex">CAPEX</th>
+          <th data-i18n="tfin_sum_risk">Риск поломки</th>
+          <th data-i18n="tfin_sum_truck">Трак твой?</th>
+          <th data-i18n="tfin_sum_avail">Year 0?</th>
+        </tr></thead>
+        <tbody>
+          <tr style="background:#f0fdf4">
+            <td><strong>1. PacLease ⭐</strong><br><small>TLG Peterbilt Charlotte</small></td>
+            <td class="s-green"><strong>$36,208</strong></td><td>$2.17M</td><td>$95k</td>
+            <td class="s-green">LOW — всё включено</td><td style="color:#dc2626">❌</td>
+            <td class="s-green"><strong>✅</strong></td>
+          </tr>
+          <tr>
+            <td><strong>2. TopMark @ 4.9%</strong><br><small>financed б/у трак</small></td>
+            <td class="s-green"><strong>$37,448</strong></td><td>$2.25M</td><td>$124k</td>
+            <td style="color:#f59e0b">MEDIUM</td><td class="s-green">✅ при 700k</td>
+            <td class="s-green"><strong>✅</strong></td>
+          </tr>
+          <tr>
+            <td><strong>3. Cash б/у $78k</strong><br><small>максимальный NET</small></td>
+            <td class="s-green"><strong>~$40,000</strong></td><td>~$2.4M¹</td><td>$189k</td>
+            <td style="color:#dc2626">HIGH — overhaul риск</td><td class="s-green">✅</td>
+            <td class="s-green"><strong>✅</strong></td>
+          </tr>
+          <tr style="opacity:0.55">
+            <td><strong>4–5. Ryder / Penske</strong></td>
+            <td colspan="5" style="font-size:11px;color:#dc2626" data-i18n="tfin_sum_ryder_note">Требуют 1+ год выручки — новую LLC не одобрят</td>
+            <td style="color:#dc2626">❌</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:11px;color:#888;margin-top:6px" data-i18n="tfin_sum_cash_note">¹ Один overhaul ($25–40k) + простой 4 нед = -$40–70k → разница с PacLease съедается</p>
+    </div>
+
+    <!-- OPTION 1: PacLease -->
+    <div style="border:2px solid #16a34a;border-radius:8px;padding:12px 14px;margin:10px 0;background:#f0fdf4">
+      <strong>⭐ <span data-i18n="tfin_pac_title">1 — PacLease Full-Service (Year 0 — реально!)</span></strong>
+      <p style="font-size:12px;color:#555;margin:4px 0 8px" data-i18n="tfin_pac_desc">Full-service lease всё включено: ТО, ремонты, шины, 24/7 roadside, подменный трак при поломке</p>
+      <table><tbody>
+        <tr><td style="width:130px;color:#888;font-size:11px">Payment</td><td><strong data-i18n="tfin_pac_payment">$7,500/мес all-in</strong></td></tr>
+        <tr><td style="color:#888;font-size:11px">NET/мес</td><td><strong class="s-green" data-i18n="tfin_pac_net">$36,208/мес</strong></td></tr>
+        <tr><td style="color:#888;font-size:11px">CAPEX</td><td style="font-size:11px" data-i18n="tfin_pac_capex">$95k (страховка $10k + пермиты $2.5k + ELD $500 + резерв $57.5k + working capital $25k)</td></tr>
+      </tbody></table>
+      <div style="font-size:12px;margin-top:8px;line-height:1.7">
+        <span style="color:#16a34a">✅ <span data-i18n="tfin_pac_pro1">Нулевой риск ремонтов — PacLease платит за всё</span></span><br>
+        <span style="color:#16a34a">✅ <span data-i18n="tfin_pac_pro2">При поломке дают подменный трак → контракт не срывается</span></span><br>
+        <span style="color:#16a34a">✅ <span data-i18n="tfin_pac_pro3">Одобряют Year 0 с личным гарантом — 811 достаточно</span></span><br>
+        <span style="color:#dc2626">❌ <span data-i18n="tfin_pac_con1">Трак не твой — equity не строится</span></span> ·
+        <span style="color:#dc2626">❌ <span data-i18n="tfin_pac_con2">На $15–26k/год дороже TopMark financing</span></span><br>
+        <span style="color:#888;font-size:11px">ℹ️ <span data-i18n="tfin_pac_con3">Трак PACCAR (K&T) — не проблема при full-service: сервис берёт PacLease</span></span>
+      </div>
+      <div class="callout callout-ok" style="margin-top:8px;font-size:12px;padding:6px 10px" data-i18n="tfin_pac_verdict">⭐ Лучший старт. Год 1 строишь историю → Год 2 financed @ 4.9% TopMark</div>
+      <div style="font-size:11px;color:#888;margin-top:6px">📞 <strong data-i18n="tfin_pac_contact">TLG Peterbilt Charlotte: (704) 597-8600</strong></div>
+    </div>
 
     <div style="border:1px solid #fca5a5;border-radius:8px;padding:12px 14px;margin:10px 0;background:#fff8f0">
       <strong data-i18n="tfin_a_title">А — Трак за наличные + трейлер в кредит</strong>
@@ -1317,7 +1382,7 @@
     <div style="border:2px solid #16a34a;border-radius:8px;padding:12px 14px;margin:10px 0;background:#f0fdf4">
       <strong>⭐ <span data-i18n="tfin_b_title">B — Финансировать трак (25% down) + трейлер за наличные</span></strong>
       <table style="margin-top:8px"><tbody>
-        <tr><td style="width:100px;color:#888;font-size:11px" data-i18n="tfin_b_truck">Трак</td><td>$78k: down $20k → financed $58k @ 9–11% / 60 мес</td></tr>
+        <tr><td style="width:100px;color:#888;font-size:11px" data-i18n="tfin_b_truck">Трак</td><td>$78k: down $20k → financed $58k @ <strong>4.9–6.9%</strong> / 60 мес (TopMark, 811 credit)</td></tr>
         <tr><td style="color:#888;font-size:11px" data-i18n="tfin_b_trailer">Трейлер</td><td>$22k cash</td></tr>
         <tr><td style="color:#888;font-size:11px">Payment</td><td><strong data-i18n="tfin_b_payment">~$1,200–1,310/мес</strong></td></tr>
         <tr><td style="color:#888;font-size:11px" data-i18n="tfin_a_reserve">Резерв</td><td class="s-green"><strong>$38k ✅</strong></td></tr>
@@ -1419,14 +1484,14 @@
         <tr>
           <td><strong>Ryder System</strong><br><small style="color:#888">ryder.com</small></td>
           <td>Full-service lease</td><td>—</td><td>—</td>
-          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
-          <td style="font-size:11px" data-i18n="tfin_ryder_note">Full-service lease. Cascadia, Volvo. ТО + шины включено.</td>
+          <td style="color:#dc2626">❌ Year 1+</td>
+          <td style="font-size:11px" data-i18n="tfin_ryder_note">⚠️ Year 1+ только. Требуют 1+ год выручки.</td>
         </tr>
         <tr>
           <td><strong>Penske Truck Leasing</strong><br><small style="color:#888">pensketruckleasing.com</small></td>
           <td>Full-service lease</td><td>—</td><td>—</td>
-          <td class="s-green" data-i18n="tfin_startup_yes">✅ Да</td>
-          <td style="font-size:11px" data-i18n="tfin_penske_note">Full-service lease. Все бренды. ТО + breakdown support.</td>
+          <td style="color:#dc2626">❌ Year 1+</td>
+          <td style="font-size:11px" data-i18n="tfin_penske_note">⚠️ Year 1+ только. Требуют 1+ год выручки.</td>
         </tr>
       </tbody>
     </table>
@@ -1957,18 +2022,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnExpand)   btnExpand.textContent   = lang === 'en' ? '▼ Expand all'   : '▼ Развернуть всё';
     if (btnCollapse) btnCollapse.textContent = lang === 'en' ? '▶ Collapse all' : '▶ Свернуть всё';
 
-    // Re-render updates table rows in correct language
-    if (typeof renderUpdates === 'function') renderUpdates();
-
-    // Update toggle button text and html lang
+    // Update toggle button, save to storage, update URL — BEFORE any other calls so even if something below throws, these are already applied
     const toggleBtn = document.getElementById('lang-toggle');
     if (toggleBtn) toggleBtn.textContent = lang === 'en' ? 'RU' : 'EN';
     document.documentElement.lang = lang;
     localStorage.setItem('lang', lang);
-    // Sync URL param so shareable link preserves language
-    const url = new URL(window.location.href);
-    url.searchParams.set('lang', lang);
-    history.replaceState({}, '', url.toString());
+    history.replaceState(null, '', '?lang=' + lang);
+
+    // Re-render updates table rows in correct language (reads from localStorage which is now updated)
+    if (typeof renderUpdates === 'function') renderUpdates();
   }
 
   const langToggle = document.getElementById('lang-toggle');

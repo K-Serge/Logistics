@@ -793,7 +793,7 @@ const LANG_EN = {
   "tfin_sit4": `$80k cash available`,
   "tfin_sit5": `Need: truck ~$78k + trailer ~$22k = $100k total`,
   "tfin_sit6": `Westrock pays net-10 → minimal cash flow gap`,
-  "tfin_options_title": `4 financing options`,
+  "tfin_options_title": `6 options — 3 realistic for Year 0`,
   "tfin_a_title": `1 — Cash truck + finance trailer`,
   "tfin_a_truck": `Truck`,
   "tfin_a_trailer": `Trailer`,
@@ -808,7 +808,7 @@ const LANG_EN = {
   "tfin_b_payment": `~$1,200–1,310/mo`,
   "tfin_b_pro1": `$38k working capital — repairs + start-up costs`,
   "tfin_b_pro2": `Trailer payment-free — lower monthly burn`,
-  "tfin_b_con1": `New LLC rate: 9–13% APR (not 5–7% for established)`,
+  "tfin_b_con1": `TopMark gives 4.9–6.9% with 811 — all repairs at your expense`,
   "tfin_b_verdict": `⭐ Best option — balance of payments and reserve`,
   "tfin_c_title": `3 — Finance everything (truck + trailer)`,
   "tfin_c_truck": `Truck`,
@@ -839,9 +839,9 @@ const LANG_EN = {
   "tfin_vfs_note": `OEM for Volvo. $5k down assist or 90 days to first payment.`,
   "tfin_tm_note": `Specializes in trucking. Soft pull. Approval in 24 hrs.`,
   "tfin_mf_note": `No time-in-business requirement. CDL experience counts.`,
-  "tfin_ryder_note": `Full-service lease. All brands (Cascadia, Volvo). Maintenance + tires included.`,
-  "tfin_penske_note": `Full-service lease. All brands. Maintenance + breakdown support included.`,
-  "tfin_final": `Recommendation: Option B — finance truck (25% down → ~$1,250/mo) via DTF or TopMark. Buy trailer cash $22k. Keep $38k as working capital. Westrock net-10 ensures stable cash flow.`,
+  "tfin_ryder_note": `⚠️ Year 1+ only. Require 1+ year of company revenue — new LLC will not be approved.`,
+  "tfin_penske_note": `⚠️ Year 1+ only. Require 1+ year of company revenue — new LLC will not be approved.`,
+  "tfin_final": `Recommendation: Year 1 — PacLease (TLG Peterbilt Charlotte (704) 597-8600): zero risk, $36k/mo NET, $95k CAPEX. Year 2 — add financed truck via TopMark 4.9% (866) 627-6644: 811 credit gets best terms + company history already established.`,
 
   // === TRUCK NAV ===
   "nav_drop_truckmech": `🔧 Cascadia vs Volvo — choice`,
@@ -861,7 +861,7 @@ const LANG_EN = {
   "fleet_note": `Fleets — large trucking companies (Werner, J.B. Hunt, Schneider, Swift). They standardize on 2–3 makes across hundreds of trucks. That's why every mechanic knows Cascadia and Volvo — these are the fleet standards.`,
 
   // === VNL 760 vs 860 ===
-  "vnl_title": `VNL 760 vs 860 — the difference`,
+  "vnl_title": `Cascadia vs VNL 760 vs VNL 860 — cab comparison`,
   "vnl_subtitle": `SC route is home-daily: sleeper is unused — no reason to pay for the 860`,
   "vnl_760_col": `VNL 760 (Regional)`,
   "vnl_860_col": `VNL 860 (Flagship OTR)`,
@@ -889,6 +889,33 @@ const LANG_EN = {
   "svc_columbia": `Columbia SC (along I-77): Freightliner dealer · TA/Petro truck stop with service`,
   "svc_friends": `Your mechanic contacts in Charlotte — a real advantage: save $50–100/hr vs dealer. Any independent shop knows DD15; D13 requires a Volvo specialist.`,
   "svc_verdict": `→ Cascadia wins again: DD15 can be serviced by any independent shop your contacts work at.`,
+
+  // === FINANCING: SUMMARY COMPARISON TABLE ===
+  "tfin_sum_title": `Real options comparison (1 truck, 50 r/t/mo = $75k/mo)`,
+  "tfin_sum_option": `Option`,
+  "tfin_sum_net": `NET/mo`,
+  "tfin_sum_5yr": `5 years`,
+  "tfin_sum_capex": `CAPEX`,
+  "tfin_sum_risk": `Breakdown risk`,
+  "tfin_sum_truck": `Truck yours?`,
+  "tfin_sum_avail": `Year 0?`,
+  "tfin_sum_cash_note": `¹ One overhaul ($25–40k) + 4-week downtime (-$15–30k) = -$40–70k → erases the $230k cash advantage over PacLease`,
+  "tfin_sum_ryder_note": `Ryder/Penske: require 1+ year of company revenue — new LLC will not be approved`,
+
+  // === FINANCING: PACLEASE BLOCK ===
+  "tfin_pac_title": `1 — PacLease Full-Service ⭐ (Year 0 — available!)`,
+  "tfin_pac_desc": `Full-service lease all-inclusive: maintenance, repairs, tires, 24/7 roadside, replacement truck on breakdown`,
+  "tfin_pac_payment": `$7,500/mo all-in`,
+  "tfin_pac_capex": `$95k (insurance $10k + permits $2.5k + ELD $500 + reserve $57.5k + working capital $25k)`,
+  "tfin_pac_net": `$36,208/mo`,
+  "tfin_pac_pro1": `Zero breakdown risk — PacLease pays for everything`,
+  "tfin_pac_pro2": `Replacement truck on breakdown → Westrock contract stays intact`,
+  "tfin_pac_pro3": `Approves Year 0 with personal guarantee — 811 credit is sufficient`,
+  "tfin_pac_con1": `Truck is not yours at the end — no equity built`,
+  "tfin_pac_con2": `$15–26k/year more expensive than TopMark financing`,
+  "tfin_pac_con3": `Truck is PACCAR (K&T) — not a problem with full-service: PacLease handles all service`,
+  "tfin_pac_verdict": `⭐ Best start: zero mechanical risk. Year 1 builds history → Year 2 financed truck @ 4.9% TopMark`,
+  "tfin_pac_contact": `TLG Peterbilt Charlotte: (704) 597-8600`,
 
   // === FINANCING: 2 TRUCKS + 2 TRAILERS ===
   "tfin_e_title": `5 — 2 trucks + 2 trailers financed (V2 from day one)`,

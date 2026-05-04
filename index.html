@@ -2632,8 +2632,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Apply heatmap on load: cols 3=Mi, 4=$, 5=$/mi rem
   applyHeatmap('truck-master-table', [3, 4, 5]);
 
-  // Highlight Level 1 / Level 2 cells
+  // Per-cell background cleanup + Level 1/2 highlights
   document.querySelectorAll('#truck-master-table tbody tr').forEach(row => {
+    // Clear fill everywhere except cols 3=Mi, 4=$, 5=$/mi rem
+    Array.from(row.cells).forEach((cell, i) => {
+      if (![3, 4, 5].includes(i)) cell.style.background = 'transparent';
+    });
+    // Level 1 / Level 2 highlight in col 8
     const cell = row.cells[8];
     if (!cell) return;
     const txt = cell.textContent;

@@ -2632,6 +2632,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Apply heatmap on load: cols 3=Mi, 4=$, 5=$/mi rem
   applyHeatmap('truck-master-table', [3, 4, 5]);
 
+  // Highlight Level 1 / Level 2 cells
+  document.querySelectorAll('#truck-master-table tbody tr').forEach(row => {
+    const cell = row.cells[8];
+    if (!cell) return;
+    const txt = cell.textContent;
+    if (txt.includes('Level 1')) cell.style.cssText += ';background:#bbf7d0;color:#14532d';
+    else if (txt.includes('Level 2')) cell.style.cssText += ';background:#fef9c3;color:#713f12';
+  });
+
   // Sortable tables — click any .th-sort header to sort
   document.querySelectorAll('table').forEach(table => {
     table.querySelectorAll('th.th-sort').forEach(th => {

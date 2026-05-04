@@ -237,29 +237,32 @@
 <a data-i18n="nav_drop_market" data-page="start" href="#market-analysis">📈 Анализ ставок vs рынок</a>
 <a data-i18n="nav_drop_roadmap" data-page="start" href="#launch-roadmap">🎯 Roadmap запуска 0–12 мес</a>
 <a data-i18n="nav_drop_finalrec" data-page="start" href="#final-rec">🏁 Финальная рекомендация</a>
+<a data-page="start" href="#expenses">💸 Полная сводка расходов</a>
+<a data-page="start" href="#risks">⚠️ Риски и mitigation</a>
 </div>
 </div>
 <div class="nav-item">
-<button class="nav-btn" data-page="truck">Покупка трака ▾</button>
+<button class="nav-btn" data-page="truck">Траки ▾</button>
 <div class="nav-dropdown">
 <a data-i18n="nav_drop_truckmech" data-page="truck" href="#truck-mechanic">🔧 Cascadia vs Volvo — выбор</a>
 <a data-i18n="nav_drop_truckstrat" data-page="truck" href="#truck-strategy">📊 Стратегия 300k → 700k</a>
 <a data-i18n="nav_drop_trailerchoice" data-page="truck" href="#trailer-choice">🚛 Трейлер: Utility + Hendrickson</a>
-<a data-i18n="nav_drop_truckfin" data-page="truck" href="#truck-financing">💰 Финансирование — новая компания</a>
+</div>
+</div>
+<div class="nav-item">
+<button class="nav-btn" data-page="purchase">Покупка ▾</button>
+<div class="nav-dropdown">
+<a data-page="purchase" href="#truck-financing">💰 Финансирование трака</a>
+</div>
+</div>
+<div class="nav-item">
+<button class="nav-btn" data-page="drivers">Водители ▾</button>
+<div class="nav-dropdown">
+<a data-page="drivers" href="#driver-hiring">👷 Найм водителей</a>
+<a data-page="drivers" href="#reserve-fund">📚 Reserve Fund</a>
 </div>
 </div>
 <div class="nav-sep"></div>
-<div class="nav-item">
-<button class="nav-btn" data-page="expenses">💸 Расходы ▾</button>
-<div class="nav-dropdown">
-<a data-i18n="nav_drop_reserve" data-page="expenses" href="#reserve-fund">📚 Reserve Fund + Working Capital</a>
-<a data-i18n="nav_drop_drivers" data-page="expenses" href="#driver-hiring">👷 Найм водителей</a>
-<a data-i18n="nav_drop_expenses" data-page="expenses" href="#expenses">💸 Полная сводка year 1</a>
-</div>
-</div>
-<div class="nav-item">
-<button class="nav-btn" data-page="risks">⚠️ Риски</button>
-</div>
 <div class="nav-item">
 <button class="nav-btn" data-page="notes">📝 Заметки</button>
 </div>
@@ -1480,8 +1483,10 @@
 <div style="margin-top:8px;padding:8px 12px;background:#eff6ff;border-left:3px solid #3b82f6;border-radius:0 6px 6px 0;font-size:12px;color:#1e40af;line-height:1.6">
       🏢 <strong>Приоритет — дилер.</strong> SelecTrucks, Penske, Berman проводят диагностику, ТО и инспекцию перед продажей — знаешь историю трака. Facebook = частник: неизвестный сервис, нет гарантий, нет документов. При равной цене дилер всегда выгоднее.
     </div>
-<!-- PENSKE LEVEL NOTE -->
-<div style="margin-top:14px;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden">
+</div>
+<!-- ГАРАНТИИ ПО УРОВНЯМ -->
+<div class="normal-section" data-page="truck">
+<div style="border:1px solid #e0e0e0;border-radius:8px;overflow:hidden">
 <div style="background:#f8fafc;padding:8px 14px;border-bottom:1px solid #e0e0e0;font-size:11px;font-weight:700;color:#374151;text-transform:uppercase;letter-spacing:0.4px">Penske Level 1 vs Level 2 vs SelecTrucks Select Way</div>
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0">
 <div style="padding:10px 14px;background:#f0fdf4;border-right:1px solid #eee">
@@ -1623,8 +1628,10 @@
 💡 <strong>Вывод:</strong> Level 2 Penske ($42,750) → дешевле на $11k vs SelecTrucks, но 12-месячную warranty на двигатель и КПП купить отдельно практически нереально на 340k+ mi. Если DD15 или DT12 сломается в первый год — ремонт $15–25k. SelecTrucks этот риск покрывает в цене.
 </div>
 </div>
-<!-- TOP PICKS -->
-<h3 style="margin-top:18px">⭐ Лучшие варианты</h3>
+</div>
+<!-- ТОП ВАРИАНТЫ + ГДЕ ИСКАТЬ -->
+<div class="normal-section" data-page="truck">
+<h3 style="margin-top:0">⭐ Лучшие варианты</h3>
 <div style="border:2px solid #16a34a;border-radius:8px;padding:12px;margin-top:8px;background:#f0fdf4">
 <strong>#1 — 2020 Cascadia 126 DC, 227,318 mi, $57,900</strong> (SelecTrucks Charlotte)<br/>
 <span style="font-size:12px;color:#555">Лучший $/mi rem среди Charlotte листингов ($0.122). Самый низкий пробег до $60k у местного дилера. DD15 + 90-day warranty + $5k Select Way Program.</span>
@@ -1792,7 +1799,7 @@
 <p class="totals" style="margin-top:8px">⭐ <span data-i18n="trl_rec">Рекомендация: б/у 2019–22 Utility 53' + Hendrickson, 400–600k mi, $20–25k. Инспекция механиком обязательна.</span></p>
 </div>
 <!-- FINANCING NEW COMPANY -->
-<div class="cash-section" data-page="truck" id="truck-financing" style="border:3px solid #f59e0b;background:#fffbeb">
+<div class="cash-section" data-page="purchase" id="truck-financing" style="border:3px solid #f59e0b;background:#fffbeb">
 <span class="section-label" data-i18n="tfin_label" style="background:#fde68a;color:#92400e">Финансирование</span>
 <h2 data-i18n="tfin_title" style="color:#92400e">Варианты — новая компания, сильный личный кредит</h2>
 <h3 data-i18n="tfin_situation_title">Наша ситуация</h3>
@@ -2024,7 +2031,7 @@
 </div>
 </div>
 <!-- RESERVE FUND + WORKING CAPITAL -->
-<div class="normal-section" data-page="expenses" id="reserve-fund">
+<div class="normal-section" data-page="drivers" id="reserve-fund">
 <span class="section-label label-money" data-i18n="t401">📚 Reserve Fund и Working Capital — что это</span>
 <div +="" 8-15="" bank="" business="" class="callout callout-danger" data-i18n="t027" dead.<br="" default="" deliver="" driver="" insurance="" loan="" paying="" r="" revenue="" still="" t="-$12-22k" takes="" truck="" →=""><br/>
 <strong>Rule:</strong> +$250-500/mo accumulation (built into Reserve fund line). By end of year $18-30k. <strong>Never use for operating cash flow.</strong>'&gt;
@@ -2056,7 +2063,7 @@
     </div>
 </div>
 <!-- DRIVER HIRING -->
-<div class="normal-section" data-page="expenses" id="driver-hiring">
+<div class="normal-section" data-page="drivers" id="driver-hiring">
 <span class="section-label label-fleet" data-i18n="t402">👷 Найм водителей</span>
 <h2 data-i18n="t403">Кого и сколько нанимать</h2>
 <table>
@@ -2176,7 +2183,7 @@
 </table>
 </div>
 <!-- TOTAL EXPENSES SUMMARY -->
-<div class="normal-section" data-page="expenses" id="expenses">
+<div class="normal-section" data-page="start" id="expenses">
 <span class="section-label label-money" data-i18n="t468">💸 Полная сводка расходов (year 1)</span>
 <h2 data-i18n="t469">Все расходы за первый год эксплуатации</h2>
 <h3>Variant 1 (1 truck SC, Cash purchase)</h3>
@@ -2219,7 +2226,7 @@
 </table>
 </div>
 <!-- RISKS -->
-<div class="risk-section" data-page="risks" id="risks">
+<div class="risk-section" data-page="start" id="risks">
 <span class="section-label label-risk" data-i18n="t480">⚠️ Риски и mitigation</span>
 <h2 data-i18n="t481">Что может пойти не так</h2>
 <table>
@@ -2436,9 +2443,9 @@ document.addEventListener('DOMContentLoaded', () => {
     en: {
       'btn-start':      'Start',
       'btn-truck':      'Trucks',
-      'btn-expenses':   'Expenses',
+      'btn-purchase':   'Purchase',
+      'btn-drivers':    'Drivers',
       'btn-documents':  'Documents',
-      'btn-risks':      'Risks',
       'btn-updates':    'Updates',
       'btn-notes':      'Notes',
       'drop-corp-structure':  'Corporate Structure',
@@ -2465,9 +2472,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ru: {
       'btn-start':      'Start',
       'btn-truck':      'Траки',
-      'btn-expenses':   'Расходы',
+      'btn-purchase':   'Покупка',
+      'btn-drivers':    'Водители',
       'btn-documents':  'Документы',
-      'btn-risks':      'Риски',
       'btn-notes':      'Заметки',
       'btn-updates':    'Обновления',
       'drop-corp-structure':  'Корп. структура',
@@ -2579,8 +2586,9 @@ document.addEventListener('DOMContentLoaded', () => {
     tbody.innerHTML = UPDATES_DATA.map(u => {
       const d = new Date(u.ts);
       const locale = lang === 'en' ? 'en-US' : 'ru-RU';
-      const dateStr = d.toLocaleDateString(locale, { day:'2-digit', month:'2-digit', year:'numeric' })
-                    + ' ' + d.toLocaleTimeString(locale, { hour:'2-digit', minute:'2-digit' });
+      const dateStr = d.toLocaleDateString(locale, { day:'2-digit', month:'2-digit', year:'numeric', timeZone:'America/New_York' })
+                    + ' ' + d.toLocaleTimeString(locale, { hour:'2-digit', minute:'2-digit', timeZone:'America/New_York' })
+                    + ' ET';
       const isNew = u.ts > lastRead;
       const badge = isNew ? '<span class="updates-new-badge">new</span>' : '';
       const page = dict[u.pageKey] || u.pageKey;

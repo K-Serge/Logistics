@@ -487,6 +487,8 @@ const LANG_RU = {
   "updates_col_date": `Дата и время`,
   "updates_col_page": `Страница`,
   "updates_col_what": `Что сделано`,
+  "upd_007_page": `Покупка трака`,
+  "upd_007_desc": `Penske Used Trucks (Charlotte region): 9 Day Cab Cascadia листингов, $42,750–65,000, 218–340k mi. Лучшие: 2 × 2021 Cascadia 126 DC Level 1 с 217–218k mi за $65,000 (Indian Trail + Concord NC). Обновлён Топ-4 рекомендаций — Penske #1 и #2.`,
   "upd_006_page": `Покупка трака`,
   "upd_006_desc": `LIVE данные с дилеров: 10 Day Cab Cascadia 126 у SelecTrucks Charlotte ($53,900–62,900, 220–348k mi, все DD15 450hp + DT12 + warranty 12/125k) + Berman PA (Cascadia 116, $37,950, 335k mi). Топ-3 рекомендации с прямыми ссылками на листинги.`,
   "upd_005_page": `Покупка трака`,

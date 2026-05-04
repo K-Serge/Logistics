@@ -2600,7 +2600,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('activePage') || 'start';
   showPage(saved);
 
-  // Heatmap: green = best (low value), red = worst (high value)
+  // Heatmap: green(min/best) → yellow(mid) → red(max/worst)
+  function heatColor(t) {
+    const c = t <= 0.5
+      ? [[87,187,138],[255,214,102]].map((v,_,a) => a[0].map((x,i) => x + (a[1][i]-x) * (t*2)))
+      : [[255,214,102],[230,124,115]].map((v,_,a) => a[0].map((x,i) => x + (a[1][i]-x) * ((t-.5)*2)));
+    const [r,g,b] = c[0];
+    return `rgb(${Math.round(r)},${Math.round(g)},${Math.round(b)})`;
+  }
   function applyHeatmap(tableId, heatCols) {
     const table = document.getElementById(tableId);
     if (!table) return;
@@ -2617,8 +2624,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const v = vals[i];
         if (v === null) return;
         const t = max === min ? 0.5 : (v - min) / (max - min);
-        const hue = Math.round((1 - t) * 118); // 118=green … 0=red
-        row.cells[col].style.cssText += `;background:hsl(${hue},72%,88%);color:#111`;
+        row.cells[col].style.cssText += `;background:${heatColor(t)};color:#111`;
       });
     });
   }

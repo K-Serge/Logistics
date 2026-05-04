@@ -2654,7 +2654,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const vals = rows.map(r => {
         if (r.classList.contains('row-overfilter')) return null;
         const c = r.cells[col];
-        const v = parseFloat(c?.dataset?.sort ?? c?.textContent);
+        const v = parseFloat((c?.dataset?.sort ?? c?.textContent).replace(/[$,]/g,''));
         return isNaN(v) ? null : v;
       });
       const nums = vals.filter(v => v !== null);
@@ -2712,7 +2712,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         rows.forEach(r => tbody.appendChild(r));
         // Re-apply heatmap after sort
-        if (table.id === 'truck-master-table') applyHeatmap('truck-master-table', [3, 4, 5, 6, 7], [7]);
+        if (table.id === 'truck-master-table') applyHeatmap('truck-master-table', [3, 4, 5, 6], [6]);
       });
     });
   });

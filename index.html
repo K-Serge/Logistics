@@ -2668,7 +2668,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cell = row.cells[8];
     if (!cell) return;
     const txt = cell.textContent;
-    if (txt.includes('Level 1') || txt.includes('12/125k')) cell.style.cssText += ';background:#bbf7d0;color:#14532d';
+    if (txt.includes('12/125k')) cell.style.cssText += ';background:#4ade80;color:#14532d;font-weight:600';
+    else if (txt.includes('Level 1')) cell.style.cssText += ';background:#bbf7d0;color:#14532d';
     else if (txt.includes('Level 2')) cell.style.cssText += ';background:#fef9c3;color:#713f12';
   });
 

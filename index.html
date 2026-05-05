@@ -211,10 +211,24 @@
 <nav class="top-nav">
 <span class="nav-brand">🚚 Logistic</span>
 <div class="nav-item">
-<button class="nav-btn" data-page="documents">Документы ▾</button>
+<button class="nav-btn" data-page="strategy">Стратегии ▾</button>
 <div class="nav-dropdown">
-<a data-i18n="nav_drop_corp" data-page="documents" href="#corp-structure">🏢 Корпоративная структура</a>
-<a data-i18n="nav_drop_docs" data-page="documents" href="#documents">📋 Документы и оформление</a>
+<a data-i18n="nav_drop_v1sc" data-page="strategy" href="#v1-sc">🅰️ Вариант 1 — SC (1 трак, 50 r/t)</a>
+<a data-i18n="nav_drop_v1half" data-page="strategy" href="#v1-half">🅰️½ Вариант 1-half (25 r/t)</a>
+<a data-i18n="nav_drop_v1double" data-page="strategy" href="#v1-double">🅰️🅰️ Вариант 1-double (2 трака)</a>
+<a data-i18n="nav_drop_compare" data-page="strategy" href="#start-comparison">⚖️ Сравнение 3 вариантов SC</a>
+<a data-i18n="nav_drop_v2" data-page="strategy" href="#v2-sc-va">🅱️ Вариант 2 — SC+VA</a>
+<a data-i18n="nav_drop_allcomp" data-page="strategy" href="#all-comparison">📊 Полное сравнение 4 сценариев</a>
+<a data-i18n="nav_drop_market" data-page="strategy" href="#market-analysis">📈 Анализ ставок vs рынок</a>
+</div>
+</div>
+<div class="nav-item">
+<button class="nav-btn" data-page="start">Start ▾</button>
+<div class="nav-dropdown">
+<a data-i18n="nav_drop_roadmap" data-page="start" href="#launch-roadmap">🎯 Roadmap запуска 0–12 мес</a>
+<a data-i18n="nav_drop_finalrec" data-page="start" href="#final-rec">🏁 Финальная рекомендация</a>
+<a data-page="start" href="#expenses">💸 Полная сводка расходов</a>
+<a data-page="start" href="#risks">⚠️ Риски и mitigation</a>
 </div>
 </div>
 <div class="nav-item">
@@ -226,27 +240,10 @@
 </div>
 <div class="nav-sep"></div>
 <div class="nav-item">
-<button class="nav-btn" data-page="start">Start ▾</button>
-<div class="nav-dropdown">
-<a data-i18n="nav_drop_v1sc" data-page="start" href="#v1-sc">🅰️ Вариант 1 — SC (1 трак, 50 r/t)</a>
-<a data-i18n="nav_drop_v1half" data-page="start" href="#v1-half">🅰️½ Вариант 1-half (25 r/t)</a>
-<a data-i18n="nav_drop_v1double" data-page="start" href="#v1-double">🅰️🅰️ Вариант 1-double (2 трака)</a>
-<a data-i18n="nav_drop_compare" data-page="start" href="#start-comparison">⚖️ Сравнение 3 вариантов SC</a>
-<a data-i18n="nav_drop_v2" data-page="start" href="#v2-sc-va">🅱️ Вариант 2 — SC+VA</a>
-<a data-i18n="nav_drop_allcomp" data-page="start" href="#all-comparison">📊 Полное сравнение 4 сценариев</a>
-<a data-i18n="nav_drop_market" data-page="start" href="#market-analysis">📈 Анализ ставок vs рынок</a>
-<a data-i18n="nav_drop_roadmap" data-page="start" href="#launch-roadmap">🎯 Roadmap запуска 0–12 мес</a>
-<a data-i18n="nav_drop_finalrec" data-page="start" href="#final-rec">🏁 Финальная рекомендация</a>
-<a data-page="start" href="#expenses">💸 Полная сводка расходов</a>
-<a data-page="start" href="#risks">⚠️ Риски и mitigation</a>
-</div>
-</div>
-<div class="nav-item">
 <button class="nav-btn" data-page="truck">Траки ▾</button>
 <div class="nav-dropdown">
 <a data-i18n="nav_drop_truckmech" data-page="truck" href="#truck-mechanic">🔧 Cascadia vs Volvo — выбор</a>
 <a data-i18n="nav_drop_truckstrat" data-page="truck" href="#truck-strategy">📊 Стратегия 300k → 700k</a>
-<a data-i18n="nav_drop_trailerchoice" data-page="truck" href="#trailer-choice">🚛 Трейлер: Utility + Hendrickson</a>
 </div>
 </div>
 <div class="nav-item">
@@ -273,6 +270,13 @@
 <div class="nav-sep"></div>
 <div class="nav-item">
 <button class="nav-btn" data-page="notes">📝 Заметки</button>
+</div>
+<div class="nav-item">
+<button class="nav-btn" data-page="documents">Документы ▾</button>
+<div class="nav-dropdown">
+<a data-i18n="nav_drop_corp" data-page="documents" href="#corp-structure">🏢 Корпоративная структура</a>
+<a data-i18n="nav_drop_docs" data-page="documents" href="#documents">📋 Документы и оформление</a>
+</div>
 </div>
 <div class="nav-item">
 <button class="nav-btn" data-page="updates">Обновления<span id="updates-bell" style="display:none">🔔</span></button>
@@ -417,7 +421,7 @@
     </div>
 </div>
 <!-- VARIANT 1: SC ONLY -->
-<div class="v1-section" data-page="start" id="v1-sc">
+<div class="v1-section" data-page="strategy" id="v1-sc">
 <span class="section-label label-v1" data-i18n="t083">🅰️ ВАРИАНТ 1: 1 трак на SC</span>
 <h2 data-i18n="t084">Только SC lane: 1 трак, 2 водителя, 2 трейлера</h2>
 <h3 data-i18n="t085">Параметры</h3>
@@ -500,7 +504,7 @@
 </table>
 </div>
 <!-- VARIANT 1-HALF: 1 TRUCK, 25 R/T -->
-<div class="v1-section" data-page="start" id="v1-half" style="border-color:#0891b2;background:#cffafe">
+<div class="v1-section" data-page="strategy" id="v1-half" style="border-color:#0891b2;background:#cffafe">
 <span class="section-label" data-i18n="t121" style="background:#a5f3fc;color:#155e75">🅰️½ ВАРИАНТ 1-half: 1 трак, 1 водитель, 1 трейлер, 25 r/t</span>
 <h2 data-i18n="t122" style="color:#155e75">Только SC lane на половинной загрузке (1 trailer достаточно)</h2>
 <h3 data-i18n="t123">Параметры</h3>
@@ -573,7 +577,7 @@
     </div>
 </div>
 <!-- VARIANT 1-DOUBLE: 2 TRUCKS, 50 R/T SPLIT -->
-<div class="v1-section" data-page="start" id="v1-double" style="border-color:#0d9488;background:#ccfbf1">
+<div class="v1-section" data-page="strategy" id="v1-double" style="border-color:#0d9488;background:#ccfbf1">
 <span class="section-label" data-i18n="t141" style="background:#99f6e4;color:#115e59">🅰️🅰️ ВАРИАНТ 1-double: 2 трака на SC (по 25 r/t каждый)</span>
 <h2 data-i18n="t142" style="color:#115e59">Тот же объём 50 r/t, но распределён между 2-мя траками</h2>
 <div class="callout callout-warn" data-i18n="t009" style="margin-top:8px">
@@ -664,7 +668,7 @@
     </div>
 </div>
 <!-- 3-WAY SC COMPARISON -->
-<div class="money-section" data-page="start" id="start-comparison" style="border:3px solid #f59e0b;background:#fffbeb">
+<div class="money-section" data-page="strategy" id="start-comparison" style="border:3px solid #f59e0b;background:#fffbeb">
 <span class="section-label" data-i18n="t170" style="background:#fde68a;color:#92400e">⚖️ Сравнение 3 SC вариантов — что выбрать для старта</span>
 <h2 data-i18n="t171" style="color:#92400e">V1-half vs V1 original vs V1-double — детальный анализ</h2>
 <h3 data-i18n="t172">Сводная таблица</h3>
@@ -753,7 +757,7 @@
 </div>
 </div>
 <!-- VARIANT 2: SC + VA -->
-<div class="v2-section" data-page="start" id="v2-sc-va">
+<div class="v2-section" data-page="strategy" id="v2-sc-va">
 <span class="section-label label-v2" data-i18n="t206">🅱️ ВАРИАНТ 2: 2 трака — SC + VA</span>
 <h2 data-i18n="t207">Truck #1 SC (как V1) + Truck #2 VA (Chesapeake)</h2>
 <h3 data-i18n="t208">Параметры Truck #2 (VA)</h3>
@@ -879,7 +883,7 @@
 </table>
 </div>
 <!-- COMPARISON V1 vs V2 -->
-<div class="money-section" data-page="start" id="all-comparison">
+<div class="money-section" data-page="strategy" id="all-comparison">
 <span class="section-label label-money" data-i18n="t266">⚖️ Сравнение всех вариантов</span>
 <h2 data-i18n="t267">Полная сравнительная таблица 4 сценариев</h2>
 <table>
@@ -950,7 +954,7 @@
     </div>
 </div>
 <!-- MARKET ANALYSIS -->
-<div class="normal-section" data-page="start" id="market-analysis">
+<div class="normal-section" data-page="strategy" id="market-analysis">
 <span class="section-label label-routes" data-i18n="t310">📈 Анализ ставок vs рынок США (Q2 2026)</span>
 <h2 data-i18n="t311">Сравнение всех Westrock lanes с рыночными бенчмарками</h2>
 <h3 data-i18n="t312">Ставки по всем lanes (из screenshot)</h3>

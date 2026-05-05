@@ -1,4 +1,5 @@
 const LANG_EN = {
+  "page_title": `Logistic — Business Plan SC + VA (2026)`,
   "t035": `Concord, NC · 2 options: 1 truck SC vs 2 trucks SC+VA`,
   "t036": `Business Plan — Logistic Trucking (SC + VA)`,
   "t037": `⭐ PacLease 1 truck`,
@@ -1040,5 +1041,436 @@ const LANG_EN = {
   "expenses_v1_title": `Variant 1 (1 truck SC, Cash purchase)`,
   "expenses_v2_title": `Variant 2 (2 trucks SC+VA, Cash purchase)`,
   "final_rec_title": `🏁 Final recommendation (taking all new inputs into account)`,
-  "docs_phase1_title": `Phase 1 (W1-2): Foundation`
+  "docs_phase1_title": `Phase 1 (W1-2): Foundation`,
+
+  // Penske comparison table — cell values
+  "penske_not_done": `not done — needed`,
+  "penske_included": `included ✓`,
+  "penske_zero_in_price": `$0 (in price)`,
+  "penske_zero_already": `$0 (already in price)`,
+  "penske_no": `none`,
+  "penske_limited": `limited`,
+  "penske_covered": `DD15 + DT12 covered ✓`,
+  "penske_90d_full": `90d on full truck ✓`,
+  "penske_unavail_340k": `often unavailable at 340k+ mi`,
+  "penske_no_warranty": `no warranty`,
+  "penske_if_found": `if you find warranty`,
+  "penske_only_12_125k": `only one with 12/125k`,
+  "penske_all_included": `— all included`,
+  "penske_cert_resale": `Penske certificate (for resale)`,
+  "penske_ext_warranty_label": `Buy extended warranty separately`,
+  "penske_ext_warranty_sub": `(12 mo / 125k, commercial truck)`,
+
+  // Breakdown Risk / financing summary table
+  "tfin_low_included": `LOW — all included`,
+  "tfin_medium_risk": `MEDIUM`,
+  "tfin_high_overhaul": `HIGH — overhaul risk`,
+  "tfin_at_700k": `✅ at 700k`,
+
+  // Companies / financing table
+  "tfin_comp_type_broker": `Broker (50+ lenders)`,
+  "tfin_comp_type_broker_net": `Broker (lender network)`,
+  "tfin_competitive": `Competitive`,
+  "tfin_from_3500": `from $3,500`,
+  "tfin_idealease_locations": `430+ locations, NC ✅`,
+
+  // Truck listings table headers
+  "truck_th_model": `Model`,
+  "truck_th_year": `Year`,
+  "truck_th_fuel_mo": `Fuel/mo`,
+  "truck_th_source": `Source`,
+  "truck_th_engine_warranty": `Engine / Warranty`,
+
+  // Cities table header
+  "infra_th_city": `City`,
+  "infra_th_services": `Services`,
+
+  // Penske table "what it adds" cells
+  "penske_l2_adds": `100-pt inspection, minor repairs`,
+  "penske_l1_adds": `+ Maintenance (oils/filters/belts/diagnostics)<br/>+ Penske 90–180d warranty on drivetrain<br/>+ official certificate`,
+  "penske_st_adds": `+ DD15 450hp / DT12 auto<br/>+ 90d warranty on full truck<br/>+ 12 mo/125k powertrain warranty`,
+  "penske_base": `— base`,
+
+  // Truck listings engine/warranty cells
+  "truck_eng_premier_9453": `DD13 450hp / DT12 · Premier inspection · #SNA9453`,
+  "truck_eng_premier_9454": `DD13 450hp / DT12 · Premier inspection · #SNA9454`,
+  "truck_eng_det_warranty": `DD13 410hp / DT12 · det.warranty option`,
+  "truck_eng_exPenske": `DD15 · DT12 auto · 3:08 rear · ex-Penske · private`,
+  "truck_eng_new_tires": `DD13 450hp · DT12 auto · new Goodyear tires · Peterbilt of CLT`,
+
+  // Truck WTL table — Charlotte NC + online cell
+  "truck_wtl_charlotte_online": `Charlotte NC + online`,
+
+  // Trailer listings table headers
+  "trailer_th_model": `Model / Type`,
+  "trailer_th_year": `Year`,
+  "trailer_th_length": `Length`,
+  "trailer_th_suspension": `Suspension`,
+  "trailer_th_source": `Source`,
+  "trailer_th_condition": `Condition / Note`,
+  "trailer_th_link": `Link`,
+
+  // Trailer listings — dealer description cells
+  "trailer_crts_desc": `Authorized Utility dealer. I-77 N — on the way to Westrock. Fleet units, known history`,
+  "trailer_gd_desc": `Dealer in Charlotte, 8011 Statesville Rd. Certified used on BuyGreatDane.com`,
+  "trailer_intraax_clarify": `INTRAAX / confirm`,
+  "trailer_hale_desc": `Multi-brand, 10,000+ units in network, inspected fleet trailers. Best budget option`,
+  "trailer_utility_new": `Utility / other new + used`,
+  "trailer_set_desc": `3800 Jeff Adams Dr, Charlotte. New 2026 Utility + used. Hendrickson air-ride units available`,
+  "trailer_wabash_desc": `Authorized Wabash dealer, 8621 Statesville Rd. Used from $15,900. Composite DuraPlate — strong walls`,
+  "trailer_seutil_label": `Utility 3000R 53' ⭐ on the route!`,
+  "trailer_seutil_desc": `Columbia SC — right on route to Westrock! Stop by on first trip. Utility dealer`,
+  "trailer_penske_desc": `Fleet-maintained, all PM done. 2018 GD ~$17k, 2016 GD ~$18k. Older but cheaper. Call Charlotte Penske for local inventory`,
+
+  // Trailer sources table headers
+  "trailer_src_th_dealer": `Dealer`,
+  "trailer_src_th_addr": `Address / City`,
+  "trailer_src_th_sells": `What they sell`,
+
+  // Trailer sources dealer descriptions
+  "trailer_src_crts_desc": `Authorized <strong>Utility Trailer</strong> dealer. New + used Utility 3000R, Stoughton, Kentucky. Fleet units`,
+  "trailer_src_gd_desc": `Authorized <strong>Great Dane</strong> dealer. New + certified used Champion. BuyGreatDane.com`,
+  "trailer_src_hale_desc": `Multi-brand, 10,000+ units in network, fleet-sourced. Best budget option nearby`,
+  "trailer_src_set_desc": `New + used Utility, Hendrickson air-ride. New 2026 Utility in stock`,
+  "trailer_src_wabash_desc": `Authorized <strong>Wabash</strong> dealer. Used from $15,900, new DuraPlate ~$38.5k+`,
+  "trailer_src_seutil_label": `SE Utility — Columbia SC 🗺️ on the route!`,
+  "trailer_src_seutil_desc": `Utility Trailer dealer — right on the way to Westrock Summerville. Stop by on first trip`,
+  "trailer_src_penske_city": `Gainesville GA (nearest)`,
+  "trailer_src_penske_desc": `Ex-fleet Great Dane, all PM done. 2018 GD ~$17k. Call Charlotte Penske for local inventory`,
+
+  // Online platforms table headers
+  "trailer_online_th_site": `Platform`,
+  "trailer_online_th_count": `Listings`,
+  "trailer_online_th_filter": `Best filter`,
+
+  // Financing summary table small labels
+  "tfin_financed_used": `financed used truck`,
+  "tfin_max_net": `maximum NET`,
+  "tfin_pac_per_mo": `All-in $7,500/mo`,
+
+  // W2 vs 1099 headers
+  "w2_th_w2": `W2 (employee)`,
+  "w2_th_1099": `1099 (contractor)`,
+
+  // Roadmap table headers
+  "road_th_depends": `Dependencies`,
+
+  // Nav button
+  "nav_notes": `📝 Notes`,
+
+  // Online platforms table content
+  "trailer_online_largest": `Largest`,
+  "trailer_online_dealers_100": `100+ dealers`,
+  "trailer_online_medium": `Medium`,
+  "trailer_online_auction": `Auction`,
+  "trailer_online_private": `Private sellers`,
+  "trailer_online_trailertrader_filter": `Dry Van, 53', 2018+, ZIP 28027, 200 mi`,
+  "trailer_online_ctt_filter": `Van-Dry, NC/SC, 2018+, 200 mi`,
+  "trailer_online_mls_filter": `Dry van, air ride, NC/SC`,
+  "trailer_online_iron_filter": `Fleet equipment, often below market`,
+  "trailer_online_fb_filter": `Cheap $14–20k, inspection required`,
+
+  // Docs / roadmap table rows with Cyrillic
+  "docs_phase2_label": `<strong>Phase 2</strong> (insurance low + permits + consortium)`,
+  "docs_eld_ongoing": `ELD + Dashcam ongoing (first year, 1 truck)`,
+  "docs_eld_val": `$780/year`,
+  "road_w12_costs_v1": `LLC: $125<br/>USDOT: $300<br/>MC: $300<br/>EIN/bank: $0<br/><strong>Total: $725</strong>`,
+  "road_w12_costs_v2": `Same costs<br/><strong>Total: $725</strong>`,
+  "road_w24_costs_v1": `Insurance: $10-16k<br/>BOC-3: $50<br/>UCR: $76<br/>IFTA: $10<br/>HVUT: $550<br/>Consortium: $200<br/>Inspection: $300<br/><strong>Total: ~$11,186–17,186</strong>`,
+  "road_w24_costs_v2": `Insurance ×2: $20-32k<br/>BOC-3: $50<br/>UCR: $152<br/>IFTA: $10<br/>HVUT: $1,100<br/>Consortium: $400<br/>Inspection: $600<br/><strong>Total: ~$22,312–34,312</strong>`,
+
+  // Risks table cells
+  "risk_r8_freq": `1-3 days/season`,
+  "risk_r8_mit": `SC route is short, rarely closes. VA I-95 more often problematic. Chains + heated filters.`,
+  "risk_r9_freq": `Cash flow pressure`,
+  "risk_r9_mit": `$40-60k working capital. Factoring as backup option.`,
+  "risk_r10_freq": `DOT audit, fines, license suspension`,
+  "risk_r10_mit": `ELD compliance enforcement. Random log audits. Fire driver for violations.`,
+  "risk_r11_freq": `Quit, accident risk`,
+  "risk_r11_mit": `Premium pay $90k + per-diem + benefits. Schedule with rotation. Track HOS strictly.`,
+
+  // ── Callout blocks t001-t034 ──────────────────────────────────────────────
+  "t001": `<li><strong>NC as resident state:</strong> IRP/IFTA must be registered in the state of residence (Charlotte NC)</li>
+<li><strong>NC vs NJ:</strong> NJ raised minimum insurance to $1.5M (July 2024) for NJ base-plated trucks. NC registration allows operating on NJ routes under the $750K-$1M federal minimum</li>
+<li><strong>Wyoming holding:</strong> Wyoming does not publicly disclose members. NC requires public disclosure. Wyoming as NC LLC member = only "Wyoming LLC" visible in NC records, names are hidden</li>
+<li><strong>Nominee Manager:</strong> signs public documents (broker agreements, contracts) on behalf of the NC LLC. Real control (bank, operations) stays with partners via a private Operating Agreement</li>
+<li><strong>What it does NOT hide:</strong> bank (KYC), insurance underwriting (SSN driver record), IRS, FMCSA enforcement actions. This protects from competitors and public records, not from government agencies</li>`,
+
+  "t002": `<strong>Services for setup (online, no need to travel):</strong> wyomingllcattorney.com (+1 307-683-0983), northwestregisteredagent.com, wyomingcompany.com. <strong>Nominee Agreement signed via DocuSign.</strong>`,
+
+  "t004": `<strong>Current owner-op activity:</strong><br/>
+      • <strong>50 trips/month</strong> SC ↔ NC (one trailer ID, 25 r/t × 2 legs)<br/>
+      • <strong>23 trips/month</strong> VA → NC<br/>
+      • <strong>12 trips/month</strong> NJ → NC<br/>
+      • Houston, TX and CADeco — currently no active volume / rates<br/>
+<strong>Note:</strong> Mileage estimates are city-to-city driving distances. Yellow cells in original spreadsheet = rates to be filled by carrier/broker.`,
+
+  "t005": `<strong>⚠️ Rates on non-SC/VA lanes in question:</strong><br/>
+      • <strong>NJ Edison HQ $1,900 r/t</strong> for 1,154 mi r/t = $1.65/mi — below market ($2.00-2.60/mi standard for NJ-NC). Verify current rates.<br/>
+      • <strong>TX Houston $2,700 r/t</strong> for 2,118 mi r/t = $1.27/mi — below long-haul TX market ($1.50-2.00/mi). Possibly old data.<br/>
+      • <strong>4 NJ locations without rates</strong> — ask dispatcher for quotes on all 4<br/>
+      • <strong><span data-i18n="t062">5 Houston locations without rates</span></strong> — given the long lane, likely not a priority for a new business`,
+
+  "t006": `<strong>Each driver:</strong> 1 round trip/day × 25 days = 25 r/t/mo. Both home-daily. <strong>HOS:</strong> 7 hrs driving + 1 hr on-duty = 8 hrs total — <strong>well under the 11/14 hr limit.</strong><br/>
+<strong>Combined: 50 round trips/mo</strong> on one truck with 2 trailers (drop-and-hook = zero detention).`,
+
+  "t007": `<strong>Why 1 trailer (not 2 as in V1-original):</strong><br/>
+      At 25 r/t, the driver has time for live load/unload at the warehouse.<br/>
+      Schedule: 7 hrs drive + 2-4 hrs detention for load/unload = 9-11 hrs on-duty — fits comfortably within the 14-hr HOS limit.<br/>
+      Drop-and-hook (2 trailers) saves time, but at 1 r/t/day it's not critical — driver still gets home by evening.<br/>
+<strong>Savings: $22,000 cash or $4,400 down payment + $358/mo loan.</strong><br/>
+<strong>Bonus:</strong> require detention pay from Westrock $50-75/hr after 2 free hours (industry standard).`,
+
+  "t008": `<strong>When this is the best choice:</strong><br/>
+      • Minimizing risk at launch — half volume gives a buffer for mistakes<br/>
+      • Westrock actually gives less than 50 r/t/mo (e.g. 25-35)<br/>
+      • Want EVERYTHING for cash with no leverage and minimal CAPEX ($167k vs $189k for V1 original)<br/>
+      • Testing the Westrock relationship before expanding<br/>
+<strong>Downside:</strong> you forgo $230-260k/year in revenue that Westrock is ready to offer.`,
+
+  "t009": `<strong>🤔 Why 2 trucks on one lane?</strong> Wear. 1 truck at 50 r/t = 21,100 mi/mo = <strong>253,200 mi/year</strong>. A used truck starts at 400k → 653k after year one → 906k after year two → engine overhaul ($18-25k) or replacement ($80k) almost certain by year 3. Plus single-point-of-failure: 1 truck breaks = business stops = contract at risk. <strong>2 trucks at 50 r/t = 126k mi/year each</strong> = sustainable, fleet lives 5+ years.`,
+
+  "t010": `<strong>2 trailers — how it works:</strong> each truck takes its own trailer round-trip. Live load/unload at SC (2 hrs detention) while driver has lunch. Driver returns with the same trailer. <strong>HOS:</strong> 6 hrs drive + 2 hrs detention + 1 hr admin = 9 hrs on-duty — comfortable.<br/>
+<strong>Alternative with 3 trailers (drop-and-hook):</strong> 3rd trailer stays permanently loaded at SC warehouse. Driver drops theirs, hooks the 3rd, drives back. Zero detention. <strong>+$22k CAPEX, +$358/mo loan, but driver is more comfortable, schedule more reliable.</strong> Decision depends on Westrock — if live-load is standard, 2 trailers OK.`,
+
+  "t011": `<strong>✅ Advantages vs V1 original (1 truck, 50 r/t):</strong><br/>
+      • <strong>Each truck runs 126k mi/year</strong> instead of 253k → lives 2× longer before major repair<br/>
+      • <strong>Backup truck</strong>: if 1 breaks, the second hauls critical loads while the first is in shop = business doesn't stop<br/>
+      • <strong>Driver retention</strong> better — each driver does only 1 r/t/day, more predictable<br/>
+      • <strong>Resale value</strong> preserved — both trucks sell in 5 years at ~1M mi instead of 1 truck near write-off<br/>
+      • <strong>Less driver fatigue</strong> — no night shifts (V1 original requires morning + evening driver)<br/>
+      • <strong>5-year cumulative TCO advantage:</strong> V1 original needs truck replacement in year 3 ($80k) + more breakdowns. V1-double avoids this.`,
+
+  "t012": `<strong>⚠️ Downsides:</strong><br/>
+      • <strong>NET/year $20-37k less</strong> ($468k vs $489k cash) — extra insurance, permits, depreciation on 2nd truck<br/>
+      • <strong>CAPEX +$98k (cash) or +$34k (financed)</strong> — but this is "insurance" against breakdowns<br/>
+      • Slightly higher management complexity (2 trucks vs 1)<br/>
+<strong>Math: NET difference $21k/year × 5 years = $105k, but engine overhaul risk $25-40k + replacement truck $80k = $105-120k spared in V1-double.</strong> Essentially the same over 5 years, but V1-double is DRAMATICALLY less risky.`,
+
+  "t013": `<strong>⚠️ Key insight:</strong> V1 original looks +$21k/year better vs V1-double on paper, but real 5-year NET is nearly identical due to:<br/>
+      • $80k truck replacement cost by year 3 (253k mi/year × 3 = already 760k+ from purchase)<br/>
+      • $25-40k major repair (engine/transmission overhaul) almost guaranteed by year 2-3<br/>
+      • 4-8 weeks total downtime over 5 years = -$25-50k lost revenue<br/>
+      • Risk of losing Westrock contract if you break down without a backup<br/>
+<strong>= Real difference over 5 years: $0-30k in favor of V1-double after all breakdown costs</strong>`,
+
+  "t014": `<strong style="font-size:14px">⭐ Best choice: V1-double (2 trucks on SC)</strong><br/><br/>
+<strong>Why V1-double &gt; V1 original:</strong><br/>
+      • Same revenue ($900k/year) BUT sustainable wear — each truck 126k mi/year vs 253k<br/>
+      • Backup truck = mission-critical for new LLC building Westrock relationship<br/>
+      • 2 home-daily drivers instead of 1 morning + 1 evening (easier to hire, less turnover)<br/>
+      • 5-year NET nearly identical ($2.05M vs $2.07M in reality)<br/>
+      • -$21k/year is a trivial price for +1000% more operational reliability<br/><br/>
+<strong>Why V1-double &gt; V1-half:</strong><br/>
+      • +$236k/year revenue ($450k → $900k) with only +$98k CAPEX = 240%/year ROI<br/>
+      • V1-half leaves money on the table that Westrock is ready to pay<br/>
+      • Driver/trailer/insurance overhead already amortized — extra cost is only marginal<br/><br/>
+<strong>CAPEX V1-double:</strong> $124k financed (via TopMark @ 4.9% APR with your 811 credit) or $287k cash.<br/>
+<strong>Alternative — Hybrid PacLease + Financed:</strong> Truck #1 PacLease (~$5k security deposit), Truck #2 financed ($16k down). Total starting cash = ~$110k vs $124k. Less equipment risk on truck #1.`,
+
+  "t015": `<strong>If capital is limited → V1-half as a conservative start:</strong><br/>
+      • $189k cash or $90k financed upfront<br/>
+      • $232k NET/year cash flow<br/>
+      • <strong>By month 9-10 cash flow will cover the upgrade to V1-double</strong> ($232k × 9/12 = $174k minus $189k initial = -$15k, but by month 12: $232k − $189k = +$43k free)<br/>
+      • Roadmap: V1-half (mo 1-9) → add 2nd driver and second shift = V1 original (mo 9-12) → add 2nd truck = V1-double (mo 12-18)<br/>
+      • Downside: forgo $230-260k revenue in year one while scaling<br/>
+      • Upside: less initial risk, simpler learning curve`,
+
+  "t016": `<strong>❌ V1 original — NOT recommended for launch:</strong><br/>
+      You'll save $34-98k CAPEX vs V1-double, but you get:<br/>
+      • 253k mi/year on one truck = engine overhaul or truck replacement by year 2-3 ($25-80k unexpected cost)<br/>
+      • Single point of failure — truck breaks → Westrock contract at risk<br/>
+      • Evening shift driver — high turnover (avg 3-6 months), constant rehiring overhead<br/>
+      • Real 5-yr NET after breakdown costs nearly equals V1-double<br/>
+      • <strong>Pay $34-98k less upfront → lose ~$100k+ through breakdown events over 5 years</strong>`,
+
+  "t017": `<strong>Real scheme for 23 r/t/mo with one driver:</strong><br/>
+      • One round trip ~30 hrs (with 10-hr rest)<br/>
+      • Driver does <strong>5-6 round trips per week</strong> (6 working days)<br/>
+      • 23 r/t / 4.3 wk = 5.3 r/t/wk — realistic, but driver works 6 days<br/>
+      • <strong>HOS check:</strong> 12 hrs driving × 5 trips/wk = 60 hrs/wk, under the 70 hrs/8 days limit, but close. 6th day usually a half-trip or admin.<br/>
+      • Driver sleeps in sleeper 4-5 nights per week — standard OTR work, but more tiring than home-daily.<br/>
+      • <strong>Salary +$5-10k/year</strong> compared to home-daily — compensation for time away from home.`,
+
+  "t018": `<strong>Key insights:</strong><br/>
+      • <strong>V1 original</strong> ($900k revenue) uses ONE truck with two drivers (morning + evening shift). Each driver does 25 r/t — total 50 r/t/mo on one truck = 21,100 mi/mo. High wear.<br/>
+      • <strong>V1-half</strong> ($450k revenue) — half volume: one driver, one shift, 25 r/t = 10,550 mi/mo. Sustainable but forgoes half the revenue.<br/>
+      • <strong>V1-double</strong> ($900k revenue) — same 50 r/t, but 2 trucks with 25 each. Same revenue as V1 original, but truck life 2× longer. Best long-term for SC-only.<br/>
+      • <strong>V2</strong> ($1,384k revenue) — adds VA lane on 2nd truck. More revenue, but VA is less marginal ($1.34/mi profit vs $1.93/mi on SC).`,
+
+  "t019": `<strong>🏆 Recommendation:</strong><br/>
+<strong>If you have capital ($329k cash or can finance $148k) and management bandwidth → V2.</strong> +$226k/year (46%) more profit with relatively small additional CAPEX. ROI-on-incremental-capital = 161%/year ($226k extra NET / $140k extra cash CAPEX).<br/><br/>
+<strong>If this is your first business or capital is limited → V1 to start.</strong> After 6-9 months of stable SC operations — add VA as Truck #2. This allows:<br/>
+      • Using SC cash flow to finance the VA expansion<br/>
+      • Learning on a simple lane before adding OTR complexity<br/>
+      • Reducing single-launch risk`,
+
+  "t020": `<strong>⚠️ V2 does not solve R1 (single-customer risk).</strong> Both trucks depend on Westrock. After 6-12 months of stable operations — diversify via DAT spot market at 20-30% revenue so you're not hostage to one client.`,
+
+  "t021": `<strong>✅ Lane analysis:</strong><br/>
+      • <strong>SC $3.55/mi</strong> — <span class="badge badge-best">TOP 5%</span> of market. Unique rate for a 211-mi short regional. Westrock clearly pays a premium for reliability.<br/>
+      • <strong>VA $2.87/mi</strong> — <span class="badge badge-best">TOP 15%</span>. Above Mid-Atlantic Avg by $0.10/mi. Good lane, not as rich as SC, but healthy margin.<br/>
+      • <strong>MD $2.74/mi</strong> — <span class="badge badge-ok">upper quartile</span>. Standard for regional 470-mi.<br/>
+      • <strong>NJ $1.65/mi</strong> — <span class="badge badge-avg">below average</span>. NJ-NC corridor usually $2.00-2.60/mi. <strong>Worth discussing with dispatch — may be outdated.</strong><br/>
+      • <strong>TX $1.27/mi</strong> — <span class="badge badge-bad">below market</span>. Long-haul TX usually $1.50-2.00/mi. Possibly old data or specific shipper deal — not a priority lane.<br/><br/>
+<strong>Conclusion:</strong> SC and VA — excellent lanes, recommended for business. MD as a top-up. NJ and TX — skip or renegotiate rates.`,
+
+  "t022": `<strong>⚠️ Fuel volatility risk (no FSC on all lanes):</strong><br/>
+      Base $3.80/gal. Sensitivity for Combined V2 (35,176 mi/mo):<br/>
+      • $4.50/gal: +$3,620/mo fuel cost → V2 NET drops from $59,593 to $55,973<br/>
+      • $5.50/gal: +$8,790/mo → V2 NET $50,803<br/>
+      • $6.00/gal (2022 peak): +$11,375/mo → V2 NET $48,218<br/>
+<strong>Mitigation:</strong> require FSC reopener clause in all contracts with EIA quarterly index.`,
+
+  "t027": `<strong>🛠️ Reserve Fund ($15k V1 / $25k V2) — "breakdown buffer"</strong><br/><br/>
+      Separate bank account, emergency funds for unexpected repairs.<br/><br/>
+<strong>Why it's needed (used truck 350-450k mi):</strong><br/>
+      • Engine overhaul DD15/X15: <strong>$18-25k</strong><br/>
+      • Transmission rebuild: <strong>$8-15k</strong><br/>
+      • Turbo: <strong>$4-6k</strong><br/>
+      • EGR cooler + DEF: <strong>$3-8k</strong><br/>
+      • DPF system: <strong>$2.5-5k</strong><br/>
+      • Drive tire set (18 pcs): <strong>$8-10k</strong> every 150k mi<br/><br/>
+<strong>Without reserve:</strong> 1 breakdown = truck sits 2-4 weeks in shop = you don't haul 8-15 r/t = -$12-22k revenue + you're still paying driver/insurance/loan → default → bank takes truck → business is dead.<br/><br/>
+<strong>Rule:</strong> +$250-500/mo accumulation (built into Reserve fund line). By year-end $18-30k. <strong>Never use for operating cash flow.</strong>`,
+
+  "t028": `<strong>💰 Working Capital ($40k V1 / $60k V2) — "AR bridge"</strong><br/><br/>
+      Operating capital to cover expenses while the client pays with a delay.<br/><br/>
+<strong>Why:</strong> Westrock pays <strong>net-10</strong> (within 10 days of invoice) — excellent terms, minimal cash flow gap. Expenses are daily:<br/>
+      • Diesel ~$2,800/wk (V1) or ~$4,800/wk (V2)<br/>
+      • Driver salary $4-7k every 2 weeks<br/>
+      • Insurance $1,400-2,800/mo<br/>
+      • Loans $1.2-1.8k/mo (if financed)<br/><br/>
+<strong>Cash flow timeline (net-10):</strong><br/>
+      • Week 1-2: working, invoices sent. Expenses: $7-12k.<br/>
+      • Week 2-3: first payments arrive (10 days after invoice).<br/>
+      • Buffer needed ~2-3 weeks of expenses = $15-25k (significantly less than net-30).<br/><br/>
+<strong>Alternative — factoring:</strong> OTR Capital / RTS pay immediately for 2-3% fee. On $75k/mo = $1.5-2.25k/mo. With net-10, factoring barely needed — only for the first month.`,
+
+  "t029": `<li><strong>CDL Class A</strong> — required for all</li>
+<li><strong>Medical card</strong> (DOT physical) — current</li>
+<li><strong>MVR clean 3+ years</strong> — no accidents/violations</li>
+<li><strong>2+ years OTR experience</strong> for VA driver, 1+ year for SC drivers</li>
+<li><strong>Pre-employment drug test</strong> via DOT consortium (Foley/USAMD)</li>
+<li><strong>Background check + employment verification</strong></li>
+<li><strong>FMCSA Drug &amp; Alcohol Clearinghouse query</strong> (mandatory since 2024)</li>`,
+
+  "t030": `Benefits package = ~$8-10k/driver/year, already incorporated into "12% burden". Helps achieve &lt;20% turnover (industry avg 90%+).`,
+
+  "t031": `<strong style="font-size:14px">⭐ OPTIMAL PLAN for Serge (Charlotte NC, credit 811, no CDL, 50/50 partner):</strong><br/><br/>
+<strong>Month 0-2 (setup):</strong><br/>
+      1. Wyoming holding LLC + nominee manager (~$550 setup) via wyomingllcattorney.com<br/>
+      2. NC operating LLC, owned by Wyoming LLC ($375 setup)<br/>
+      3. EIN, NC business bank, USDOT + MC application<br/>
+      4. <strong>Call TLG Peterbilt Charlotte (704) 597-8600</strong> — quote for PacLease Full-Service, 1 truck, 20k mi/mo<br/>
+      5. Simultaneously: TopMark Funding pre-approval as backup and for future 2nd truck<br/>
+      6. Insurance quotes (Progressive Commercial, Great West, Sentry)<br/>
+      7. Confirm with Westrock: trailer ownership, FSC clause, contract terms<br/><br/>
+<strong>Month 2-3 (launch with 1 PacLease truck):</strong><br/>
+      • 1× PacLease truck @ ~$7,500/mo all-in (including maintenance, repairs, replacement on breakdown)<br/>
+      • 2× Dry van trailers $44k cash (or $0 if Westrock supplies)<br/>
+      • 2× CDL-A drivers @ $8,000/mo salary (one morning, one evening shift)<br/>
+      • Total starting capital: <strong>~$95-100k</strong> (vs $189k cash purchase, vs $124k financed)<br/>
+      • Revenue $75k/mo, NET <strong>$36,208/mo = $434,496/year</strong><br/><br/>
+<strong>Month 12-18 (expansion, if Westrock relationship stable):</strong><br/>
+      • Add Truck #2 — financed via TopMark @ 4.9% (your 811 credit) at ~$1,200/mo payment<br/>
+      • Two options for Truck #2:<br/>
+         <strong>(a) V1-double:</strong> both trucks on SC, 25 r/t each = sustainable wear. NET ~$50k/mo<br/>
+         <strong>(b) V2:</strong> 2nd truck on VA (Chesapeake) lane @ $1,755 r/t. NET ~$55k/mo<br/>
+      • Decision depends on: Westrock confirms VA volume is stable? Driver pool in NC for OTR?<br/><br/>
+<strong>Month 24-36:</strong> 3rd truck (if both lanes stable) or PacLease renewal<br/><br/>
+<strong>Why PacLease for first truck — a critical decision:</strong><br/>
+      ✅ New LLC approved by PacLease (Penske/Ryder require 1+ year revenue history)<br/>
+      ✅ 20k mi/mo will destroy a used cash-truck in 2 years ($25-40k engine repair almost certain)<br/>
+      ✅ Hired drivers care less about the truck — risk increases<br/>
+      ✅ Replacement truck on breakdown = zero downtime = Westrock contract preserved<br/>
+      ✅ CAPEX $95k vs $189k cash — frees $94k for reserve fund + 2nd truck later<br/>
+      ⚠️ Trade-off: -$1-3k/mo NET vs financed/cash. But this is an insurance premium against catastrophic events.`,
+
+  "t032": `<strong>If you have $329k cash or can finance $148k → V2 (2 trucks SC+VA).</strong><br/><br/>
+      Buy:<br/>
+      • <strong>2× Freightliner Cascadia 2021-2022 DD15 Gen5 Sleeper, 350-400k mi, ~$80k each</strong><br/>
+      • <strong>3× Dry Van 53' trailers 2020-22, ~$22k each</strong> (or $0 if Westrock provides shipper-supplied pool)<br/><br/>
+      Hire:<br/>
+      • <strong>Driver #1 + #2 SC home-daily @ $85k salary</strong> each<br/>
+      • <strong>Driver #3 VA OTR @ $90k salary + per-diem</strong><br/><br/>
+      V2 financial results (Cash):<br/>
+      • Revenue/year: <strong>$1,384,380</strong><br/>
+      • NET/year: <strong>$715,116</strong> (52% margin)<br/>
+      • Year 1 NET (after $226k CAPEX equipment): <strong>$472,831</strong><br/>
+      • Break-even CAPEX: <strong>5.5 months</strong><br/>
+      • Profit per mile: $1.93 SC + $1.34 VA (top 5-15% of market)<br/><br/>
+      If you have less capital or this is your first business → <strong>start with V1 (SC only)</strong>: $489k/year NET, $189k cash CAPEX, break-even 4.6 mo. Add VA as Truck #2 in 6-9 months.`,
+
+  "t033": `<strong>📋 Critical confirmations with Westrock before buying trucks:</strong><br/>
+      1. <strong>Trailers — shipper-supplied or carrier?</strong> Difference of $44k-66k CAPEX.<br/>
+      2. <strong>Written contract with volume commitment</strong> for at least 12 months per lane.<br/>
+      3. <strong>FSC reopener clause</strong> with quarterly reset per EIA weekly diesel.<br/>
+      4. <strong>Detention pay</strong> after 2 hrs free ($50-75/hr standard).<br/>
+      5. <strong>Net pay terms:</strong> net-30, net-45, or quick-pay with discount?<br/>
+      6. <strong>Cargo damage liability</strong> — driver/carrier or Westrock insurance?<br/>
+      7. <strong>VA run reality check</strong> — really $1,755 r/t? And is 23 r/t/mo sustainable volume?<br/>
+      8. <strong>NJ/MD/TX rates</strong> — current or old? Possibly hidden capacity for V3-expansion after a year.<br/>
+      9. <strong>Backhaul opportunities</strong> — any loads NC→SC/VA for additional revenue?`,
+
+  "t034": `<strong>📞 Action items today:</strong><br/>
+      1. Schedule meeting with Westrock dispatcher for clarifications above<br/>
+      2. Get sample contract for review with lawyer ($300-500 for legal review)<br/>
+      3. Pre-qualify financing options (Daimler Truck Financial, PACCAR Financial, or local bank) if considering financed<br/>
+      4. Shortlist 5-7 used trucks Cascadia 2021-22 on TruckPaper.com / CommercialTruckTrader.com<br/>
+      5. Get 3+ insurance quotes (Progressive Commercial, Great West, Sentry)<br/>
+      6. NC LLC formation start (online NC SoS, $125, 5-7 days)`,
+
+  "t455": `<strong>⏱️ Critical path:</strong> MC Number blocks operations for 21 days. After LLC (W1) → MC application (W1-2) → 21-day wait → MC active (W4-5). Everything else can be done in parallel during those 3 weeks.<br/>
+<strong>Total timeline to first trip:</strong> ~6-8 weeks (if truck purchased and driver hired in parallel).`,
+
+  "t495": `<strong>📋 Alternative options (if you have different preferences):</strong>`,
+
+  // ── Roadmap W1-2 and W2-4 large cells ────────────────────────────────────
+  "road_w12_cell": `<strong>📋 Company registration:</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• <strong>LLC NC</strong> — sosnc.gov → online, 15 min. Timeline: 5-7 days. <em>Cost: $125</em><br/>
+• <strong>EIN</strong> (tax ID) — irs.gov immediately after LLC. Free, instant online. <em>$0</em><br/>
+• <strong>Business bank account</strong> — Bank of America / Chase Business. Need: EIN + LLC docs. <em>$0</em><br/>
+• <strong>USDOT Number</strong> — fmcsa.dot.gov/registration. Need EIN. Timeline: 1-2 days. <em>$300</em><br/>
+• <strong>MC Number</strong> (Motor Carrier authority) — same FMCSA site. ⚠️ After filing — <strong>mandatory 21-day waiting period</strong>, only then MC becomes active. <em>$300</em>
+</span>
+<strong>📞 Confirm with Westrock before launch:</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• <strong>Trailer ownership</strong> — does Westrock provide their own trailers (drop-and-hook) or do you need your own? Critical for CAPEX<br/>
+• <strong>FSC clause</strong> (Fuel Surcharge) — is there a fuel surcharge on top of $1,600/r/t when diesel rises? Standard: if diesel above base $3.50 → they pay +$0.05-0.10/mi. <strong>Make sure it's in the contract</strong><br/>
+• <strong>Detention pay</strong> — payment for waiting at load/unload after 2 free hours. Standard: $50-75/hr. Require it in the contract<br/>
+• <strong>Payment terms</strong> — net-7 or net-30? net-7 better for cash flow. Clarify if factoring is needed<br/>
+• <strong>Volume guarantee</strong> — how many r/t guaranteed per month? Minimum per contract?
+</span>
+<strong>🚛 Shortlist trucks and trailers:</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• Sites: TruckPaper.com, CommercialTruckTrader.com, SelecTrucks Charlotte<br/>
+• Truck specs: Freightliner Cascadia 2019-2021, mileage 200-350k mi, engine DD15, transmission DT12 (automatic). Budget: <strong>$60k</strong><br/>
+• Trailer specs: Utility / Great Dane 53' dry van 2018-2020, INTRAAX suspension. Budget: <strong>$20k</strong><br/>
+• Request VIN for history check on FMCSA Safety (safer.fmcsa.dot.gov) and CarFax
+</span>`,
+
+  "road_w24_cell": `<strong>🛡️ Insurance quotes (minimum 3 brokers):</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• Call: Progressive Commercial, Great West Casualty, Sentry Insurance, Owner Operator Direct<br/>
+• What brokers need: USDOT number + truck VIN + route NC↔SC + cargo type (dry van, coffee/tea — no hazmat)<br/>
+• Minimum FMCSA coverages: Primary Liability <strong>$750k</strong> (interstate) + Cargo <strong>$100k</strong> + Physical Damage + Uninsured Motorist<br/>
+• Cost for new LLC (no history): <strong>$10,000-16,000/year/truck</strong>. Pay upfront for the year or monthly (+15% for installments)
+</span>
+<strong>📄 Permits and registrations (parallel with MC waiting period):</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• <strong>BOC-3</strong> (Blanket of Coverage) — appointment of Process Agent in all states. Service: BOC3Filing.com or FMCSA Register. Needed immediately after MC filing. <em>$50</em><br/>
+• <strong>UCR</strong> (Unified Carrier Registration) — annual carrier registration. Site: ucr.gov. V1 (1 truck): <em>$76/year</em>. V2 (2 trucks): <em>$152/year</em><br/>
+• <strong>IFTA</strong> (International Fuel Tax Agreement) — needed because you drive through NC and SC (2 states). File with NC DOR (dornc.com). Receive IFTA decals for truck. <em>$10</em> + quarterly filing<br/>
+• <strong>HVUT Form 2290</strong> (Heavy Vehicle Use Tax) — federal tax on trucks over 55,000 lbs. File on IRS.gov. <em>$550/year/truck</em>. Need truck VIN<br/>
+• <strong>Drug &amp; Alcohol Consortium</strong> — driver registration in DOT-certified consortium (Foley Services, USAMD). Pre-employment drug test required by FMCSA. <em>$150/year/driver</em> + $50-75 for initial test
+</span>
+<strong>🔬 Pre-purchase truck inspection:</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• Choose 1-2 finalists → hire independent mechanic (NOT dealer — conflict of interest)<br/>
+• What they check: DD15 compression test, DT12 transmission, brakes, frame, EGR/DPF system, electrical<br/>
+• <em>$150-300/truck</em>. Required — protects against buying a lemon for $60k<br/>
+• After inspection → negotiate price (defects found = $1-5k discount)
+</span>`
 };

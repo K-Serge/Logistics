@@ -1,4 +1,5 @@
 const LANG_RU = {
+  "page_title": `Logistic — Бизнес-план SC + VA (2026)`,
   "t035": `Concord, NC · 2 варианта: 1 трак SC vs 2 трака SC+VA`,
   "t036": `Бизнес-план — Logistic Trucking (SC + VA)`,
   "t037": `⭐ PacLease 1 трак`,
@@ -1040,5 +1041,436 @@ const LANG_RU = {
   "expenses_v1_title": `Variant 1 (1 truck SC, Cash purchase)`,
   "expenses_v2_title": `Variant 2 (2 trucks SC+VA, Cash purchase)`,
   "final_rec_title": `🏁 Финальная рекомендация (с учётом всех новых вводных)`,
-  "docs_phase1_title": `Phase 1 (W1-2): Foundation`
+  "docs_phase1_title": `Phase 1 (W1-2): Foundation`,
+
+  // Penske comparison table — cell values
+  "penske_not_done": `не сделано — нужно`,
+  "penske_included": `включено ✓`,
+  "penske_zero_in_price": `$0 (в цене)`,
+  "penske_zero_already": `$0 (уже в цене)`,
+  "penske_no": `нет`,
+  "penske_limited": `ограниченная`,
+  "penske_covered": `DD15 + DT12 покрыты ✓`,
+  "penske_90d_full": `90d на весь трак ✓`,
+  "penske_unavail_340k": `на 340k+ mi часто недоступно`,
+  "penske_no_warranty": `без warranty`,
+  "penske_if_found": `если найдёшь warranty`,
+  "penske_only_12_125k": `единственный с 12/125k`,
+  "penske_all_included": `— всё включено`,
+  "penske_cert_resale": `Penske сертификат (для перепродажи)`,
+  "penske_ext_warranty_label": `Купить extended warranty отдельно`,
+  "penske_ext_warranty_sub": `(12 мес / 125k, коммерческий трак)`,
+
+  // Breakdown Risk / financing summary table
+  "tfin_low_included": `LOW — всё включено`,
+  "tfin_medium_risk": `MEDIUM`,
+  "tfin_high_overhaul": `HIGH — overhaul риск`,
+  "tfin_at_700k": `✅ при 700k`,
+
+  // Companies / financing table
+  "tfin_comp_type_broker": `Брокер (50+ lenders)`,
+  "tfin_comp_type_broker_net": `Брокер (lender network)`,
+  "tfin_competitive": `Конкурентная`,
+  "tfin_from_3500": `от $3,500`,
+  "tfin_idealease_locations": `430+ локаций, NC ✅`,
+
+  // Truck listings table headers
+  "truck_th_model": `Модель`,
+  "truck_th_year": `Год`,
+  "truck_th_fuel_mo": `Топливо/мес`,
+  "truck_th_source": `Источник`,
+  "truck_th_engine_warranty": `Двигатель / Гарантия`,
+
+  // Cities table header
+  "infra_th_city": `Город`,
+  "infra_th_services": `Сервисы`,
+
+  // Penske table "what it adds" cells
+  "penske_l2_adds": `100-pt инспекция, мелкий ремонт`,
+  "penske_l1_adds": `+ ТО (масла/фильтры/ремни/диагностика)<br/>+ гарантия Penske 90–180d на агрегаты<br/>+ официальный сертификат`,
+  "penske_st_adds": `+ DD15 450hp / DT12 auto<br/>+ 90d гарантия на всё<br/>+ 12 мес/125k powertrain warranty`,
+  "penske_base": `— база`,
+
+  // Truck listings engine/warranty cells
+  "truck_eng_premier_9453": `DD13 450hp / DT12 · Premier инспекция · #SNA9453`,
+  "truck_eng_premier_9454": `DD13 450hp / DT12 · Premier инспекция · #SNA9454`,
+  "truck_eng_det_warranty": `DD13 410hp / DT12 · опция det.warranty`,
+  "truck_eng_exPenske": `DD15 · DT12 auto · 3:08 rear · экс-Penske · частник`,
+  "truck_eng_new_tires": `DD13 450hp · DT12 auto · новые шины Goodyear · Peterbilt of CLT`,
+
+  // Truck WTL table — Charlotte NC + online cell
+  "truck_wtl_charlotte_online": `Charlotte NC + онлайн`,
+
+  // Trailer listings table headers
+  "trailer_th_model": `Модель / Тип`,
+  "trailer_th_year": `Год`,
+  "trailer_th_length": `Длина`,
+  "trailer_th_suspension": `Подвеска`,
+  "trailer_th_source": `Источник`,
+  "trailer_th_condition": `Состояние / Примечание`,
+  "trailer_th_link": `Ссылка`,
+
+  // Trailer listings — dealer description cells
+  "trailer_crts_desc": `Авторизованный дилер Utility. I-77 N — по дороге к Westrock. Fleet units, известная история`,
+  "trailer_gd_desc": `Дилер в городе, 8011 Statesville Rd. Сертифицированные б/у на BuyGreatDane.com`,
+  "trailer_intraax_clarify": `INTRAAX / уточнить`,
+  "trailer_hale_desc": `Мультибренд, 10,000+ единиц по сети, инспектированные fleet trailers. Лучший бюджетный вариант`,
+  "trailer_utility_new": `Utility / др. new + б/у`,
+  "trailer_set_desc": `3800 Jeff Adams Dr, Charlotte. Новые 2026 Utility + б/у. Hendrickson air-ride units доступны`,
+  "trailer_wabash_desc": `Авт. дилер Wabash, 8621 Statesville Rd. Б/у от $15,900. Composite DuraPlate — прочные стенки`,
+  "trailer_seutil_label": `Utility 3000R 53' ⭐ на маршруте!`,
+  "trailer_seutil_desc": `Columbia SC — прямо на маршруте к Westrock! Заехать при первой поездке. Utility дилер`,
+  "trailer_penske_desc": `Fleet-maintained, все PM выполнены. 2018 GD ~$17k, 2016 GD ~$18k. Старее но дешевле. Звони в Charlotte Penske для локального инвентаря`,
+
+  // Trailer sources table headers
+  "trailer_src_th_dealer": `Дилер`,
+  "trailer_src_th_addr": `Адрес / Город`,
+  "trailer_src_th_sells": `Что продают`,
+
+  // Trailer sources dealer descriptions
+  "trailer_src_crts_desc": `Авт. дилер <strong>Utility Trailer</strong>. Новые + б/у Utility 3000R, Stoughton, Kentucky. Fleet units`,
+  "trailer_src_gd_desc": `Авт. дилер <strong>Great Dane</strong>. Новые + сертифицированные б/у Champion. BuyGreatDane.com`,
+  "trailer_src_hale_desc": `Мультибренд, 10,000+ единиц по сети, fleet-sourced. Лучший бюджетный вариант рядом`,
+  "trailer_src_set_desc": `Новые + б/у Utility, Hendrickson air-ride. Новые 2026 Utility в наличии`,
+  "trailer_src_wabash_desc": `Авт. дилер <strong>Wabash</strong>. Б/у от $15,900, новые DuraPlate ~$38.5k+`,
+  "trailer_src_seutil_label": `SE Utility — Columbia SC 🗺️ на маршруте!`,
+  "trailer_src_seutil_desc": `Utility Trailer дилер — прямо по дороге к Westrock Summerville. Заехать при первой поездке`,
+  "trailer_src_penske_city": `Gainesville GA (ближайший)`,
+  "trailer_src_penske_desc": `Ex-fleet Great Dane, все PM выполнены. 2018 GD ~$17k. Звони в Charlotte Penske для лок. инвентаря`,
+
+  // Online platforms table headers
+  "trailer_online_th_site": `Площадка`,
+  "trailer_online_th_count": `Объявлений`,
+  "trailer_online_th_filter": `Лучший фильтр`,
+
+  // Financing summary table small labels
+  "tfin_financed_used": `financed б/у трак`,
+  "tfin_max_net": `максимальный NET`,
+  "tfin_pac_per_mo": `All-in $7,500/мес`,
+
+  // W2 vs 1099 headers
+  "w2_th_w2": `W2 (сотрудник)`,
+  "w2_th_1099": `1099 (контрактор)`,
+
+  // Roadmap table headers
+  "road_th_depends": `Зависимости`,
+
+  // Nav button
+  "nav_notes": `📝 Заметки`,
+
+  // Online platforms table content
+  "trailer_online_largest": `Крупнейший`,
+  "trailer_online_dealers_100": `100+ дилеров`,
+  "trailer_online_medium": `Средний`,
+  "trailer_online_auction": `Аукцион`,
+  "trailer_online_private": `Частники`,
+  "trailer_online_trailertrader_filter": `Dry Van, 53', 2018+, ZIP 28027, 200 mi`,
+  "trailer_online_ctt_filter": `Van-Dry, NC/SC, 2018+, 200 mi`,
+  "trailer_online_mls_filter": `Dry van, air ride, NC/SC`,
+  "trailer_online_iron_filter": `Fleet equipment, часто дешевле рынка`,
+  "trailer_online_fb_filter": `Дёшево $14–20k, обязательна инспекция`,
+
+  // Docs / roadmap table rows with Cyrillic
+  "docs_phase2_label": `<strong>Phase 2</strong> (страховка low + permits + consortium)`,
+  "docs_eld_ongoing": `ELD + Dashcam ongoing (первый год, 1 трак)`,
+  "docs_eld_val": `$780/год`,
+  "road_w12_costs_v1": `LLC: $125<br/>USDOT: $300<br/>MC: $300<br/>EIN/bank: $0<br/><strong>Итого: $725</strong>`,
+  "road_w12_costs_v2": `Те же расходы<br/><strong>Итого: $725</strong>`,
+  "road_w24_costs_v1": `Страховка: $10-16k<br/>BOC-3: $50<br/>UCR: $76<br/>IFTA: $10<br/>HVUT: $550<br/>Consortium: $200<br/>Inspection: $300<br/><strong>Итого: ~$11,186–17,186</strong>`,
+  "road_w24_costs_v2": `Страховка ×2: $20-32k<br/>BOC-3: $50<br/>UCR: $152<br/>IFTA: $10<br/>HVUT: $1,100<br/>Consortium: $400<br/>Inspection: $600<br/><strong>Итого: ~$22,312–34,312</strong>`,
+
+  // Risks table Cyrillic cells
+  "risk_r8_freq": `1-3 дня/сезон`,
+  "risk_r8_mit": `SC route короткий, редко закрывается. VA I-95 чаще проблематичен. Chains + heated filters.`,
+  "risk_r9_freq": `Cash flow pressure`,
+  "risk_r9_mit": `$40-60k working capital. Factoring как backup option.`,
+  "risk_r10_freq": `DOT audit, fines, license suspension`,
+  "risk_r10_mit": `ELD compliance enforcement. Random log audits. Fire driver для violations.`,
+  "risk_r11_freq": `Quit, accident risk`,
+  "risk_r11_mit": `Premium pay $90k + per-diem + benefits. Schedule с rotation. Track HOS strictly.`,
+
+  // ── Callout blocks t001-t034 ──────────────────────────────────────────────
+  "t001": `<li><strong>NC по resident state:</strong> IRP/IFTA обязаны регистрироваться в штате проживания (Charlotte NC)</li>
+<li><strong>NC vs NJ:</strong> NJ с июля 2024 поднял min insurance до $1.5M для base-plated в NJ траков. NC регистрация позволяет работать на NJ маршруте под $750K-$1M federal минимум</li>
+<li><strong>Wyoming holding:</strong> Wyoming не раскрывает members публично. NC требует публично указывать. Wyoming как member NC LLC = в NC records видно только "Wyoming LLC", имена скрыты</li>
+<li><strong>Nominee Manager:</strong> подписывает публичные документы (broker agreements, contracts) от имени NC LLC. Реальный контроль (банк, операции) у партнёров через приватный Operating Agreement</li>
+<li><strong>Что НЕ скрывает:</strong> банк (KYC), insurance underwriting (SSN driver record), IRS, FMCSA enforcement actions. Это для защиты от конкурентов и публичных records, не от госорганов</li>`,
+
+  "t002": `<strong>Сервисы для setup (онлайн, физически ехать не нужно):</strong> wyomingllcattorney.com (+1 307-683-0983), northwestregisteredagent.com, wyomingcompany.com. <strong>Подписание Nominee Agreement через DocuSign.</strong>`,
+
+  "t004": `<strong>Текущая активность owner-op:</strong><br/>
+      • <strong>50 trips/month</strong> SC ↔ NC (один trailer ID, 25 r/t × 2 legs)<br/>
+      • <strong>23 trips/month</strong> VA → NC<br/>
+      • <strong>12 trips/month</strong> NJ → NC<br/>
+      • Houston, TX и CADeco — пока без активного volume / ставок<br/>
+<strong>Note:</strong> Mileage estimates are city-to-city driving distances. Yellow cells in original spreadsheet = rates to be filled by carrier/broker.`,
+
+  "t005": `<strong>⚠️ Ставки по non-SC/VA lanes под вопросом:</strong><br/>
+      • <strong>NJ Edison HQ $1,900 r/t</strong> для 1,154 mi r/t = $1.65/mi — ниже рынка ($2.00-2.60/mi standard для NJ-NC). Уточни актуальность.<br/>
+      • <strong>TX Houston $2,700 r/t</strong> для 2,118 mi r/t = $1.27/mi — ниже long-haul TX рынка ($1.50-2.00/mi). Возможно old data.<br/>
+      • <strong>4 NJ локации без ставок</strong> — попроси у dispatcher quote для всех 4<br/>
+      • <strong><span data-i18n="t062">5 Houston локаций без ставок</span></strong> — учитывая длинный lane, возможно не приоритет для нового бизнеса`,
+
+  "t006": `<strong>Каждый driver:</strong> 1 round trip/день × 25 дней = 25 r/t/мес. Оба home-daily. <strong>HOS:</strong> 7 hrs driving + 1 hr on-duty = 8 hrs total — <strong>под лимит 11/14 hrs с большим запасом</strong>.<br/>
+<strong>Combined: 50 round trips/мес</strong> на одном траке с 2 трейлерами (drop-and-hook = zero detention).`,
+
+  "t007": `<strong>Почему 1 trailer (а не 2 как в V1-original):</strong><br/>
+      При 25 r/t = 1 r/t в день у driver есть запас времени для live load/unload на складе.<br/>
+      Schedule: 7 hrs drive + 2-4 hrs detention при load/unload = 9-11 hrs on-duty — комфортно укладывается в 14-hr HOS limit.<br/>
+      Drop-and-hook (2 trailers) экономит время, но при 1 r/t/день не критично — driver всё равно успевает домой к вечеру.<br/>
+<strong>Экономия: $22,000 cash или $4,400 down payment + $358/мес loan.</strong><br/>
+<strong>Бонус:</strong> требуй у Westrock detention pay $50-75/hr после 2 hrs free (стандарт industry).`,
+
+  "t008": `<strong>Когда это лучший выбор:</strong><br/>
+      • Минимизация risk на старте — половина volume даёт buffer на ошибки<br/>
+      • Westrock даёт меньше 50 r/t/мес по факту (например 25-35)<br/>
+      • Хочешь ВСЁ за cash без leverage и с минимальным капексом ($167k vs $189k у V1 original)<br/>
+      • Тестировать relationship с Westrock перед expansion<br/>
+<strong>Минус:</strong> упускаешь $230-260k revenue/year, который Westrock готов давать.`,
+
+  "t009": `<strong>🤔 Зачем 2 трака на одном lane?</strong> Износ. 1 трак на 50 r/t = 21,100 mi/мес = <strong>253,200 mi/year</strong>. Used трак стартует с 400k → 653k через год → 906k через 2 года → почти точно нужен engine overhaul ($18-25k) или замена ($80k) к 3-му году. Plus single-point-of-failure: 1 трак ломается = бизнес стоит = риск контракта. <strong>2 трака на 50 r/t = по 126k mi/year каждый</strong> = sustainable, парк живёт 5+ лет.`,
+
+  "t010": `<strong>2 трейлера — как работает:</strong> каждый трак везёт свой trailer туда-обратно. На SC происходит live load/unload (2 hrs detention) пока driver обедает. Driver возвращается с тем же trailer. <strong>HOS:</strong> 6 hrs drive + 2 hrs detention + 1 hr admin = 9 hrs on-duty — комфортно.<br/>
+<strong>Альтернатива с 3 trailers (drop-and-hook):</strong> 3-й trailer стоит на SC-складе постоянно загруженный. Driver сбрасывает свой, цепляет 3-й, едет назад. Detention 0 hrs. <strong>+$22k капекса, +$358/мес loan, но driver комфортнее, schedule более reliable.</strong> Решение зависит от Westrock — если live-load standard, 2 trailers OK.`,
+
+  "t011": `<strong>✅ Преимущества vs V1 original (1 трак, 50 r/t):</strong><br/>
+      • <strong>Каждый трак ездит 126k mi/year</strong> вместо 253k → лet's в 2 раза дольше до major repair<br/>
+      • <strong>Backup truck</strong>: если 1 ломается, второй везёт критичные грузы пока первый в shop = бизнес не останавливается<br/>
+      • <strong>Driver retention</strong> лучше — каждый driver работает только 1 r/t/day, более предсказуемо<br/>
+      • <strong>Resale value</strong> сохраняется — оба трака продашь через 5 лет с пробегом ~1M вместо 1 трака под списание<br/>
+      • <strong>Less driver fatigue</strong> — нет ночных смен (V1 original требует утренний + вечерний driver)<br/>
+      • <strong>5-year cumulative TCO advantage:</strong> в V1 original year 3 нужна замена трака ($80k) + больше breakdowns. V1-double избегает этого.`,
+
+  "t012": `<strong>⚠️ Минусы:</strong><br/>
+      • <strong>NET/year на $20-37k меньше</strong> ($468k vs $489k cash) — добавочные insurance, permits, depreciation на 2-й трак<br/>
+      • <strong>CAPEX +$98k (cash) или +$34k (financed)</strong> — но это "insurance" против поломок<br/>
+      • Сложность управления чуть выше (2 trucks vs 1)<br/>
+<strong>Math: NET difference $21k/year × 5 years = $105k, но риск engine overhaul $25-40k + replacement truck $80k = $105-120k spared в V1-double.</strong> По сути одинаково в 5-летней перспективе, но V1-double КРАТНО менее рискован.`,
+
+  "t013": `<strong>⚠️ Главный insight:</strong> V1 original выглядит на бумаге +$21k/year vs V1-double, но в реальности 5-летняя NET почти одинакова из-за:<br/>
+      • $80k стоимость замены трака к year 3 (253k mi/year × 3 = пробег уже 760k+ от покупки)<br/>
+      • $25-40k major repair (engine/transmission overhaul) почти гарантирован к year 2-3<br/>
+      • 4-8 weeks total downtime за 5 лет = -$25-50k lost revenue<br/>
+      • Риск потерять Westrock contract если ломаешься без backup<br/>
+<strong>= Реальная разница за 5 лет: $0-30k в пользу V1-double после всех костов breakdown</strong>`,
+
+  "t014": `<strong style="font-size:14px">⭐ Лучший выбор: V1-double (2 трака на SC)</strong><br/><br/>
+<strong>Почему V1-double &gt; V1 original:</strong><br/>
+      • Same revenue ($900k/year) НО sustainable износ — каждый трак 126k mi/year vs 253k<br/>
+      • Backup truck = mission-critical для новой LLC, building Westrock relationship<br/>
+      • 2 home-daily драйвера вместо 1 утренний + 1 вечерний (легче нанять, меньше турновер)<br/>
+      • 5-year NET почти одинаковый ($2.05M vs $2.07M реально)<br/>
+      • -$21k/year тривиальная цена за +1000% больше operational reliability<br/><br/>
+<strong>Почему V1-double &gt; V1-half:</strong><br/>
+      • +$236k/year revenue ($450k → $900k) при добавочных $98k капекса = ROI 240%/year<br/>
+      • V1-half оставляет деньги на столе который Westrock готов платить<br/>
+      • Driver/trailer/insurance overhead уже amortized — добавочный труд только marginal<br/><br/>
+<strong>CAPEX V1-double:</strong> $124k financed (через TopMark @ 4.9% APR с твоим credit 811) или $287k cash.<br/>
+<strong>Альтернатива — Hybrid PacLease + Financed:</strong> Truck #1 PacLease (~$5k security deposit), Truck #2 financed ($16k down). Total starting cash = ~$110k vs $124k. Меньше equipment risk на 1-м траке.`,
+
+  "t015": `<strong>Если капитал ограничен → V1-half как conservative старт:</strong><br/>
+      • $189k cash или $90k financed на старте<br/>
+      • $232k NET/year cash flow<br/>
+      • <strong>К месяцу 9-10 cash flow покроет апгрейд до V1-double</strong> ($232k × 9/12 = $174k минус $189k initial = -$15k, но к месяцу 12 будет $232k − $189k = +$43k свободных)<br/>
+      • Roadmap: V1-half (мес 1-9) → добавить 2-го driver и второй shift = V1 original (мес 9-12) → добавить 2-й трак = V1-double (мес 12-18)<br/>
+      • Минус: упускаешь $230-260k revenue в первый год пока scaling<br/>
+      • Плюс: меньше initial risk, learning curve проще`,
+
+  "t016": `<strong>❌ V1 original — НЕ рекомендую для старта:</strong><br/>
+      Сэкономишь $34-98k капекса vs V1-double, но получишь:<br/>
+      • 253k mi/year на один трак = engine overhaul или замена трака к year 2-3 ($25-80k unexpected cost)<br/>
+      • Single point of failure — трак ломается → Westrock контракт под угрозой<br/>
+      • Вечерний shift driver — высокая текучка (3-6 мес средний срок), constant rehiring overhead<br/>
+      • Реальный 5-yr NET после breakdown costs почти равен V1-double<br/>
+      • <strong>Pay $34-98k less upfront → lose ~$100k+ через breakdown events за 5 лет</strong>`,
+
+  "t017": `<strong>Реальная схема для 23 r/t/мес одним driver:</strong><br/>
+      • Один round trip ~30 hrs (с 10-hr rest)<br/>
+      • Driver делает <strong>5-6 round trips в неделю</strong> (6 рабочих дней)<br/>
+      • 23 r/t / 4.3 нед = 5.3 r/t/нед — реалистично, но driver работает 6 дней<br/>
+      • <strong>HOS check:</strong> 12 hrs driving × 5 trips/нед = 60 hrs/нед, под лимит 70 hrs/8 days, но close. 6-й день обычно half-trip или admin.<br/>
+      • Driver спит в sleeper 4-5 ночей в неделю — стандарт OTR работа, но утомительнее home-daily.<br/>
+      • <strong>Salary +$5-10k/year</strong> по сравнению с home-daily — компенсация за время вне дома.`,
+
+  "t018": `<strong>Главные инсайты:</strong><br/>
+      • <strong>V1 original</strong> ($900k revenue) использует ОДИН трак с двумя водителями (утренний + вечерний shift). Каждый driver делает 25 r/t — итого 50 r/t/мес на одном траке = 21,100 mi/мес. Высокий износ.<br/>
+      • <strong>V1-half</strong> ($450k revenue) — half-volume: один driver, один shift, 25 r/t = 10,550 mi/мес. Sustainable но упускает половину revenue.<br/>
+      • <strong>V1-double</strong> ($900k revenue) — те же 50 r/t, но 2 трака по 25 каждый. Same revenue как V1 original, но трак-life в 2× длиннее. Best long-term для SC-only.<br/>
+      • <strong>V2</strong> ($1,384k revenue) — добавляет VA lane на 2-м траке. Больше revenue, но VA менее marginal ($1.34/mi profit vs $1.93/mi на SC).`,
+
+  "t019": `<strong>🏆 Рекомендация:</strong><br/>
+<strong>Если хватает капитала ($329k cash или $148k financed) и есть управленческая bandwidth → V2.</strong> +$226k/year (46%) больше прибыли при relatively small additional CAPEX. ROI-on-incremental-capital = 161%/year ($226k extra NET / $140k extra cash CAPEX).<br/><br/>
+<strong>Если первый бизнес или ограничен капитал → V1 как старт.</strong> Через 6-9 мес после стабилизации SC — добавить VA как Truck #2. Это позволит:<br/>
+      • Использовать SC cash flow для финансирования VA-расширения<br/>
+      • Учиться на простом lane перед добавлением OTR complexity<br/>
+      • Снизить single-launch risk`,
+
+  "t020": `<strong>⚠️ V2 не решает R1 (single-customer risk).</strong> Оба трака зависят от Westrock. После 6-12 мес стабильной работы — диверсифицируй через DAT spot market на 20-30% revenue, чтобы не быть заложником одного клиента.`,
+
+  "t021": `<strong>✅ Анализ по lanes:</strong><br/>
+      • <strong>SC $3.55/mi</strong> — <span class="badge badge-best">TOP 5%</span> рынка. Уникальная ставка для 211-mi short regional. Westrock явно платит премию за reliability.<br/>
+      • <strong>VA $2.87/mi</strong> — <span class="badge badge-best">TOP 15%</span>. Выше Mid-Atlantic Avg на $0.10/mi. Хороший lane, не такой жирный как SC, но healthy margin.<br/>
+      • <strong>MD $2.74/mi</strong> — <span class="badge badge-ok">верхний квартиль</span>. Стандарт для regional 470-mi.<br/>
+      • <strong>NJ $1.65/mi</strong> — <span class="badge badge-avg">ниже среднего</span>. NJ-NC corridor обычно $2.00-2.60/mi. <strong>Эту ставку стоит обсудить с dispatch — может быть устаревшая.</strong><br/>
+      • <strong>TX $1.27/mi</strong> — <span class="badge badge-bad">ниже рынка</span>. Long-haul TX обычно $1.50-2.00/mi. Возможно old data или специфический shipper deal — не приоритетный lane.<br/><br/>
+<strong>Вывод:</strong> SC и VA — отличные lanes, рекомендуются для бизнеса. MD как добор. NJ и TX — пропустить или пересмотреть ставки.`,
+
+  "t022": `<strong>⚠️ Fuel volatility risk (нет FSC во всех lanes):</strong><br/>
+      База $3.80/gal. Sensitivity для Combined V2 (35,176 mi/мес):<br/>
+      • $4.50/gal: +$3,620/мес fuel cost → V2 NET падает с $59,593 до $55,973<br/>
+      • $5.50/gal: +$8,790/мес → V2 NET $50,803<br/>
+      • $6.00/gal (2022 peak): +$11,375/мес → V2 NET $48,218<br/>
+<strong>Mitigation:</strong> требуй FSC reopener clause во всех контрактах с EIA quarterly index.`,
+
+  "t027": `<strong>🛠️ Reserve Fund ($15k V1 / $25k V2) — "breakdown buffer"</strong><br/><br/>
+      Отдельный банковский счёт, неприкосновенный запас на экстренные ремонты.<br/><br/>
+<strong>Зачем нужен (used трак 350-450k mi):</strong><br/>
+      • Engine overhaul DD15/X15: <strong>$18-25k</strong><br/>
+      • Transmission rebuild: <strong>$8-15k</strong><br/>
+      • Turbo: <strong>$4-6k</strong><br/>
+      • EGR cooler + DEF: <strong>$3-8k</strong><br/>
+      • DPF system: <strong>$2.5-5k</strong><br/>
+      • Drive tires set (18 шт): <strong>$8-10k</strong> каждые 150k mi<br/><br/>
+<strong>Без reserve:</strong> 1 breakdown = трак стоит 2-4 нед в shop = ты не везёшь 8-15 r/t = -$12-22k revenue + всё ещё платишь driver/insurance/loan → дефолт → банк забирает трак → бизнес мёртв.<br/><br/>
+<strong>Правило:</strong> +$250-500/мес накопления (заложено в Reserve fund line). К концу года $18-30k. <strong>Никогда не используй на operating cash flow.</strong>`,
+
+  "t028": `<strong>💰 Working Capital ($40k V1 / $60k V2) — "AR bridge"</strong><br/><br/>
+      Оборотный капитал для покрытия расходов пока клиент платит с задержкой.<br/><br/>
+<strong>Зачем:</strong> Westrock платит <strong>net-10</strong> (через 10 дней после invoice) — отличные условия, минимальный кассовый разрыв. Расходы ежедневные:<br/>
+      • Дизель ~$2,800/нед (V1) или ~$4,800/нед (V2)<br/>
+      • Drivers salary $4-7k каждые 2 нед<br/>
+      • Insurance $1,400-2,800/мес<br/>
+      • Loans $1.2-1.8k/мес (если financed)<br/><br/>
+<strong>Cash flow timeline (net-10):</strong><br/>
+      • Неделя 1-2: работаешь, invoices выставлены. Расходы: $7-12k.<br/>
+      • Неделя 2-3: первые поступления приходят (10 дней после invoice).<br/>
+      • Нужен буфер ~2-3 нед расходов = $15-25k (значительно меньше чем net-30).<br/><br/>
+<strong>Альтернатива — factoring:</strong> OTR Capital / RTS платят сразу за 2-3% fee. На $75k/мес = $1.5-2.25k/мес. При net-10 factoring почти не нужен — только для первого месяца.`,
+
+  "t029": `<li><strong>CDL Class A</strong> — обязательно для всех</li>
+<li><strong>Medical card</strong> (DOT physical) — current</li>
+<li><strong>MVR clean 3+ years</strong> — без accidents/violations</li>
+<li><strong>2+ years OTR experience</strong> для VA driver, 1+ year для SC drivers</li>
+<li><strong>Pre-employment drug test</strong> через DOT consortium (Foley/USAMD)</li>
+<li><strong>Background check + employment verification</strong></li>
+<li><strong>FMCSA Drug &amp; Alcohol Clearinghouse query</strong> (mandatory с 2024)</li>`,
+
+  "t030": `Benefits package = ~$8-10k/driver/year, уже incorporated в "12% burden". Помогает достичь &lt;20% turnover (industry avg 90%+).`,
+
+  "t031": `<strong style="font-size:14px">⭐ ОПТИМАЛЬНЫЙ ПЛАН для Serge (Charlotte NC, credit 811, без CDL, 50/50 partner):</strong><br/><br/>
+<strong>Месяц 0-2 (setup):</strong><br/>
+      1. Wyoming holding LLC + nominee manager (~$550 setup) через wyomingllcattorney.com<br/>
+      2. NC operating LLC, owned by Wyoming LLC ($375 setup)<br/>
+      3. EIN, NC business bank, USDOT + MC application<br/>
+      4. <strong>Звонок в TLG Peterbilt Charlotte (704) 597-8600</strong> — quote на PacLease Full-Service, 1 truck, 20k mi/мес<br/>
+      5. Параллельно: TopMark Funding pre-approval как backup и для будущего 2-го трака<br/>
+      6. Insurance quotes (Progressive Commercial, Great West, Sentry)<br/>
+      7. Confirm с Westrock: trailer ownership, FSC clause, contract terms<br/><br/>
+<strong>Месяц 2-3 (launch с 1 траком PacLease):</strong><br/>
+      • 1× PacLease truck @ ~$7,500/мес all-in (включая ТО, ремонты, replacement при поломке)<br/>
+      • 2× Dry van trailers $44k cash (или 0 если Westrock supplies)<br/>
+      • 2× CDL-A drivers @ $8,000/мес salary (один утро, один вечер shift)<br/>
+      • Total starting capital: <strong>~$95-100k</strong> (vs $189k cash purchase, vs $124k financed)<br/>
+      • Revenue $75k/мес, NET <strong>$36,208/мес = $434,496/year</strong><br/><br/>
+<strong>Месяц 12-18 (expansion, если Westrock relationship стабильна):</strong><br/>
+      • Add Truck #2 — financed через TopMark @ 4.9% (твой 811 credit) на ~$1,200/мес payment<br/>
+      • Two options для Truck #2:<br/>
+         <strong>(a) V1-double:</strong> оба трака на SC, по 25 r/t каждый = sustainable износ. NET ~$50k/мес<br/>
+         <strong>(b) V2:</strong> 2-й трак на VA (Chesapeake) lane @ $1,755 r/t. NET ~$55k/мес<br/>
+      • Решение зависит от: Westrock confirms VA volume стабилен? Driver pool в NC для OTR?<br/><br/>
+<strong>Месяц 24-36:</strong> 3-й трак (если оба lanes стабильны) или PacLease renewal<br/><br/>
+<strong>Почему PacLease для первого трака — критическое решение:</strong><br/>
+      ✅ Новая LLC одобряется PacLease (Penske/Ryder требуют 1+ year revenue history)<br/>
+      ✅ 20k mi/мес уничтожит used cash-truck за 2 года ($25-40k engine repair almost certain)<br/>
+      ✅ Нанятые водители меньше следят за траком — risk возрастает<br/>
+      ✅ Replacement truck при поломке = zero downtime = Westrock contract сохраняется<br/>
+      ✅ Capex $95k vs $189k cash — освобождает $94k для reserve fund + 2-го трака позже<br/>
+      ⚠️ Trade-off: -$1-3k/мес NET vs financed/cash. Но это insurance premium against catastrophic events.`,
+
+  "t032": `<strong>Если есть капитал $329k cash или способ финансировать $148k → V2 (2 трака SC+VA).</strong><br/><br/>
+      Покупай:<br/>
+      • <strong>2× Freightliner Cascadia 2021-2022 DD15 Gen5 Sleeper, 350-400k mi, ~$80k each</strong><br/>
+      • <strong>3× Dry Van 53' trailers 2020-22, ~$22k each</strong> (или 0 если Westrock даёт shipper-supplied pool)<br/><br/>
+      Нанимай:<br/>
+      • <strong>Driver #1 + #2 SC home-daily @ $85k salary</strong> каждый<br/>
+      • <strong>Driver #3 VA OTR @ $90k salary + per-diem</strong><br/><br/>
+      Финансовые результаты V2 (Cash):<br/>
+      • Revenue/year: <strong>$1,384,380</strong><br/>
+      • NET/year: <strong>$715,116</strong> (52% margin)<br/>
+      • Year 1 NET (после $226k CAPEX equipment): <strong>$472,831</strong><br/>
+      • Break-even CAPEX: <strong>5.5 месяцев</strong><br/>
+      • Profit per mile: $1.93 SC + $1.34 VA (топ 5-15% рынка)<br/><br/>
+      Если меньше capital или first-time business → <strong>стартуй с V1 (только SC)</strong>: $489k/year NET, $189k cash CAPEX, break-even 4.6 мес. Через 6-9 мес добавишь VA как Truck #2.`,
+
+  "t033": `<strong>📋 Critical confirmations с Westrock перед покупкой trucks:</strong><br/>
+      1. <strong>Trailers — shipper-supplied или carrier?</strong> Разница $44k-66k капекса.<br/>
+      2. <strong>Письменный контракт с volume commitment</strong> на 12 мес минимум для каждого lane.<br/>
+      3. <strong>FSC reopener clause</strong> с квартальным reset по EIA weekly diesel.<br/>
+      4. <strong>Detention pay</strong> после 2 hrs free ($50-75/hr standard).<br/>
+      5. <strong>Net pay terms:</strong> net-30, net-45, или quick-pay с discount?<br/>
+      6. <strong>Cargo damage liability</strong> — driver/carrier или Westrock insurance?<br/>
+      7. <strong>VA рейс reality check</strong> — действительно $1,755 r/t? И что 23 r/t/мес устойчивый volume?<br/>
+      8. <strong>NJ/MD/TX rates</strong> — реальны или старые? Возможно скрытая capacity для V3-expansion после года.<br/>
+      9. <strong>Backhaul opportunities</strong> — есть ли загрузки NC→SC/VA для дополнительной выручки?`,
+
+  "t034": `<strong>📞 Action items today:</strong><br/>
+      1. Назначить встречу с Westrock dispatcher для clarifications выше<br/>
+      2. Получить sample contract для review с lawyer ($300-500 за legal review)<br/>
+      3. Pre-qualify financing options (Daimler Truck Financial, PACCAR Financial, или local bank) если рассматриваешь financed<br/>
+      4. Shortlist 5-7 used trucks Cascadia 2021-22 на TruckPaper.com / CommercialTruckTrader.com<br/>
+      5. Получить 3+ insurance quotes (Progressive Commercial, Great West, Sentry)<br/>
+      6. NC LLC formation start (онлайн NC SoS, $125, 5-7 days)`,
+
+  "t455": `<strong>⏱️ Critical path:</strong> MC Number блокирует операции на 21 день. После LLC (W1) → MC application (W1-2) → 21-day wait → MC active (W4-5). Всё остальное можно параллельно делать в эти 3 нед.<br/>
+<strong>Total timeline до первого рейса:</strong> ~6-8 недель (если truck purchased и driver hired в параллель).`,
+
+  "t495": `<strong>📋 Альтернативные варианты (если предпочтения другие):</strong>`,
+
+  // ── Roadmap W1-2 and W2-4 large cells ────────────────────────────────────
+  "road_w12_cell": `<strong>📋 Регистрация компании:</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• <strong>LLC NC</strong> — sosnc.gov → онлайн, 15 мин. Срок: 5-7 дней. <em>Стоимость: $125</em><br/>
+• <strong>EIN</strong> (налоговый номер) — irs.gov сразу после LLC. Бесплатно, мгновенно онлайн. <em>$0</em><br/>
+• <strong>Business bank account</strong> — Bank of America / Chase Business. Нужен: EIN + LLC docs. <em>$0</em><br/>
+• <strong>USDOT Number</strong> — fmcsa.dot.gov/registration. Нужен EIN. Срок: 1-2 дня. <em>$300</em><br/>
+• <strong>MC Number</strong> (Motor Carrier authority) — там же на FMCSA. ⚠️ После подачи — <strong>обязательный 21-день waiting period</strong>, только после него MC становится активным. <em>$300</em>
+</span>
+<strong>📞 Подтвердить с Westrock до старта:</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• <strong>Trailer ownership</strong> — Westrock даёт свои трейлеры (drop-and-hook) или нужен свой? Критично для CAPEX<br/>
+• <strong>FSC clause</strong> (Fuel Surcharge) — есть ли надбавка за топливо поверх $1,600/r/t при росте цены дизеля? Стандарт: если дизель выше базы $3.50 → платят +$0.05-0.10/mi. <strong>Обязательно фиксируй в контракте</strong><br/>
+• <strong>Detention pay</strong> — оплата простоя на загрузке/разгрузке после 2 free hours. Стандарт: $50-75/hr. Требуй включить в контракт<br/>
+• <strong>Payment terms</strong> — net-7 или net-30? net-7 лучше для cash flow. Уточни нужен ли factoring<br/>
+• <strong>Volume guarantee</strong> — сколько r/t гарантировано в месяц? Минимум по контракту?
+</span>
+<strong>🚛 Shortlist траков и трейлеров:</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• Сайты: TruckPaper.com, CommercialTruckTrader.com, SelecTrucks Charlotte<br/>
+• Параметры трака: Freightliner Cascadia 2019-2021, пробег 200-350k mi, двигатель DD15, КПП DT12 (автомат). Бюджет: <strong>$60k</strong><br/>
+• Параметры трейлера: Utility / Great Dane 53' dry van 2018-2020, INTRAAX подвеска. Бюджет: <strong>$20k</strong><br/>
+• Запрашивай VIN для проверки истории на FMCSA Safety (safer.fmcsa.dot.gov) и CarFax
+</span>`,
+
+  "road_w24_cell": `<strong>🛡️ Insurance quotes (минимум 3 брокера):</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• Звони: Progressive Commercial, Great West Casualty, Sentry Insurance, Owner Operator Direct<br/>
+• Что нужно брокеру: USDOT номер + VIN трака + маршрут NC↔SC + cargo type (dry van, coffee/tea — no hazmat)<br/>
+• Минимальные покрытия по FMCSA: Primary Liability <strong>$750k</strong> (interstate) + Cargo <strong>$100k</strong> + Physical Damage + Uninsured Motorist<br/>
+• Стоимость для новой LLC (нет истории): <strong>$10,000-16,000/год/трак</strong>. Платишь сразу за год или ежемесячно (+15% за рассрочку)
+</span>
+<strong>📄 Permits и регистрации (параллельно с MC waiting period):</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• <strong>BOC-3</strong> (Blanket of Coverage) — назначение Process Agent во всех штатах. Сервис: BOC3Filing.com или FMCSA Register. Нужен сразу после MC filing. <em>$50</em><br/>
+• <strong>UCR</strong> (Unified Carrier Registration) — ежегодная регистрация перевозчика. Сайт: ucr.gov. V1 (1 трак): <em>$76/год</em>. V2 (2 трака): <em>$152/год</em><br/>
+• <strong>IFTA</strong> (International Fuel Tax Agreement) — нужен т.к. едешь через NC и SC (2 штата). Подаёшь в NC DOR (dornc.com). Получаешь IFTA decals для трака. <em>$10</em> + quarterly filing<br/>
+• <strong>HVUT Form 2290</strong> (Heavy Vehicle Use Tax) — федеральный налог на траки свыше 55,000 lbs. Подаёшь на IRS.gov. <em>$550/год/трак</em>. Нужен VIN трака<br/>
+• <strong>Drug &amp; Alcohol Consortium</strong> — регистрация водителей в DOT-certified consortium (Foley Services, USAMD). Pre-employment drug test обязателен по FMCSA. <em>$150/год/водитель</em> + $50-75 за первый тест
+</span>
+<strong>🔬 Pre-purchase inspection трака:</strong><br/>
+<span style="font-size:12px;line-height:1.8;display:block;margin:4px 0">
+• Выбираешь 1-2 финалиста → нанимаешь независимого mechanic (НЕ дилерского — конфликт интересов)<br/>
+• Что проверяют: DD15 compression test, КПП DT12, тормоза, рама, EGR/DPF система, электрика<br/>
+• <em>$150-300/трак</em>. Обязательно — защищает от покупки "лимона" за $60k<br/>
+• После инспекции → negotiate price (найденные дефекты = скидка $1-5k)
+</span>`
 };

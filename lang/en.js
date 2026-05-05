@@ -1472,5 +1472,19 @@ const LANG_EN = {
 • What they check: DD15 compression test, DT12 transmission, brakes, frame, EGR/DPF system, electrical<br/>
 • <em>$150-300/truck</em>. Required — protects against buying a lemon for $60k<br/>
 • After inspection → negotiate price (defects found = $1-5k discount)
-</span>`
+</span>`,
+
+  "trailer_src_th_phone": `Phone`,
+  "vnl_cas_weight": `~15,800 lbs (lightest)`,
+  "vnl_cas_service": `4,000+ locations, any mechanic`,
+  "vnl_volvo_dealers": `~300 Volvo dealers`,
+  "fin_net_mo_label": `NET/mo`,
+  "tfin_a_trailer_row": `$22k @ 10% / 60 mo → ~$467/mo`,
+  "tfin_b_truck_row": `$78k: down $20k → financed $58k @ <strong>9–13%</strong> / 60 mo <span style="color:#888;font-size:11px">(new LLC no history; Year 2 → 4.9–6.9%)</span>`,
+  "tfin_c_truck_row": `$78k: down $16k → financed $62k @ 9–11% / 60 mo`,
+  "tfin_e_truck_row": `$78k: down $20k → financed $58k @ 9–11% / 60 mo → ~$1,250/mo`,
+  "tfin_e_trailer_row": `$22k: down $5k → financed $17k @ 10% / 60 mo → ~$362/mo`,
+  "w2_cost_w2": `+$1,350/mo`,
+  "w2_cost_1099": `$0 extra`,
+  "notes_placeholder": `Add notes here...`
 };

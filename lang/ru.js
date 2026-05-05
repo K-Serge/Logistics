@@ -1472,5 +1472,19 @@ const LANG_RU = {
 • Что проверяют: DD15 compression test, КПП DT12, тормоза, рама, EGR/DPF система, электрика<br/>
 • <em>$150-300/трак</em>. Обязательно — защищает от покупки "лимона" за $60k<br/>
 • После инспекции → negotiate price (найденные дефекты = скидка $1-5k)
-</span>`
+</span>`,
+
+  "trailer_src_th_phone": `Телефон`,
+  "vnl_cas_weight": `~15,800 lbs (самый лёгкий)`,
+  "vnl_cas_service": `4,000+ точек, любой механик`,
+  "vnl_volvo_dealers": `~300 дилеров Volvo`,
+  "fin_net_mo_label": `NET/мес`,
+  "tfin_a_trailer_row": `$22k @ 10% / 60 мес → ~$467/мес`,
+  "tfin_b_truck_row": `$78k: down $20k → financed $58k @ <strong>9–13%</strong> / 60 мес <span style="color:#888;font-size:11px">(новая LLC без истории; Year 2 → 4.9–6.9%)</span>`,
+  "tfin_c_truck_row": `$78k: down $16k → financed $62k @ 9–11% / 60 мес`,
+  "tfin_e_truck_row": `$78k: down $20k → financed $58k @ 9–11% / 60 мес → ~$1,250/мес`,
+  "tfin_e_trailer_row": `$22k: down $5k → financed $17k @ 10% / 60 мес → ~$362/мес`,
+  "w2_cost_w2": `+$1,350/мес`,
+  "w2_cost_1099": `$0 сверху`,
+  "notes_placeholder": `Добавь заметки здесь...`
 };

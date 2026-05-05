@@ -211,7 +211,7 @@
 <nav class="top-nav">
 <span class="nav-brand">🚚 Logistic</span>
 <div class="nav-item">
-<button class="nav-btn" data-page="strategy">Стратегии ▾</button>
+<button class="nav-btn" data-page="strategy" data-i18n="nav_strategy">Стратегии ▾</button>
 <div class="nav-dropdown">
 <a data-i18n="nav_drop_v1sc" data-page="strategy" href="#v1-sc">🅰️ Вариант 1 — SC (1 трак, 50 r/t)</a>
 <a data-i18n="nav_drop_v1half" data-page="strategy" href="#v1-half">🅰️½ Вариант 1-half (25 r/t)</a>
@@ -227,8 +227,8 @@
 <div class="nav-dropdown">
 <a data-i18n="nav_drop_roadmap" data-page="start" href="#launch-roadmap">🎯 Roadmap запуска 0–12 мес</a>
 <a data-i18n="nav_drop_finalrec" data-page="start" href="#final-rec">🏁 Финальная рекомендация</a>
-<a data-page="start" href="#expenses">💸 Полная сводка расходов</a>
-<a data-page="start" href="#risks">⚠️ Риски и mitigation</a>
+<a data-page="start" href="#expenses" data-i18n="nav_drop_expenses_link">💸 Полная сводка расходов</a>
+<a data-page="start" href="#risks" data-i18n="nav_drop_risks_link">⚠️ Риски и mitigation</a>
 </div>
 </div>
 <div class="nav-item">
@@ -240,30 +240,30 @@
 </div>
 <div class="nav-sep"></div>
 <div class="nav-item">
-<button class="nav-btn" data-page="truck">Траки ▾</button>
+<button class="nav-btn" data-page="truck" data-i18n="nav_trucks">Траки ▾</button>
 <div class="nav-dropdown">
 <a data-i18n="nav_drop_truckmech" data-page="truck" href="#truck-mechanic">🔧 Cascadia vs Volvo — выбор</a>
 <a data-i18n="nav_drop_truckstrat" data-page="truck" href="#truck-strategy">📊 Стратегия 300k → 700k</a>
 </div>
 </div>
 <div class="nav-item">
-<button class="nav-btn" data-page="trailer">Трейлер ▾</button>
+<button class="nav-btn" data-page="trailer" data-i18n="nav_trailer">Трейлер ▾</button>
 <div class="nav-dropdown">
-<a data-page="trailer" href="#trailer-choice">🚛 Utility 53' — выбор + стратегия</a>
-<a data-page="trailer" href="#trailer-listings">📋 Листинги трейлеров</a>
-<a data-page="trailer" href="#trailer-sources">🔍 Где искать</a>
+<a data-page="trailer" href="#trailer-choice" data-i18n="nav_drop_trailer_choice">🚛 Utility 53' — выбор + стратегия</a>
+<a data-page="trailer" href="#trailer-listings" data-i18n="nav_drop_trailer_list">📋 Листинги трейлеров</a>
+<a data-page="trailer" href="#trailer-sources" data-i18n="nav_drop_trailer_src">🔍 Где искать</a>
 </div>
 </div>
 <div class="nav-item">
-<button class="nav-btn" data-page="purchase">Покупка ▾</button>
+<button class="nav-btn" data-page="purchase" data-i18n="nav_purchase">Покупка ▾</button>
 <div class="nav-dropdown">
-<a data-page="purchase" href="#truck-financing">💰 Финансирование трака</a>
+<a data-page="purchase" href="#truck-financing" data-i18n="nav_drop_purchase_fin">💰 Финансирование трака</a>
 </div>
 </div>
 <div class="nav-item">
-<button class="nav-btn" data-page="drivers">Водители ▾</button>
+<button class="nav-btn" data-page="drivers" data-i18n="nav_drivers">Водители ▾</button>
 <div class="nav-dropdown">
-<a data-page="drivers" href="#driver-hiring">👷 Найм водителей</a>
+<a data-page="drivers" href="#driver-hiring" data-i18n="nav_drop_drivers_hire">👷 Найм водителей</a>
 <a data-page="drivers" href="#reserve-fund">📚 Reserve Fund</a>
 </div>
 </div>
@@ -272,14 +272,14 @@
 <button class="nav-btn" data-page="notes">📝 Заметки</button>
 </div>
 <div class="nav-item">
-<button class="nav-btn" data-page="documents">Документы ▾</button>
+<button class="nav-btn" data-page="documents" data-i18n="nav_documents">Документы ▾</button>
 <div class="nav-dropdown">
 <a data-i18n="nav_drop_corp" data-page="documents" href="#corp-structure">🏢 Корпоративная структура</a>
 <a data-i18n="nav_drop_docs" data-page="documents" href="#documents">📋 Документы и оформление</a>
 </div>
 </div>
 <div class="nav-item">
-<button class="nav-btn" data-page="updates">Обновления<span id="updates-bell" style="display:none">🔔</span></button>
+<button class="nav-btn" data-page="updates"><span data-i18n="nav_updates">Обновления</span><span id="updates-bell" style="display:none">🔔</span></button>
 </div>
 <div class="nav-spacer"></div>
 <a class="lang-btn" href="https://drive.google.com/drive/u/0/folders/1_otBqtXwwGJXaCxtExM53M-UTN1NXTLF" style="margin-right:6px" target="_blank" title="Google Drive">📁 Drive</a>
@@ -433,7 +433,7 @@
 <tr><td>Miles/year</td><td data-i18n="t128">126,600 mi (sustainable износ)</td></tr>
 <tr><td data-i18n="t129">Revenue/мес</td><td class="s-green"><strong>25 × $1,600 = $40,000</strong></td></tr>
 <tr><td>Revenue/year</td><td class="s-green"><strong>$480,000</strong></td></tr>
-<tr><td>Дизель</td><td>$5.50/gal · 6.5 mpg · 10,550 mi → 1,623 gal</td></tr>
+<tr><td data-i18n="v1h_diesel_label">Дизель</td><td data-i18n="v1h_diesel_val">$5.50/gal · 6.5 mpg · 10,550 mi → 1,623 gal</td></tr>
 <tr><td data-i18n="t130">Команда</td><td>1 W2 driver (home-daily) + <strong>1 trailer</strong> + 1 truck</td></tr>
 </tbody>
 </table>
@@ -445,47 +445,47 @@
 <strong>Экономия: $22,000 cash или $4,400 down payment + $358/мес loan.</strong><br/>
 <strong>Бонус:</strong> требуй у Westrock detention pay $50-75/hr после 2 hrs free (стандарт industry).
     </div>
-<h3 style="margin-top:16px">P&amp;L — Cash (трак + трейлер куплены за кеш)</h3>
+<h3 style="margin-top:16px" data-i18n="v1h_pl_title">P&amp;L — Cash (трак + трейлер куплены за кеш)</h3>
 <table>
-<thead><tr><th>Статья</th><th>/мес</th></tr></thead>
+<thead><tr><th data-i18n="v1h_pl_col_item">Статья</th><th data-i18n="v1h_pl_col_mo">/мес</th></tr></thead>
 <tbody>
 <tr><td class="s-green"><strong>💰 Revenue (25 × $1,600)</strong></td><td class="s-green"><strong>+$40,000</strong></td></tr>
-<tr><td>⛽ Топливо ($5.50/gal)<br/><span style="font-size:11px;color:#6b7280">10,550 mi ÷ 6.5 mpg = 1,623 gal × $5.50/gal</span></td><td class="s-red">-$8,927</td></tr>
-<tr><td>👷 Driver W2 зарплата<br/><span style="font-size:11px;color:#6b7280">$85,000/год ÷ 12 мес</span></td><td class="s-red">-$7,083</td></tr>
-<tr><td>📋 Payroll burden 12%<br/><span style="font-size:11px;color:#6b7280">$7,083 × 12% — налоги работодателя: Social Security 6.2% + Medicare 1.45% + FUTA/SUTA ~4.3%</span></td><td class="s-red">-$850</td></tr>
-<tr><td>🏥 Health insurance<br/><span style="font-size:11px;color:#6b7280">Медстраховка для W2 сотрудника — стандарт для привлечения CDL водителя</span></td><td class="s-red">-$500</td></tr>
-<tr><td>🛡️ Страховка (трак + трейлер)<br/><span style="font-size:11px;color:#6b7280">Коммерческая авто ~$10,800/год + трейлер ~$1,800/год = $12,600/год ÷ 12</span></td><td class="s-red">-$1,150</td></tr>
-<tr><td>🔧 Обслуживание + шины<br/><span style="font-size:11px;color:#6b7280">10,550 mi × $0.21/mi (инд. стандарт $0.15–0.25): шины $950 + ТО/масло $400 + тормоза/фильтры $400 + резерв $450</span></td><td class="s-red">-$2,200</td></tr>
-<tr><td>📄 IFTA + permits<br/><span style="font-size:11px;color:#6b7280">IFTA fuel tax (квартальный) + UCR $76/год + IRP ~$150/год + BOC-3 $40/год</span></td><td class="s-red">-$300</td></tr>
-<tr><td>📡 ELD + misc<br/><span style="font-size:11px;color:#6b7280">ELD подписка $50 + accounting/payroll $100 + телефон/связь $50 + прочее $50</span></td><td class="s-red">-$250</td></tr>
+<tr><td data-i18n="v1h_fuel">⛽ Топливо ($5.50/gal)<br/><span style="font-size:11px;color:#6b7280">10,550 mi ÷ 6.5 mpg = 1,623 gal × $5.50/gal</span></td><td class="s-red">-$8,927</td></tr>
+<tr><td data-i18n="v1h_driver_salary">👷 Driver W2 зарплата<br/><span style="font-size:11px;color:#6b7280">$85,000/год ÷ 12 мес</span></td><td class="s-red">-$7,083</td></tr>
+<tr><td data-i18n="v1h_burden">📋 Payroll burden 12%<br/><span style="font-size:11px;color:#6b7280">$7,083 × 12% — налоги работодателя: Social Security 6.2% + Medicare 1.45% + FUTA/SUTA ~4.3%</span></td><td class="s-red">-$850</td></tr>
+<tr><td data-i18n="v1h_health">🏥 Health insurance<br/><span style="font-size:11px;color:#6b7280">Медстраховка для W2 сотрудника — стандарт для привлечения CDL водителя</span></td><td class="s-red">-$500</td></tr>
+<tr><td data-i18n="v1h_insurance">🛡️ Страховка (трак + трейлер)<br/><span style="font-size:11px;color:#6b7280">Коммерческая авто ~$10,800/год + трейлер ~$1,800/год = $12,600/год ÷ 12</span></td><td class="s-red">-$1,150</td></tr>
+<tr><td data-i18n="v1h_maint">🔧 Обслуживание + шины<br/><span style="font-size:11px;color:#6b7280">10,550 mi × $0.21/mi (инд. стандарт $0.15–0.25): шины $950 + ТО/масло $400 + тормоза/фильтры $400 + резерв $450</span></td><td class="s-red">-$2,200</td></tr>
+<tr><td data-i18n="v1h_ifta">📄 IFTA + permits<br/><span style="font-size:11px;color:#6b7280">IFTA fuel tax (квартальный) + UCR $76/год + IRP ~$150/год + BOC-3 $40/год</span></td><td class="s-red">-$300</td></tr>
+<tr><td data-i18n="v1h_eld">📡 ELD + misc<br/><span style="font-size:11px;color:#6b7280">ELD подписка $50 + accounting/payroll $100 + телефон/связь $50 + прочее $50</span></td><td class="s-red">-$250</td></tr>
 <tr style="background:#fecaca"><td><strong>Total costs</strong></td><td class="s-red"><strong>-$21,260</strong></td></tr>
-<tr style="background:#dcfce7"><td><strong data-i18n="t134">NET/мес</strong> <span style="font-weight:normal;font-size:11px;color:#15803d">(чистая прибыль после всех расходов)</span></td><td class="s-green"><strong>+$18,740</strong></td></tr>
-<tr style="background:#dcfce7"><td><strong>NET/year</strong> <span style="font-weight:normal;font-size:11px;color:#15803d">(NET/мес × 12)</span></td><td class="s-green"><strong>+$224,880</strong></td></tr>
+<tr style="background:#dcfce7"><td><strong data-i18n="t134">NET/мес</strong> <span style="font-weight:normal;font-size:11px;color:#15803d" data-i18n="v1h_net_mo_desc">(чистая прибыль после всех расходов)</span></td><td class="s-green"><strong>+$18,740</strong></td></tr>
+<tr style="background:#dcfce7"><td><strong data-i18n="v1h_net_yr_label">NET/year</strong> <span style="font-weight:normal;font-size:11px;color:#15803d" data-i18n="v1h_net_yr_desc">(NET/мес × 12)</span></td><td class="s-green"><strong>+$224,880</strong></td></tr>
 <tr><td><strong>Revenue per mile</strong></td><td class="s-green"><strong>$3.79/mi</strong></td></tr>
 <tr><td>Profit per mile</td><td>$1.78/mi</td></tr>
 <tr><td>Profit margin</td><td>46.9%</td></tr>
 </tbody>
 </table>
-<div class="callout callout-info" style="margin-top:8px;font-size:12px">
+<div class="callout callout-info" style="margin-top:8px;font-size:12px" data-i18n="v1h_maint_callout">
   💡 <strong>Обслуживание $2,200/мес = резервный фонд:</strong> откладывать на отдельный счёт каждый месяц.<br/>
   Индустриальный стандарт: <strong>$0.15–0.25/миля</strong> на б/у траке. 10,550 mi × $0.21 = <strong>$2,216 ✓</strong><br/>
   Состав: шины (18 шт × $500 каждые ~100k mi) ≈ $950 + ТО/масло ≈ $400 + тормоза/фильтры ≈ $400 + резерв на крупный ремонт ≈ $450.<br/>
   <strong>Рекомендация:</strong> стартовать с $5–10k на счёте до первого рейса (если трак сломается в первый месяц — резерва ещё нет).
 </div>
-<h3 data-i18n="t135" style="margin-top:16px">CAPEX <span style="font-weight:normal;font-size:13px;color:#0369a1">(стартовые вложения — платишь один раз до первого рейса)</span> — V1-half</h3>
+<h3 data-i18n="t135" style="margin-top:16px">CAPEX <span style="font-weight:normal;font-size:13px;color:#0369a1"><span data-i18n="v1h_capex_desc">(стартовые вложения — платишь один раз до первого рейса)</span></span> — V1-half</h3>
 <table>
 <thead><tr><th data-i18n="t136">Статья</th><th>Financed</th><th>Cash</th></tr></thead>
 <tbody>
 <tr><td>Truck + 1 trailer ($60k + $22k = $82k)</td><td>$16,400</td><td>$82,000</td></tr>
-<tr><td style="padding-left:16px;font-size:12px;color:#6b7280">↳ LLC NC + EIN</td><td style="font-size:12px;color:#6b7280">$125</td><td style="font-size:12px;color:#6b7280">$125</td></tr>
-<tr><td style="padding-left:16px;font-size:12px;color:#6b7280">↳ USDOT + MC authority</td><td style="font-size:12px;color:#6b7280">$600</td><td style="font-size:12px;color:#6b7280">$600</td></tr>
-<tr><td style="padding-left:16px;font-size:12px;color:#6b7280">↳ BOC-3 + UCR + Drug consortium</td><td style="font-size:12px;color:#6b7280">$276</td><td style="font-size:12px;color:#6b7280">$276</td></tr>
-<tr><td style="padding-left:16px;font-size:12px;color:#6b7280">↳ Insurance (1 truck, year 1)</td><td style="font-size:12px;color:#6b7280">$7,500</td><td style="font-size:12px;color:#6b7280">$7,500</td></tr>
-<tr><td style="padding-left:16px;font-size:12px;color:#6b7280">↳ IRP plates + HVUT + IFTA</td><td style="font-size:12px;color:#6b7280">$2,360</td><td style="font-size:12px;color:#6b7280">$2,360</td></tr>
-<tr><td style="padding-left:16px;font-size:12px;color:#6b7280">↳ ELD + dashcam (setup)</td><td style="font-size:12px;color:#6b7280">$200</td><td style="font-size:12px;color:#6b7280">$200</td></tr>
-<tr><td style="padding-left:16px;font-size:12px;color:#6b7280">↳ Pre-purchase inspection</td><td style="font-size:12px;color:#6b7280">$300</td><td style="font-size:12px;color:#6b7280">$300</td></tr>
-<tr><td style="padding-left:16px;font-size:12px;color:#6b7280">↳ Driver onboarding (drug test + MVR)</td><td style="font-size:12px;color:#6b7280">$300</td><td style="font-size:12px;color:#6b7280">$300</td></tr>
-<tr style="border-top:1px solid #bae6fd"><td><strong>Итого permits + insurance + setup</strong></td><td><strong>$11,661</strong></td><td><strong>$11,661</strong></td></tr>
+<tr><td style="padding-left:16px;font-size:12px;color:#6b7280"><span data-i18n="v1h_capex_llc">↳ LLC NC + EIN</span></td><td style="font-size:12px;color:#6b7280">$125</td><td style="font-size:12px;color:#6b7280">$125</td></tr>
+<tr><td style="padding-left:16px;font-size:12px;color:#6b7280"><span data-i18n="v1h_capex_mc">↳ USDOT + MC authority</span></td><td style="font-size:12px;color:#6b7280">$600</td><td style="font-size:12px;color:#6b7280">$600</td></tr>
+<tr><td style="padding-left:16px;font-size:12px;color:#6b7280"><span data-i18n="v1h_capex_boc">↳ BOC-3 + UCR + Drug consortium</span></td><td style="font-size:12px;color:#6b7280">$276</td><td style="font-size:12px;color:#6b7280">$276</td></tr>
+<tr><td style="padding-left:16px;font-size:12px;color:#6b7280"><span data-i18n="v1h_capex_ins">↳ Insurance (1 truck, year 1)</span></td><td style="font-size:12px;color:#6b7280">$7,500</td><td style="font-size:12px;color:#6b7280">$7,500</td></tr>
+<tr><td style="padding-left:16px;font-size:12px;color:#6b7280"><span data-i18n="v1h_capex_irp">↳ IRP plates + HVUT + IFTA</span></td><td style="font-size:12px;color:#6b7280">$2,360</td><td style="font-size:12px;color:#6b7280">$2,360</td></tr>
+<tr><td style="padding-left:16px;font-size:12px;color:#6b7280"><span data-i18n="v1h_capex_eld">↳ ELD + dashcam (setup)</span></td><td style="font-size:12px;color:#6b7280">$200</td><td style="font-size:12px;color:#6b7280">$200</td></tr>
+<tr><td style="padding-left:16px;font-size:12px;color:#6b7280"><span data-i18n="v1h_capex_insp">↳ Pre-purchase inspection</span></td><td style="font-size:12px;color:#6b7280">$300</td><td style="font-size:12px;color:#6b7280">$300</td></tr>
+<tr><td style="padding-left:16px;font-size:12px;color:#6b7280"><span data-i18n="v1h_capex_driver">↳ Driver onboarding (drug test + MVR)</span></td><td style="font-size:12px;color:#6b7280">$300</td><td style="font-size:12px;color:#6b7280">$300</td></tr>
+<tr style="border-top:1px solid #bae6fd"><td><strong><strong data-i18n="v1h_capex_subtotal">Итого permits + insurance + setup</strong></strong></td><td><strong>$11,661</strong></td><td><strong>$11,661</strong></td></tr>
 <tr><td>Reserve fund</td><td>$10,000</td><td>$10,000</td></tr>
 <tr><td>Working capital</td><td>$0</td><td>$0</td></tr>
 <tr style="background:#a5f3fc"><td><strong data-i18n="t137">Итого CAPEX V1-half</strong></td><td><strong>$38,061</strong></td><td><strong>$103,661</strong></td></tr>
@@ -2382,17 +2382,17 @@
 <tr><td><strong>#3 VA OTR</strong></td><td data-i18n="t409">NC↔VA, 5-6 дн/нед, sleeper berth (~20 nights/мес away)</td><td>$90k/year + per-diem $80/night + benefits</td><td>W2</td><td>OTR job boards (Drive4Schneider, OTRJobs.com), industry referrals</td></tr>
 </tbody>
 </table>
-<h3 style="margin-top:16px">W2 vs 1099 — как оформить водителя?</h3>
+<h3 style="margin-top:16px" data-i18n="w2_title">W2 vs 1099 — как оформить водителя?</h3>
 <table>
 <thead><tr><th></th><th>W2 (сотрудник)</th><th>1099 (контрактор)</th></tr></thead>
 <tbody>
-<tr><td>Payroll налоги</td><td>Ты платишь ~12%</td><td>Водитель платит сам</td></tr>
-<tr><td>Health insurance</td><td>Ты предлагаешь</td><td>Его проблема</td></tr>
-<tr><td>Workers' comp</td><td>Обязателен</td><td>Не нужен</td></tr>
-<tr><td>Доп. расходы тебе</td><td class="s-red">+$1,350/мес</td><td class="s-green">$0 сверху</td></tr>
+<tr><td><span data-i18n="w2_tax_label">Payroll налоги</span></td><td><span data-i18n="w2_tax_w2">Ты платишь ~12%</span></td><td><span data-i18n="w2_tax_1099">Водитель платит сам</span></td></tr>
+<tr><td>Health insurance</td><td><span data-i18n="w2_health_w2">Ты предлагаешь</span></td><td><span data-i18n="w2_health_1099">Его проблема</span></td></tr>
+<tr><td>Workers' comp</td><td><span data-i18n="w2_wc_w2">Обязателен</span></td><td><span data-i18n="w2_wc_1099">Не нужен</span></td></tr>
+<tr><td><span data-i18n="w2_cost_label">Доп. расходы тебе</span></td><td class="s-red">+$1,350/мес</td><td class="s-green">$0 сверху</td></tr>
 </tbody>
 </table>
-<div class="callout callout-warn" style="margin-top:8px">
+<div class="callout callout-warn" style="margin-top:8px" data-i18n="w2_callout">
   <strong>⚠️ Почему 1099 опасен для dedicated маршрута:</strong><br/>
   IRS автоматически переквалифицирует в W2 если водитель: работает только на тебя + ездит на твоём траке + по твоему расписанию.<br/>
   Результат: штрафы + все налоги за весь период ретроспективно.<br/>
@@ -2442,7 +2442,7 @@
 <tr><td>3. <strong>Business bank account</strong></td><td>Bank of America / Chase Business</td><td data-i18n="t428">1 день</td><td>Free</td><td>EIN + LLC docs</td></tr>
 <tr><td>4. <strong>USDOT Number</strong></td><td>FMCSA Portal</td><td data-i18n="t429">1 день</td><td>$300</td><td>EIN</td></tr>
 <tr><td>5. <strong>MC Number application</strong></td><td>FMCSA</td><td data-i18n="t430">21 день mandatory wait</td><td>$300</td><td>USDOT</td></tr>
-<tr style="background:#e0f2fe"><td colspan="3"><strong>Итого Phase 1</strong></td><td><strong>$725</strong></td><td></td></tr>
+<tr style="background:#e0f2fe"><td colspan="3"><strong data-i18n="docs_ph1_total">Итого Phase 1</strong></td><td><strong>$725</strong></td><td></td></tr>
 </tbody>
 </table>
 <h3 data-i18n="t431" style="margin-top:12px">Phase 2 (W2-4): <span style="font-weight:normal;font-size:0.9em;display:block;margin-top:2px">Параллельно с MC waiting period</span></h3>
@@ -2462,7 +2462,7 @@
 <tr><td>10. <strong>IFTA + decals</strong></td><td>NC DOR</td><td data-i18n="t440">10 дней</td><td>$10 + quarterly</td><td>USDOT + EIN</td></tr>
 <tr><td>11. <strong>HVUT (2290)</strong></td><td>IRS</td><td data-i18n="t441">1 день</td><td>$550/year/truck</td><td>EIN + truck VIN</td></tr>
 <tr><td>12. <strong>Truck purchase + inspection</strong></td><td>Dealer / private + 3rd party inspector</td><td data-i18n="t442">2-3 нед</td><td data-i18n="t443">см. CAPEX</td><td>Business bank account</td></tr>
-<tr style="background:#e0f2fe"><td colspan="3"><strong>Итого Phase 2</strong> <span style="font-weight:normal;font-size:11px">(без трака)</span></td><td><strong>$13,836–$18,836</strong></td><td><span style="font-size:11px">$50+$76+$150+$13-18k+$10+$550</span></td></tr>
+<tr style="background:#e0f2fe"><td colspan="3"><strong data-i18n="docs_ph2_total">Итого Phase 2</strong> <span style="font-weight:normal;font-size:11px">(без трака)</span></td><td><strong>$13,836–$18,836</strong></td><td><span style="font-size:11px">$50+$76+$150+$13-18k+$10+$550</span></td></tr>
 </tbody>
 </table>
 <h3 data-i18n="t444" style="margin-top:12px">Phase 3 (W4-6): <span style="font-weight:normal;font-size:0.9em;display:block;margin-top:2px">После получения MC</span></h3>
@@ -2481,7 +2481,7 @@
 <tr><td>16. <strong>Westrock/S&amp;D vendor onboarding</strong></td><td>Westrock procurement portal</td><td data-i18n="t452">2-4 нед</td><td>Free</td><td>MC active + insurance cert</td></tr>
 <tr><td>17. <strong>Factoring agreement (optional)</strong></td><td>OTR Capital / RTS</td><td data-i18n="t453">3-5 дней</td><td>2-3% per invoice</td><td>MC active</td></tr>
 <tr><td>18. <strong>Driver hiring + drug test + MVR check</strong></td><td>Hiring portal + DOT consortium</td><td data-i18n="t454">2-3 нед</td><td>$300/driver onboarding</td><td>Drug &amp; Alcohol Consortium</td></tr>
-<tr style="background:#e0f2fe"><td colspan="3"><strong>Итого Phase 3</strong> <span style="font-weight:normal;font-size:11px">(one-time, без ongoing ELD/dashcam)</span></td><td><strong>$2,100–$2,800</strong></td><td><span style="font-size:11px">IRP $1,800-2,500 + driver onboarding $300</span></td></tr>
+<tr style="background:#e0f2fe"><td colspan="3"><strong data-i18n="docs_ph3_total">Итого Phase 3</strong> <span style="font-weight:normal;font-size:11px">(one-time, без ongoing ELD/dashcam)</span></td><td><strong>$2,100–$2,800</strong></td><td><span style="font-size:11px">IRP $1,800-2,500 + driver onboarding $300</span></td></tr>
 </tbody>
 </table>
 <div style="background:#f0fdf4;border:2px solid #16a34a;border-radius:8px;padding:12px;margin-top:12px">
@@ -2491,9 +2491,9 @@
 <tr><td><strong>Phase 2</strong> (страховка low + permits + consortium)</td><td style="text-align:right"><strong>$13,836–$18,836</strong></td></tr>
 <tr><td><strong>Phase 3</strong> (IRP plates + driver onboarding)</td><td style="text-align:right"><strong>$2,100–$2,800</strong></td></tr>
 <tr><td style="font-size:11px;color:#6b7280">ELD + Dashcam ongoing (первый год, 1 трак)</td><td style="text-align:right;font-size:11px;color:#6b7280">$780/год</td></tr>
-<tr style="border-top:2px solid #16a34a"><td><strong>💰 Итого startup costs (без трака/трейлера)</strong></td><td style="text-align:right"><strong class="s-green">$16,661–$22,361</strong></td></tr>
+<tr style="border-top:2px solid #16a34a"><td><strong><strong data-i18n="docs_gt_startup">💰 Итого startup costs (без трака/трейлера)</strong></strong></td><td style="text-align:right"><strong class="s-green">$16,661–$22,361</strong></td></tr>
 <tr><td style="font-size:11px;color:#6b7280">+ Truck $60k + Trailer $22k = $82k (cash)</td><td style="text-align:right;font-size:11px;color:#6b7280">$82,000</td></tr>
-<tr style="background:#dcfce7"><td><strong>💰 Итого всё (cash, 1 трак + 1 трейлер)</strong></td><td style="text-align:right"><strong class="s-green">$98,661–$104,361</strong></td></tr>
+<tr style="background:#dcfce7"><td><strong><strong data-i18n="docs_gt_all">💰 Итого всё (cash, 1 трак + 1 трейлер)</strong></strong></td><td style="text-align:right"><strong class="s-green">$98,661–$104,361</strong></td></tr>
 </tbody>
 </table>
 </div>
@@ -2507,7 +2507,7 @@
 <span class="section-label label-reco" data-i18n="t456">🎯 Roadmap запуска — детальная последовательность</span>
 <h2 data-i18n="t457">0-12 месяцев план</h2>
 <table>
-<thead><tr><th style="width:80px">Период</th><th>Действия</th><th style="width:140px">V1: 1 трак + 1 трейлер</th><th style="width:140px">V2: 2 трака + 2 трейлера</th></tr></thead>
+<thead><tr><th style="width:80px" data-i18n="road_col_period">Период</th><th data-i18n="road_col_actions">Действия</th><th style="width:140px" data-i18n="road_col_v1">V1: 1 трак + 1 трейлер</th><th style="width:140px" data-i18n="road_col_v2">V2: 2 трака + 2 трейлера</th></tr></thead>
 <tbody>
 <tr style="vertical-align:top"><td><strong>W1-2</strong></td><td>
 <strong>📋 Регистрация компании:</strong><br/>
@@ -2558,16 +2558,16 @@
 • После инспекции → negotiate price (найденные дефекты = скидка $1-5k)
 </span>
 </td><td style="font-size:12px">Страховка: $10-16k<br/>BOC-3: $50<br/>UCR: $76<br/>IFTA: $10<br/>HVUT: $550<br/>Consortium: $200<br/>Inspection: $300<br/><strong>Итого: ~$11,186–17,186</strong></td><td style="font-size:12px">Страховка ×2: $20-32k<br/>BOC-3: $50<br/>UCR: $152<br/>IFTA: $10<br/>HVUT: $1,100<br/>Consortium: $400<br/>Inspection: $600<br/><strong>Итого: ~$22,312–34,312</strong></td></tr>
-<tr style="vertical-align:top"><td><strong>W3-5</strong></td><td>Покупка: <strong>1 трак $60k + 1 трейлер $20k</strong> (V1) или <strong>2 трака $120k + 2 трейлера $40k</strong> (V2). Closing у дилера или private party. Pre-purchase inspection перед подписанием.</td><td style="font-size:12px">Трак: $60,000<br/>Трейлер: $20,000<br/><strong>Итого: $80,000</strong></td><td style="font-size:12px">2 трака: $120,000<br/>2 трейлера: $40,000<br/><strong>Итого: $160,000</strong></td></tr>
+<tr style="vertical-align:top"><td><strong>W3-5</strong></td><td><span data-i18n="road_w35_desc">Покупка: <strong>1 трак $60k + 1 трейлер $20k</strong> (V1) или <strong>2 трака $120k + 2 трейлера $40k</strong> (V2). Closing у дилера или private party. Pre-purchase inspection перед подписанием.</span></td><td style="font-size:12px">Трак: $60,000<br/>Трейлер: $20,000<br/><strong>Итого: $80,000</strong></td><td style="font-size:12px">2 трака: $120,000<br/>2 трейлера: $40,000<br/><strong>Итого: $160,000</strong></td></tr>
 <tr><td><strong>W5</strong></td><td>MC active (21-день истёк). Insurance bound — финализируешь полис. ELD device заказываешь (Motive/Samsara, $35-45/мес).</td><td style="font-size:12px">ELD setup: $200<br/>Dashcam: $150<br/><strong>~$350</strong></td><td style="font-size:12px">ELD ×2: $400<br/>Dashcam ×2: $300<br/><strong>~$700</strong></td></tr>
 <tr><td><strong>W5-6</strong></td><td>IRP Apportioned Plates (NC DMV, $1,800-2,500/трак). Westrock vendor onboarding (paperwork, MC cert, insurance cert). Размещаешь вакансии для водителей: CDL Class A, home-daily, $85k/год.</td><td style="font-size:12px">IRP: $1,800-2,500<br/>Driver onboarding: $300<br/><strong>~$2,100–2,800</strong></td><td style="font-size:12px">IRP ×2: $3,600-5,000<br/>Drivers: $600<br/><strong>~$4,200–5,600</strong></td></tr>
 <tr><td><strong>W6-8</strong></td><td>Водитель нанят. ELD и dashcam установлены на траке. Test runs (2-3 пробных рейса без груза). Reserve fund на отдельный счёт.</td><td style="font-size:12px">Reserve fund: $10,000<br/><strong>~$10,000</strong></td><td style="font-size:12px">Reserve fund: $20,000<br/><strong>~$20,000</strong></td></tr>
-<tr><td><strong>W8</strong></td><td>🚚 <strong>ПЕРВЫЙ РЕЙС С ГРУЗОМ — FIRST REVENUE TRIP</strong></td><td>—</td><td>—</td></tr>
-<tr><td><strong>M2-3</strong></td><td>Стабилизация операций. Factoring (если нужно для cash flow — OTR Capital, 2-3% от invoice). Строишь отношения с Westrock dispatch.</td><td>—</td><td>—</td></tr>
-<tr><td><strong>M3-6</strong></td><td>Отслеживаешь реальные метрики: actual fuel MPG, maintenance costs, driver retention. Накапливаешь cash reserve. V1: оцениваешь возможность добавить 2-й трак.</td><td>—</td><td>—</td></tr>
-<tr><td><strong>M6-9</strong></td><td>Переходишь с factoring на прямой net-30 с Westrock (если credit OK). Перезаключаешь страховку — с track record premium снижается на 15-25%.</td><td>—</td><td>—</td></tr>
-<tr><td><strong>M9-12</strong></td><td>V1: рассматриваешь expansion (2-й трак) если capital позволяет. Топмарк Funding (4.9% APR при credit 811). V2: оцениваешь 3-й трак на новый lane.</td><td>—</td><td>—</td></tr>
-<tr><td><strong>M12+</strong></td><td>Диверсификация: 20-30% revenue через DAT Spot Market для снижения зависимости от одного клиента (Westrock).</td><td>—</td><td>—</td></tr>
+<tr><td><strong>W8</strong></td><td><span data-i18n="road_w8_desc">🚚 <strong>ПЕРВЫЙ РЕЙС С ГРУЗОМ — FIRST REVENUE TRIP</strong></span></td><td>—</td><td>—</td></tr>
+<tr><td><strong>M2-3</strong></td><td><span data-i18n="road_m23">Стабилизация операций. Factoring (если нужно для cash flow — OTR Capital, 2-3% от invoice). Строишь отношения с Westrock dispatch.</span></td><td>—</td><td>—</td></tr>
+<tr><td><strong>M3-6</strong></td><td><span data-i18n="road_m36">Отслеживаешь реальные метрики: actual fuel MPG, maintenance costs, driver retention. Накапливаешь cash reserve. V1: оцениваешь возможность добавить 2-й трак.</span></td><td>—</td><td>—</td></tr>
+<tr><td><strong>M6-9</strong></td><td><span data-i18n="road_m69">Переходишь с factoring на прямой net-30 с Westrock (если credit OK). Перезаключаешь страховку — с track record premium снижается на 15-25%.</span></td><td>—</td><td>—</td></tr>
+<tr><td><strong>M9-12</strong></td><td><span data-i18n="road_m912">V1: рассматриваешь expansion (2-й трак) если capital позволяет. Топмарк Funding (4.9% APR при credit 811). V2: оцениваешь 3-й трак на новый lane.</span></td><td>—</td><td>—</td></tr>
+<tr><td><strong>M12+</strong></td><td><span data-i18n="road_m12">Диверсификация: 20-30% revenue через DAT Spot Market для снижения зависимости от одного клиента (Westrock).</span></td><td>—</td><td>—</td></tr>
 </tbody>
 </table>
 </div>

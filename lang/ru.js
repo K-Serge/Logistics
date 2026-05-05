@@ -1493,5 +1493,8 @@ const LANG_RU = {
   "docs_ph2_note_inline": `(без трака)`,
   "docs_ph3_note_inline": `(one-time, без ongoing ELD/dashcam)`,
   "risk_r9_desc": `Westrock задерживает платежи (net-60)`,
-  "comp_v1d_breakeven": `5.5 мес`
+  "comp_v1d_breakeven": `5.5 мес`,
+  "t045_suffix": ` — открывает best financing rates 4.9-6.9% APR`,
+  "penske_l2_cost_line": `$42,750 + $800 ТО`,
+  "penske_sw_cost_line": `$42,750 + $800 ТО + $3–5k warranty`
 };

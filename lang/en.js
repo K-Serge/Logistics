@@ -1493,5 +1493,8 @@ const LANG_EN = {
   "docs_ph2_note_inline": `(excl. truck)`,
   "docs_ph3_note_inline": `(one-time, excl. ongoing ELD/dashcam)`,
   "risk_r9_desc": `Westrock delays payments (net-60)`,
-  "comp_v1d_breakeven": `5.5 mo`
+  "comp_v1d_breakeven": `5.5 mo`,
+  "t045_suffix": ` — opens best financing rates 4.9-6.9% APR`,
+  "penske_l2_cost_line": `$42,750 + $800 service`,
+  "penske_sw_cost_line": `$42,750 + $800 service + $3–5k warranty`
 };

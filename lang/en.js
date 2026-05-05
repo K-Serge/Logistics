@@ -1486,5 +1486,11 @@ const LANG_EN = {
   "tfin_e_trailer_row": `$22k: down $5k → financed $17k @ 10% / 60 mo → ~$362/mo`,
   "w2_cost_w2": `+$1,350/mo`,
   "w2_cost_1099": `$0 extra`,
-  "notes_placeholder": `Add notes here...`
+  "notes_placeholder": `Add notes here...`,
+  "col_per_mo": `$/mo`,
+  "tfin_cash_used_title": `3. Cash used $78k`,
+  "tfin_c_trailer_row": `$22k: down $4.5k → financed $17.5k @ 10% / 60 mo`,
+  "docs_ph2_note_inline": `(excl. truck)`,
+  "docs_ph3_note_inline": `(one-time, excl. ongoing ELD/dashcam)`,
+  "risk_r9_desc": `Westrock delays payments (net-60)`
 };

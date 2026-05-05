@@ -1486,5 +1486,11 @@ const LANG_RU = {
   "tfin_e_trailer_row": `$22k: down $5k → financed $17k @ 10% / 60 мес → ~$362/мес`,
   "w2_cost_w2": `+$1,350/мес`,
   "w2_cost_1099": `$0 сверху`,
-  "notes_placeholder": `Добавь заметки здесь...`
+  "notes_placeholder": `Добавь заметки здесь...`,
+  "col_per_mo": `$/мес`,
+  "tfin_cash_used_title": `3. Cash б/у $78k`,
+  "tfin_c_trailer_row": `$22k: down $4.5k → financed $17.5k @ 10% / 60 мес`,
+  "docs_ph2_note_inline": `(без трака)`,
+  "docs_ph3_note_inline": `(one-time, без ongoing ELD/dashcam)`,
+  "risk_r9_desc": `Westrock задерживает платежи (net-60)`
 };

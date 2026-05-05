@@ -1492,5 +1492,6 @@ const LANG_EN = {
   "tfin_c_trailer_row": `$22k: down $4.5k → financed $17.5k @ 10% / 60 mo`,
   "docs_ph2_note_inline": `(excl. truck)`,
   "docs_ph3_note_inline": `(one-time, excl. ongoing ELD/dashcam)`,
-  "risk_r9_desc": `Westrock delays payments (net-60)`
+  "risk_r9_desc": `Westrock delays payments (net-60)`,
+  "comp_v1d_breakeven": `5.5 mo`
 };

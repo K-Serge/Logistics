@@ -3192,8 +3192,10 @@ document.addEventListener('DOMContentLoaded', () => {
     heatCols.forEach(col => {
       const vals = rows.map(r => {
         if (r.classList.contains('row-overfilter') || r.classList.contains('row-remote')) return null;
+        if (r.cells.length === 1) return null; // skip colspan separator rows
         const c = r.cells[col];
-        const v = parseFloat((c?.dataset?.sort ?? c?.textContent).replace(/[$,]/g,''));
+        if (!c) return null;
+        const v = parseFloat((c.dataset?.sort ?? c.textContent).replace(/[$,]/g,''));
         return isNaN(v) ? null : v;
       });
       const nums = vals.filter(v => v !== null);
@@ -3219,6 +3221,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Per-cell background cleanup + Level 1/2 highlights
   document.querySelectorAll('#truck-master-table tbody tr').forEach(row => {
+    if (row.cells.length === 1) return; // skip colspan separator rows
     const isFB     = row.classList.contains('row-overfilter');
     const isRemote = row.classList.contains('row-remote');
     Array.from(row.cells).forEach((cell, i) => {

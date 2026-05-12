@@ -10,6 +10,11 @@
 - **Стартер-пакет партнёра:** `~/MyDocumetns/AI/Cloude/contexts/business-transport/documents/trucking-starter-package.xlsx`
 - **Сессионный контекст:** `~/MyDocumetns/AI/Cloude/contexts/business-transport/documents/trucking-session-context.md`
 
+## Coding Principles (Karpathy)
+- **Simplicity First**: no new abstractions, classes, or JS patterns unless explicitly asked — this is a static HTML project
+- **Surgical Changes**: editing one section means don't touch adjacent CSS/JS — match existing style exactly
+- **Goal-Driven**: before touching index.html, state which element changes and what the verify step is
+
 ## ⛔ ПРАВИЛО i18n — ОБЯЗАТЕЛЬНО
 
 ### Единый источник правды
@@ -21,6 +26,12 @@
 1. Пишем HTML → только `data-i18n="key"` атрибуты, **никакого текста в HTML**
 2. Добавляем ключ + Russian текст в `lang/ru.js`
 3. `lang/en.js` — **не трогаем** до запроса перевода
+
+### ⛔⛔⛔ АБСОЛЮТНЫЙ ЗАПРЕТ — НЕТ ИСКЛЮЧЕНИЙ
+**НИКОГДА не писать русский текст напрямую в index.html.**
+Это касается ЛЮБОГО нового контента — секции, таблицы, списки, заголовки, кнопки, подписи.
+Даже "временно". Даже "один раз". Даже "быстро".
+Каждый элемент с текстом = `data-i18n="key"` + ключ в ru.js. Точка.
 
 ### Workflow перевода (когда пользователь просит)
 1. Читаем весь `lang/ru.js`

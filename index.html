@@ -6,8 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title data-i18n="page_title">Logistic — Бизнес-план SC + VA (2026)</title>
 <link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='6' fill='%232563eb'/&gt;&lt;text x='16' y='23' font-size='20' text-anchor='middle' font-family='Apple Color Emoji,Segoe UI Emoji'&gt;🚚&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
-<script src="lang/ru.js?v=8"></script>
-<script src="lang/en.js?v=8"></script>
+<script src="lang/ru.js?v=9"></script>
+<script src="lang/en.js?v=9"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; color: #1a1a1a; background: #f5f5f5; }
@@ -3174,13 +3174,22 @@ document.addEventListener('DOMContentLoaded', () => {
     else if (txt.includes('Level 1')) cell.style.cssText += ';background:#bbf7d0;color:#14532d';
     else if (txt.includes('Level 2')) cell.style.cssText += ';background:#fef9c3;color:#713f12';
 
-    // Model color: 126=green, 116=yellow, 113=red
+    // Model color: 126=green, 116=yellow, 113=yellow(smaller cab)
     const modelCell = row.cells[1];
     if (modelCell && !isRemote && !isFB) {
       const m = modelCell.textContent;
       if (m.includes('126')) modelCell.style.cssText += ';background:#bbf7d0;color:#14532d;font-weight:600';
       else if (m.includes('116')) modelCell.style.cssText += ';background:#fef9c3;color:#713f12;font-weight:600';
-      else if (m.includes('113')) modelCell.style.cssText += ';background:#fecaca;color:#991b1b;font-weight:600';
+      else if (m.includes('113')) {
+        modelCell.style.cssText += ';background:#fef9c3;color:#713f12;font-weight:600';
+        if (!modelCell.querySelector('.cab-note')) {
+          const note = document.createElement('span');
+          note.className = 'cab-note';
+          note.style.cssText = 'display:block;font-size:9px;font-weight:400;color:#92400e';
+          note.textContent = 'меньший короб';
+          modelCell.appendChild(note);
+        }
+      }
     }
 
     // Year color: 2019=red, 2020=yellow, 2021=green

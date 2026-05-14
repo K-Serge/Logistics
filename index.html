@@ -6,8 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title data-i18n="page_title">Logistic — Бизнес-план SC + VA (2026)</title>
 <link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='6' fill='%232563eb'/&gt;&lt;text x='16' y='23' font-size='20' text-anchor='middle' font-family='Apple Color Emoji,Segoe UI Emoji'&gt;🚚&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
-<script src="lang/ru.js?v=10"></script>
-<script src="lang/en.js?v=10"></script>
+<script src="lang/ru.js?v=11"></script>
+<script src="lang/en.js?v=11"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; color: #1a1a1a; background: #f5f5f5; }
@@ -269,6 +269,16 @@
 </div>
 <div class="nav-sep"></div>
 <div class="nav-item">
+<button class="nav-btn" data-page="faq">❓ FAQ ▾</button>
+<div class="nav-dropdown">
+<a data-page="faq" href="#faq-dot">🔑 DOT# и MC — когда получать?</a>
+<a data-page="faq" href="#faq-repair">🔧 Сколько на ремонт?</a>
+<a data-page="faq" href="#faq-insurance">🛡️ Страховка — типы и стоимость</a>
+<a data-page="faq" href="#faq-1099">📋 1099 vs W2</a>
+</div>
+</div>
+<div class="nav-sep"></div>
+<div class="nav-item">
 <button class="nav-btn" data-page="selectrucks">🏢 SelecTrucks ▾</button>
 <div class="nav-dropdown">
 <a data-page="selectrucks" href="#st-financing">💰 Финансирование</a>
@@ -446,7 +456,7 @@
 <tr><td data-i18n="t129">Revenue/мес</td><td class="s-green"><strong>25 × $1,600 = $40,000</strong></td></tr>
 <tr><td>Revenue/year</td><td class="s-green"><strong>$480,000</strong></td></tr>
 <tr><td data-i18n="v1h_diesel_label">Дизель</td><td data-i18n="v1h_diesel_val">$5.50/gal · 6.5 mpg · 10,550 mi → 1,623 gal</td></tr>
-<tr><td data-i18n="t130">Команда</td><td>1 W2 driver (home-daily) + <strong>1 trailer</strong> + 1 truck</td></tr>
+<tr><td data-i18n="t130">Команда</td><td>1 driver 1099 (home-daily) + <strong>1 trailer</strong> + 1 truck</td></tr>
 </tbody>
 </table>
 <div class="callout callout-info" data-i18n="t007" style="margin-top:10px">
@@ -463,10 +473,10 @@
 <tbody>
 <tr><td class="s-green"><strong>💰 Revenue (25 × $1,600)</strong></td><td class="s-green"><strong>+$40,000</strong></td></tr>
 <tr><td data-i18n="v1h_fuel">⛽ Топливо ($5.50/gal)<br/><span style="font-size:11px;color:#6b7280">10,550 mi ÷ 6.5 mpg = 1,623 gal × $5.50/gal</span></td><td class="s-red">-$8,927</td></tr>
-<tr><td data-i18n="v1h_driver_salary">👷 Driver W2 зарплата<br/><span style="font-size:11px;color:#6b7280">$85,000/год ÷ 12 мес</span></td><td class="s-red">-$7,083</td></tr>
-<tr><td data-i18n="v1h_burden">📋 Payroll burden 12%<br/><span style="font-size:11px;color:#6b7280">$7,083 × 12% — налоги работодателя: Social Security 6.2% + Medicare 1.45% + FUTA/SUTA ~4.3%</span></td><td class="s-red">-$850</td></tr>
-<tr><td data-i18n="v1h_health">🏥 Health insurance<br/><span style="font-size:11px;color:#6b7280">Медстраховка для W2 сотрудника — стандарт для привлечения CDL водителя</span></td><td class="s-red">-$500</td></tr>
-<tr><td data-i18n="v1h_insurance">🛡️ Страховка (трак + трейлер)<br/><span style="font-size:11px;color:#6b7280">Коммерческая авто ~$10,800/год + трейлер ~$1,800/год = $12,600/год ÷ 12</span></td><td class="s-red">-$1,150</td></tr>
+<tr><td data-i18n="v1h_driver_salary">👷 Driver 1099 оплата<br/><span style="font-size:11px;color:#6b7280">$300–350/день × 25 дней <span style="color:#d97706">(Марк: только 1099, не W2)</span></span></td><td class="s-red">-$8,150</td></tr>
+<tr><td data-i18n="v1h_burden">📋 Payroll burden<br/><span style="font-size:11px;color:#16a34a">1099 контрактор — налоги платит водитель сам</span></td><td class="s-green">$0</td></tr>
+<tr><td data-i18n="v1h_health">🏥 Health insurance<br/><span style="font-size:11px;color:#16a34a">1099 — не обязательно. Марк: 12 лет без benefits</span></td><td class="s-green">$0</td></tr>
+<tr><td data-i18n="v1h_insurance">🛡️ Страховка (трак + трейлер)<br/><span style="font-size:11px;color:#6b7280">Cargo + Liability + Physical Damage ~$24,000/год ÷ 12 <span style="color:#d97706">(Марк: реально $1,500–2,000/мес)</span></span></td><td class="s-red">-$2,000</td></tr>
 <tr><td data-i18n="v1h_maint">🔧 Обслуживание + шины<br/><span style="font-size:11px;color:#6b7280">10,550 mi × $0.21/mi (инд. стандарт $0.15–0.25): шины $950 + ТО/масло $400 + тормоза/фильтры $400 + резерв $450</span></td><td class="s-red">-$2,200</td></tr>
 <tr><td data-i18n="v1h_ifta">📄 IFTA + permits<br/><span style="font-size:11px;color:#6b7280">IFTA fuel tax (квартальный) + UCR $76/год + IRP ~$150/год + BOC-3 $40/год</span></td><td class="s-red">-$300</td></tr>
 <tr><td data-i18n="v1h_eld">📡 ELD + misc<br/><span style="font-size:11px;color:#6b7280">ELD подписка $50 + accounting/payroll $100 + телефон/связь $50 + прочее $50</span></td><td class="s-red">-$250</td></tr>
@@ -525,7 +535,7 @@
 <tr><td data-i18n="t088">Miles/мес</td><td>50 × 422 = 21,100 mi</td></tr>
 <tr><td data-i18n="t089">Revenue/мес</td><td class="s-green"><strong>50 × $1,500 = $75,000</strong></td></tr>
 <tr><td>Revenue/year</td><td class="s-green"><strong>$900,000</strong></td></tr>
-<tr><td data-i18n="t090">Команда</td><td>2 W2 drivers (home-daily) + 2 trailers + 1 truck</td></tr>
+<tr><td data-i18n="t090">Команда</td><td>2 drivers 1099 (home-daily) + 2 trailers + 1 truck</td></tr>
 </tbody>
 </table>
 <h3 data-i18n="t091" style="margin-top:16px">Переменные расходы</h3>
@@ -543,7 +553,7 @@
 <table>
 <thead><tr><th data-i18n="t098">Статья</th><th style="width:100px">Financed</th><th style="width:100px">Cash</th></tr></thead>
 <tbody>
-<tr><td>Insurance ($1M + cargo $100k)</td><td>-$1,400</td><td>-$1,400</td></tr>
+<tr><td>Insurance (Cargo + Liability + Physical)</td><td>-$2,000</td><td>-$2,000</td></tr>
 <tr><td>Permits (IRP/HVUT/IFTA/UCR allocated)</td><td>-$250</td><td>-$250</td></tr>
 <tr><td>ELD + dashcam</td><td>-$75</td><td>-$75</td></tr>
 <tr><td>Truck loan ($80k, 20% down, 60mo @ 9%)</td><td>-$1,330</td><td class="s-green">$0</td></tr>
@@ -557,8 +567,8 @@
 <table>
 <thead><tr><th>Driver</th><th>Salary</th><th>Burden 12%</th><th data-i18n="t101">$/мес</th></tr></thead>
 <tbody>
-<tr><td data-i18n="t102">Driver #1 (утро)</td><td>$85,000/year</td><td>$10,200</td><td>-$7,917</td></tr>
-<tr><td data-i18n="t103">Driver #2 (вечер)</td><td>$85,000/year</td><td>$10,200</td><td>-$7,917</td></tr>
+<tr><td data-i18n="t102">Driver #1 (утро)</td><td>1099 $8,150/мес</td><td>$8,150</td><td>-$8,150</td></tr>
+<tr><td data-i18n="t103">Driver #2 (вечер)</td><td>1099 $8,150/мес</td><td>$8,150</td><td>-$8,150</td></tr>
 <tr style="background:#fecaca"><td><strong data-i18n="t104">Итого</strong></td><td><strong>$170k/year</strong></td><td></td><td class="s-red"><strong>-$15,834</strong></td></tr>
 </tbody>
 </table>
@@ -636,7 +646,7 @@
 <tbody>
 <tr><td class="s-green"><strong>Revenue</strong></td><td>50 × $1,500</td><td class="s-green">$75,000</td><td class="s-green">$75,000</td></tr>
 <tr><td data-i18n="t161">Переменные (общие 21,100 mi)</td><td>fuel + maint + tolls + reserve</td><td>-$16,388</td><td>-$16,388</td></tr>
-<tr><td>2× Insurance</td><td>$1,400 each</td><td>-$2,800</td><td>-$2,800</td></tr>
+<tr><td>2× Insurance (Cargo+Liability+Physical)</td><td>$2,000 each</td><td>-$4,000</td><td>-$4,000</td></tr>
 <tr><td>2× Permits (allocated)</td><td>$250 each</td><td>-$500</td><td>-$500</td></tr>
 <tr><td>2× ELD + dashcam</td><td>$75 each</td><td>-$150</td><td>-$150</td></tr>
 <tr><td>2× Truck loans</td><td>$1,330 each</td><td>-$2,660</td><td class="s-green">$0</td></tr>
@@ -644,7 +654,7 @@
 <tr><td>Bookkeeping (shared)</td><td>—</td><td>-$250</td><td>-$250</td></tr>
 <tr><td>LLC misc (shared)</td><td>—</td><td>-$50</td><td>-$50</td></tr>
 <tr style="background:#fecaca"><td><strong data-i18n="t162">Итого фикс.</strong></td><td></td><td class="s-red"><strong>-$7,125</strong></td><td class="s-red"><strong>-$3,750</strong></td></tr>
-<tr><td>2× Drivers @ $85k</td><td></td><td>-$15,834</td><td>-$15,834</td></tr>
+<tr><td>2× Drivers @ 1099 $8,150/мес</td><td></td><td>-$16,300</td><td>-$16,300</td></tr>
 <tr style="background:#fecaca"><td><strong>Total costs</strong></td><td></td><td class="s-red"><strong>-$39,347</strong></td><td class="s-red"><strong>-$35,972</strong></td></tr>
 <tr style="background:#dcfce7"><td><strong data-i18n="t163">NET/мес</strong></td><td></td><td class="s-green"><strong>$35,653</strong></td><td class="s-green"><strong>$39,028</strong></td></tr>
 <tr style="background:#dcfce7"><td><strong>NET/year</strong></td><td></td><td class="s-green"><strong>$427,836</strong></td><td class="s-green"><strong>$468,336</strong></td></tr>
@@ -835,7 +845,7 @@
 <table>
 <thead><tr><th data-i18n="t238">Статья</th><th>Financed</th><th>Cash</th></tr></thead>
 <tbody>
-<tr><td>Insurance (additional truck)</td><td>-$1,400</td><td>-$1,400</td></tr>
+<tr><td>Insurance (additional truck)</td><td>-$2,000</td><td>-$2,000</td></tr>
 <tr><td>Permits (allocated)</td><td>-$250</td><td>-$250</td></tr>
 <tr><td>ELD + dashcam</td><td>-$75</td><td>-$75</td></tr>
 <tr><td>Truck loan #2</td><td>-$1,330</td><td class="s-green">$0</td></tr>
@@ -1865,7 +1875,18 @@
 <div class="normal-section" data-page="truck" id="truck-strategy">
 <span class="section-label label-fleet" data-i18n="tstrat_label">Стратегия</span>
 <h2 data-i18n="tstrat_title">Купить при 300–400k → использовать → продать при 700k</h2>
-<div class="callout callout-info" style="margin-bottom:12px">
+
+<div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:12px;margin-bottom:14px;font-size:12px">
+  <strong style="color:#14532d">✅ Марк сказал:</strong>
+  <ul style="margin:6px 0 0 18px;line-height:1.9">
+    <li data-i18n="mark_truck1">Трак лучше купить за <strong>кеш</strong> — меньше зависимости и расходов на проценты</li>
+    <li data-i18n="mark_truck2">Возраст: желательно <strong>2–3 года</strong>, но можно и старше — 200k+ миль нормально</li>
+    <li data-i18n="mark_truck3"><strong>Гарантия важна</strong> — ищи трак где дилер передаёт оставшуюся warranty (пример: трак с 5-лет гарантией, продают через 3 года — 2 года гарантии переходят)</li>
+    <li data-i18n="mark_truck4"><strong>Механическую коробку — НЕ БРАТЬ.</strong> Меньше водителей соглашаются, сложнее водить, легче убить коробку</li>
+    <li data-i18n="mark_truck5">Ломаться начинают на <strong>400k миль</strong>, серьёзно — на 500k+. 200–350k — безопасная зона</li>
+    <li data-i18n="mark_truck6">$1,500 за 422 мили/день — <strong>хорошие условия</strong> по рынку</li>
+  </ul>
+</div><div class="callout callout-info" style="margin-bottom:12px">
 <ul style="margin:0 0 0 18px;line-height:1.9">
 <li data-i18n="tstrat_why1">До 300k: основные проблемы уже проявились — входишь ПОСЛЕ них</li>
 <li data-i18n="tstrat_why2">300–700k: golden zone — системы работают, overhaul ещё не нужен</li>
@@ -1924,7 +1945,16 @@
 <span class="section-label label-fleet" data-i18n="trl_label">Трейлер</span>
 <h2 data-i18n="trl_title">Utility 53' + Hendrickson INTRAAX — выбор флотов</h2>
 <p data-i18n="trl_subtitle" style="font-size:12px;color:#555;margin-bottom:12px">Подтверждено механиком: лучший dry van для нашего маршрута</p>
-<div class="callout callout-info" style="margin-bottom:12px">
+
+<div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:12px;margin-bottom:14px;font-size:12px">
+  <strong style="color:#14532d">✅ Марк сказал — обязательные требования к трейлеру:</strong>
+  <ul style="margin:6px 0 0 18px;line-height:1.9">
+    <li data-i18n="mark_trl1">Возраст <strong>7–8 лет — нормально</strong>, не обязательно новый</li>
+    <li data-i18n="mark_trl2"><strong>Автоматическая подкачка шин (CTIS/tire inflation system)</strong> — обязательно</li>
+    <li data-i18n="mark_trl3"><strong>Воздушная подвеска</strong> — обязательно (не рессоры)</li>
+    <li data-i18n="mark_trl4"><strong>Двери — открываются в бок</strong> (swing doors), НЕ рулонные вверх (roll-up)</li>
+  </ul>
+</div><div class="callout callout-info" style="margin-bottom:12px">
 <ul style="margin:0 0 0 18px;line-height:1.9">
 <li data-i18n="trl_why1">Utility Trailer Mfg. Co. — #1 производитель dry van в США</li>
 <li data-i18n="trl_why2">Hendrickson INTRAAX Air Ride — лучшая воздушная подвеска</li>
@@ -2482,7 +2512,7 @@
 <strong>Зачем:</strong> Westrock платит <strong>net-10</strong> (через 10 дней после invoice) — отличные условия, минимальный кассовый разрыв. Расходы ежедневные:<br/>
       • Дизель ~$2,800/нед (V1) или ~$4,800/нед (V2)<br/>
       • Drivers salary $4-7k каждые 2 нед<br/>
-      • Insurance $1,400-2,800/мес<br/>
+      • Insurance $2,000-4,000/мес<br/>
       • Loans $1.2-1.8k/мес (если financed)<br/><br/>
 <strong>Cash flow timeline (net-10):</strong><br/>
       • Неделя 1-2: работаешь, invoices выставлены. Расходы: $7-12k.<br/>
@@ -2498,12 +2528,24 @@
 <table>
 <thead><tr><th>Driver</th><th data-i18n="t404">Lane / роль</th><th>Salary</th><th data-i18n="t405">Тип</th><th data-i18n="t406">Где искать</th></tr></thead>
 <tbody>
-<tr><td><strong data-i18n="t407">#1 SC утренний</strong></td><td>NC↔SC, 06:00-13:00, home-daily</td><td>$85k/year + benefits</td><td>W2</td><td>Indeed, ZipRecruiter, Truckers Forum, local CDL schools (NC/SC)</td></tr>
-<tr><td><strong data-i18n="t408">#2 SC вечерний</strong></td><td>NC↔SC, 14:00-21:00, home-daily</td><td>$85k/year + benefits</td><td>W2</td><td>Same</td></tr>
+<tr><td><strong data-i18n="t407">#1 SC утренний</strong></td><td>NC↔SC, 06:00-13:00, home-daily</td><td>$300–350/день (1099)</td><td>1099 ✓</td><td>Indeed, ZipRecruiter, Truckers Forum, local CDL schools (NC/SC)</td></tr>
+<tr><td><strong data-i18n="t408">#2 SC вечерний</strong></td><td>NC↔SC, 14:00-21:00, home-daily</td><td>$300–350/день (1099)</td><td>1099 ✓</td><td>Same</td></tr>
 <tr><td><strong>#3 VA OTR</strong></td><td data-i18n="t409">NC↔VA, 5-6 дн/нед, sleeper berth (~20 nights/мес away)</td><td>$90k/year + per-diem $80/night + benefits</td><td>W2</td><td>OTR job boards (Drive4Schneider, OTRJobs.com), industry referrals</td></tr>
 </tbody>
 </table>
-<h3 style="margin-top:16px" data-i18n="w2_title">W2 vs 1099 — как оформить водителя?</h3>
+
+<div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:12px;margin:12px 0;font-size:12px">
+  <strong style="color:#14532d">✅ Марк сказал — 3 вида страховки:</strong>
+  <ul style="margin:6px 0 0 18px;line-height:1.9">
+    <li data-i18n="mark_ins1"><strong>Cargo</strong> — страховка груза</li>
+    <li data-i18n="mark_ins2"><strong>Liability</strong> — ответственность перед третьими лицами ($1M минимум)</li>
+    <li data-i18n="mark_ins3"><strong>Physical Damage</strong> — трак + трейлер</li>
+    <li data-i18n="mark_ins4">Итого: <strong>$1,500–2,000/мес</strong> реальная стоимость</li>
+    <li data-i18n="mark_ins5">Страховщики требуют <strong>2 года опыта</strong> у водителя</li>
+    <li data-i18n="mark_ins6">Progressive может попросить <strong>3 месяца</strong> операционной истории компании</li>
+    <li data-i18n="mark_ins7">Марк дал контакты <strong>2 страховых агентов</strong> для переговоров</li>
+  </ul>
+</div><h3 style="margin-top:16px" data-i18n="w2_title">W2 vs 1099 — как оформить водителя?</h3>
 <table>
 <thead><tr><th></th><th data-i18n="w2_th_w2">W2 (сотрудник)</th><th data-i18n="w2_th_1099">1099 (контрактор)</th></tr></thead>
 <tbody>
@@ -2514,13 +2556,15 @@
 </tbody>
 </table>
 <div class="callout callout-warn" style="margin-top:8px" data-i18n="w2_callout">
-  <strong>⚠️ Почему 1099 опасен для dedicated маршрута:</strong><br/>
-  IRS автоматически переквалифицирует в W2 если водитель: работает только на тебя + ездит на твоём траке + по твоему расписанию.<br/>
-  Результат: штрафы + все налоги за весь период ретроспективно.<br/>
-  <strong>FMCSA:</strong> dedicated маршрут (одна компания, фиксированный schedule) = признак employee по федеральным стандартам.<br/>
-  <strong>NC</strong> — штат строгий, активно преследует misclassification в trucking.<br/><br/>
-  <strong>1099 законен только если:</strong> водитель owner-operator (трак его собственный) и работает на нескольких компаний.<br/>
-  У тебя dedicated маршрут на твоём траке → <strong>только W2.</strong>
+  <strong>⚠️ Теоретический риск 1099 (IRS):</strong><br/>
+  Если водитель работает только на тебя + на твоём траке + по твоему расписанию → IRS может переквалифицировать в W2. Штрафы + ретроспективные налоги.<br/>
+  <strong>NC закон</strong> формально строгий по misclassification.
+</div>
+<div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:12px;margin-top:8px;font-size:12px">
+  <strong style="color:#14532d">✅ Марк сказал (12 лет опыта, NC):</strong><br/>
+  «Оформляй водителей как 1099 контракторов — в NC это работает. Я так работаю 12 лет без проблем.»<br/>
+  <strong>Экономия:</strong> нет payroll налогов (12%), нет workers' comp, нет health benefits.<br/>
+  <strong>Важно:</strong> составить грамотный IC Agreement. Проконсультируйся с трак-адвокатом ($300–500 разово).
 </div>
 <h3 data-i18n="t410" style="margin-top:16px">Требования к кандидатам</h3>
 <ul data-i18n="t029" style="margin:8px 0 8px 20px;line-height:1.7">
@@ -2654,7 +2698,7 @@
 <thead><tr><th data-i18n="t470">Категория</th><th data-i18n="t471">Год 1</th><th>%</th></tr></thead>
 <tbody>
 <tr><td data-i18n="t472">Fuel (21,100 mi/мес × 12)</td><td>$141,480</td><td>16%</td></tr>
-<tr><td>Driver salaries (2× $85k + 12% burden)</td><td>$190,000</td><td>21%</td></tr>
+<tr><td>Driver salaries (2× 1099 $8,150/мес × 12)</td><td>$195,600</td><td>22%</td></tr>
 <tr><td>Maintenance + tires</td><td>$45,576</td><td>5%</td></tr>
 <tr><td>Insurance</td><td>$16,800</td><td>2%</td></tr>
 <tr><td>Permits / registrations</td><td>$3,000</td><td>0.3%</td></tr>
@@ -2784,6 +2828,154 @@
       6. NC LLC formation start (онлайн NC SoS, $125, 5-7 days)
     </div>
 </div>
+<!-- FAQ -->
+<div data-page="faq" style="padding:24px 0">
+
+<div class="normal-section" id="faq-dot" style="margin-bottom:20px;border:2px solid #2563eb;background:#eff6ff">
+<span class="section-label" style="background:#bfdbfe;color:#1e3a8a">❓ FAQ</span>
+<h2 data-i18n="faq_dot_title" style="color:#1e3a8a">🔑 DOT# и MC — получать когда трак есть или нет?</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+  <div style="background:#fff;border:2px solid #16a34a;border-radius:8px;padding:14px">
+    <div style="font-weight:700;color:#14532d;margin-bottom:8px;font-size:13px">✅ DOT Number — <span data-i18n="faq_dot_free">бесплатно, без трака</span></div>
+    <ul style="margin:0 0 0 16px;font-size:12px;line-height:1.9;color:#374151">
+      <li data-i18n="faq_dot1">Регистрируй <strong>немедленно</strong> — трак не нужен</li>
+      <li data-i18n="faq_dot2">Бесплатно на fmcsa.dot.gov — 15 минут онлайн</li>
+      <li data-i18n="faq_dot3">DOT# нужен для страховки, IRP, IFTA</li>
+    </ul>
+  </div>
+  <div style="background:#fff;border:2px solid #d97706;border-radius:8px;padding:14px">
+    <div style="font-weight:700;color:#92400e;margin-bottom:8px;font-size:13px">⏳ MC Authority — $300, <span data-i18n="faq_mc_wait">21 день ожидания</span></div>
+    <ul style="margin:0 0 0 16px;font-size:12px;line-height:1.9;color:#374151">
+      <li data-i18n="faq_mc1">Подавай <strong>до покупки трака</strong> — 21-дневный waiting period</li>
+      <li data-i18n="faq_mc2">MC активен → только тогда покупай трак и нанимай</li>
+      <li data-i18n="faq_mc3">BOC-3 ($50) нужен одновременно с MC</li>
+      <li data-i18n="faq_mc4">Progressive: может просить 3 мес истории до страховки</li>
+    </ul>
+  </div>
+</div>
+<div style="background:#fef9c3;border:1px solid #fde68a;border-radius:8px;padding:12px;font-size:12px">
+  <strong data-i18n="faq_dot_order">📋 Правильный порядок:</strong>
+  <div style="margin-top:6px;display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+    <span style="background:#2563eb;color:#fff;padding:4px 10px;border-radius:4px;font-size:11px">1. LLC</span>
+    <span>→</span>
+    <span style="background:#2563eb;color:#fff;padding:4px 10px;border-radius:4px;font-size:11px">2. EIN</span>
+    <span>→</span>
+    <span style="background:#16a34a;color:#fff;padding:4px 10px;border-radius:4px;font-size:11px">3. DOT# (бесплатно)</span>
+    <span>→</span>
+    <span style="background:#d97706;color:#fff;padding:4px 10px;border-radius:4px;font-size:11px">4. MC + BOC-3 ($350)</span>
+    <span>→</span>
+    <span style="background:#7c3aed;color:#fff;padding:4px 10px;border-radius:4px;font-size:11px">5. Ждать 21 день</span>
+    <span>→</span>
+    <span style="background:#dc2626;color:#fff;padding:4px 10px;border-radius:4px;font-size:11px">6. Страховка</span>
+    <span>→</span>
+    <span style="background:#0f766e;color:#fff;padding:4px 10px;border-radius:4px;font-size:11px">7. Трак + IRP</span>
+  </div>
+</div>
+</div>
+
+<div class="normal-section" id="faq-repair" style="margin-bottom:20px;border:2px solid #dc2626;background:#fef2f2">
+<span class="section-label" style="background:#fecaca;color:#991b1b">🔧 Ремонт</span>
+<h2 data-i18n="faq_rep_title" style="color:#991b1b">🔧 Сколько откладывать на ремонт трака?</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:14px">
+  <div style="background:#fff;border:1px solid #fecaca;border-radius:8px;padding:12px;text-align:center">
+    <div data-i18n="faq_rep_rule" style="font-size:11px;color:#6b7280;margin-bottom:4px">Правило отрасли</div>
+    <div style="font-size:22px;font-weight:700;color:#dc2626">$0.15–0.20</div>
+    <div style="font-size:11px;color:#6b7280">за милю в резерв</div>
+  </div>
+  <div style="background:#fff;border:1px solid #fecaca;border-radius:8px;padding:12px;text-align:center">
+    <div data-i18n="faq_rep_monthly" style="font-size:11px;color:#6b7280;margin-bottom:4px">Наш маршрут (422 mi/день × 25)</div>
+    <div style="font-size:22px;font-weight:700;color:#dc2626">$1,580–2,110</div>
+    <div style="font-size:11px;color:#6b7280">/мес в резерв</div>
+  </div>
+  <div style="background:#fff;border:1px solid #fecaca;border-radius:8px;padding:12px;text-align:center">
+    <div data-i18n="faq_rep_min" style="font-size:11px;color:#6b7280;margin-bottom:4px">Минимальный резерв на старте</div>
+    <div style="font-size:22px;font-weight:700;color:#dc2626">$15,000</div>
+    <div style="font-size:11px;color:#6b7280">на непредвиденные поломки</div>
+  </div>
+</div>
+<div class="table-wrap">
+<table>
+<thead><tr>
+  <th data-i18n="faq_rep_th_what">Что ломается</th>
+  <th data-i18n="faq_rep_th_when">Когда</th>
+  <th data-i18n="faq_rep_th_cost">Стоимость ремонта</th>
+</tr></thead>
+<tbody>
+<tr><td data-i18n="faq_rep_tires">Шины (4–6 шт замена)</td><td data-i18n="faq_rep_t_when">150–200k миль</td><td>$1,200–2,400</td></tr>
+<tr><td data-i18n="faq_rep_brakes">Тормоза + колодки</td><td data-i18n="faq_rep_b_when">100–150k миль</td><td>$800–1,500</td></tr>
+<tr><td data-i18n="faq_rep_clutch">Сцепление (если MANUAL)</td><td data-i18n="faq_rep_c_when">200–300k миль</td><td>$3,000–5,000</td></tr>
+<tr><td data-i18n="faq_rep_dt12">DT12 автомат сервис</td><td data-i18n="faq_rep_d_when">100k интервалы</td><td>$500–1,200</td></tr>
+<tr><td data-i18n="faq_rep_injectors">Инжекторы DD15</td><td data-i18n="faq_rep_i_when">400–500k миль</td><td>$5,000–12,000</td></tr>
+<tr style="background:#fecaca"><td data-i18n="faq_rep_overhaul">Engine overhaul</td><td>700k+ <span data-i18n="faq_rep_o_note">(Марк: серьёзные проблемы с 500k+)</span></td><td style="font-weight:700">$25,000–40,000</td></tr>
+</tbody>
+</table>
+</div>
+<div style="background:#fef9c3;border:1px solid #fde68a;border-radius:8px;padding:10px;margin-top:10px;font-size:12px">
+  <strong data-i18n="faq_rep_tip">💡 Марк сказал:</strong> <span data-i18n="faq_rep_tip2">Ломаться начинают на 400k, серьёзно — на 500k+. Трак 200–350k = безопасная зона. Покупай с историей обслуживания.</span>
+</div>
+</div>
+
+<div class="normal-section" id="faq-insurance" style="margin-bottom:20px">
+<span class="section-label" style="background:#ede9fe;color:#5b21b6">🛡️ Страховка</span>
+<h2 data-i18n="faq_ins_title">🛡️ Страховка — 3 вида и реальная стоимость</h2>
+<div class="table-wrap">
+<table>
+<thead><tr>
+  <th data-i18n="faq_ins_th_type">Тип</th>
+  <th data-i18n="faq_ins_th_what">Что покрывает</th>
+  <th data-i18n="faq_ins_th_req">Обязательно?</th>
+  <th data-i18n="faq_ins_th_cost">Примерная стоимость</th>
+</tr></thead>
+<tbody>
+<tr><td><strong>Liability</strong></td><td data-i18n="faq_ins_liab">Ущерб третьим лицам ($1M минимум)</td><td style="color:#dc2626;font-weight:700" data-i18n="faq_ins_yes">Да, FMCSA требует</td><td>$700–1,000/мес</td></tr>
+<tr><td><strong>Cargo</strong></td><td data-i18n="faq_ins_cargo">Страховка груза ($100k типично)</td><td style="color:#dc2626;font-weight:700" data-i18n="faq_ins_yes">Да, брокеры требуют</td><td>$200–400/мес</td></tr>
+<tr><td><strong>Physical Damage</strong></td><td data-i18n="faq_ins_phys">Трак + трейлер от повреждений</td><td style="color:#d97706" data-i18n="faq_ins_rec">Рекомендуется</td><td>$400–700/мес</td></tr>
+<tr style="background:#fef9c3"><td colspan="3"><strong data-i18n="faq_ins_total">Итого все три (Марк: реальная цена)</strong></td><td style="font-weight:700;font-size:15px;color:#dc2626">$1,500–2,000/мес</td></tr>
+</tbody>
+</table>
+</div>
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:12px;margin-top:12px;font-size:12px">
+  <strong style="color:#991b1b" data-i18n="faq_ins_warn">⚠️ Требования страховщиков:</strong>
+  <ul style="margin:6px 0 0 18px;line-height:1.9">
+    <li data-i18n="faq_ins_w1">Водитель: <strong>минимум 2 года опыта CDL</strong></li>
+    <li data-i18n="faq_ins_w2">Progressive: может требовать <strong>3 месяца</strong> операционной истории</li>
+    <li data-i18n="faq_ins_w3">Марк дал контакты двух агентов — обсуди условия с обоими</li>
+  </ul>
+</div>
+</div>
+
+<div class="normal-section" id="faq-1099" style="margin-bottom:20px">
+<span class="section-label" style="background:#d1fae5;color:#065f46">📋 Оформление</span>
+<h2 data-i18n="faq_1099_title">📋 1099 vs W2 — опыт Марка (12 лет в NC)</h2>
+<div style="background:#f0fdf4;border:2px solid #16a34a;border-radius:8px;padding:14px;margin-bottom:14px;font-size:13px">
+  <strong style="color:#14532d" data-i18n="faq_1099_mark">✅ Марк сказал:</strong> <span data-i18n="faq_1099_quote">«Оформляй как 1099 контракторов — в NC это работает. Я так работаю 12 лет без проблем.»</span>
+</div>
+<div class="table-wrap">
+<table>
+<thead><tr>
+  <th></th>
+  <th data-i18n="faq_1099_th_w2">W2 (сотрудник)</th>
+  <th data-i18n="faq_1099_th_1099">1099 (контрактор) ✅ Марк</th>
+</tr></thead>
+<tbody>
+<tr><td data-i18n="faq_1099_taxes">Payroll налоги</td><td data-i18n="faq_1099_tax_w2" class="s-red">Ты платишь ~12%</td><td class="s-green" data-i18n="faq_1099_tax_1099">Водитель платит сам</td></tr>
+<tr><td>Health insurance</td><td data-i18n="faq_1099_h_w2" class="s-red">Ты предлагаешь</td><td class="s-green" data-i18n="faq_1099_h_1099">Не обязательно</td></tr>
+<tr><td>Workers' comp</td><td data-i18n="faq_1099_wc_w2" class="s-red">Обязателен</td><td class="s-green" data-i18n="faq_1099_wc_1099">Не нужен</td></tr>
+<tr><td data-i18n="faq_1099_cost">Доп. расходы</td><td class="s-red">+$1,350/мес</td><td class="s-green">$0</td></tr>
+<tr><td data-i18n="faq_1099_pay">Оплата водителю</td><td>$7,083/мес ($85k/год)</td><td style="font-weight:700">$300–350/день × 25 = $7,500–8,750</td></tr>
+</tbody>
+</table>
+</div>
+<div style="background:#fef9c3;border:1px solid #fde68a;border-radius:8px;padding:10px;margin-top:10px;font-size:12px">
+  <strong data-i18n="faq_1099_tip">💡 Совет:</strong> <span data-i18n="faq_1099_tip2">Составь грамотный Independent Contractor Agreement. Проконсультируйся с трак-адвокатом ($300–500 разово). Это защитит при налоговой проверке.</span>
+</div>
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px;margin-top:10px;font-size:12px">
+  <strong data-i18n="faq_1099_reg">💡 Марк:</strong> <span data-i18n="faq_1099_reg2">Возможно стоит нанять специалиста для всего процесса регистрации трак-компании — сэкономит время и избавит от ошибок.</span>
+</div>
+</div>
+
+</div><!-- /faq -->
+
 <!-- SELECTRUCKS -->
 <div data-page="selectrucks" style="padding:24px 0">
 

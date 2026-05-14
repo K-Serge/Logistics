@@ -1842,4 +1842,13 @@ const LANG_RU = {
   // Trailer ATIS/air suspension aftermarket notes
   "mark_trl2_note": "↳ Ставится отдельно на любой прицеп: Aperia Halo крепится на ступицу без сверления, $600–1,300, 2–3 часа в trailer shop",
   "mark_trl3_note": "↳ Spring-ride + ATIS = более простой и дешёвый вариант для dry van. Air ride конверсия $5–10k — дороже чем купить прицеп сразу с air ride",
+  // Trailer spec table additions
+  "trl_susp_note_lbl": "↳ Или spring-ride",
+  "trl_susp_note_val": "Spring + ATIS дешевле. Конверсия в air ride $5–10k. Уточни у Westrock.",
+  "trl_atis_lbl": "ATIS (подкачка шин)",
+  "trl_atis_val": "Обязательно — 90% взрывов от недокачки",
+  "trl_atis_note_lbl": "↳ Aftermarket",
+  "trl_atis_note_val": "Aperia Halo — на ступицу без сверления, $600–1,300, 2–3 ч в trailer shop",
+  "trl_doors_lbl": "Двери",
+  "trl_doors_val": "Swing doors (распашные) — для Westrock Coffee",
 };

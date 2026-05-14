@@ -1842,4 +1842,13 @@ const LANG_EN = {
   // Trailer ATIS/air suspension aftermarket notes
   "mark_trl2_note": "↳ Can be installed on any trailer separately: Aperia Halo bolts onto the hub without drilling, $600–1,300, 2–3 hours at a trailer shop",
   "mark_trl3_note": "↳ Spring-ride + ATIS = simpler and cheaper option for dry van. Air ride conversion $5–10k — more expensive than buying a trailer with air ride from the start",
+  // Trailer spec table additions
+  "trl_susp_note_lbl": "↳ Or spring-ride",
+  "trl_susp_note_val": "Spring + ATIS is cheaper. Air ride conversion $5–10k. Confirm with Westrock.",
+  "trl_atis_lbl": "ATIS (tire inflation)",
+  "trl_atis_val": "Required — 90% of blowouts caused by under-inflation",
+  "trl_atis_note_lbl": "↳ Aftermarket",
+  "trl_atis_note_val": "Aperia Halo — bolts to hub without drilling, $600–1,300, 2–3 hrs at trailer shop",
+  "trl_doors_lbl": "Doors",
+  "trl_doors_val": "Swing doors — required for Westrock Coffee",
 };

@@ -6,8 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title data-i18n="page_title">Logistic — Бизнес-план SC + VA (2026)</title>
 <link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='6' fill='%232563eb'/&gt;&lt;text x='16' y='23' font-size='20' text-anchor='middle' font-family='Apple Color Emoji,Segoe UI Emoji'&gt;🚚&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
-<script src="lang/ru.js?v=11"></script>
-<script src="lang/en.js?v=11"></script>
+<script src="lang/ru.js?v=12"></script>
+<script src="lang/en.js?v=12"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; color: #1a1a1a; background: #f5f5f5; }
@@ -275,6 +275,9 @@
 <a data-page="faq" href="#faq-repair">🔧 Сколько на ремонт?</a>
 <a data-page="faq" href="#faq-insurance">🛡️ Страховка — типы и стоимость</a>
 <a data-page="faq" href="#faq-1099">📋 1099 vs W2</a>
+<a data-page="faq" href="#faq-breaks">🔧 Когда ломается трак?</a>
+<a data-page="faq" href="#faq-airsus">🚛 Air suspension — нужна?</a>
+<a data-page="faq" href="#faq-todo">☎️ Спросить у знакомых</a>
 </div>
 </div>
 <div class="nav-sep"></div>
@@ -2555,16 +2558,22 @@
 <tr><td><span data-i18n="w2_cost_label">Доп. расходы тебе</span></td><td class="s-red" data-i18n="w2_cost_w2">+$1,350/мес</td><td class="s-green" data-i18n="w2_cost_1099">$0 сверху</td></tr>
 </tbody>
 </table>
-<div class="callout callout-warn" style="margin-top:8px" data-i18n="w2_callout">
-  <strong>⚠️ Теоретический риск 1099 (IRS):</strong><br/>
-  Если водитель работает только на тебя + на твоём траке + по твоему расписанию → IRS может переквалифицировать в W2. Штрафы + ретроспективные налоги.<br/>
-  <strong>NC закон</strong> формально строгий по misclassification.
-</div>
 <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:12px;margin-top:8px;font-size:12px">
-  <strong style="color:#14532d">✅ Марк сказал (12 лет опыта, NC):</strong><br/>
-  «Оформляй водителей как 1099 контракторов — в NC это работает. Я так работаю 12 лет без проблем.»<br/>
-  <strong>Экономия:</strong> нет payroll налогов (12%), нет workers' comp, нет health benefits.<br/>
-  <strong>Важно:</strong> составить грамотный IC Agreement. Проконсультируйся с трак-адвокатом ($300–500 разово).
+  <strong style="color:#14532d">✅ <span data-i18n="w2_mark_title">Марк сказал (12 лет опыта, NC):</span></strong><br/>
+  <span data-i18n="w2_mark_quote">«Оформляй водителей как 1099 контракторов — в NC это работает. Я так работаю 12 лет без проблем.»</span><br/>
+  <strong data-i18n="w2_mark_saving">Экономия:</strong> <span data-i18n="w2_mark_saving_text">нет payroll налогов (12%), нет workers' comp, нет health benefits.</span>
+</div>
+<div style="background:#fef2f2;border:2px solid #dc2626;border-radius:8px;padding:12px;margin-top:8px;font-size:12px">
+  <strong style="color:#dc2626">🔴 <span data-i18n="w2_risk_title">ЮРИДИЧЕСКИЙ РИСК — проконсультируйся с адвокатом</span></strong><br/>
+  <span data-i18n="w2_risk_irs">По тестам IRS водитель на твоём грузовике + твой маршрут + твоё расписание = <strong>W2 сотрудник</strong> по всем критериям:</span><br/>
+  <ul style="margin:6px 0 6px 16px;line-height:1.7">
+    <li data-i18n="w2_risk_p1">Ты предоставляешь грузовик → ты обеспечиваешь инструменты → признак найма</li>
+    <li data-i18n="w2_risk_p2">Работает только по твоему маршруту → ты контролируешь → признак найма</li>
+    <li data-i18n="w2_risk_p3">Работает по твоему расписанию → ты контролируешь → признак найма</li>
+  </ul>
+  <strong data-i18n="w2_risk_dol">DOL 2024 (новые правила, март 2024):</strong> <span data-i18n="w2_risk_dol_text">6-факторный тест ещё жёстче. NC использует Control Test + Economic Realities.</span><br/>
+  <strong data-i18n="w2_risk_penalty">При проверке IRS:</strong> <span data-i18n="w2_risk_penalty_text">налоги работодателя 15.3% за весь период назад, штрафы $50–580 за каждую незаполненную W-2, штрафы NC $5,000–$25,000. Если водитель уволится и подаст на unemployment — автоматически запускается проверка.</span><br/>
+  <strong data-i18n="w2_risk_action">→ Действие:</strong> <span data-i18n="w2_risk_action_text">Проконсультируйся с trucking CPA или адвокатом перед наймом первого водителя ($300–500 разово).</span>
 </div>
 <h3 data-i18n="t410" style="margin-top:16px">Требования к кандидатам</h3>
 <ul data-i18n="t029" style="margin:8px 0 8px 20px;line-height:1.7">
@@ -2971,6 +2980,127 @@
 </div>
 <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px;margin-top:10px;font-size:12px">
   <strong data-i18n="faq_1099_reg">💡 Марк:</strong> <span data-i18n="faq_1099_reg2">Возможно стоит нанять специалиста для всего процесса регистрации трак-компании — сэкономит время и избавит от ошибок.</span>
+</div>
+</div>
+
+
+<!-- FAQ: Engine breaks -->
+<div class="normal-section" id="faq-breaks" style="margin-bottom:20px;border:2px solid #d97706;background:#fffbeb">
+<span class="section-label" style="background:#fde68a;color:#78350f">🔧 Надёжность</span>
+<h2 data-i18n="faq_breaks_title">🔧 Когда начинает ломаться современный трак?</h2>
+<div style="background:#fff7ed;border:1px solid #fdba74;border-radius:8px;padding:12px;margin-bottom:12px;font-size:13px">
+  <strong data-i18n="faq_breaks_mark">⚠️ Марк сказал: «Ломается после 400k миль»</strong><br/>
+  <span data-i18n="faq_breaks_mark_note">Это устаревшая оценка. Современные двигатели (DD15, PACCAR MX, Cummins ISX) рассчитаны на 750k–1M миль при правильном ТО.</span>
+</div>
+<div class="table-wrap">
+<table>
+<thead><tr>
+  <th data-i18n="faq_breaks_th_eng">Двигатель</th>
+  <th data-i18n="faq_breaks_th_zone">Безопасная зона</th>
+  <th data-i18n="faq_breaks_th_risk">Зона риска</th>
+  <th data-i18n="faq_breaks_th_fail">Что ломается и когда</th>
+</tr></thead>
+<tbody>
+<tr>
+  <td><strong>DD15</strong><br/><span style="font-size:11px;color:#6b7280">Freightliner Cascadia</span></td>
+  <td class="s-green" data-i18n="faq_breaks_dd15_safe">до 500k</td>
+  <td class="s-yellow" data-i18n="faq_breaks_dd15_risk">500k–700k+</td>
+  <td style="font-size:11px" data-i18n="faq_breaks_dd15_fail">EGR cooler течёт ($2–3k) @300–500k; DPF ($8–15k) @300k; инжекторы ($7–10k комплект) @400–600k; O-rings цилиндров @600k+</td>
+</tr>
+<tr>
+  <td><strong>PACCAR MX-13</strong><br/><span style="font-size:11px;color:#6b7280">Kenworth T680, PB 579</span></td>
+  <td class="s-yellow" data-i18n="faq_breaks_mx_safe">до 400k (при хорошем ТО)</td>
+  <td class="s-red" data-i18n="faq_breaks_mx_risk">400k+ (чувствителен к маслу)</td>
+  <td style="font-size:11px" data-i18n="faq_breaks_mx_fail">EGR клапан сажа (частый код SPN 2659); DPF быстро забивается на коротких маршрутах (&lt;500 миль); инжекторы $1,200/шт. ($7–12k комплект)</td>
+</tr>
+<tr>
+  <td><strong>Cummins ISX15</strong><br/><span style="font-size:11px;color:#6b7280">KW/PB до 2015</span></td>
+  <td class="s-green" data-i18n="faq_breaks_isx_safe">до 500k</td>
+  <td class="s-yellow" data-i18n="faq_breaks_isx_risk">500k–700k</td>
+  <td style="font-size:11px" data-i18n="faq_breaks_isx_fail">Турбо $6–7k @400–600k; инжекторы $7–10k @400–600k; EGR cooler $1.5–3.5k @300–500k; капремонт $30–50k @700–900k</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="background:#fef3c7;border:1px solid #fbbf24;border-radius:8px;padding:10px;margin-top:10px;font-size:12px">
+  <strong data-i18n="faq_breaks_warn">⚠️ Важно для коротких маршрутов (&lt;500 миль):</strong> <span data-i18n="faq_breaks_warn_text">Частые старты, мало highway regen → EGR/DPF засоряются быстрее. Делать принудительный DPF regen каждые 5–7 дней. Менять масло каждые 15–20k миль, не 25k.</span>
+</div>
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px;margin-top:8px;font-size:12px">
+  <strong data-i18n="faq_breaks_key">💡 Ключевой принцип:</strong> <span data-i18n="faq_breaks_key_text">Пробег вторичен — первична история ТО. Грузовик на 420k с документами лучше грузовика на 280k без истории обслуживания. Pre-purchase inspection у независимого механика — $150–300, обязательно.</span>
+</div>
+</div>
+
+<!-- FAQ: Air suspension -->
+<div class="normal-section" id="faq-airsus" style="margin-bottom:20px">
+<span class="section-label" style="background:#e0f2fe;color:#0c4a6e">🚛 Подвеска</span>
+<h2 data-i18n="faq_airsus_title">🚛 Air suspension на прицепе — нужна или нет?</h2>
+<div class="table-wrap">
+<table>
+<thead><tr>
+  <th></th>
+  <th data-i18n="faq_airsus_th_air">Air Ride 🌬️</th>
+  <th data-i18n="faq_airsus_th_spring">Spring (листовая) 🍃</th>
+</tr></thead>
+<tbody>
+<tr><td data-i18n="faq_airsus_ride">Плавность хода</td><td class="s-green" data-i18n="faq_airsus_ride_air">Лучше — меньше вибраций</td><td data-i18n="faq_airsus_ride_spring">Жёстче, особенно пустой</td></tr>
+<tr><td data-i18n="faq_airsus_maint">Обслуживание</td><td class="s-yellow" data-i18n="faq_airsus_maint_air">Дороже: воздушные мешки, клапаны (+15–20% к ТО)</td><td class="s-green" data-i18n="faq_airsus_maint_spring">Проще — только пружины и болты</td></tr>
+<tr><td data-i18n="faq_airsus_weight">Вес прицепа</td><td class="s-yellow" data-i18n="faq_airsus_weight_air">+400–500 lbs (меньше полезная нагрузка)</td><td class="s-green" data-i18n="faq_airsus_weight_spring">Легче</td></tr>
+<tr><td data-i18n="faq_airsus_req">Требование клиентов</td><td class="s-green" data-i18n="faq_airsus_req_air">Westrock Coffee — уточнить в договоре</td><td data-i18n="faq_airsus_req_spring">Принимается большинством</td></tr>
+</tbody>
+</table>
+</div>
+<div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:10px;margin-top:10px;font-size:12px">
+  <strong data-i18n="faq_airsus_verdict">💡 Вывод:</strong> <span data-i18n="faq_airsus_verdict_text">Сегодня &gt;50% новых dry van строятся со spring-ride. Air ride оправдан если Westrock Coffee прямо требует в контракте. Уточни у шиппера ДО покупки прицепа.</span>
+</div>
+<div style="border:2px solid #0ea5e9;background:#f0f9ff;border-radius:8px;padding:12px;margin-top:12px">
+  <h3 style="margin:0 0 8px 0;font-size:14px;color:#0c4a6e" data-i18n="faq_atis_title">🔧 ATIS — автоматическая подкачка шин</h3>
+  <p style="font-size:12px;margin:0 0 8px 0" data-i18n="faq_atis_what">Система поддерживает заданное давление в шинах во время движения через ось от тормозной системы прицепа. При падении давления — автоматически подкачивает.</p>
+  <ul style="font-size:12px;margin:0 0 8px 16px;line-height:1.7">
+    <li data-i18n="faq_atis_stat">90% взрывов шин вызваны недокачкой (данные ATA)</li>
+    <li data-i18n="faq_atis_result">С ATIS: в 2 раза меньше tire-related downtime; +1.4% экономия топлива; +10% ресурс шин</li>
+    <li data-i18n="faq_atis_cost">Стоимость: $500–2,200 на прицеп (Meritor, PSI, Aperia Halo)</li>
+    <li data-i18n="faq_atis_roi">Окупается при одном предотвращённом взрыве (замена + буксировка = $500–2,000)</li>
+  </ul>
+  <div style="background:#fef9c3;border:1px solid #fde68a;border-radius:6px;padding:8px;font-size:12px">
+    <strong data-i18n="faq_atis_mark">✅ Марк прав насчёт ATIS:</strong> <span data-i18n="faq_atis_mark_text">Особенно важна на юго-востоке — жаркий асфальт + I-95/I-26. Взрыв шины прицепа на трассе = дорогой инцидент. Ставить однозначно.</span>
+  </div>
+</div>
+</div>
+
+<!-- FAQ: Ask contacts -->
+<div class="normal-section" id="faq-todo" style="margin-bottom:20px;border:2px solid #7c3aed;background:#faf5ff">
+<span class="section-label" style="background:#ddd6fe;color:#4c1d95">☎️ Узнать лично</span>
+<h2 data-i18n="faq_todo_title">☎️ Вопросы — спросить у знакомых в индустрии</h2>
+<p style="font-size:13px;color:#6b7280" data-i18n="faq_todo_desc">Эти вопросы лучше прояснить через личные контакты в трукинге, а не только через интернет.</p>
+<div class="table-wrap">
+<table>
+<thead><tr>
+  <th data-i18n="faq_todo_th_q">Вопрос</th>
+  <th data-i18n="faq_todo_th_why">Почему важно</th>
+  <th data-i18n="faq_todo_th_who">Кого спросить</th>
+  <th data-i18n="faq_todo_th_status">Статус</th>
+</tr></thead>
+<tbody>
+<tr>
+  <td data-i18n="faq_todo_q1">Реально ли трак с 400k+ ломается или это миф?</td>
+  <td style="font-size:11px" data-i18n="faq_todo_w1">Марк говорит "ломается после 400k". Форумы: DD15 ходит 700k+. Нужно реальное мнение механика NC/SC.</td>
+  <td style="font-size:11px" data-i18n="faq_todo_who1">Механики Peterbilt/Kenworth Charlotte, знакомые трак-операторы</td>
+  <td><span style="background:#fde68a;color:#78350f;border-radius:4px;padding:2px 6px;font-size:11px" data-i18n="faq_todo_open">Открыт</span></td>
+</tr>
+<tr>
+  <td data-i18n="faq_todo_q2">1099 или W2 — как реально работают в NC?</td>
+  <td style="font-size:11px" data-i18n="faq_todo_w2">Марк говорит 1099 OK. IRS-тест указывает на W2. Нужна консультация trucking CPA или адвоката.</td>
+  <td style="font-size:11px" data-i18n="faq_todo_who2">Trucking CPA (ATBS), адвокат по трукинг-бизнесу NC, другие операторы NC</td>
+  <td><span style="background:#fecaca;color:#991b1b;border-radius:4px;padding:2px 6px;font-size:11px" data-i18n="faq_todo_critical">Критично</span></td>
+</tr>
+<tr>
+  <td data-i18n="faq_todo_q3">Westrock Coffee — требует Air ride и ATIS?</td>
+  <td style="font-size:11px" data-i18n="faq_todo_w3">Это может быть требование контракта, а не закона. Покупка прицепа без уточнения — риск несоответствия.</td>
+  <td style="font-size:11px" data-i18n="faq_todo_who3">Напрямую у менеджера Westrock в Concord NC при подписании договора</td>
+  <td><span style="background:#fde68a;color:#78350f;border-radius:4px;padding:2px 6px;font-size:11px" data-i18n="faq_todo_open">Открыт</span></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

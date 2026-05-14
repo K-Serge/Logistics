@@ -1839,4 +1839,7 @@ const LANG_RU = {
   "faq_todo_who3": "Напрямую у менеджера Westrock в Concord NC при подписании договора",
   "faq_todo_open": "Открыт",
   "faq_todo_critical": "Критично",
+  // Trailer ATIS/air suspension aftermarket notes
+  "mark_trl2_note": "↳ Ставится отдельно на любой прицеп: Aperia Halo крепится на ступицу без сверления, $600–1,300, 2–3 часа в trailer shop",
+  "mark_trl3_note": "↳ Spring-ride + ATIS = более простой и дешёвый вариант для dry van. Air ride конверсия $5–10k — дороже чем купить прицеп сразу с air ride",
 };

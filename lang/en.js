@@ -1839,4 +1839,7 @@ const LANG_EN = {
   "faq_todo_who3": "Directly with the Westrock manager in Concord NC when signing the contract",
   "faq_todo_open": "Open",
   "faq_todo_critical": "Critical",
+  // Trailer ATIS/air suspension aftermarket notes
+  "mark_trl2_note": "↳ Can be installed on any trailer separately: Aperia Halo bolts onto the hub without drilling, $600–1,300, 2–3 hours at a trailer shop",
+  "mark_trl3_note": "↳ Spring-ride + ATIS = simpler and cheaper option for dry van. Air ride conversion $5–10k — more expensive than buying a trailer with air ride from the start",
 };

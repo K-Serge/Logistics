@@ -6,8 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title data-i18n="page_title">Logistic — Бизнес-план SC + VA (2026)</title>
 <link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='6' fill='%232563eb'/&gt;&lt;text x='16' y='23' font-size='20' text-anchor='middle' font-family='Apple Color Emoji,Segoe UI Emoji'&gt;🚚&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
-<script src="lang/ru.js?v=19"></script>
-<script src="lang/en.js?v=19"></script>
+<script src="lang/ru.js?v=20"></script>
+<script src="lang/en.js?v=20"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; color: #1a1a1a; background: #f5f5f5; }
@@ -328,52 +328,198 @@
 <!-- OWNER PROFILE + CORPORATE STRUCTURE -->
 <div class="normal-section" data-page="documents" id="corp-structure" style="border:2px solid #5b21b6;background:#f5f3ff">
 <span class="section-label label-legal" data-i18n="t040">👤 Профиль владельца + Корпоративная структура</span>
-<h2 data-i18n="t041" style="color:#5b21b6">Wyoming holding + NC operating LLC (анонимность 50/50 партнёров)</h2>
-<h3 data-i18n="t042">Профиль</h3>
-<table>
+<h2 style="color:#5b21b6" data-i18n="t041">Wyoming Holding + NC Operating LLC — анонимная структура 50/50</h2>
+
+<!-- OWNER PROFILE -->
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+  <div style="background:#fff;border-radius:8px;padding:12px;border:1px solid #ddd8fe">
+    <div style="font-weight:700;font-size:12px;color:#5b21b6;margin-bottom:6px">👤 Партнёр 1</div>
+    <div style="font-size:13px"><strong>Serge (Serhii Klement)</strong></div>
+    <div style="font-size:12px;color:#6b7280">Charlotte / Matthews, NC</div>
+    <div style="margin-top:6px;font-size:12px">Credit score: <strong class="s-green">811</strong> — топ-тир, открывает 4.9–6.9% APR</div>
+    <div style="font-size:12px;margin-top:2px">CDL: <span style="color:#dc2626">нет</span> (не нужен — нанимаем W2 водителей)</div>
+  </div>
+  <div style="background:#fff;border-radius:8px;padding:12px;border:1px solid #ddd8fe">
+    <div style="font-weight:700;font-size:12px;color:#5b21b6;margin-bottom:6px">👤 Партнёр 2</div>
+    <div style="font-size:13px"><strong>Itzel Zaldivar</strong></div>
+    <div style="font-size:12px;color:#6b7280">50/50 partner</div>
+    <div style="margin-top:6px;font-size:12px">Доля в бизнесе: <strong>50%</strong></div>
+    <div style="font-size:12px;margin-top:2px">Управление через Operating Agreement</div>
+  </div>
+</div>
+
+<!-- STRUCTURE DIAGRAM -->
+<h3 style="margin:0 0 8px;color:#5b21b6">🏗️ Корпоративная структура</h3>
+<pre style="background:#1e2837;color:#d4dbe8;padding:14px;border-radius:8px;font-size:12px;line-height:1.9;margin:0 0 12px;overflow-x:auto">
+  Serge + Itzel (физлица, 50/50)
+         ↓ владеют анонимно
+  ┌─────────────────────────────────────────┐
+  │  WYOMING LLC  (холдинг, Cheyenne WY)   │
+  │  Nominee Manager = Wyoming LLC Attorney  │
+  │  ⚡ Имена партнёров НЕ в публичных      │
+  │     записях Wyoming                      │
+  └──────────────────┬──────────────────────┘
+                     │ 100% владеет
+  ┌──────────────────▼──────────────────────┐
+  │  NORTH CAROLINA LLC  (операционная)     │
+  │  Owner в NC records = "Wyoming LLC"     │
+  │  MC / DOT / IRP / IFTA / страховка      │
+  │  Наёмные водители W2, контракт Westrock  │
+  └─────────────────────────────────────────┘</pre>
+
+<!-- WHY THIS STRUCTURE -->
+<h3 style="margin:0 0 8px;color:#5b21b6">❓ Зачем такая структура — объяснение простыми словами</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
+  <div style="background:#f5f3ff;border-radius:6px;padding:10px;border-left:3px solid #7c3aed">
+    <div style="font-weight:700;font-size:12px;color:#5b21b6;margin-bottom:4px">🔒 Анонимность</div>
+    <div style="font-size:11px;color:#374151">Wyoming не раскрывает owners публично. В NC records видно только "Wyoming LLC" — не твои имена. Конкуренты и партнёры не видят кто стоит за бизнесом.</div>
+  </div>
+  <div style="background:#f5f3ff;border-radius:6px;padding:10px;border-left:3px solid #7c3aed">
+    <div style="font-weight:700;font-size:12px;color:#5b21b6;margin-bottom:4px">🛡️ Защита активов</div>
+    <div style="font-size:11px;color:#374151">При иске к NC LLC — твой дом, машина, личные счета защищены WY холдингом. Два уровня LLC = два барьера для кредиторов.</div>
+  </div>
+  <div style="background:#f5f3ff;border-radius:6px;padding:10px;border-left:3px solid #7c3aed">
+    <div style="font-weight:700;font-size:12px;color:#5b21b6;margin-bottom:4px">📋 Nominee Manager</div>
+    <div style="font-size:11px;color:#374151">Юридическая фирма (Wyoming LLC Attorney) подписывает публичные документы вместо тебя. Ты — реальный владелец через приватный Operating Agreement. Ехать никуда не нужно — DocuSign.</div>
+  </div>
+  <div style="background:#fef9c3;border-radius:6px;padding:10px;border-left:3px solid #f59e0b">
+    <div style="font-weight:700;font-size:12px;color:#92400e;margin-bottom:4px">⚠️ Что НЕ скрывает</div>
+    <div style="font-size:11px;color:#374151">Банк (KYC требует SSN), IRS (налоги), FMCSA (enforcement). Структура защищает от конкурентов и публичных records — не от госорганов.</div>
+  </div>
+</div>
+
+<!-- NOMINEE MANAGER COMPARISON -->
+<h3 style="margin:0 0 8px;color:#5b21b6">🔍 Nominee Manager — сравнение сервисов</h3>
+<div class="table-wrap">
+<table style="width:100%;font-size:12px">
+<thead><tr style="background:#5b21b6;color:#fff">
+  <th>Сервис</th>
+  <th>Setup</th>
+  <th>Ежегодно</th>
+  <th>Attorney privilege</th>
+  <th>Что входит</th>
+  <th>Рейтинг</th>
+</tr></thead>
 <tbody>
-<tr><td data-i18n="t043">Имя / локация</td><td data-i18n="t043v">Serge (Serhii Klement) · Charlotte / Matthews, NC + Itzel Zaldivar</td></tr>
-<tr><td data-i18n="t044">Личный credit score</td><td class="s-green"><strong data-i18n="t045">811 (топ-тир)</strong><span data-i18n="t045_suffix"> — открывает best financing rates 4.9-6.9% APR</span></td></tr>
-<tr><td>CDL</td><td class="s-red" data-i18n="t046">Нет (и не нужен — нанимаешь водителей)</td></tr>
-<tr><td data-i18n="t048">Партнёрство в trucking</td><td data-i18n="t049">Serge (Serhii Klement) · Charlotte / Matthews, NC + Itzel Zaldivar — 50/50 partners</td></tr>
+<tr style="background:#f0fdf4">
+  <td><strong>Wyoming LLC Attorney</strong><br/><span style="font-size:10px">wyomingllcattorney.com<br/>+1 (307) 683-0983</span></td>
+  <td><strong>$550</strong></td>
+  <td><strong>$860/год</strong></td>
+  <td><span style="color:#16a34a;font-weight:700">✅ Да</span></td>
+  <td style="font-size:11px">LLC formation + Nominee + RA + EIN + Operating Agreement + DocuSign + Annual Report</td>
+  <td><span style="background:#16a34a;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px">⭐ Лучший</span></td>
+</tr>
+<tr>
+  <td><strong>Wyoming Corporate Services</strong><br/><span style="font-size:10px">wyomingcompany.com<br/>1-307-632-3333</span></td>
+  <td>$365 nominee<br/>+ $515 LLC = $880</td>
+  <td>$400 + $145 RA = $545/год</td>
+  <td><span style="color:#dc2626">❌ Нет</span></td>
+  <td style="font-size:11px">Public Director + RA — без attorney privilege. В суде могут заставить раскрыть владельца.</td>
+  <td><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px">Дешевле</span></td>
+</tr>
+<tr style="background:#f8fafc">
+  <td><strong>DIY (без nominee)</strong><br/><span style="font-size:10px">sos.wyo.gov</span></td>
+  <td>$100 (state fee)</td>
+  <td>$60 annual report + $25 RA = $85/год</td>
+  <td>—</td>
+  <td style="font-size:11px">Твоё имя НЕ видно в WY reестре по умолчанию (WY не требует раскрывать members!). Только Registered Agent публичен.</td>
+  <td><span style="background:#6b7280;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px">Бюджетно</span></td>
+</tr>
 </tbody>
 </table>
-<h3 data-i18n="t050" style="margin-top:16px">Структура: двойная LLC (Wyoming holding + NC operating)</h3>
-<pre data-i18n="t051" style="background:#1e2837;color:#d4dbe8;padding:12px;border-radius:6px;font-size:11.5px;line-height:1.6;margin:8px 0">
-   Serge (Serhii Klement) + Itzel Zaldivar (физлица)
-            ↓ владеют 50/50
-   Wyoming LLC (холдинг) — АНОНИМНЫЙ
-   [имена не в публичных записях Wyoming]
-            ↓ 100% владеет
-   North Carolina LLC (операционная)
-   [в NC records: owner = "Wyoming LLC", не физлица]
-            ↓
-   Trucking бизнес: MC/DOT, IRP, IFTA, страховка
-   [Manager публичный = nominee, не партнёры]</pre>
-<h3 data-i18n="t052" style="margin-top:12px">Почему именно так</h3>
-<ul data-i18n="t001" style="margin:8px 0 8px 20px;line-height:1.7">
-<li><strong>NC по resident state:</strong> IRP/IFTA обязаны регистрироваться в штате проживания (Charlotte NC)</li>
-<li><strong>NC vs NJ:</strong> NJ с июля 2024 поднял min insurance до $1.5M для base-plated в NJ траков. NC регистрация позволяет работать на NJ маршруте под $750K-$1M federal минимум</li>
-<li><strong>Wyoming holding:</strong> Wyoming не раскрывает members публично. NC требует публично указывать. Wyoming как member NC LLC = в NC records видно только "Wyoming LLC", имена скрыты</li>
-<li><strong>Nominee Manager:</strong> подписывает публичные документы (broker agreements, contracts) от имени NC LLC. Реальный контроль (банк, операции) у партнёров через приватный Operating Agreement</li>
-<li><strong>Что НЕ скрывает:</strong> банк (KYC), insurance underwriting (SSN driver record), IRS, FMCSA enforcement actions. Это для защиты от конкурентов и публичных records, не от госорганов</li>
-</ul>
-<h3 data-i18n="t053" style="margin-top:16px">Стоимость структуры</h3>
-<table>
-<thead><tr><th data-i18n="t054">Расход</th><th data-i18n="t055">Разово</th><th data-i18n="t056">В год</th></tr></thead>
+</div>
+<div style="background:#eff6ff;border-radius:6px;padding:8px 12px;font-size:11px;margin-top:6px;color:#1e40af">
+  💡 <strong>Факт про Wyoming:</strong> WY по умолчанию не требует указывать members/owners в публичных документах — только Registered Agent. Nominee нужен для дополнительного уровня защиты через attorney privilege. Для старта можно обойтись DIY + хорошим RA.
+</div>
+
+<!-- REGISTERED AGENTS -->
+<h3 style="margin:14px 0 8px;color:#5b21b6">📮 Registered Agents — зачем и где</h3>
+<div class="table-wrap">
+<table style="width:100%;font-size:12px">
+<thead><tr style="background:#5b21b6;color:#fff">
+  <th>Штат</th>
+  <th>Для какой LLC</th>
+  <th>Сервис</th>
+  <th>Цена</th>
+  <th>Что получаешь</th>
+</tr></thead>
 <tbody>
-<tr><td data-i18n="t057">Wyoming LLC регистрация</td><td>~$100</td><td>—</td></tr>
-<tr><td>Wyoming registered agent + nominee manager service</td><td>~$200</td><td>$600-700</td></tr>
-<tr><td>Wyoming annual report</td><td>—</td><td>$60</td></tr>
-<tr><td data-i18n="t058">NC LLC регистрация (foreign entity registration)</td><td>$250</td><td>—</td></tr>
-<tr><td>NC annual report</td><td>—</td><td>$200</td></tr>
-<tr style="background:#ede9fe"><td><strong data-i18n="t059">Итого структура</strong></td><td><strong>~$550</strong></td><td><strong>~$860-960</strong></td></tr>
+<tr>
+  <td><strong>Wyoming</strong></td>
+  <td>Holding LLC</td>
+  <td>wyomingagents.com</td>
+  <td>$25/год</td>
+  <td>Адрес в Cheyenne WY для гос. документов, судебных повесток. Юридически обязателен.</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td><strong>North Carolina</strong></td>
+  <td>Operating LLC</td>
+  <td>northwestregisteredagent.com</td>
+  <td>$125/год</td>
+  <td>Адрес в NC для FMCSA, NC Secretary of State, судебных повесток к NC LLC.</td>
+</tr>
 </tbody>
 </table>
-<div class="callout callout-info" data-i18n="t002" style="margin-top:8px">
-<strong>Сервисы для setup (онлайн, физически ехать не нужно):</strong> wyomingllcattorney.com (+1 307-683-0983), northwestregisteredagent.com, wyomingcompany.com. <strong>Подписание Nominee Agreement через DocuSign.</strong>
+</div>
+<div style="font-size:11px;color:#6b7280;margin-top:4px">Registered Agent ≠ твой рабочий адрес. RA принимает только официальные и судебные документы. Для обычной рабочей почты — нужен Virtual Office отдельно.</div>
+
+<!-- ADDRESS GUIDE -->
+<h3 style="margin:14px 0 8px;color:#5b21b6">📍 Как решить вопрос с адресами</h3>
+<div style="background:#fff;border:1px solid #ddd8fe;border-radius:8px;padding:12px;margin-bottom:10px">
+  <div style="font-weight:700;font-size:12px;margin-bottom:8px">У тебя будет 3 адреса — каждый для своей цели:</div>
+  <div style="display:flex;flex-direction:column;gap:6px">
+    <div style="display:flex;gap:8px;align-items:flex-start">
+      <span style="background:#5b21b6;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;white-space:nowrap;min-width:120px;text-align:center">WY Registered Agent</span>
+      <div style="font-size:11px;color:#374151">Cheyenne, WY — только для юридических документов WY LLC (судебные иски, SoS письма). Ты туда почти никогда не смотришь — RA уведомляет по email.</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:flex-start">
+      <span style="background:#5b21b6;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;white-space:nowrap;min-width:120px;text-align:center">NC Registered Agent</span>
+      <div style="font-size:11px;color:#374151">Charlotte, NC — только для судебных документов NC LLC. Northwest RA — $125/год. Сюда тоже редко что приходит.</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:flex-start">
+      <span style="background:#2563eb;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;white-space:nowrap;min-width:120px;text-align:center">NC Virtual Office ⭐</span>
+      <div style="font-size:11px;color:#374151"><strong>Твой рабочий адрес Charlotte</strong> — для FMCSA, IRS, банка, страховки, партнёров. Сюда приходит всё. iPostal1 ($9.99/мес) — при любом письме мгновенный email + скан конверта + скан содержимого по запросу.</div>
+    </div>
+  </div>
+</div>
+
+<!-- VIRTUAL MAILBOX -->
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:12px">
+  <div style="font-weight:700;font-size:13px;margin-bottom:8px;color:#1e40af">📬 Как выбрать адрес в Charlotte рядом с домом</div>
+  <div style="font-size:12px;margin-bottom:6px">1. Заходишь на <strong>ipostal1.com</strong> → "Choose Location" → ввести ZIP код дома</div>
+  <div style="font-size:12px;margin-bottom:6px">2. Показывает ближайшие точки (обычно UPS Store, Pack &amp; Ship, Postal Plus)</div>
+  <div style="font-size:12px;margin-bottom:6px">3. Адрес выглядит как реальная улица: <code style="background:#dbeafe;padding:1px 6px;border-radius:3px">1234 Independence Blvd Ste 301, Charlotte NC 28209</code> — не PO Box, подходит для FMCSA</div>
+  <div style="font-size:12px;margin-bottom:8px">4. Платишь $9.99/мес — приходит письмо → <strong>мгновенный email</strong> с фото конверта. Говоришь "открой и просканируй" — скидывают PDF в приложение. Физически ехать — только если нужна оригинальная бумага.</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;font-size:11px">
+    <div style="background:#fff;border-radius:4px;padding:6px;text-align:center;border:1px solid #bfdbfe"><strong>iPostal1</strong><br/>$9.99/мес<br/>4,250+ адресов<br/>✅ Email alert</div>
+    <div style="background:#fff;border-radius:4px;padding:6px;text-align:center;border:1px solid #bfdbfe"><strong>PostScan Mail</strong><br/>$10/мес<br/>800+ адресов<br/>✅ AI summary</div>
+    <div style="background:#fff;border-radius:4px;padding:6px;text-align:center;border:1px solid #bfdbfe"><strong>Anytime Mailbox</strong><br/>$9.99/мес<br/>1,000+ адресов<br/>✅ App</div>
+  </div>
+</div>
+
+<!-- COST TABLE -->
+<h3 style="margin:14px 0 8px;color:#5b21b6">💰 Стоимость всей структуры</h3>
+<div class="table-wrap">
+<table style="width:100%;font-size:12px">
+<thead><tr><th>Статья</th><th style="width:100px">Разово</th><th style="width:100px">В год</th></tr></thead>
+<tbody>
+<tr><td>WY LLC state filing</td><td>$100</td><td>—</td></tr>
+<tr style="background:#f8fafc"><td>WY Nominee Manager (Wyoming LLC Attorney)</td><td>$550</td><td>$860</td></tr>
+<tr><td>WY Registered Agent (wyomingagents.com)</td><td>—</td><td>$25</td></tr>
+<tr style="background:#f8fafc"><td>WY Annual Report</td><td>—</td><td>$60</td></tr>
+<tr><td>NC LLC state filing</td><td>$125</td><td>—</td></tr>
+<tr style="background:#f8fafc"><td>NC Registered Agent (Northwest)</td><td>—</td><td>$125</td></tr>
+<tr><td>NC Annual Report</td><td>—</td><td>$200</td></tr>
+<tr style="background:#f8fafc"><td>NC Virtual Office (iPostal1)</td><td>—</td><td>$120</td></tr>
+<tr style="border-top:2px solid #5b21b6;background:#f5f3ff"><td><strong>Итого структура</strong></td><td><strong>~$775</strong></td><td><strong>~$1,390/год</strong></td></tr>
+</tbody>
+</table>
+</div>
+<div style="background:#f5f3ff;border-radius:6px;padding:8px 12px;font-size:11px;margin-top:6px;color:#5b21b6">
+  <strong>Подписание через DocuSign — физически ехать никуда не нужно.</strong> Wyoming LLC Attorney: wyomingllcattorney.com · +1 (307) 683-0983. Northwest RA: northwestregisteredagent.com
 </div>
 </div>
+
 <!-- WAREHOUSE LANE REFERENCE -->
 <div class="normal-section" data-page="warehouse" id="warehouse" style="border:2px solid #1e40af;background:#eff6ff">
 <span class="section-label label-routes">📍 Warehouse Lane Reference</span>
@@ -2851,7 +2997,7 @@
 <tbody>
 <tr>
   <td>1</td>
-  <td><strong>WY LLC</strong> — холдинг (Wyoming LLC Attorney)</td>
+  <td><strong>WY LLC</strong><br/><span style="font-size:11px;color:#6b7280">Заходишь на wyomingllcattorney.com, заполняешь форму онлайн ($100 state fee + $550 nominee setup). Они ставят своё имя в публичные записи WY вместо тебя. Документы через DocuSign — никуда ехать не надо.</span> — холдинг (Wyoming LLC Attorney)<br/><span style="font-size:11px;color:#6b7280">Заходишь на wyomingllcattorney.com, заполняешь форму онлайн ($100 state fee + $550 nominee setup). Они ставят своё имя в публичные записи вместо тебя. Документы через DocuSign — ехать никуда не надо.</span></td>
   <td>wyomingllcattorney.com</td>
   <td>20 мая</td>
   <td>1–3 дня</td>
@@ -2861,7 +3007,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>2</td>
-  <td><strong>NC LLC</strong> — операционная (sosnc.gov)</td>
+  <td><strong>NC LLC</strong><br/><span style="font-size:11px;color:#6b7280">Заходишь на sosnc.gov → Business Registration → LLC. Название компании, адрес (виртуальный офис), registered agent. Оплачиваешь $125 картой. Готово за 1–2 рабочих дня.</span> — операционная (sosnc.gov)<br/><span style="font-size:11px;color:#6b7280">Идёшь на sosnc.gov → Business Registration → LLC. Заполняешь форму: название компании, адрес (виртуальный офис), registered agent. Оплачиваешь $125 картой онлайн. Готово за 1–2 рабочих дня.</span></td>
   <td>NC Secretary of State online</td>
   <td>20 мая</td>
   <td>1–2 дня</td>
@@ -2871,7 +3017,7 @@
 </tr>
 <tr>
   <td>3</td>
-  <td><strong>NC Registered Agent</strong> (Northwest RA)</td>
+  <td><strong>NC Registered Agent</strong><br/><span style="font-size:11px;color:#6b7280">northwestregisteredagent.com → NC → $125/год. Они дают адрес в NC для судебных и гос. документов. При регистрации NC LLC вводишь их как Registered Agent.</span> (Northwest RA)<br/><span style="font-size:11px;color:#6b7280">Заходишь на northwestregisteredagent.com, выбираешь NC, оплачиваешь $125/год. Они дают тебе адрес в NC для получения судебных и государственных документов. При регистрации NC LLC вводишь их адрес как Registered Agent.</span></td>
   <td>northwestregisteredagent.com</td>
   <td>20 мая</td>
   <td>Мгновенно</td>
@@ -2881,7 +3027,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>4</td>
-  <td><strong>EIN для NC LLC</strong> (IRS Form SS-4)</td>
+  <td><strong>EIN для NC LLC</strong><br/><span style="font-size:11px;color:#6b7280">irs.gov → "Apply for an Employer ID Number" → LLC → вводишь данные компании. Через 15 мин получаешь EIN на экране. Сохрани PDF — нужен для банка и FMCSA.</span> (IRS Form SS-4)<br/><span style="font-size:11px;color:#6b7280">Заходишь на irs.gov → "Apply for an Employer ID Number" → выбираешь LLC → вводишь данные компании. Через 15 минут получаешь EIN прямо на экране. Сохрани PDF — он нужен для банка и FMCSA.</span></td>
   <td>irs.gov → EIN Assistant</td>
   <td>21 мая</td>
   <td>15 мин</td>
@@ -2891,7 +3037,7 @@
 </tr>
 <tr style="background:#fef9c3;border-left:4px solid #f59e0b">
   <td>5</td>
-  <td><strong>USDOT Number</strong> (бесплатно, выдаётся мгновенно)</td>
+  <td><strong>USDOT Number</strong><br/><span style="font-size:11px;color:#6b7280">li-public.fmcsa.dot.gov → Register New USDOT. Вводишь данные LLC, EIN, тип груза (General Freight). Бесплатно. Номер выдаётся сразу же — записываешь, нужен везде дальше.</span> (бесплатно, выдаётся мгновенно)<br/><span style="font-size:11px;color:#6b7280">Заходишь на li-public.fmcsa.dot.gov → Register New USDOT. Вводишь данные LLC, EIN, тип груза (General Freight), количество траков. Номер выдаётся сразу же — записываешь его, он нужен везде дальше.</span>, выдаётся мгновенно)</td>
   <td>li-public.fmcsa.dot.gov → Register</td>
   <td>21 мая</td>
   <td>Мгновенно</td>
@@ -2901,7 +3047,7 @@
 </tr>
 <tr style="background:#fef3c7;border-left:4px solid #f59e0b">
   <td>6</td>
-  <td><strong>MC Number application — ЗАПУСКАЕТ 21-ДЕНЬ ⚡</strong></td>
+  <td><strong>MC Number application — ЗАПУСКАЕТ 21-ДЕНЬ ⚡<br/><span style="font-size:11px;color:#6b7280">На том же портале FMCSA → Operating Authority → Motor Carrier (Property). Платишь $300 картой онлайн. FMCSA публикует твою заявку — 21 день даётся общественности на возражения. По истечении MC автоматически активируется (если нет возражений). Делай сразу после USDOT.</span> ⚡</strong></td>
   <td>li-public.fmcsa.dot.gov → Operating Authority</td>
   <td>21 мая</td>
   <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 21 день wait</span></td>
@@ -2911,7 +3057,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>7</td>
-  <td><strong>BOC-3 Process Agent</strong> (blanket, все 50 штатов)</td>
+  <td><strong>BOC-3 Process Agent</strong><br/><span style="font-size:11px;color:#6b7280">bocthree.com или usamd.com → платишь ~$50 → они назначают агентов во всех 50 штатах для приёма юридических документов. FMCSA требует BOC-3 до активации MC. Делается за 1 день онлайн.</span><br/><span style="font-size:11px;color:#6b7280">Заходишь на bocthree.com или usamd.com, платишь ~$50 и они назначают агентов во всех 50 штатах которые принимают юридические документы за тебя. FMCSA требует BOC-3 до активации MC. Делается за 1 день, никуда ехать не нужно.</span> (blanket, все 50 штатов)</td>
   <td>USAMD.com или bocthree.com</td>
   <td>22 мая</td>
   <td>1 день</td>
@@ -2921,7 +3067,7 @@
 </tr>
 <tr>
   <td>8</td>
-  <td><strong>UCR Registration</strong></td>
+  <td><strong>UCR Registration</strong><br/><span style="font-size:11px;color:#6b7280">ucr.gov → Register → вводишь USDOT. Выбираешь 1 трак = $76/год. Платишь картой. Ежегодный федеральный сбор за interstate работу. Обновлять каждый год до 1 января.</span><br/><span style="font-size:11px;color:#6b7280">Заходишь на ucr.gov → Register → вводишь USDOT номер. Выбираешь количество траков (1 = $76/год). Платишь картой. Это ежегодный федеральный сбор за право работать interstate. Без него authority могут приостановить.</span></td>
   <td>ucr.gov</td>
   <td>22 мая</td>
   <td>1 день</td>
@@ -2931,7 +3077,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>9</td>
-  <td><strong>Drug & Alcohol Consortium</strong></td>
+  <td><strong>Drug &amp; Alcohol Consortium</strong><br/><span style="font-size:11px;color:#6b7280">foleyservices.com или usamd.com → Enrollment. Регистрируешь компанию ($150/год на водителя). Программа случайного тестирования водителей — обязательна по DOT до найма первого водителя.</span></td>
   <td>Foley Services или USAMD</td>
   <td>22 мая</td>
   <td>1 день</td>
@@ -2941,7 +3087,7 @@
 </tr>
 <tr>
   <td>10</td>
-  <td><strong>Бизнес-адрес NC</strong> (не домашний — Regus или iPostal1 Charlotte)</td>
+  <td><strong>Бизнес-адрес NC</strong><br/><span style="font-size:11px;color:#6b7280">ipostal1.com → Choose Location → Charlotte NC → выбираешь ближайшую точку к дому ($9.99/мес). Реальный street address (не PO Box) для FMCSA, банка, IRS. При любом письме — мгновенный email + скан.</span> (не домашний — Regus или iPostal1 Charlotte)<br/><span style="font-size:11px;color:#6b7280">Заходишь на ipostal1.com → Choose Location → Charlotte NC → выбираешь ближайшую точку к дому. Оплачиваешь $9.99/мес. Получаешь реальный street address (не PO Box) — он нужен для FMCSA, банка, IRS. При любом письме — мгновенное email уведомление + скан содержимого.</span> (не домашний — Regus или iPostal1 Charlotte)</td>
   <td>regus.com / ipostal1.com</td>
   <td>23 мая</td>
   <td>1 день</td>
@@ -2951,7 +3097,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>11</td>
-  <td><strong>EIN для WY LLC</strong></td>
+  <td><strong>EIN для WY LLC</strong><br/><span style="font-size:11px;color:#6b7280">Аналогично NC — irs.gov → Apply EIN → данные WY компании. Нужен если WY LLC будет открывать отдельный банк счёт. Если только холдинг — можно сделать позже.</span><br/><span style="font-size:11px;color:#6b7280">Аналогично NC LLC — irs.gov → Apply EIN → вводишь данные WY компании. Нужен для WY компании если будет открывать отдельный банковский счёт или платить taxes на федеральном уровне. Если только холдинг — можно сделать чуть позже.</span></td>
   <td>irs.gov</td>
   <td>23 мая</td>
   <td>15 мин</td>
@@ -2983,7 +3129,7 @@
 <tbody>
 <tr>
   <td>12</td>
-  <td><strong>Бизнес банк-счёт</strong> (Bank of America / Chase Business)</td>
+  <td><strong>Бизнес банк-счёт</strong><br/><span style="font-size:11px;color:#6b7280">Идёшь в отделение BoA или Chase с NC LLC Articles + EIN + паспортом. Открываешь Business Checking. Онлайн для бизнес не работает — нужно личное присутствие. Все платежи компании только через него.</span> (Bank of America / Chase Business)<br/><span style="font-size:11px;color:#6b7280">Идёшь в отделение (BoA или Chase), берёшь NC LLC Articles of Organization + EIN + паспорт. Открываешь Business Checking. Все операции компании — только через него (Westrock платит сюда, страховка списывается отсюда). Онлайн для бизнес-счёта обычно не работает — нужно личное присутствие.</span> (Bank of America / Chase Business)</td>
   <td>Отделение банка</td>
   <td>26 мая</td>
   <td>1–2 часа</td>
@@ -2993,7 +3139,7 @@
 </tr>
 <tr style="background:#fef3c7;border-left:4px solid #f59e0b">
   <td>13</td>
-  <td><strong>📞 СТРАХОВКА — звонить 3+ компании (см. чеклист ниже)</strong></td>
+  <td><strong>📞 СТРАХОВКА — звонить 3+ компании (см. чеклист ниже)<br/><span style="font-size:11px;color:#6b7280">Звонишь напрямую в Progressive Commercial, Great West Casualty, Sentry, Canal Insurance. Называешь: USDOT#, MC#, тип груза (general freight), маршрут (NC↔SC), год и модель трака (когда выберешь). Просишь quote на Primary Liability $1M + Cargo $100k + Physical Damage. Получаешь 3+ котировки, сравниваешь. Bind только после получения VIN трака.</span> (см. чеклист ниже)</strong></td>
   <td>Progressive · Great West · Sentry · Canal</td>
   <td>26–30 мая</td>
   <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 5–7 дней</span></td>
@@ -3003,7 +3149,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>14</td>
-  <td><strong>PacLease переговоры</strong> TLG Peterbilt Charlotte</td>
+  <td><strong>PacLease переговоры</strong><br/><span style="font-size:11px;color:#6b7280">Звонишь (704) 597-8600 → просишь Full-Service Lease quote (Peterbilt 579 / Kenworth T680, 12–24 мес). Full-Service = $7,500/мес включает ТО, ремонты и замену трака при поломке. Проси письменный quote для сравнения с покупкой.</span> TLG Peterbilt Charlotte<br/><span style="font-size:11px;color:#6b7280">Звонишь на (704) 597-8600 → просишь Full-Service Lease quote на Peterbilt 579 или Kenworth T680 на 12–24 месяца. Full-Service = $7,500/мес включает ТО, ремонты и замену трака при поломке. Это альтернатива покупке: меньше CAPEX, но выше monthly cost. Проси письменный quote.</span> TLG Peterbilt Charlotte</td>
   <td>📞 (704) 597-8600</td>
   <td>28 мая</td>
   <td>1 час</td>
@@ -3013,7 +3159,7 @@
 </tr>
 <tr>
   <td>15</td>
-  <td><strong>Поиск + инспекция трака</strong> (3rd party, ~$200–300)</td>
+  <td><strong>Поиск + инспекция трака</strong><br/><span style="font-size:11px;color:#6b7280">Смотришь таблицу Траки на этом сайте (топ-10 по $/mi). Нанимаешь 3rd-party инспектора ($150–300, TruckPaper → Inspector Network). Инспектор проверяет двигатель, тормоза, раму, EGR/DPF, историю VIN. Без инспекции — не покупай.</span> (3rd party, ~$200–300)<br/><span style="font-size:11px;color:#6b7280">Смотришь таблицу Траки на этом сайте (топ-10 по $/mi). Едешь смотреть физически или нанимаешь 3rd-party инспектора ($150–300, ищи на TruckPaper → Inspector Network). Инспектор проверяет: двигатель, тормоза, рама, EGR, DPF, история по VIN. Без инспекции — не покупай.</span> (3rd party, ~$200–300)</td>
   <td>TruckPaper / SelecTrucks / Penske → инспектор</td>
   <td>27 мая – 6 июня</td>
   <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 1–2 недели</span></td>
@@ -3023,7 +3169,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>16</td>
-  <td><strong>IFTA Registration</strong> (NC DOR)</td>
+  <td><strong>IFTA Registration</strong><br/><span style="font-size:11px;color:#6b7280">ncdor.gov → IFTA → регистрируешь компанию. Получаешь IFTA license + 2 decal наклейки на трак. Ежеквартально подаёшь отчёт: сколько миль проехал в каждом штате, сколько топлива купил. Нужен до interstate поездок.</span> (NC DOR)<br/><span style="font-size:11px;color:#6b7280">Заходишь на ncdor.gov → IFTA. Регистрируешь компанию, получаешь IFTA license и 2 decal (наклейки) на трак. IFTA = ежеквартальная отчётность по топливу — сколько проехал в каждом штате, сколько топлива купил. Нужен до начала interstate поездок.</span> (NC DOR)</td>
   <td>ncdor.gov → IFTA</td>
   <td>29 мая</td>
   <td>10 дней</td>
@@ -3033,7 +3179,7 @@
 </tr>
 <tr>
   <td>17</td>
-  <td><strong>Operating Agreement</strong> WY LLC + NC LLC</td>
+  <td><strong>Operating Agreement</strong><br/><span style="font-size:11px;color:#6b7280">Wyoming LLC Attorney готовит оба Operating Agreement (WY + NC). Документ описывает: кто владеет (50/50 Serge + Itzel), как принимаются решения, как делится прибыль. Приватный документ, не публикуется. Подписываешь через DocuSign.</span> WY LLC + NC LLC<br/><span style="font-size:11px;color:#6b7280">Wyoming LLC Attorney готовит для тебя оба Operating Agreement — документы, которые описывают кто владеет компанией (50/50 Serge + Itzel), как принимаются решения, как распределяется прибыль. Это приватные документы (не публикуются). Подписываешь через DocuSign.</span> WY LLC + NC LLC</td>
   <td>Wyoming LLC Attorney (уже нанят)</td>
   <td>29–30 мая</td>
   <td>2–3 дня</td>
@@ -3043,7 +3189,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>18</td>
-  <td><strong>Получить VIN трака</strong> → передать страховщику</td>
+  <td><strong>Получить VIN трака</strong><br/><span style="font-size:11px;color:#6b7280">После выбора трака берёшь VIN (17 знаков, на двери кабины или dashboard). Передаёшь страховщику для финального bind. Также нужен для HVUT 2290 и IRP plates. Без VIN ничего дальше не оформить.</span> → передать страховщику<br/><span style="font-size:11px;color:#6b7280">После выбора трака — берёшь VIN (17-значный номер на двери кабины или dashboard). Передаёшь страховщику для финального bind. Без VIN страховщик не может оформить полис на конкретный трак. Также нужен для HVUT 2290 и IRP plates.</span> → передать страховщику</td>
   <td>Dealer / Penske / SelecTrucks</td>
   <td>3–6 июня</td>
   <td>1 день</td>
@@ -3075,7 +3221,7 @@
 <tbody>
 <tr style="background:#f0fdf4;border-left:4px solid #16a34a">
   <td>19</td>
-  <td><strong>✅ MC ACTIVE — проверить статус</strong></td>
+  <td><strong>✅ MC ACTIVE — проверить статус<br/><span style="font-size:11px;color:#6b7280">Заходишь на li-public.fmcsa.dot.gov → поиск по MC#. Смотришь статус: должно быть "Active". Если всё ок — поздравляю, можно работать interstate. Если статус "Pending" — звони в FMCSA (800) 832-5660.</span></td>
   <td>li-public.fmcsa.dot.gov</td>
   <td>~11 июня</td>
   <td>—</td>
@@ -3085,7 +3231,7 @@
 </tr>
 <tr>
   <td>20</td>
-  <td><strong>Финализировать страховку</strong> — bind + первый взнос</td>
+  <td><strong>Финализировать страховку</strong><br/><span style="font-size:11px;color:#6b7280">Звонишь выбранному страховщику: "MC активен, готов bind". Присылают полис + счёт на первый взнос ($3,500–5,500). Платишь → получаешь Certificate of Insurance. Страховщик сам подаёт BMC-91 в FMCSA — MC полностью активируется.</span> — bind + первый взнос<br/><span style="font-size:11px;color:#6b7280">Звонишь выбранному страховщику: "MC активен, готов bind". Они присылают полис и счёт на первый взнос (20–30% от годовой = $3,500–5,500). Платишь, получаешь Certificate of Insurance. Страховщик сам подаёт BMC-91 в FMCSA — твой MC полностью активируется.</span> — bind + первый взнос</td>
   <td>Страховщик (Progressive / Great West)</td>
   <td>11 июня</td>
   <td>1 день</td>
@@ -3095,7 +3241,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>21</td>
-  <td><strong>HVUT Form 2290</strong> (IRS — налог на трак)</td>
+  <td><strong>HVUT Form 2290</strong><br/><span style="font-size:11px;color:#6b7280">irs.gov → Form 2290 → вводишь VIN трака + дату первого использования. Платишь $550. IRS присылает Stamped Schedule 1 — это proof of payment. БЕЗ него NC DMV не выдаст IRP plates. Онлайн за 1 час.</span> (IRS — налог на трак)<br/><span style="font-size:11px;color:#6b7280">Заходишь на irs.gov → Form 2290. Вводишь VIN трака, дату первого использования. Платишь $550 (1 трак >55,000 lbs). IRS присылает Stamped Schedule 1 — это proof of payment. БЕЗ него NC DMV не выдаст IRP plates. Можно сделать онлайн за 1 час.</span> (IRS — налог на трак)</td>
   <td>irs.gov → Form 2290 online</td>
   <td>11 июня</td>
   <td>1 день (instant stamp)</td>
@@ -3105,7 +3251,7 @@
 </tr>
 <tr style="background:#fef3c7;border-left:4px solid #f59e0b">
   <td>22</td>
-  <td><strong>IRP Apportioned Plates</strong> (NC DMV)</td>
+  <td><strong>IRP Apportioned Plates</strong><br/><span style="font-size:11px;color:#6b7280">Идёшь в NC DMV Motor Carrier Services (не обычный DMV!) с пакетом: MC#, USDOT#, HVUT Stamped Schedule 1, truck title, insurance cert, IFTA license. Без plates ехать interstate нельзя. Готово за 2 недели — подавай сразу в день MC activation.</span> (NC DMV)<br/><span style="font-size:11px;color:#6b7280">Идёшь в NC DMV Motor Carrier Services (не обычный DMV!) с пакетом: MC#, USDOT#, HVUT Stamped Schedule 1, truck title, insurance cert, IFTA license. Подаёшь на IRP apportioned plates — они позволяют ехать в любой штат без отдельных permits. Готово за 2 недели. БЕЗ plates ехать нельзя.</span> (NC DMV)</td>
   <td>ncdmv.net → IRP</td>
   <td>11 июня</td>
   <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 2 недели</span></td>
@@ -3115,7 +3261,7 @@
 </tr>
 <tr>
   <td>23</td>
-  <td><strong>Westrock vendor onboarding</strong> — подать MC cert + insurance cert</td>
+  <td><strong>Westrock vendor onboarding</strong><br/><span style="font-size:11px;color:#6b7280">Звонишь/пишешь контакту в Westrock → просишь vendor packet. Заполняешь: MC#, USDOT#, insurance cert (Additional Insured: Westrock), W9. Отправляешь в procurement. Они вносят тебя в систему за 2–4 нед — начинай сразу после MC.</span> — подать MC cert + insurance cert<br/><span style="font-size:11px;color:#6b7280">Звонишь/пишешь контакту в Westrock → просишь vendor onboarding packet. Заполняешь форму: MC#, USDOT#, insurance certificate (Additional Insured: Westrock), W9. Отправляешь в их procurement dept. Они проверяют и вносят тебя в систему. Занимает 2–4 недели — начинай сразу после MC активации.</span> — подать MC cert + insurance cert</td>
   <td>Westrock procurement portal</td>
   <td>12 июня</td>
   <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 2–4 недели</span></td>
@@ -3125,7 +3271,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>24</td>
-  <td><strong>ELD device</strong> (Motive / Samsara) — заказать, shipping 3 дня</td>
+  <td><strong>ELD device</strong><br/><span style="font-size:11px;color:#6b7280">gomotive.com или samsara.com → заказываешь device ($35–45/мес). Подключается в OBD порт под dashboard. Водитель логинится через телефон — ведёт электронный журнал рабочего времени (HOS). Обязательно с 2017 года для interstate. Shipping 3 дня.</span> (Motive / Samsara) — заказать, shipping 3 дня<br/><span style="font-size:11px;color:#6b7280">Заходишь на gomotive.com или samsara.com → заказываешь ELD device. Motive: $35/мес, Samsara: $45/мес. Устройство подключается в порт OBD/diagnostic под приборной панелью. Водитель логинится через телефон — это его электронный журнал рабочего времени (HOS). FMCSA требует с 2017 года.</span> (Motive / Samsara) — заказать, shipping 3 дня</td>
   <td>gomotive.com / samsara.com</td>
   <td>13 июня</td>
   <td>3 дня shipping</td>
@@ -3135,7 +3281,7 @@
 </tr>
 <tr>
   <td>25</td>
-  <td><strong>Driver hiring</strong> (CDL-A, W2, $85k/год) + drug test + MVR</td>
+  <td><strong>Driver hiring</strong><br/><span style="font-size:11px;color:#6b7280">Вакансия на Indeed.com ("CDL-A driver, home daily, $85k/year, Charlotte NC"). После выбора кандидата: DOT physical у сертифицированного врача ($100) + drug test в consortium ($75) + MVR через NC DMV ($15). Только при чистых результатах — нанимаешь официально (W2).</span> (CDL-A, W2, $85k/год) + drug test + MVR<br/><span style="font-size:11px;color:#6b7280">Размещаешь вакансию на Indeed.com ("CDL-A driver, home daily, $85k/year, Charlotte NC"). Собеседуешь кандидатов. Выбранного водителя отправляешь на: DOT physical (сертифицированный врач $100) + drug test в consortium ($75) + запрашиваешь MVR в NC DMV ($15). Только после чистых результатов — нанимаешь.</span> (CDL-A, W2, $85k/год) + drug test + MVR</td>
   <td>Indeed / CDLjobs.com + DOT consortium</td>
   <td>16 июня</td>
   <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 1–2 недели</span></td>
@@ -3145,7 +3291,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>26</td>
-  <td><strong>ELD install + compliance check</strong></td>
+  <td><strong>ELD install + compliance check</strong><br/><span style="font-size:11px;color:#6b7280">Подключаешь ELD в J-Bus / diagnostic порт трака (под dashboard). Водитель устанавливает приложение, создаёт профиль. Делаешь тест-поездку — проверяешь что HOS записывается корректно. FMCSA проверяет ELD при roadside inspection.</span><br/><span style="font-size:11px;color:#6b7280">Подключаешь ELD в диагностический порт трака (J-Bus порт, обычно под dashboard). Водитель устанавливает приложение Motive/Samsara на телефон, создаёт профиль, проверяет что трак подключился. Тест-поездка для проверки записи HOS. FMCSA может проверить ELD при roadside inspection — должен работать корректно.</span></td>
   <td>Механик / самостоятельно</td>
   <td>17 июня</td>
   <td>1 день</td>
@@ -3155,7 +3301,7 @@
 </tr>
 <tr>
   <td>27</td>
-  <td><strong>Test run</strong> (2–3 пробных рейса без груза)</td>
+  <td><strong>Test run</strong><br/><span style="font-size:11px;color:#6b7280">2–3 пробных рейса без груза по маршруту Concord NC → Summerville SC (211 mi). Цель: проверить трак на дороге, ELD запись, расход топлива реальный, время в пути. Водитель привыкает к маршруту и точкам загрузки/разгрузки.</span> (2–3 пробных рейса без груза)<br/><span style="font-size:11px;color:#6b7280">Делаешь 2–3 рейса по маршруту Concord NC → Summerville SC (211 mi) без груза. Цель: проверить трак на дороге, ELD запись, расход топлива, время в пути. Водитель привыкает к маршруту. Westrock может запросить доказательство что трак готов.</span> (2–3 пробных рейса без груза)</td>
   <td>Concord NC → Summerville SC</td>
   <td>20 июня</td>
   <td>1 день</td>
@@ -3165,7 +3311,7 @@
 </tr>
 <tr style="background:#dcfce7;border-left:4px solid #16a34a">
   <td>28</td>
-  <td><strong>🚀 ПЕРВЫЙ РЕЙС С ГРУЗОМ</strong></td>
+  <td><strong>🚀 ПЕРВЫЙ РЕЙС С ГРУЗОМ<br/><span style="font-size:11px;color:#6b7280">Westrock подтверждает первый load. Водитель едет на Westrock склад в Concord NC, забирает груз, везёт в Summerville SC (211 mi). Billing: ты выставляешь invoice на $1,500. Westrock платит net-30/45. При factoring — получаешь деньги в тот же день (минус 2–3%). 🎉</span></td>
   <td>Westrock Coffee Concord NC → Summerville SC</td>
   <td>~27 июня</td>
   <td>—</td>
@@ -3175,7 +3321,7 @@
 </tr>
 <tr style="background:#f8fafc">
   <td>29</td>
-  <td><strong>Factoring agreement</strong> (OTR Capital / RTS) — опционально</td>
+  <td><strong>Factoring agreement</strong><br/><span style="font-size:11px;color:#6b7280">Factoring = продаёшь invoice факторинговой компании за 97–98% и получаешь деньги сразу (не ждёшь 30–45 дней). $1,500 invoice → $1,455 сразу. Нужен если cash flow проблема. OTR Capital: otrcapital.com · RTS: rtsinc.com</span> (OTR Capital / RTS) — опционально<br/><span style="font-size:11px;color:#6b7280">Factoring = продаёшь invoice факторинговой компании за 97–98% суммы и получаешь деньги сразу (не ждёшь 30–45 дней). Например: invoice $1,500 → получаешь $1,455 сразу. Нужен если cash flow проблема. OTR Capital: otrcapital.com, RTS Financial: rtsinc.com.</span> (OTR Capital / RTS) — опционально</td>
   <td>otrcapital.com</td>
   <td>После MC</td>
   <td>3–5 дней</td>

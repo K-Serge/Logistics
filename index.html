@@ -6,8 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title data-i18n="page_title">Logistic — Бизнес-план SC + VA (2026)</title>
 <link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='6' fill='%232563eb'/&gt;&lt;text x='16' y='23' font-size='20' text-anchor='middle' font-family='Apple Color Emoji,Segoe UI Emoji'&gt;🚚&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
-<script src="lang/ru.js?v=20"></script>
-<script src="lang/en.js?v=20"></script>
+<script src="lang/ru.js?v=21"></script>
+<script src="lang/en.js?v=21"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; color: #1a1a1a; background: #f5f5f5; }
@@ -368,68 +368,163 @@
   └─────────────────────────────────────────┘</pre>
 
 <!-- WHY THIS STRUCTURE -->
-<h3 style="margin:0 0 8px;color:#5b21b6">❓ Зачем такая структура — объяснение простыми словами</h3>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
+<h3 style="margin:0 0 8px;color:#5b21b6">❓ Зачем такая структура</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px">
   <div style="background:#f5f3ff;border-radius:6px;padding:10px;border-left:3px solid #7c3aed">
-    <div style="font-weight:700;font-size:12px;color:#5b21b6;margin-bottom:4px">🔒 Анонимность</div>
-    <div style="font-size:11px;color:#374151">Wyoming не раскрывает owners публично. В NC records видно только "Wyoming LLC" — не твои имена. Конкуренты и партнёры не видят кто стоит за бизнесом.</div>
+    <div style="font-weight:700;font-size:12px;color:#5b21b6;margin-bottom:4px">🔒 Публичная анонимность</div>
+    <div style="font-size:11px;color:#374151">Конкуренты, партнёры, клиенты не могут через Google, Secretary of State или любой публичный реестр найти что за компанией стоят Serge и Itzel.</div>
   </div>
   <div style="background:#f5f3ff;border-radius:6px;padding:10px;border-left:3px solid #7c3aed">
     <div style="font-weight:700;font-size:12px;color:#5b21b6;margin-bottom:4px">🛡️ Защита активов</div>
-    <div style="font-size:11px;color:#374151">При иске к NC LLC — твой дом, машина, личные счета защищены WY холдингом. Два уровня LLC = два барьера для кредиторов.</div>
+    <div style="font-size:11px;color:#374151">При иске к NC LLC — дом, машина, личные счета защищены WY холдингом. Два уровня LLC = два барьера для кредиторов.</div>
   </div>
   <div style="background:#f5f3ff;border-radius:6px;padding:10px;border-left:3px solid #7c3aed">
     <div style="font-weight:700;font-size:12px;color:#5b21b6;margin-bottom:4px">📋 Nominee Manager</div>
-    <div style="font-size:11px;color:#374151">Юридическая фирма (Wyoming LLC Attorney) подписывает публичные документы вместо тебя. Ты — реальный владелец через приватный Operating Agreement. Ехать никуда не нужно — DocuSign.</div>
+    <div style="font-size:11px;color:#374151">Юридическая фирма подписывает публичные документы вместо тебя. Ты — реальный владелец через приватный Operating Agreement. Всё через DocuSign.</div>
   </div>
   <div style="background:#fef9c3;border-radius:6px;padding:10px;border-left:3px solid #f59e0b">
     <div style="font-weight:700;font-size:12px;color:#92400e;margin-bottom:4px">⚠️ Что НЕ скрывает</div>
-    <div style="font-size:11px;color:#374151">Банк (KYC требует SSN), IRS (налоги), FMCSA (enforcement). Структура защищает от конкурентов и публичных records — не от госорганов.</div>
+    <div style="font-size:11px;color:#374151">Банк (KYC — SSN обязателен), IRS, FMCSA enforcement, страховщик. Это для конкурентов и публичных records — не от госорганов.</div>
   </div>
 </div>
 
-<!-- NOMINEE MANAGER COMPARISON -->
-<h3 style="margin:0 0 8px;color:#5b21b6">🔍 Nominee Manager — сравнение сервисов</h3>
+<!-- PRIVACY EXPLAINER -->
+<h3 style="margin:0 0 8px;color:#5b21b6">🤔 Как Wyoming скрывает имена — объяснение</h3>
+<div style="background:#1e2837;color:#d4dbe8;border-radius:8px;padding:14px;margin-bottom:10px;font-size:12px;line-height:1.8">
+  <div style="color:#f59e0b;font-weight:700;margin-bottom:8px">📄 Articles of Organization = "свидетельство о рождении" LLC</div>
+  <div>Это документ, который подаётся в Secretary of State при создании компании. В нём указывается:</div>
+  <div style="margin:8px 0 8px 12px;color:#86efac">✅ Название компании<br/>✅ Registered Agent (адрес в штате)<br/>✅ Organizer — тот, кто подписал документ<br/>❌ Members / Owners — в Wyoming НЕ УКАЗЫВАЮТСЯ</div>
+  <div style="color:#fde68a">👉 Вывод: если ты сам подписываешь Articles → твоё имя появляется один раз как "organizer".<br/>Если nominee / RA подписывает → твоё имя нигде не фигурирует.</div>
+</div>
+
+<!-- PRIVACY LEVELS TABLE -->
+<h3 style="margin:0 0 8px;color:#5b21b6">🔐 Уровни публичной защиты (цель: чтоб никто не нашёл через Google)</h3>
+<div class="table-wrap">
+<table style="width:100%;font-size:12px">
+<thead><tr style="background:#5b21b6;color:#fff">
+  <th style="width:25px">Ур.</th>
+  <th>Схема</th>
+  <th style="width:110px">Стоимость/год</th>
+  <th>Твоё имя видно публично?</th>
+  <th>Подходит для цели?</th>
+</tr></thead>
+<tbody>
+<tr style="background:#fef2f2">
+  <td style="font-weight:700;color:#dc2626;text-align:center">0</td>
+  <td><strong>Нет LLC — физлицо / Sole Proprietor</strong></td>
+  <td>$0</td>
+  <td style="color:#dc2626">❌ Твоё имя везде: в FMCSA, в MC authority, в DOT записях</td>
+  <td style="color:#dc2626">❌ Нет</td>
+</tr>
+<tr>
+  <td style="font-weight:700;color:#d97706;text-align:center">1</td>
+  <td><strong>NC LLC только</strong><br/><span style="font-size:10px;color:#6b7280">Ты сам подписываешь Articles</span></td>
+  <td>~$325/год</td>
+  <td style="color:#d97706">⚠️ NC требует указывать members публично → твоё имя видно в NC Secretary of State</td>
+  <td style="color:#d97706">⚠️ Нет (NC раскрывает)</td>
+</tr>
+<tr style="background:#fef9c3">
+  <td style="font-weight:700;color:#d97706;text-align:center">2</td>
+  <td><strong>WY LLC DIY (без nominee)</strong> → владеет NC LLC<br/><span style="font-size:10px;color:#6b7280">Ты сам подписываешь WY Articles</span></td>
+  <td>~$410/год</td>
+  <td style="color:#d97706">⚠️ В NC records: owner = "Wyoming LLC" ✅<br/>В WY records: твоё имя как organizer один раз<br/><span style="font-size:10px">Гуглится редко, но технически есть</span></td>
+  <td style="color:#d97706">⚠️ Почти да (1 след)</td>
+</tr>
+<tr style="background:#f0fdf4">
+  <td style="font-weight:700;color:#16a34a;text-align:center">3</td>
+  <td><strong>WY LLC + RA как organizer</strong> → владеет NC LLC<br/><span style="font-size:10px;color:#6b7280">RA (registered agent) подписывает Articles вместо тебя</span></td>
+  <td>~$510/год</td>
+  <td style="color:#16a34a">✅ Твоё имя НИГДЕ в публичных записях WY<br/>✅ В NC records: "Wyoming LLC"<br/><span style="font-size:10px">Достаточно для 99% ситуаций</span></td>
+  <td style="color:#16a34a">✅ Да — цель достигнута</td>
+</tr>
+<tr style="background:#dcfce7">
+  <td style="font-weight:700;color:#16a34a;text-align:center">4</td>
+  <td><strong>WY LLC + Nominee Manager</strong> → владеет NC LLC<br/><span style="font-size:10px;color:#6b7280">Wyoming Corporate Services $365+$145/год</span></td>
+  <td>~$945/год</td>
+  <td style="color:#16a34a">✅ Nominee подписывает ВСЕ документы<br/>✅ Имена нигде, включая broker agreements<br/>⚠️ Без attorney privilege — в суде могут заставить раскрыть</td>
+  <td style="color:#16a34a">✅ Да + бизнес документы тоже</td>
+</tr>
+<tr style="background:#f0fdf4;border:2px solid #16a34a">
+  <td style="font-weight:700;color:#16a34a;text-align:center">5</td>
+  <td><strong>WY LLC + Attorney Nominee</strong> → владеет NC LLC<br/><span style="font-size:10px;color:#6b7280">Wyoming LLC Attorney $550+$860/год</span></td>
+  <td>~$1,410/год</td>
+  <td style="color:#16a34a">✅ Максимальная защита<br/>✅ Attorney-client privilege = даже суд не может заставить раскрыть<br/>✅ Nominee подписывает всё</td>
+  <td style="color:#16a34a">✅ Да + защита в суде</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- RECOMMENDATION BOX -->
+<div style="background:#fff;border:2px solid #16a34a;border-radius:8px;padding:14px;margin-top:10px">
+  <div style="font-weight:700;font-size:13px;margin-bottom:10px;color:#15803d">🎯 Рекомендация для вашего случая</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    <div style="background:#f0fdf4;border-radius:6px;padding:10px;border-left:3px solid #16a34a">
+      <div style="font-weight:700;font-size:12px;color:#15803d;margin-bottom:4px">Если цель — только публичная анонимность</div>
+      <div style="font-size:11px;color:#374151;margin-bottom:6px"><strong>Уровень 3 достаточен</strong> — WY LLC где RA подписывает как organizer. Твоё имя нигде не фигурирует в публичных записях. Стоит ~$510/год.</div>
+      <div style="font-size:11px;color:#374151">Конкурент заходит на Wyoming SoS → видит только название LLC и адрес RA. Google → ничего. ✅ Цель достигнута.</div>
+    </div>
+    <div style="background:#eff6ff;border-radius:6px;padding:10px;border-left:3px solid #2563eb">
+      <div style="font-weight:700;font-size:12px;color:#1e40af;margin-bottom:4px">Если цель — анонимность + защита в суде</div>
+      <div style="font-size:11px;color:#374151;margin-bottom:6px"><strong>Уровень 5 (Wyoming LLC Attorney)</strong> — attorney-client privilege защищает даже если кто-то подаёт в суд и требует раскрыть владельцев. Адвокат имеет право отказать.</div>
+      <div style="font-size:11px;color:#374151">Стоит ~$1,410/год (+$900 vs уровня 3). За trucking бизнес с одним контрактом — возможно избыточно на старте.</div>
+    </div>
+  </div>
+  <div style="margin-top:10px;padding:8px 10px;background:#fef9c3;border-radius:6px;font-size:12px;color:#92400e">
+    <strong>💡 Вывод:</strong> Для trucking с Westrock контрактом — <strong>Уровень 3 (RA как organizer, ~$510/год)</strong> — закрывает цель "публично не найти". Nominee Manager (уровень 4–5) берут если хочешь чтоб nominee подписывал ещё и broker agreements / contracts с партнёрами — не только гос. документы.
+  </div>
+</div>
+
+<!-- NOMINEE COMPARISON TABLE -->
+<h3 style="margin:14px 0 8px;color:#5b21b6">🔍 Сравнение сервисов — Nominee Manager</h3>
 <div class="table-wrap">
 <table style="width:100%;font-size:12px">
 <thead><tr style="background:#5b21b6;color:#fff">
   <th>Сервис</th>
-  <th>Setup</th>
-  <th>Ежегодно</th>
-  <th>Attorney privilege</th>
+  <th style="width:80px">Setup</th>
+  <th style="width:90px">Ежегодно</th>
+  <th style="width:70px">Attorney privilege</th>
   <th>Что входит</th>
-  <th>Рейтинг</th>
+  <th style="width:80px">Уровень</th>
 </tr></thead>
 <tbody>
 <tr style="background:#f0fdf4">
-  <td><strong>Wyoming LLC Attorney</strong><br/><span style="font-size:10px">wyomingllcattorney.com<br/>+1 (307) 683-0983</span></td>
-  <td><strong>$550</strong></td>
-  <td><strong>$860/год</strong></td>
+  <td><strong>Wyoming LLC Attorney</strong><br/><span style="font-size:10px;color:#6b7280">wyomingllcattorney.com · +1 (307) 683-0983</span></td>
+  <td>$550</td>
+  <td>$860</td>
   <td><span style="color:#16a34a;font-weight:700">✅ Да</span></td>
-  <td style="font-size:11px">LLC formation + Nominee + RA + EIN + Operating Agreement + DocuSign + Annual Report</td>
-  <td><span style="background:#16a34a;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px">⭐ Лучший</span></td>
+  <td style="font-size:10px">LLC formation + Nominee + RA + EIN + Operating Agreement + DocuSign + Annual Report signing</td>
+  <td><span style="background:#16a34a;color:#fff;padding:2px 6px;border-radius:4px;font-size:10px">Уровень 5 ⭐</span></td>
 </tr>
 <tr>
-  <td><strong>Wyoming Corporate Services</strong><br/><span style="font-size:10px">wyomingcompany.com<br/>1-307-632-3333</span></td>
-  <td>$365 nominee<br/>+ $515 LLC = $880</td>
-  <td>$400 + $145 RA = $545/год</td>
+  <td><strong>Wyoming Corporate Services</strong><br/><span style="font-size:10px;color:#6b7280">wyomingcompany.com · 1-307-632-3333</span></td>
+  <td>$365 + $515 LLC = $880</td>
+  <td>$545</td>
   <td><span style="color:#dc2626">❌ Нет</span></td>
-  <td style="font-size:11px">Public Director + RA — без attorney privilege. В суде могут заставить раскрыть владельца.</td>
-  <td><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px">Дешевле</span></td>
+  <td style="font-size:10px">Public Director + RA. В суде могут заставить раскрыть владельца. Для публичной анонимности — достаточно.</td>
+  <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:10px">Уровень 4</span></td>
 </tr>
 <tr style="background:#f8fafc">
-  <td><strong>DIY (без nominee)</strong><br/><span style="font-size:10px">sos.wyo.gov</span></td>
-  <td>$100 (state fee)</td>
-  <td>$60 annual report + $25 RA = $85/год</td>
+  <td><strong>DIY — сам подписываешь + хороший RA</strong><br/><span style="font-size:10px;color:#6b7280">sos.wyo.gov + wyomingagents.com</span></td>
+  <td>$100</td>
+  <td>$85–145</td>
   <td>—</td>
-  <td style="font-size:11px">Твоё имя НЕ видно в WY reестре по умолчанию (WY не требует раскрывать members!). Только Registered Agent публичен.</td>
-  <td><span style="background:#6b7280;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px">Бюджетно</span></td>
+  <td style="font-size:10px">Ты подписываешь Articles как organizer (имя мелькает один раз). Дальше в текущих записях тебя нет — WY не требует раскрывать owners. Дёшево и достаточно для большинства.</td>
+  <td><span style="background:#6b7280;color:#fff;padding:2px 6px;border-radius:4px;font-size:10px">Уровень 2</span></td>
+</tr>
+<tr>
+  <td><strong>DIY — RA подписывает как organizer</strong><br/><span style="font-size:10px;color:#6b7280">Попросить RA выступить organizer при подаче</span></td>
+  <td>$100</td>
+  <td>$85–145</td>
+  <td>—</td>
+  <td style="font-size:10px">RA подписывает Articles вместо тебя → твоё имя НИГДЕ даже как organizer. Многие RA делают это за небольшую доплату. Уточни при регистрации.</td>
+  <td><span style="background:#16a34a;color:#fff;padding:2px 6px;border-radius:4px;font-size:10px">Уровень 3 ✅</span></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div style="background:#eff6ff;border-radius:6px;padding:8px 12px;font-size:11px;margin-top:6px;color:#1e40af">
-  💡 <strong>Факт про Wyoming:</strong> WY по умолчанию не требует указывать members/owners в публичных документах — только Registered Agent. Nominee нужен для дополнительного уровня защиты через attorney privilege. Для старта можно обойтись DIY + хорошим RA.
+  💡 <strong>Ключевой факт:</strong> Wyoming по умолчанию не требует указывать owners/members в публичных документах — это встроено в закон штата. Главное что нужно — чтоб кто-то другой подписал Articles как organizer. Это может сделать RA, это может сделать nominee. Разница между уровнями 3 и 5 — только в защите при судебном разбирательстве, не в публичной анонимности.
 </div>
 
 <!-- REGISTERED AGENTS -->
@@ -449,48 +544,49 @@
   <td>Holding LLC</td>
   <td>wyomingagents.com</td>
   <td>$25/год</td>
-  <td>Адрес в Cheyenne WY для гос. документов, судебных повесток. Юридически обязателен.</td>
+  <td style="font-size:11px">Адрес в Cheyenne WY для гос. документов + судебных повесток. Юридически обязателен. Могут выступить organizer при подаче (уточни).</td>
 </tr>
 <tr style="background:#f8fafc">
   <td><strong>North Carolina</strong></td>
   <td>Operating LLC</td>
   <td>northwestregisteredagent.com</td>
   <td>$125/год</td>
-  <td>Адрес в NC для FMCSA, NC Secretary of State, судебных повесток к NC LLC.</td>
+  <td style="font-size:11px">Адрес в NC для FMCSA, NC Secretary of State + судебных повесток к NC LLC. Обязателен по закону NC.</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div style="font-size:11px;color:#6b7280;margin-top:4px">Registered Agent ≠ твой рабочий адрес. RA принимает только официальные и судебные документы. Для обычной рабочей почты — нужен Virtual Office отдельно.</div>
+<div style="font-size:11px;color:#6b7280;margin-top:4px">RA ≠ рабочий адрес. RA принимает только официальные и судебные документы. Для обычной рабочей почты — нужен Virtual Office отдельно (iPostal1 ~$10/мес).</div>
 
 <!-- ADDRESS GUIDE -->
-<h3 style="margin:14px 0 8px;color:#5b21b6">📍 Как решить вопрос с адресами</h3>
+<h3 style="margin:14px 0 8px;color:#5b21b6">📍 Три адреса — для разных целей</h3>
 <div style="background:#fff;border:1px solid #ddd8fe;border-radius:8px;padding:12px;margin-bottom:10px">
-  <div style="font-weight:700;font-size:12px;margin-bottom:8px">У тебя будет 3 адреса — каждый для своей цели:</div>
-  <div style="display:flex;flex-direction:column;gap:6px">
-    <div style="display:flex;gap:8px;align-items:flex-start">
-      <span style="background:#5b21b6;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;white-space:nowrap;min-width:120px;text-align:center">WY Registered Agent</span>
-      <div style="font-size:11px;color:#374151">Cheyenne, WY — только для юридических документов WY LLC (судебные иски, SoS письма). Ты туда почти никогда не смотришь — RA уведомляет по email.</div>
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <div style="display:flex;gap:10px;align-items:flex-start">
+      <span style="background:#5b21b6;color:#fff;padding:4px 8px;border-radius:4px;font-size:11px;white-space:nowrap;min-width:130px;text-align:center">WY Registered Agent<br/>Cheyenne, WY</span>
+      <div style="font-size:12px;color:#374151">Только для судебных и гос. документов WY LLC. Туда почти ничего не приходит — RA уведомляет email. Ехать не надо.</div>
     </div>
-    <div style="display:flex;gap:8px;align-items:flex-start">
-      <span style="background:#5b21b6;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;white-space:nowrap;min-width:120px;text-align:center">NC Registered Agent</span>
-      <div style="font-size:11px;color:#374151">Charlotte, NC — только для судебных документов NC LLC. Northwest RA — $125/год. Сюда тоже редко что приходит.</div>
+    <div style="display:flex;gap:10px;align-items:flex-start">
+      <span style="background:#5b21b6;color:#fff;padding:4px 8px;border-radius:4px;font-size:11px;white-space:nowrap;min-width:130px;text-align:center">NC Registered Agent<br/>Charlotte, NC</span>
+      <div style="font-size:12px;color:#374151">Только для судебных документов NC LLC. Northwest RA — $125/год. Сюда тоже редко что приходит.</div>
     </div>
-    <div style="display:flex;gap:8px;align-items:flex-start">
-      <span style="background:#2563eb;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;white-space:nowrap;min-width:120px;text-align:center">NC Virtual Office ⭐</span>
-      <div style="font-size:11px;color:#374151"><strong>Твой рабочий адрес Charlotte</strong> — для FMCSA, IRS, банка, страховки, партнёров. Сюда приходит всё. iPostal1 ($9.99/мес) — при любом письме мгновенный email + скан конверта + скан содержимого по запросу.</div>
+    <div style="display:flex;gap:10px;align-items:flex-start">
+      <span style="background:#2563eb;color:#fff;padding:4px 8px;border-radius:4px;font-size:11px;white-space:nowrap;min-width:130px;text-align:center">⭐ NC Virtual Office<br/>Charlotte рядом с домом</span>
+      <div style="font-size:12px;color:#374151"><strong>Твой рабочий адрес для всего:</strong> FMCSA, IRS, банк, страховка, письма партнёров. iPostal1 $9.99/мес — при любом письме мгновенный email уведомление + скан конверта. Говоришь "открой" → PDF содержимого в приложении.</div>
     </div>
   </div>
 </div>
 
 <!-- VIRTUAL MAILBOX -->
-<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:12px">
-  <div style="font-weight:700;font-size:13px;margin-bottom:8px;color:#1e40af">📬 Как выбрать адрес в Charlotte рядом с домом</div>
-  <div style="font-size:12px;margin-bottom:6px">1. Заходишь на <strong>ipostal1.com</strong> → "Choose Location" → ввести ZIP код дома</div>
-  <div style="font-size:12px;margin-bottom:6px">2. Показывает ближайшие точки (обычно UPS Store, Pack &amp; Ship, Postal Plus)</div>
-  <div style="font-size:12px;margin-bottom:6px">3. Адрес выглядит как реальная улица: <code style="background:#dbeafe;padding:1px 6px;border-radius:3px">1234 Independence Blvd Ste 301, Charlotte NC 28209</code> — не PO Box, подходит для FMCSA</div>
-  <div style="font-size:12px;margin-bottom:8px">4. Платишь $9.99/мес — приходит письмо → <strong>мгновенный email</strong> с фото конверта. Говоришь "открой и просканируй" — скидывают PDF в приложение. Физически ехать — только если нужна оригинальная бумага.</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;font-size:11px">
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:12px;margin-bottom:14px">
+  <div style="font-weight:700;font-size:13px;margin-bottom:8px;color:#1e40af">📬 Как выбрать адрес в Charlotte рядом с домом (iPostal1)</div>
+  <div style="font-size:12px;line-height:1.8">
+    1. Заходишь на <strong>ipostal1.com</strong> → "Choose Location" → вводишь свой ZIP код<br/>
+    2. Показывает ближайшие точки с расстоянием (обычно UPS Store, Pack &amp; Ship)<br/>
+    3. Адрес выглядит как реальная улица: <code style="background:#dbeafe;padding:1px 6px;border-radius:3px">1234 Independence Blvd Ste 301, Charlotte NC</code> — не PO Box, принимает FMCSA<br/>
+    4. При получении письма → <strong>мгновенный push/email</strong> на телефон. Кнопка "Scan" → присылают PDF. Физически ехать только за оригиналом.
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px;font-size:11px">
     <div style="background:#fff;border-radius:4px;padding:6px;text-align:center;border:1px solid #bfdbfe"><strong>iPostal1</strong><br/>$9.99/мес<br/>4,250+ адресов<br/>✅ Email alert</div>
     <div style="background:#fff;border-radius:4px;padding:6px;text-align:center;border:1px solid #bfdbfe"><strong>PostScan Mail</strong><br/>$10/мес<br/>800+ адресов<br/>✅ AI summary</div>
     <div style="background:#fff;border-radius:4px;padding:6px;text-align:center;border:1px solid #bfdbfe"><strong>Anytime Mailbox</strong><br/>$9.99/мес<br/>1,000+ адресов<br/>✅ App</div>
@@ -498,7 +594,7 @@
 </div>
 
 <!-- COST TABLE -->
-<h3 style="margin:14px 0 8px;color:#5b21b6">💰 Стоимость всей структуры</h3>
+<h3 style="margin:0 0 8px;color:#5b21b6">💰 Стоимость структуры</h3>
 <div class="table-wrap">
 <table style="width:100%;font-size:12px">
 <thead><tr><th>Статья</th><th style="width:100px">Разово</th><th style="width:100px">В год</th></tr></thead>
@@ -511,12 +607,14 @@
 <tr style="background:#f8fafc"><td>NC Registered Agent (Northwest)</td><td>—</td><td>$125</td></tr>
 <tr><td>NC Annual Report</td><td>—</td><td>$200</td></tr>
 <tr style="background:#f8fafc"><td>NC Virtual Office (iPostal1)</td><td>—</td><td>$120</td></tr>
-<tr style="border-top:2px solid #5b21b6;background:#f5f3ff"><td><strong>Итого структура</strong></td><td><strong>~$775</strong></td><td><strong>~$1,390/год</strong></td></tr>
+<tr style="border-top:2px solid #5b21b6;background:#f5f3ff"><td><strong>Итого (с nominee)</strong></td><td><strong>~$775</strong></td><td><strong>~$1,390/год</strong></td></tr>
+<tr style="background:#dcfce7"><td><strong>Итого (уровень 3 — без nominee, RA как organizer)</strong></td><td><strong>~$225</strong></td><td><strong>~$530/год</strong></td></tr>
 </tbody>
 </table>
 </div>
 <div style="background:#f5f3ff;border-radius:6px;padding:8px 12px;font-size:11px;margin-top:6px;color:#5b21b6">
-  <strong>Подписание через DocuSign — физически ехать никуда не нужно.</strong> Wyoming LLC Attorney: wyomingllcattorney.com · +1 (307) 683-0983. Northwest RA: northwestregisteredagent.com
+  <strong>Всё подписывается через DocuSign — физически ехать никуда не нужно.</strong><br/>
+  Wyoming LLC Attorney: wyomingllcattorney.com · +1 (307) 683-0983 · Northwest RA: northwestregisteredagent.com · iPostal1: ipostal1.com
 </div>
 </div>
 

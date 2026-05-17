@@ -6,8 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title data-i18n="page_title">Logistic — Бизнес-план SC + VA (2026)</title>
 <link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='6' fill='%232563eb'/&gt;&lt;text x='16' y='23' font-size='20' text-anchor='middle' font-family='Apple Color Emoji,Segoe UI Emoji'&gt;🚚&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
-<script src="lang/ru.js?v=18"></script>
-<script src="lang/en.js?v=18"></script>
+<script src="lang/ru.js?v=19"></script>
+<script src="lang/en.js?v=19"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; color: #1a1a1a; background: #f5f5f5; }
@@ -2810,83 +2810,468 @@
 </div>
 <!-- DOCUMENTS / LEGAL -->
 <div class="normal-section" data-page="documents" id="documents">
-<span class="section-label label-legal" data-i18n="t418">📋 Документы и юр. оформление — последовательность</span>
-<h2 data-i18n="t419">Что и когда оформлять</h2>
-<h3 data-i18n="docs_phase1_title">Phase 1 (W1-2): Foundation</h3>
-<table style="table-layout:fixed;width:100%">
-<thead><tr>
-<th data-i18n="t420" style="width:22%">Док</th>
-<th data-i18n="t421" style="width:22%">Где</th>
-<th data-i18n="t422" style="width:13%">Срок</th>
-<th data-i18n="t423" style="width:15%">Стоимость</th>
-<th data-i18n="t424" style="width:28%">Зависимости</th>
+<span class="section-label label-legal" data-i18n="docs_cal_section_label">📋 Документы и юр. оформление — пошаговый календарь</span>
+<h2 data-i18n="docs_cal_h2">Пошаговый календарь запуска</h2>
+
+<!-- CRITICAL PATH BANNER -->
+<div style="background:linear-gradient(135deg,#1e3a5f,#2563eb);color:#fff;border-radius:10px;padding:14px 16px;margin-bottom:14px;font-size:13px;line-height:1.7">
+  <div style="font-weight:700;font-size:15px;margin-bottom:6px" data-i18n="docs_cal_subtitle">Начало: 20 мая · MC активен: ~11 июня · Первый рейс: ~27 июня</div>
+  <div data-i18n="docs_cal_critical_path">⏱️ Критический путь: MC Number требует 21 день ожидания после подачи — подавай сразу 21 мая. Всё остальное делается параллельно в этот период.</div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;font-size:11px">
+    <span style="background:rgba(255,255,255,0.15);padding:3px 10px;border-radius:20px">🔴 Критично — без этого не запустишься</span>
+    <span style="background:rgba(255,255,255,0.15);padding:3px 10px;border-radius:20px">🟡 Важно — нужно до первого рейса</span>
+    <span style="background:rgba(255,255,255,0.15);padding:3px 10px;border-radius:20px">🟢 Опционально — можно позже</span>
+    <span style="background:rgba(255,255,255,0.15);padding:3px 10px;border-radius:20px">🔵 = параллельно с другим</span>
+  </div>
+</div>
+
+<!-- TIMELINE VISUAL -->
+<div style="display:flex;align-items:center;gap:0;margin-bottom:16px;overflow-x:auto;padding:4px 0">
+  <div style="background:#2563eb;color:#fff;padding:6px 10px;border-radius:6px 0 0 6px;font-size:11px;font-weight:700;white-space:nowrap;min-width:80px;text-align:center">20 мая<br/>Старт</div>
+  <div style="background:#3b82f6;color:#fff;padding:6px 8px;font-size:11px;white-space:nowrap;flex:1;text-align:center;min-width:60px">21 мая<br/>MC filed ⚡</div>
+  <div style="background:#60a5fa;color:#1e3a5f;padding:6px 8px;font-size:11px;white-space:nowrap;flex:2;text-align:center;min-width:80px">26 мая – 6 июня<br/>⏳ MC ждём 21д</div>
+  <div style="background:#f59e0b;color:#fff;padding:6px 8px;font-size:11px;white-space:nowrap;flex:1;text-align:center;min-width:70px">11 июня<br/>MC ACTIVE ✅</div>
+  <div style="background:#16a34a;color:#fff;padding:6px 10px;border-radius:0 6px 6px 0;font-size:11px;font-weight:700;white-space:nowrap;min-width:80px;text-align:center">~27 июня<br/>🚀 1-й рейс</div>
+</div>
+
+<!-- PHASE 1 -->
+<h3 data-i18n="docs_ph1_cal_title" style="margin:0 0 6px;color:#1e3a5f">🗓️ Неделя 1 (20–23 мая) — Foundation</h3>
+<div class="table-wrap">
+<table style="width:100%;table-layout:auto">
+<thead><tr style="background:#1e3a5f;color:#fff">
+  <th style="width:30px">#</th>
+  <th data-i18n="docs_col_task">Задача</th>
+  <th data-i18n="docs_col_where">Где / Как</th>
+  <th style="width:70px">Дата</th>
+  <th style="width:90px" data-i18n="docs_col_wait">Срок</th>
+  <th style="width:80px" data-i18n="docs_col_priority">Приоритет</th>
+  <th style="width:90px" data-i18n="docs_col_cost">Стоимость</th>
+  <th data-i18n="docs_col_parallel">Параллельно</th>
 </tr></thead>
 <tbody>
-<tr><td>1. <strong>LLC NC</strong></td><td>NC Secretary of State (online)</td><td data-i18n="t425">5-7 дней</td><td>$125</td><td>—</td></tr>
-<tr><td>2. <strong>EIN</strong></td><td>IRS online</td><td data-i18n="t426">15 мин</td><td>Free</td><td data-i18n="t427">После LLC</td></tr>
-<tr><td>3. <strong>Business bank account</strong></td><td>Bank of America / Chase Business</td><td data-i18n="t428">1 день</td><td>Free</td><td>EIN + LLC docs</td></tr>
-<tr><td>4. <strong>USDOT Number</strong></td><td>FMCSA Portal</td><td data-i18n="t429">1 день</td><td>$300</td><td>EIN</td></tr>
-<tr><td>5. <strong>MC Number application</strong></td><td>FMCSA</td><td data-i18n="t430">21 день mandatory wait</td><td>$300</td><td>USDOT</td></tr>
-<tr style="background:#e0f2fe"><td colspan="3"><strong data-i18n="docs_ph1_total">Итого Phase 1</strong></td><td><strong>$725</strong></td><td></td></tr>
-</tbody>
-</table>
-<h3 data-i18n="t431" style="margin-top:12px">Phase 2 (W2-4): <span style="font-weight:normal;font-size:0.9em;display:block;margin-top:2px">Параллельно с MC waiting period</span></h3>
-<table style="table-layout:fixed;width:100%">
-<thead><tr>
-<th data-i18n="t432" style="width:22%">Док</th>
-<th data-i18n="t433" style="width:22%">Где</th>
-<th data-i18n="t434" style="width:13%">Срок</th>
-<th data-i18n="t435" style="width:15%">Стоимость</th>
-<th style="width:28%" data-i18n="road_th_depends">Зависимости</th>
-</tr></thead>
-<tbody>
-<tr><td>6. <strong>BOC-3 Process Agent</strong></td><td>Blanket agent (online)</td><td data-i18n="t436">1 день</td><td>$50</td><td>USDOT + MC filed</td></tr>
-<tr><td>7. <strong>UCR Registration</strong></td><td>UCR.gov</td><td data-i18n="t437">1 день</td><td>$76 V1 / $152 V2</td><td>USDOT</td></tr>
-<tr><td>8. <strong>Drug &amp; Alcohol Consortium</strong></td><td>Foley / USAMD</td><td data-i18n="t438">1 день</td><td>$150/year/driver</td><td>—</td></tr>
-<tr><td>9. <strong>Insurance quotes + bind</strong></td><td>Progressive / Great West / Sentry</td><td data-i18n="t439">7 дней (3+ quotes)</td><td>$13-18k/year/truck</td><td>USDOT + truck VIN</td></tr>
-<tr><td>10. <strong>IFTA + decals</strong></td><td>NC DOR</td><td data-i18n="t440">10 дней</td><td>$10 + quarterly</td><td>USDOT + EIN</td></tr>
-<tr><td>11. <strong>HVUT (2290)</strong></td><td>IRS</td><td data-i18n="t441">1 день</td><td>$550/year/truck</td><td>EIN + truck VIN</td></tr>
-<tr><td>12. <strong>Truck purchase + inspection</strong></td><td>Dealer / private + 3rd party inspector</td><td data-i18n="t442">2-3 нед</td><td data-i18n="t443">см. CAPEX</td><td>Business bank account</td></tr>
-<tr style="background:#e0f2fe"><td colspan="3"><strong data-i18n="docs_ph2_total">Итого Phase 2</strong> <span style="font-weight:normal;font-size:11px" data-i18n="docs_ph2_note_inline">(без трака)</span></td><td><strong>$13,836–$18,836</strong></td><td><span style="font-size:11px">$50+$76+$150+$13-18k+$10+$550</span></td></tr>
-</tbody>
-</table>
-<h3 data-i18n="t444" style="margin-top:12px">Phase 3 (W4-6): <span style="font-weight:normal;font-size:0.9em;display:block;margin-top:2px">После получения MC</span></h3>
-<table style="table-layout:fixed;width:100%">
-<thead><tr>
-<th data-i18n="t445" style="width:22%">Док</th>
-<th data-i18n="t446" style="width:22%">Где</th>
-<th data-i18n="t447" style="width:13%">Срок</th>
-<th data-i18n="t448" style="width:15%">Стоимость</th>
-<th style="width:28%" data-i18n="road_th_depends">Зависимости</th>
-</tr></thead>
-<tbody>
-<tr><td>13. <strong>IRP Apportioned Plates</strong></td><td>NC DMV</td><td data-i18n="t449">2 нед</td><td>$1,800-2,500/year/truck</td><td>MC active + HVUT + truck title</td></tr>
-<tr><td>14. <strong>ELD device + install</strong></td><td>Motive / Samsara</td><td data-i18n="t450">3 дня shipping</td><td>$35-45/mo/truck</td><td>Truck purchased</td></tr>
-<tr><td>15. <strong>Dashcam install</strong></td><td>Same vendor</td><td data-i18n="t451">1 день</td><td>$30/mo/truck</td><td>ELD installed</td></tr>
-<tr><td>16. <strong>Westrock/S&amp;D vendor onboarding</strong></td><td>Westrock procurement portal</td><td data-i18n="t452">2-4 нед</td><td>Free</td><td>MC active + insurance cert</td></tr>
-<tr><td>17. <strong>Factoring agreement (optional)</strong></td><td>OTR Capital / RTS</td><td data-i18n="t453">3-5 дней</td><td>2-3% per invoice</td><td>MC active</td></tr>
-<tr><td>18. <strong>Driver hiring + drug test + MVR check</strong></td><td>Hiring portal + DOT consortium</td><td data-i18n="t454">2-3 нед</td><td>$300/driver onboarding</td><td>Drug &amp; Alcohol Consortium</td></tr>
-<tr style="background:#e0f2fe"><td colspan="3"><strong data-i18n="docs_ph3_total">Итого Phase 3</strong> <span style="font-weight:normal;font-size:11px" data-i18n="docs_ph3_note_inline">(one-time, без ongoing ELD/dashcam)</span></td><td><strong>$2,100–$2,800</strong></td><td><span style="font-size:11px">IRP $1,800-2,500 + driver onboarding $300</span></td></tr>
-</tbody>
-</table>
-<div style="background:#f0fdf4;border:2px solid #16a34a;border-radius:8px;padding:12px;margin-top:12px">
-<table style="width:100%;margin:0">
-<tbody>
-<tr><td><strong>Phase 1</strong> (LLC + EIN + USDOT + MC)</td><td style="text-align:right"><strong>$725</strong></td></tr>
-<tr><td data-i18n="docs_phase2_label"><strong>Phase 2</strong> (страховка low + permits + consortium)</td><td style="text-align:right"><strong>$13,836–$18,836</strong></td></tr>
-<tr><td><strong>Phase 3</strong> (IRP plates + driver onboarding)</td><td style="text-align:right"><strong>$2,100–$2,800</strong></td></tr>
-<tr><td style="font-size:11px;color:#6b7280" data-i18n="docs_eld_ongoing">ELD + Dashcam ongoing (первый год, 1 трак)</td><td style="text-align:right;font-size:11px;color:#6b7280" data-i18n="docs_eld_val">$780/год</td></tr>
-<tr style="border-top:2px solid #16a34a"><td><strong><strong data-i18n="docs_gt_startup">💰 Итого startup costs (без трака/трейлера)</strong></strong></td><td style="text-align:right"><strong class="s-green">$16,661–$22,361</strong></td></tr>
-<tr><td style="font-size:11px;color:#6b7280">+ Truck $60k + Trailer $22k = $82k (cash)</td><td style="text-align:right;font-size:11px;color:#6b7280">$82,000</td></tr>
-<tr style="background:#dcfce7"><td><strong><strong data-i18n="docs_gt_all">💰 Итого всё (cash, 1 трак + 1 трейлер)</strong></strong></td><td style="text-align:right"><strong class="s-green">$98,661–$104,361</strong></td></tr>
+<tr>
+  <td>1</td>
+  <td><strong>WY LLC</strong> — холдинг (Wyoming LLC Attorney)</td>
+  <td>wyomingllcattorney.com</td>
+  <td>20 мая</td>
+  <td>1–3 дня</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$100 + $550</td>
+  <td>NC LLC</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>2</td>
+  <td><strong>NC LLC</strong> — операционная (sosnc.gov)</td>
+  <td>NC Secretary of State online</td>
+  <td>20 мая</td>
+  <td>1–2 дня</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$125</td>
+  <td>WY LLC</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td><strong>NC Registered Agent</strong> (Northwest RA)</td>
+  <td>northwestregisteredagent.com</td>
+  <td>20 мая</td>
+  <td>Мгновенно</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$125/год</td>
+  <td>NC LLC</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>4</td>
+  <td><strong>EIN для NC LLC</strong> (IRS Form SS-4)</td>
+  <td>irs.gov → EIN Assistant</td>
+  <td>21 мая</td>
+  <td>15 мин</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>Free</td>
+  <td>USDOT</td>
+</tr>
+<tr style="background:#fef9c3;border-left:4px solid #f59e0b">
+  <td>5</td>
+  <td><strong>USDOT Number</strong> (бесплатно, выдаётся мгновенно)</td>
+  <td>li-public.fmcsa.dot.gov → Register</td>
+  <td>21 мая</td>
+  <td>Мгновенно</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td><strong>Free</strong></td>
+  <td>MC Number</td>
+</tr>
+<tr style="background:#fef3c7;border-left:4px solid #f59e0b">
+  <td>6</td>
+  <td><strong>MC Number application — ЗАПУСКАЕТ 21-ДЕНЬ ⚡</strong></td>
+  <td>li-public.fmcsa.dot.gov → Operating Authority</td>
+  <td>21 мая</td>
+  <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 21 день wait</span></td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$300</td>
+  <td>BOC-3</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>7</td>
+  <td><strong>BOC-3 Process Agent</strong> (blanket, все 50 штатов)</td>
+  <td>USAMD.com или bocthree.com</td>
+  <td>22 мая</td>
+  <td>1 день</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$50</td>
+  <td>UCR, Consortium</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td><strong>UCR Registration</strong></td>
+  <td>ucr.gov</td>
+  <td>22 мая</td>
+  <td>1 день</td>
+  <td><span style="background:#fef9c3;color:#92400e;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🟡 Важно</span></td>
+  <td>$76 (1 трак)</td>
+  <td>BOC-3</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>9</td>
+  <td><strong>Drug & Alcohol Consortium</strong></td>
+  <td>Foley Services или USAMD</td>
+  <td>22 мая</td>
+  <td>1 день</td>
+  <td><span style="background:#fef9c3;color:#92400e;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🟡 Важно</span></td>
+  <td>$150/driver/год</td>
+  <td>BOC-3, UCR</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td><strong>Бизнес-адрес NC</strong> (не домашний — Regus или iPostal1 Charlotte)</td>
+  <td>regus.com / ipostal1.com</td>
+  <td>23 мая</td>
+  <td>1 день</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$50–80/мес</td>
+  <td>—</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>11</td>
+  <td><strong>EIN для WY LLC</strong></td>
+  <td>irs.gov</td>
+  <td>23 мая</td>
+  <td>15 мин</td>
+  <td><span style="background:#dcfce7;color:#15803d;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🟢 Опционально</span></td>
+  <td>Free</td>
+  <td>EIN NC LLC</td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="callout callout-warn" data-i18n="t455" style="margin-top:10px">
-<strong>⏱️ Critical path:</strong> MC Number блокирует операции на 21 день. После LLC (W1) → MC application (W1-2) → 21-day wait → MC active (W4-5). Всё остальное можно параллельно делать в эти 3 нед.<br/>
-<strong>Total timeline до первого рейса:</strong> ~6-8 недель (если truck purchased и driver hired в параллель).
+
+<!-- PHASE 2 -->
+<h3 data-i18n="docs_ph2_cal_title" style="margin:14px 0 6px;color:#1e3a5f">🗓️ Неделя 2–3 (26 мая – 6 июня) — Страховка + Трак + Permits</h3>
+<div style="background:#eff6ff;border-left:4px solid #2563eb;border-radius:0 6px 6px 0;padding:8px 12px;font-size:12px;margin-bottom:8px">
+  ⏳ <strong>MC ждём 21 день</strong> (до ~11 июня). Используем это время максимально.
+</div>
+<div class="table-wrap">
+<table style="width:100%;table-layout:auto">
+<thead><tr style="background:#1e3a5f;color:#fff">
+  <th style="width:30px">#</th>
+  <th data-i18n="docs_col_task">Задача</th>
+  <th data-i18n="docs_col_where">Где / Как</th>
+  <th style="width:110px">Дата</th>
+  <th style="width:90px" data-i18n="docs_col_wait">Срок</th>
+  <th style="width:80px" data-i18n="docs_col_priority">Приоритет</th>
+  <th style="width:90px" data-i18n="docs_col_cost">Стоимость</th>
+  <th data-i18n="docs_col_parallel">Параллельно</th>
+</tr></thead>
+<tbody>
+<tr>
+  <td>12</td>
+  <td><strong>Бизнес банк-счёт</strong> (Bank of America / Chase Business)</td>
+  <td>Отделение банка</td>
+  <td>26 мая</td>
+  <td>1–2 часа</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>Free</td>
+  <td>Страховые звонки</td>
+</tr>
+<tr style="background:#fef3c7;border-left:4px solid #f59e0b">
+  <td>13</td>
+  <td><strong>📞 СТРАХОВКА — звонить 3+ компании (см. чеклист ниже)</strong></td>
+  <td>Progressive · Great West · Sentry · Canal</td>
+  <td>26–30 мая</td>
+  <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 5–7 дней</span></td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$14–22k/год<br/>взнос: $3.5–5.5k</td>
+  <td>Поиск трака</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>14</td>
+  <td><strong>PacLease переговоры</strong> TLG Peterbilt Charlotte</td>
+  <td>📞 (704) 597-8600</td>
+  <td>28 мая</td>
+  <td>1 час</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$7,500/мес all-in</td>
+  <td>Страховые звонки</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td><strong>Поиск + инспекция трака</strong> (3rd party, ~$200–300)</td>
+  <td>TruckPaper / SelecTrucks / Penske → инспектор</td>
+  <td>27 мая – 6 июня</td>
+  <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 1–2 недели</span></td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$60,000 + $200</td>
+  <td>Страховка</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>16</td>
+  <td><strong>IFTA Registration</strong> (NC DOR)</td>
+  <td>ncdor.gov → IFTA</td>
+  <td>29 мая</td>
+  <td>10 дней</td>
+  <td><span style="background:#fef9c3;color:#92400e;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🟡 Важно</span></td>
+  <td>Free + $10 decals</td>
+  <td>BOC-3</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td><strong>Operating Agreement</strong> WY LLC + NC LLC</td>
+  <td>Wyoming LLC Attorney (уже нанят)</td>
+  <td>29–30 мая</td>
+  <td>2–3 дня</td>
+  <td><span style="background:#fef9c3;color:#92400e;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🟡 Важно</span></td>
+  <td>включено в $550</td>
+  <td>—</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>18</td>
+  <td><strong>Получить VIN трака</strong> → передать страховщику</td>
+  <td>Dealer / Penske / SelecTrucks</td>
+  <td>3–6 июня</td>
+  <td>1 день</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>—</td>
+  <td>—</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- PHASE 3 -->
+<h3 data-i18n="docs_ph3_cal_title" style="margin:14px 0 6px;color:#1e3a5f">🗓️ Неделя 4–6 (9–27 июня) — MC Active + IRP + Запуск</h3>
+<div style="background:#f0fdf4;border-left:4px solid #16a34a;border-radius:0 6px 6px 0;padding:8px 12px;font-size:12px;margin-bottom:8px">
+  ✅ <strong>~11 июня: MC становится активным</strong> — с этого момента можно вести коммерческие перевозки (при наличии страховки и IRP).
+</div>
+<div class="table-wrap">
+<table style="width:100%;table-layout:auto">
+<thead><tr style="background:#1e3a5f;color:#fff">
+  <th style="width:30px">#</th>
+  <th data-i18n="docs_col_task">Задача</th>
+  <th data-i18n="docs_col_where">Где / Как</th>
+  <th style="width:110px">Дата</th>
+  <th style="width:90px" data-i18n="docs_col_wait">Срок</th>
+  <th style="width:80px" data-i18n="docs_col_priority">Приоритет</th>
+  <th style="width:90px" data-i18n="docs_col_cost">Стоимость</th>
+  <th data-i18n="docs_col_parallel">Параллельно</th>
+</tr></thead>
+<tbody>
+<tr style="background:#f0fdf4;border-left:4px solid #16a34a">
+  <td>19</td>
+  <td><strong>✅ MC ACTIVE — проверить статус</strong></td>
+  <td>li-public.fmcsa.dot.gov</td>
+  <td>~11 июня</td>
+  <td>—</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>—</td>
+  <td>Все ниже</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td><strong>Финализировать страховку</strong> — bind + первый взнос</td>
+  <td>Страховщик (Progressive / Great West)</td>
+  <td>11 июня</td>
+  <td>1 день</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$3,500–5,500</td>
+  <td>IRP Plates, Westrock</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>21</td>
+  <td><strong>HVUT Form 2290</strong> (IRS — налог на трак)</td>
+  <td>irs.gov → Form 2290 online</td>
+  <td>11 июня</td>
+  <td>1 день (instant stamp)</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$550/трак</td>
+  <td>IRP Plates</td>
+</tr>
+<tr style="background:#fef3c7;border-left:4px solid #f59e0b">
+  <td>22</td>
+  <td><strong>IRP Apportioned Plates</strong> (NC DMV)</td>
+  <td>ncdmv.net → IRP</td>
+  <td>11 июня</td>
+  <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 2 недели</span></td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$1,800–2,500/год</td>
+  <td>HVUT, страховка</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td><strong>Westrock vendor onboarding</strong> — подать MC cert + insurance cert</td>
+  <td>Westrock procurement portal</td>
+  <td>12 июня</td>
+  <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 2–4 недели</span></td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>Free</td>
+  <td>Driver hiring</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>24</td>
+  <td><strong>ELD device</strong> (Motive / Samsara) — заказать, shipping 3 дня</td>
+  <td>gomotive.com / samsara.com</td>
+  <td>13 июня</td>
+  <td>3 дня shipping</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$35–45/мес</td>
+  <td>Dashcam</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td><strong>Driver hiring</strong> (CDL-A, W2, $85k/год) + drug test + MVR</td>
+  <td>Indeed / CDLjobs.com + DOT consortium</td>
+  <td>16 июня</td>
+  <td><span style="background:#f59e0b;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:700">⚠️ 1–2 недели</span></td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>$300/driver</td>
+  <td>Westrock onboarding</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>26</td>
+  <td><strong>ELD install + compliance check</strong></td>
+  <td>Механик / самостоятельно</td>
+  <td>17 июня</td>
+  <td>1 день</td>
+  <td><span style="background:#fecaca;color:#b91c1c;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🔴 Критично</span></td>
+  <td>—</td>
+  <td>IRP plates</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td><strong>Test run</strong> (2–3 пробных рейса без груза)</td>
+  <td>Concord NC → Summerville SC</td>
+  <td>20 июня</td>
+  <td>1 день</td>
+  <td><span style="background:#fef9c3;color:#92400e;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🟡 Важно</span></td>
+  <td>~$200 fuel</td>
+  <td>—</td>
+</tr>
+<tr style="background:#dcfce7;border-left:4px solid #16a34a">
+  <td>28</td>
+  <td><strong>🚀 ПЕРВЫЙ РЕЙС С ГРУЗОМ</strong></td>
+  <td>Westrock Coffee Concord NC → Summerville SC</td>
+  <td>~27 июня</td>
+  <td>—</td>
+  <td><span style="background:#16a34a;color:#fff;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">✅ ЦЕЛЬ</span></td>
+  <td>+$1,500</td>
+  <td>—</td>
+</tr>
+<tr style="background:#f8fafc">
+  <td>29</td>
+  <td><strong>Factoring agreement</strong> (OTR Capital / RTS) — опционально</td>
+  <td>otrcapital.com</td>
+  <td>После MC</td>
+  <td>3–5 дней</td>
+  <td><span style="background:#dcfce7;color:#15803d;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:600">🟢 Опционально</span></td>
+  <td>2–3% от invoice</td>
+  <td>—</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- INSURANCE CHECKLIST -->
+<div style="background:#fffbeb;border:2px solid #f59e0b;border-radius:8px;padding:14px;margin-top:14px">
+  <div style="font-weight:700;font-size:14px;margin-bottom:8px" data-i18n="docs_ins_section_title">📞 Страховка — что уточнять при звонке</div>
+  <div style="font-size:12px;margin-bottom:8px;color:#6b7280" data-i18n="docs_ins_carriers">Звони в 3+ компании: Progressive Commercial · Great West Casualty · Sentry Insurance · Canal Insurance</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px">
+    <div style="padding:6px 8px;background:#fff;border-radius:4px;border:1px solid #fde68a" data-i18n="docs_ins_q1">1. Покрывает ли полис маршрут Concord NC ↔ Summerville SC?</div>
+    <div style="padding:6px 8px;background:#fff;border-radius:4px;border:1px solid #fde68a" data-i18n="docs_ins_q2">2. Есть ли скидка за ELD (Motive/Samsara) и dashcam?</div>
+    <div style="padding:6px 8px;background:#fff;border-radius:4px;border:1px solid #fde68a" data-i18n="docs_ins_q3">3. Как включить Westrock Coffee как Additional Insured?</div>
+    <div style="padding:6px 8px;background:#fff;border-radius:4px;border:1px solid #fde68a" data-i18n="docs_ins_q4">4. Размер первого взноса (deposit)? 20–30% от годовой?</div>
+    <div style="padding:6px 8px;background:#fff;border-radius:4px;border:1px solid #fde68a" data-i18n="docs_ins_q5">5. Что покрывает при breakdown (roadside assistance)?</div>
+    <div style="padding:6px 8px;background:#fff;border-radius:4px;border:1px solid #fde68a" data-i18n="docs_ins_q6">6. Как меняется ставка после 12 и 24 месяцев работы?</div>
+    <div style="padding:6px 8px;background:#fff;border-radius:4px;border:1px solid #fde68a" data-i18n="docs_ins_q7">7. Physical Damage — включён в пакет или отдельно?</div>
+    <div style="padding:6px 8px;background:#fff;border-radius:4px;border:1px solid #fde68a">8. Net-30/45 Westrock: нужна ли performance bond?</div>
+  </div>
+  <div style="margin-top:8px;font-size:12px;color:#b45309;font-weight:600" data-i18n="docs_ins_note">⚠️ Новый carrier = +30–60% к цене в первые 2 года. Первый взнос $3,500–5,500 cash.</div>
+</div>
+
+<!-- PITFALLS -->
+<div style="margin-top:14px">
+  <div style="font-weight:700;font-size:14px;margin-bottom:8px;color:#dc2626" data-i18n="docs_pitfalls_title">🚨 Главные подводные камни</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+    <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:6px;padding:10px">
+      <div style="font-weight:700;font-size:12px;color:#dc2626;margin-bottom:4px" data-i18n="docs_pit1_title">❌ Покупка трака до страховки</div>
+      <div style="font-size:11px;color:#374151" data-i18n="docs_pit1_body">Без страховки ехать нельзя. MC active → insurance bind → трак. Или PacLease с 1-го дня.</div>
     </div>
+    <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:6px;padding:10px">
+      <div style="font-weight:700;font-size:12px;color:#dc2626;margin-bottom:4px" data-i18n="docs_pit2_title">❌ Адрес FMCSA ≠ адрес LLC</div>
+      <div style="font-size:11px;color:#374151" data-i18n="docs_pit2_body">Используй виртуальный офис Charlotte — не домашний. FMCSA требует точное совпадение с NC SoS.</div>
+    </div>
+    <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:6px;padding:10px">
+      <div style="font-weight:700;font-size:12px;color:#dc2626;margin-bottom:4px" data-i18n="docs_pit3_title">❌ IRP без HVUT 2290</div>
+      <div style="font-size:11px;color:#374151" data-i18n="docs_pit3_body">NC DMV не выдаст plates без 2290 stamp. Порядок: 2290 → потом IRP. Нужен VIN.</div>
+    </div>
+    <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:6px;padding:10px">
+      <div style="font-weight:700;font-size:12px;color:#dc2626;margin-bottom:4px" data-i18n="docs_pit4_title">❌ Westrock без письменного контракта</div>
+      <div style="font-size:11px;color:#374151" data-i18n="docs_pit4_body">До покупки трака — письменный контракт + volume commitment + FSC reopener clause.</div>
+    </div>
+    <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:6px;padding:10px">
+      <div style="font-weight:700;font-size:12px;color:#dc2626;margin-bottom:4px" data-i18n="docs_pit5_title">❌ UCR забыть обновить</div>
+      <div style="font-size:11px;color:#374151" data-i18n="docs_pit5_body">UCR renewal каждый год до 1 января. Просрочка = authority suspended. Поставь напоминание декабрь.</div>
+    </div>
+    <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:6px;padding:10px">
+      <div style="font-weight:700;font-size:12px;color:#dc2626;margin-bottom:4px" data-i18n="docs_pit6_title">❌ New Entrant Audit (год 1)</div>
+      <div style="font-size:11px;color:#374151" data-i18n="docs_pit6_body">FMCSA проверяет в первые 12 мес. Хранить: Driver Qual Files, ELD logs, drug test records, inspection reports.</div>
+    </div>
+  </div>
 </div>
+
+<!-- BUDGET SUMMARY -->
+<div style="background:#f0fdf4;border:2px solid #16a34a;border-radius:8px;padding:14px;margin-top:14px">
+  <div style="font-weight:700;font-size:14px;margin-bottom:10px" data-i18n="docs_budget_title">💰 Итоговый бюджет запуска (V1, cash)</div>
+  <table style="width:100%;margin:0;font-size:13px">
+  <tbody>
+  <tr><td data-i18n="docs_budget_wy">WY LLC (state + agent + nominee manager)</td><td style="text-align:right;white-space:nowrap">~$1,600</td></tr>
+  <tr style="background:#f0fdf4"><td data-i18n="docs_budget_nc">NC LLC (state + registered agent)</td><td style="text-align:right">$250</td></tr>
+  <tr><td data-i18n="docs_budget_ein">EIN (оба LLC)</td><td style="text-align:right">Free</td></tr>
+  <tr style="background:#f0fdf4"><td data-i18n="docs_budget_usdot">USDOT Number</td><td style="text-align:right">Free</td></tr>
+  <tr><td data-i18n="docs_budget_mc">MC Number</td><td style="text-align:right">$300</td></tr>
+  <tr style="background:#f0fdf4"><td data-i18n="docs_budget_boc">BOC-3 Process Agent</td><td style="text-align:right">$50</td></tr>
+  <tr><td data-i18n="docs_budget_ucr">UCR Registration (1 трак)</td><td style="text-align:right">$76</td></tr>
+  <tr style="background:#f0fdf4"><td data-i18n="docs_budget_drug">Drug &amp; Alcohol Consortium</td><td style="text-align:right">$150</td></tr>
+  <tr><td data-i18n="docs_budget_ifta">IFTA + decals</td><td style="text-align:right">$10</td></tr>
+  <tr style="background:#f0fdf4"><td data-i18n="docs_budget_hvut">HVUT Form 2290</td><td style="text-align:right">$550</td></tr>
+  <tr><td data-i18n="docs_budget_irp">IRP Apportioned Plates</td><td style="text-align:right">$1,800–2,500</td></tr>
+  <tr style="background:#f0fdf4"><td data-i18n="docs_budget_ins">Insurance первый взнос (2–3 мес)</td><td style="text-align:right">$3,500–5,500</td></tr>
+  <tr><td data-i18n="docs_budget_nc_office">NC Virtual Office (Regus/iPostal1, год)</td><td style="text-align:right">$600–960</td></tr>
+  <tr style="background:#f0fdf4"><td data-i18n="docs_budget_wy_office">WY Virtual Office (год)</td><td style="text-align:right">$228</td></tr>
+  <tr><td data-i18n="docs_budget_eld">ELD + Dashcam (первый год)</td><td style="text-align:right">$780</td></tr>
+  <tr style="background:#f0fdf4"><td data-i18n="docs_budget_driver">Driver onboarding</td><td style="text-align:right">$300</td></tr>
+  <tr><td data-i18n="docs_budget_inspection">3rd party truck inspection</td><td style="text-align:right">$200–300</td></tr>
+  <tr style="border-top:1px solid #16a34a"><td><strong data-i18n="docs_budget_subtotal">Subtotal permits + compliance</strong></td><td style="text-align:right"><strong>$9,594–12,854</strong></td></tr>
+  <tr style="background:#dcfce7"><td><strong data-i18n="docs_budget_truck">🚛 Truck (Cascadia 126 DD15)</strong></td><td style="text-align:right"><strong>$60,000</strong></td></tr>
+  <tr style="background:#dcfce7"><td><strong data-i18n="docs_budget_trailer">🚚 Trailer (Dry Van 53' 2020–22)</strong></td><td style="text-align:right"><strong>$22,000</strong></td></tr>
+  <tr style="background:#dcfce7"><td><strong data-i18n="docs_budget_wc">💰 Working capital reserve (AR bridge)</strong></td><td style="text-align:right"><strong>$30,000</strong></td></tr>
+  <tr style="border-top:2px solid #16a34a;background:#bbf7d0"><td><strong data-i18n="docs_budget_total">💰 ИТОГО ВСЁ (cash, V1 — 1 трак + 1 трейлер)</strong></td><td style="text-align:right"><strong class="s-green" style="font-size:15px">$121,594–125,854</strong></td></tr>
+  </tbody>
+  </table>
+  <div style="margin-top:8px;font-size:11px;color:#6b7280">
+    <div data-i18n="docs_budget_note1">💡 Если трейлер от Westrock → вычти $22k → ~$100–104k</div>
+    <div data-i18n="docs_budget_note2">💡 PacLease вместо покупки → $7,500/мес, CAPEX ~$70k</div>
+  </div>
+</div>
+
+</div>
+
 <!-- LAUNCH ROADMAP -->
 <div class="reco-section" data-page="start" id="launch-roadmap">
 <span class="section-label label-reco" data-i18n="t456">🎯 Roadmap запуска — детальная последовательность</span>
